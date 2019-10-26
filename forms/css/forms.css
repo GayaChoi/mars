@@ -1,0 +1,126 @@
+form {
+   margin-left: 100px;
+}
+
+form.kit-form input[type="text"],
+form.kit-form input[type="password"],
+form.kit-form input[type="email"],
+form.kit-form input[type="url"],
+form.kit-form input[type="date"],
+form.kit-form input[type="month"],
+form.kit-form input[type="time"],
+form.kit-form input[type="datetime"],
+form.kit-form input[type="datetime-local"],
+form.kit-form input[type="week"],
+form.kit-form input[type="number"],
+form.kit-form input[type="search"],
+form.kit-form input[type="tel"],
+form.kit-form input[type="color"],
+form.kit-form input[type="checkbox"],
+form.kit-form select,
+form.kit-form textarea {
+    color: #B1B1B1;
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: inherit;
+    padding: 0.5em 0.6em;
+    display: inline-block;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    background: #F2F2F2;
+    vertical-align: middle;
+    box-sizing: border-box;
+}
+
+form.kit-form input:not([type]) {
+    padding: 0.5em 0.6em;
+    display: inline-block;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form.kit-form input[type="color"] {
+    padding: 0.2em 0.5em;
+}
+
+form.kit-form input[type="text"]:focus,
+form.kit-form input[type="password"]:focus,
+form.kit-form input[type="email"]:focus,
+form.kit-form input[type="url"]:focus,
+form.kit-form input[type="date"]:focus,
+form.kit-form input[type="month"]:focus,
+form.kit-form input[type="time"]:focus,
+form.kit-form input[type="datetime"]:focus,
+form.kit-form input[type="datetime-local"]:focus,
+form.kit-form input[type="week"]:focus,
+form.kit-form input[type="number"]:focus,
+form.kit-form input[type="search"]:focus,
+form.kit-form input[type="tel"]:focus,
+form.kit-form input[type="color"]:focus,
+form.kit-form input[type="checkbox"]:focus,
+form.kit-form select:focus,
+form.kit-form textarea:focus {
+    outline: 0;
+    border-color: #4166F5;
+}
+
+form.kit-form input:not([type]):focus {
+    outline: 0;
+    border-color: #4166F5;
+}
+
+form.kit-form input[type="file"]:focus,
+form.kit-form input[type="radio"]:focus {
+    outline: thin solid #4166F5;
+    outline: 1px auto #4166F5;
+}
+
+form.kit-form .kit-checkbox,
+form.kit-form .kit-radio {
+    margin: 0.5em 0;
+    display: block;
+}
+
+form.kit-form input:focus:invalid,
+form.kit-form textarea:focus:invalid,
+form.kit-form select:focus:invalid {
+    color: #b94a48;
+    border-color: #e9322d;
+}
+
+form.kit-form input[type="file"]:focus:invalid:focus,
+form.kit-form input[type="radio"]:focus:invalid:focus,
+form.kit-form input[type="checkbox"]:focus:invalid:focus {
+    outline-color: #e9322d;
+}
+
+form.kit-form select {
+    height: 2.25em;
+    border: 1px solid #ccc;
+    background-color: white;
+}
+
+form.kit-form select[multiple] {
+    height: auto;
+}
+
+form.kit-form label {
+    margin: 0.5em 0 0.2em;
+}
+
+form.kit-form fieldset {
+    margin: 0;
+    padding: 0.35em 0 0.75em;
+    border: 0;
+}
+
+form.kit-form legend {
+    display: block;
+    width: 100%;
+    padding: 0.3em 0;
+    margin-bottom: 0.3em;
+    color: #333;
+    border-bottom: 1px solid #e5e5e5;
+}
