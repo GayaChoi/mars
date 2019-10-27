@@ -4,18 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>css-kit-css</title>
+    <title>forms</title>
     <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../Assets/common/common.css">
     <link rel="stylesheet" href="../../forms/css/forms.css">
     <link rel="stylesheet" href="../../forms/css/forms-r.css">
+    <link rel="stylesheet" href="../../buttons/css/buttons.css">
     <link rel="stylesheet" href="../../base/css/base.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 </head>
 <body>
    <div id="wrap">
-    <div class="form-wrap">
-       <div class="form-container">
-            <form class="kit-form">
+        <div class="form-wrap">
+            <form class="mars-form">
                 <fieldset>
                     <legend>form ui</legend>
                        <input type="email" placeholder="Email">
@@ -24,10 +25,25 @@
                         <label for="remember">
                             <input id="remember" type="checkbox"> Remember me
                         </label>
+                        <button type="submit" class="mars-button mars-button-primary">Sign in</button>
                 </fieldset>
             </form>
-        </div>  
-     </div> 
-  </div>
+            <ul>
+              <li>
+                <input class="mars-checkbox-style" id="Checkbox1" type="checkbox">
+                <label for="checkbox">Checkbox1</label>
+              </li>
+              <li>
+                <input class="mars-checkbox-style" id="Checkbox2" type="checkbox" checked>
+                <label for="checkbox">Checkbox2</label>
+              </li>
+              <li>
+                <input class="mars-checkbox-style" id="Checkbox3" type="checkbox" disabled>
+                <label for="checkbox">Checkbox3</label> 
+              </li>
+            </ul>
+        </div> 
+    </div>
 </body>
+<script src="../../forms/js/hover.js"></script>
 </html>

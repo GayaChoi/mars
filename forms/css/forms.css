@@ -1,26 +1,27 @@
 form {
+   margin-top: 50px;
    margin-left: 100px;
 }
 
-form.kit-form input[type="text"],
-form.kit-form input[type="password"],
-form.kit-form input[type="email"],
-form.kit-form input[type="url"],
-form.kit-form input[type="date"],
-form.kit-form input[type="month"],
-form.kit-form input[type="time"],
-form.kit-form input[type="datetime"],
-form.kit-form input[type="datetime-local"],
-form.kit-form input[type="week"],
-form.kit-form input[type="number"],
-form.kit-form input[type="search"],
-form.kit-form input[type="tel"],
-form.kit-form input[type="color"],
-form.kit-form input[type="checkbox"],
-form.kit-form select,
-form.kit-form textarea {
+.mars-form input[type="text"],
+.mars-form input[type="password"],
+.mars-form input[type="email"],
+.mars-form input[type="url"],
+.mars-form input[type="date"],
+.mars-form input[type="month"],
+.mars-form input[type="time"],
+.mars-form input[type="datetime"],
+.mars-form input[type="datetime-local"],
+.mars-form input[type="week"],
+.mars-form input[type="number"],
+.mars-form input[type="search"],
+.mars-form input[type="tel"],
+.mars-form input[type="color"],
+.mars-form input[type="checkbox"],
+.mars-form select,
+.mars-form textarea {
     color: #B1B1B1;
-    font-family: 'Nunito', sans-serif;
+    font-family: inherit;
     font-style: normal;
     font-weight: normal;
     font-size: inherit;
@@ -33,7 +34,7 @@ form.kit-form textarea {
     box-sizing: border-box;
 }
 
-form.kit-form input:not([type]) {
+.mars-form input:not([type]) {
     padding: 0.5em 0.6em;
     display: inline-block;
     border: 1px solid #ffffff;
@@ -41,86 +42,151 @@ form.kit-form input:not([type]) {
     box-sizing: border-box;
 }
 
-form.kit-form input[type="color"] {
+.mars-form input[type="color"] {
     padding: 0.2em 0.5em;
 }
 
-form.kit-form input[type="text"]:focus,
-form.kit-form input[type="password"]:focus,
-form.kit-form input[type="email"]:focus,
-form.kit-form input[type="url"]:focus,
-form.kit-form input[type="date"]:focus,
-form.kit-form input[type="month"]:focus,
-form.kit-form input[type="time"]:focus,
-form.kit-form input[type="datetime"]:focus,
-form.kit-form input[type="datetime-local"]:focus,
-form.kit-form input[type="week"]:focus,
-form.kit-form input[type="number"]:focus,
-form.kit-form input[type="search"]:focus,
-form.kit-form input[type="tel"]:focus,
-form.kit-form input[type="color"]:focus,
-form.kit-form input[type="checkbox"]:focus,
-form.kit-form select:focus,
-form.kit-form textarea:focus {
+.mars-form input[type="text"]:focus,
+.mars-form input[type="password"]:focus,
+.mars-form input[type="email"]:focus,
+.mars-form input[type="url"]:focus,
+.mars-form input[type="date"]:focus,
+.mars-form input[type="month"]:focus,
+.mars-form input[type="time"]:focus,
+.mars-form input[type="datetime"]:focus,
+.mars-form input[type="datetime-local"]:focus,
+.mars-form input[type="week"]:focus,
+.mars-form input[type="number"]:focus,
+.mars-form input[type="search"]:focus,
+.mars-form input[type="tel"]:focus,
+.mars-form input[type="color"]:focus,
+.mars-form input[type="checkbox"]:focus,
+.mars-form select:focus,
+.mars-form textarea:focus {
     outline: 0;
-    border-color: #4166F5;
+    border-color: #129FEA;
 }
 
-form.kit-form input:not([type]):focus {
+.mars-form input:not([type]):focus {
     outline: 0;
-    border-color: #4166F5;
+    border-color: #129FEA;
 }
 
-form.kit-form input[type="file"]:focus,
-form.kit-form input[type="radio"]:focus {
-    outline: thin solid #4166F5;
-    outline: 1px auto #4166F5;
+.mars-form input[type="file"]:focus,
+.mars-form input[type="radio"]:focus {
+    outline: thin solid #129FEA;
+    outline: 1px auto #129FEA;
 }
 
-form.kit-form .kit-checkbox,
-form.kit-form .kit-radio {
+.mars-form .mars-checkbox,
+.mars-form .mars-radio {
     margin: 0.5em 0;
     display: block;
 }
 
-form.kit-form input:focus:invalid,
-form.kit-form textarea:focus:invalid,
-form.kit-form select:focus:invalid {
+.mars-form input:focus:invalid,
+.mars-form textarea:focus:invalid,
+.mars-form select:focus:invalid {
     color: #b94a48;
     border-color: #e9322d;
 }
 
-form.kit-form input[type="file"]:focus:invalid:focus,
-form.kit-form input[type="radio"]:focus:invalid:focus,
-form.kit-form input[type="checkbox"]:focus:invalid:focus {
+.mars-form input[type="file"]:focus:invalid:focus,
+.mars-form input[type="radio"]:focus:invalid:focus,
+.mars-form input[type="checkbox"]:focus:invalid:focus {
     outline-color: #e9322d;
 }
 
-form.kit-form select {
+.mars-form select {
     height: 2.25em;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     background-color: white;
 }
 
-form.kit-form select[multiple] {
+.mars-form select[multiple] {
     height: auto;
 }
 
-form.kit-form label {
+.mars-form label {
     margin: 0.5em 0 0.2em;
 }
 
-form.kit-form fieldset {
+.mars-form fieldset {
     margin: 0;
     padding: 0.35em 0 0.75em;
     border: 0;
 }
 
-form.kit-form legend {
+.mars-form legend {
     display: block;
     width: 100%;
     padding: 0.3em 0;
     margin-bottom: 0.3em;
-    color: #333;
+    color: #000000;
     border-bottom: 1px solid #e5e5e5;
 }
+
+/* checkbox style */
+
+
+.mars-checkbox-style {
+    position: absolute; 
+    opacity: 0;
+}
+
+.mars-checkbox-style + label {
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+}
+
+.mars-checkbox-style + label:before {
+    content: '';
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: text-top;
+    width: 20px;
+    height: 20px;
+    background: #ffffff;
+    border: 2.5px solid #ebecf0;
+}
+
+.mars-checkbox-style:hover + label:before {
+    border-color: #129FEA;
+}
+
+.mars-checkbox-style:checked + label:before {
+    background: #129FEA;
+}
+
+/* disable checkbox */
+.mars-checkbox-style:disabled + label {
+    color: #e5e5e5;
+    cursor: auto;
+}
+
+.mars-checkbox-style:disabled + label:before {
+    background: #dddddd;   
+}
+
+.mars-checkbox-style:checked + label:after {
+    content: '';
+    position: absolute;
+    left: 6px;
+    top: 10px;
+    background: #ffffff;
+    width: 2px;
+    height: 2px;
+    box-shadow: 
+    2px 0 0 white,
+    4px 0 0 white,
+    4px -2px 0 white,
+    4px -4px 0 white,
+    4px -6px 0 white,
+    4px -8px 0 white;
+    transform: rotate(45deg);
+}
+
+
+
+
