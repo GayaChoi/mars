@@ -6,10 +6,16 @@ form {
 .mars-form.mars-form-stacked input[type="email"],
 .mars-form.mars-form-stacked input[type="password"],
 .mars-form.mars-form-stacked input {
-   width: 50%;
-   border-radius: 4px;
+   display: block;
+   width: 33%;
+   border-radius: 0.5em;
    margin-bottom: 20px;
 }
+
+.mars-form-stacked input:not([type]) {
+    display: block;
+}
+
 
 /* not round */
 .mars-form.mars-form-base input[type="text"],
@@ -51,9 +57,8 @@ form {
 .mars-form.mars-form-little input,
 .mars-form.mars-form-little select,
 .mars-form.mars-form-little textarea {   
-    border-radius: 4px;
+    border-radius: 0.5em;
 }
-
 
 /* round */
 .mars-form.mars-form-round input[type="text"],
@@ -73,7 +78,7 @@ form {
 .mars-form.mars-form-round input,
 .mars-form.mars-form-round select,
 .mars-form.mars-form-round textarea {   
-    border-radius: 20px;
+    border-radius: 2em;
 }
 
 /* default input */
@@ -99,7 +104,7 @@ form {
     font-style: normal;
     font-weight: normal;
     font-size: inherit;
-    padding: 0.5em 0.6em;
+    padding: 0.5em 1em;
     display: inline-block;
     border: 1px solid #ffffff;
     background: #F2F2F2;
@@ -188,6 +193,32 @@ form {
     border-bottom: 1px solid #e5e5e5;
 }
 
+
+/* disabled  */
+.mars-form input[type="text"][disabled],
+.mars-form input[type="password"][disabled],
+.mars-form input[type="email"][disabled],
+.mars-form input[type="url"][disabled],
+.mars-form input[type="date"][disabled],
+.mars-form input[type="month"][disabled],
+.mars-form input[type="time"][disabled],
+.mars-form input[type="datetime"][disabled],
+.mars-form input[type="datetime-local"][disabled],
+.mars-form input[type="week"][disabled],
+.mars-form input[type="number"][disabled],
+.mars-form input[type="search"][disabled],
+.mars-form input[type="tel"][disabled],
+.mars-form input[type="color"][disabled],
+.mars-form select[disabled],
+.mars-form textarea[disabled] {
+    cursor: not-allowed;
+    background-color:#eaeded;
+    color: #cad2d3;
+}
+
+
+
+
 /* checkbox style */
 
 .mars-checkbox-style {
@@ -211,10 +242,10 @@ form {
     background: #ffffff;
     border: 2.5px solid #ebecf0;
 }
-    
+
 .mars-checkbox-style:hover + label:before {
-    border-color: #129FEA;  
-} 
+    border-color: #129FEA;
+}
 
 .mars-checkbox-style:checked + label:before {
     background: #129FEA;
@@ -248,6 +279,10 @@ form {
     4px -8px 0 white;
     transform: rotate(45deg);
 }
+
+
+
+
 
 
 
