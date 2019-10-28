@@ -1,8 +1,82 @@
 form {
-   margin-top: 50px;
+   margin-top: 0px;
    margin-left: 100px;
 }
 
+.mars-form.mars-form-stacked input[type="email"],
+.mars-form.mars-form-stacked input[type="password"],
+.mars-form.mars-form-stacked input {
+   width: 50%;
+   border-radius: 4px;
+   margin-bottom: 20px;
+}
+
+/* not round */
+.mars-form.mars-form-base input[type="text"],
+.mars-form.mars-form-base input[type="password"],
+.mars-form.mars-form-base input[type="email"],
+.mars-form.mars-form-base input[type="url"],
+.mars-form.mars-form-base input[type="date"],
+.mars-form.mars-form-base input[type="month"],
+.mars-form.mars-form-base input[type="time"],
+.mars-form.mars-form-base input[type="datetime"],
+.mars-form.mars-form-base input[type="datetime-local"],
+.mars-form.mars-form-base input[type="week"],
+.mars-form.mars-form-base input[type="number"],
+.mars-form.mars-form-base input[type="search"],
+.mars-form.mars-form-base input[type="tel"],
+.mars-form.mars-form-base input[type="color"],
+.mars-form.mars-form-base input,
+.mars-form.mars-form-base select,
+.mars-form.mars-form-base textarea {   
+    border-radius: 0px;
+}
+
+
+/* little round */
+.mars-form.mars-form-little input[type="text"],
+.mars-form.mars-form-little input[type="password"],
+.mars-form.mars-form-little input[type="email"],
+.mars-form.mars-form-little input[type="url"],
+.mars-form.mars-form-little input[type="date"],
+.mars-form.mars-form-little input[type="month"],
+.mars-form.mars-form-little input[type="time"],
+.mars-form.mars-form-little input[type="datetime"],
+.mars-form.mars-form-little input[type="datetime-local"],
+.mars-form.mars-form-little input[type="week"],
+.mars-form.mars-form-little input[type="number"],
+.mars-form.mars-form-little input[type="search"],
+.mars-form.mars-form-little input[type="tel"],
+.mars-form.mars-form-little input[type="color"],
+.mars-form.mars-form-little input,
+.mars-form.mars-form-little select,
+.mars-form.mars-form-little textarea {   
+    border-radius: 4px;
+}
+
+
+/* round */
+.mars-form.mars-form-round input[type="text"],
+.mars-form.mars-form-round input[type="password"],
+.mars-form.mars-form-round input[type="email"],
+.mars-form.mars-form-round input[type="url"],
+.mars-form.mars-form-round input[type="date"],
+.mars-form.mars-form-round input[type="month"],
+.mars-form.mars-form-round input[type="time"],
+.mars-form.mars-form-round input[type="datetime"],
+.mars-form.mars-form-round input[type="datetime-local"],
+.mars-form.mars-form-round input[type="week"],
+.mars-form.mars-form-round input[type="number"],
+.mars-form.mars-form-round input[type="search"],
+.mars-form.mars-form-round input[type="tel"],
+.mars-form.mars-form-round input[type="color"],
+.mars-form.mars-form-round input,
+.mars-form.mars-form-round select,
+.mars-form.mars-form-round textarea {   
+    border-radius: 20px;
+}
+
+/* default input */
 .mars-form input[type="text"],
 .mars-form input[type="password"],
 .mars-form input[type="email"],
@@ -17,10 +91,10 @@ form {
 .mars-form input[type="search"],
 .mars-form input[type="tel"],
 .mars-form input[type="color"],
-.mars-form input[type="checkbox"],
+.mars-form input,
 .mars-form select,
 .mars-form textarea {
-    color: #B1B1B1;
+    color: #000000;
     font-family: inherit;
     font-style: normal;
     font-weight: normal;
@@ -28,7 +102,6 @@ form {
     padding: 0.5em 0.6em;
     display: inline-block;
     border: 1px solid #ffffff;
-    border-radius: 4px;
     background: #F2F2F2;
     vertical-align: middle;
     box-sizing: border-box;
@@ -60,7 +133,7 @@ form {
 .mars-form input[type="search"]:focus,
 .mars-form input[type="tel"]:focus,
 .mars-form input[type="color"]:focus,
-.mars-form input[type="checkbox"]:focus,
+.mars-form input:focus,
 .mars-form select:focus,
 .mars-form textarea:focus {
     outline: 0;
@@ -97,16 +170,6 @@ form {
     outline-color: #e9322d;
 }
 
-.mars-form select {
-    height: 2.25em;
-    border: 1px solid #cccccc;
-    background-color: white;
-}
-
-.mars-form select[multiple] {
-    height: auto;
-}
-
 .mars-form label {
     margin: 0.5em 0 0.2em;
 }
@@ -119,7 +182,6 @@ form {
 
 .mars-form legend {
     display: block;
-    width: 100%;
     padding: 0.3em 0;
     margin-bottom: 0.3em;
     color: #000000;
@@ -127,7 +189,6 @@ form {
 }
 
 /* checkbox style */
-
 
 .mars-checkbox-style {
     position: absolute; 
@@ -150,10 +211,10 @@ form {
     background: #ffffff;
     border: 2.5px solid #ebecf0;
 }
-
+    
 .mars-checkbox-style:hover + label:before {
-    border-color: #129FEA;
-}
+    border-color: #129FEA;  
+} 
 
 .mars-checkbox-style:checked + label:before {
     background: #129FEA;
@@ -166,6 +227,7 @@ form {
 }
 
 .mars-checkbox-style:disabled + label:before {
+    border-color: #ebecf0;
     background: #dddddd;   
 }
 
@@ -186,6 +248,7 @@ form {
     4px -8px 0 white;
     transform: rotate(45deg);
 }
+
 
 
 
