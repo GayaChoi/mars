@@ -193,7 +193,6 @@ form {
     border-bottom: 1px solid #e5e5e5;
 }
 
-
 /* disabled  */
 .mars-form input[type="text"][disabled],
 .mars-form input[type="password"][disabled],
@@ -216,11 +215,13 @@ form {
     color: #cad2d3;
 }
 
-
-
+.mars-form input:not([type])[disabled] {
+    cursor: not-allowed;
+    background-color: #eaeded;
+    color: #cad2d3;
+}
 
 /* checkbox style */
-
 .mars-checkbox-style {
     position: absolute; 
     opacity: 0;
@@ -232,7 +233,7 @@ form {
     padding: 0;
 }
 
-.mars-checkbox-style + label:before {
+.mars-checkbox-style + label::before {
     content: '';
     margin-right: 10px;
     display: inline-block;
@@ -243,11 +244,11 @@ form {
     border: 2.5px solid #ebecf0;
 }
 
-.mars-checkbox-style:hover + label:before {
+.mars-checkbox-style:hover + label::before {
     border-color: #129FEA;
 }
 
-.mars-checkbox-style:checked + label:before {
+.mars-checkbox-style:checked + label::before {
     background: #129FEA;
 }
 
@@ -257,12 +258,12 @@ form {
     cursor: auto;
 }
 
-.mars-checkbox-style:disabled + label:before {
+.mars-checkbox-style:disabled + label::before {
     border-color: #ebecf0;
     background: #dddddd;   
 }
 
-.mars-checkbox-style:checked + label:after {
+.mars-checkbox-style:checked + label::after {
     content: '';
     position: absolute;
     left: 6px;
@@ -280,7 +281,44 @@ form {
     transform: rotate(45deg);
 }
 
+/* label */
+/* input / textarea */
+.mars-form.mars-form-label label {
+    color: rgb(51, 51, 51);
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
 
+.mars-form.mars-form-label input,
+.mars-form.mars-form-label textarea {
+    width: 75%; /* 3-4 sizing box */
+    border: 2px solid transparent;
+    background: #fafafa;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.13);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.mars-form.mars-form-label input:focus,
+.mars-form.mars-form-label textarea:focus {
+    border: 2px solid transparent;
+    border-radius: 3px;
+    border-width: 2px 0px;
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.13);
+}
+
+.mars-form.mars-form-label.success input:focus {
+    border-bottom: 2px solid rgb(3,192,74);  
+}
+
+.mars-form.mars-form-label.warning input:focus {
+    border-bottom: 2px solid rgb(237,135,45);  
+}
+
+.mars-form.mars-form-label.error input:focus {
+    border-bottom: 2px solid rgb(227, 0, 34);  
+}
 
 
 
