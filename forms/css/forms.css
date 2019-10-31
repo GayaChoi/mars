@@ -1,84 +1,5 @@
-form {
-   margin-top: 0px;
-   margin-left: 100px;
-}
-
-.mars-form.mars-form-stacked input[type="email"],
-.mars-form.mars-form-stacked input[type="password"],
-.mars-form.mars-form-stacked input {
-   display: block;
-   width: 33%;
-   border-radius: 0.5em;
-   margin-bottom: 20px;
-}
-
-.mars-form-stacked input:not([type]) {
-    display: block;
-}
-
-
-/* not round */
-.mars-form.mars-form-base input[type="text"],
-.mars-form.mars-form-base input[type="password"],
-.mars-form.mars-form-base input[type="email"],
-.mars-form.mars-form-base input[type="url"],
-.mars-form.mars-form-base input[type="date"],
-.mars-form.mars-form-base input[type="month"],
-.mars-form.mars-form-base input[type="time"],
-.mars-form.mars-form-base input[type="datetime"],
-.mars-form.mars-form-base input[type="datetime-local"],
-.mars-form.mars-form-base input[type="week"],
-.mars-form.mars-form-base input[type="number"],
-.mars-form.mars-form-base input[type="search"],
-.mars-form.mars-form-base input[type="tel"],
-.mars-form.mars-form-base input[type="color"],
-.mars-form.mars-form-base input,
-.mars-form.mars-form-base select,
-.mars-form.mars-form-base textarea {   
-    border-radius: 0px;
-}
-
-
-/* little round */
-.mars-form.mars-form-little input[type="text"],
-.mars-form.mars-form-little input[type="password"],
-.mars-form.mars-form-little input[type="email"],
-.mars-form.mars-form-little input[type="url"],
-.mars-form.mars-form-little input[type="date"],
-.mars-form.mars-form-little input[type="month"],
-.mars-form.mars-form-little input[type="time"],
-.mars-form.mars-form-little input[type="datetime"],
-.mars-form.mars-form-little input[type="datetime-local"],
-.mars-form.mars-form-little input[type="week"],
-.mars-form.mars-form-little input[type="number"],
-.mars-form.mars-form-little input[type="search"],
-.mars-form.mars-form-little input[type="tel"],
-.mars-form.mars-form-little input[type="color"],
-.mars-form.mars-form-little input,
-.mars-form.mars-form-little select,
-.mars-form.mars-form-little textarea {   
-    border-radius: 0.5em;
-}
-
-/* round */
-.mars-form.mars-form-round input[type="text"],
-.mars-form.mars-form-round input[type="password"],
-.mars-form.mars-form-round input[type="email"],
-.mars-form.mars-form-round input[type="url"],
-.mars-form.mars-form-round input[type="date"],
-.mars-form.mars-form-round input[type="month"],
-.mars-form.mars-form-round input[type="time"],
-.mars-form.mars-form-round input[type="datetime"],
-.mars-form.mars-form-round input[type="datetime-local"],
-.mars-form.mars-form-round input[type="week"],
-.mars-form.mars-form-round input[type="number"],
-.mars-form.mars-form-round input[type="search"],
-.mars-form.mars-form-round input[type="tel"],
-.mars-form.mars-form-round input[type="color"],
-.mars-form.mars-form-round input,
-.mars-form.mars-form-round select,
-.mars-form.mars-form-round textarea {   
-    border-radius: 2em;
+* {
+  box-sizing: border-box;
 }
 
 /* default input */
@@ -96,7 +17,6 @@ form {
 .mars-form input[type="search"],
 .mars-form input[type="tel"],
 .mars-form input[type="color"],
-.mars-form input,
 .mars-form select,
 .mars-form textarea {
     color: #000000;
@@ -106,8 +26,8 @@ form {
     font-size: inherit;
     padding: 0.5em 1em;
     display: inline-block;
-    border: 1px solid #ffffff;
-    background: #F2F2F2;
+    border: 1px solid transparent;
+    background: rgba(0,0,0,.08);
     vertical-align: middle;
     box-sizing: border-box;
 }
@@ -115,7 +35,7 @@ form {
 .mars-form input:not([type]) {
     padding: 0.5em 0.6em;
     display: inline-block;
-    border: 1px solid #ffffff;
+    border: 1px solid transparent;
     border-radius: 4px;
     box-sizing: border-box;
 }
@@ -138,7 +58,7 @@ form {
 .mars-form input[type="search"]:focus,
 .mars-form input[type="tel"]:focus,
 .mars-form input[type="color"]:focus,
-.mars-form input:focus,
+.mars-form input[type="checkbox"]:focus,
 .mars-form select:focus,
 .mars-form textarea:focus {
     outline: 0;
@@ -156,12 +76,6 @@ form {
     outline: 1px auto #129FEA;
 }
 
-.mars-form .mars-checkbox,
-.mars-form .mars-radio {
-    margin: 0.5em 0;
-    display: block;
-}
-
 .mars-form input:focus:invalid,
 .mars-form textarea:focus:invalid,
 .mars-form select:focus:invalid {
@@ -176,7 +90,7 @@ form {
 }
 
 .mars-form label {
-    margin: 0.5em 0 0.2em;
+    margin: 0.5em 0.75em 0.5em;
 }
 
 .mars-form fieldset {
@@ -221,108 +135,460 @@ form {
     color: #cad2d3;
 }
 
-/* checkbox style */
-.mars-checkbox-style {
-    position: absolute; 
-    opacity: 0;
+/**********************    round area   *******************/
+
+/* not round */
+.mars-form.base input[type="text"],
+.mars-form.base input[type="password"],
+.mars-form.base input[type="email"],
+.mars-form.base input[type="url"],
+.mars-form.base input[type="date"],
+.mars-form.base input[type="month"],
+.mars-form.base input[type="time"],
+.mars-form.base input[type="datetime"],
+.mars-form.base input[type="datetime-local"],
+.mars-form.base input[type="week"],
+.mars-form.base input[type="number"],
+.mars-form.base input[type="search"],
+.mars-form.base input[type="tel"],
+.mars-form.base input[type="color"],
+.mars-form.base input,
+.mars-form.base select,
+.mars-form.base textarea {   
+    border-radius: 0px;
 }
 
-.mars-checkbox-style + label {
-    position: relative;
-    cursor: pointer;
-    padding: 0;
+.mars-form.base input:not([type]) {
+    border-radius: 0px;
 }
 
-.mars-checkbox-style + label::before {
-    content: '';
-    margin-right: 10px;
-    display: inline-block;
-    vertical-align: text-top;
-    width: 20px;
-    height: 20px;
-    background: #ffffff;
-    border: 2.5px solid #ebecf0;
+
+/* little round */
+.mars-form.little input[type="text"],
+.mars-form.little input[type="password"],
+.mars-form.little input[type="email"],
+.mars-form.little input[type="url"],
+.mars-form.little input[type="date"],
+.mars-form.little input[type="month"],
+.mars-form.little input[type="time"],
+.mars-form.little input[type="datetime"],
+.mars-form.little input[type="datetime-local"],
+.mars-form.little input[type="week"],
+.mars-form.little input[type="number"],
+.mars-form.little input[type="search"],
+.mars-form.little input[type="tel"],
+.mars-form.little input[type="color"],
+.mars-form.little select,
+.mars-form.little textarea {   
+    border-radius: 0.5em;
+    padding: 0.5em 1em;
 }
 
-.mars-checkbox-style:hover + label::before {
-    border-color: #129FEA;
+.mars-form.little input:not([type]) {
+    border-radius: 0.5em;
+    padding: 0.5em 1em;
 }
 
-.mars-checkbox-style:checked + label::before {
-    background: #129FEA;
+/* round */
+.mars-form.round input[type="text"],
+.mars-form.round input[type="password"],
+.mars-form.round input[type="email"],
+.mars-form.round input[type="url"],
+.mars-form.round input[type="date"],
+.mars-form.round input[type="month"],
+.mars-form.round input[type="time"],
+.mars-form.round input[type="datetime"],
+.mars-form.round input[type="datetime-local"],
+.mars-form.round input[type="week"],
+.mars-form.round input[type="number"],
+.mars-form.round input[type="search"],
+.mars-form.round input[type="tel"],
+.mars-form.round input[type="color"],
+.mars-form.round select,
+.mars-form.round textarea {   
+    border-radius: 2em;
+    padding: 0.5em 1em;
 }
 
-/* disable checkbox */
-.mars-checkbox-style:disabled + label {
-    color: #e5e5e5;
-    cursor: auto;
+.mars-form.round input:not([type]) {
+    border-radius: 2em;
+    padding: 0.5em 1em;
 }
 
-.mars-checkbox-style:disabled + label::before {
-    border-color: #ebecf0;
-    background: #dddddd;   
-}
 
-.mars-checkbox-style:checked + label::after {
-    content: '';
-    position: absolute;
-    left: 6px;
-    top: 10px;
-    background: #ffffff;
-    width: 2px;
-    height: 2px;
-    box-shadow: 
-    2px 0 0 white,
-    4px 0 0 white,
-    4px -2px 0 white,
-    4px -4px 0 white,
-    4px -6px 0 white,
-    4px -8px 0 white;
-    transform: rotate(45deg);
-}
+/****************************** sizing area *************************/
 
-/* label */
+/* sizing */
 /* input / textarea */
-.mars-form.mars-form-label label {
-    color: rgb(51, 51, 51);
-    font-size: 14px;
-    font-weight: 700;
-    margin-bottom: 30px;
+.mars-form .mars-input-1 {
+    width: 100%;
+}
+.mars-form .mars-input-3-4 {
+    width: 75%;
+}
+.mars-form .mars-input-2-3 {
+    width: 66%;
+}
+.mars-form .mars-input-1-2 {
+    width: 50%;
+}
+.mars-form .mars-input-1-3 {
+    width: 33%;
+}
+.mars-form .mars-input-1-4 {
+    width: 25%;
 }
 
-.mars-form.mars-form-label input,
-.mars-form.mars-form-label textarea {
-    width: 75%; /* 3-4 sizing box */
+.mars-form.size input {
     border: 2px solid transparent;
-    background: #fafafa;
+    background: rgba(0,0,0,.08);
     box-sizing: border-box;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.13);
-    transition: all 0.3s ease-in-out 0s;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease-in-out 0s;
 }
 
-.mars-form.mars-form-label input:focus,
-.mars-form.mars-form-label textarea:focus {
+.mars-form.size input[type="text"]:focus,
+.mars-form.size input[type="password"]:focus,
+.mars-form.size input[type="email"]:focus,
+.mars-form.size input[type="url"]:focus,
+.mars-form.size input[type="date"]:focus,
+.mars-form.size input[type="month"]:focus,
+.mars-form.size input[type="time"]:focus,
+.mars-form.size input[type="datetime"]:focus,
+.mars-form.size input[type="datetime-local"]:focus,
+.mars-form.size input[type="week"]:focus,
+.mars-form.size input[type="number"]:focus,
+.mars-form.size input[type="search"]:focus,
+.mars-form.size input[type="tel"]:focus,
+.mars-form.size input[type="color"]:focus,
+.mars-form.size input:focus,
+.mars-form.size select:focus,
+.mars-form.size textarea:focus {
+    outline: 0;
     border: 2px solid transparent;
     border-radius: 3px;
     border-width: 2px 0px;
-    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.13);
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
+} 
+
+
+/***************************** color *************************/
+
+/* color input */
+
+.mars-form.blue input[type="text"]:focus,
+.mars-form.blue input[type="password"]:focus,
+.mars-form.blue input[type="email"]:focus,
+.mars-form.blue input[type="url"]:focus,
+.mars-form.blue input[type="date"]:focus,
+.mars-form.blue input[type="month"]:focus,
+.mars-form.blue input[type="time"]:focus,
+.mars-form.blue input[type="datetime"]:focus,
+.mars-form.blue input[type="datetime-local"]:focus,
+.mars-form.blue input[type="week"]:focus,
+.mars-form.blue input[type="number"]:focus,
+.mars-form.blue input[type="search"]:focus,
+.mars-form.blue input[type="tel"]:focus,
+.mars-form.blue input[type="color"]:focus,
+.mars-form.blue input[type="checkbox"]:focus,
+.mars-form.blue input:focus,
+.mars-form.blue select:focus,
+.mars-form.blue textarea:focus {
+    outline: 0;
+    border-color: rgb(0,83,156);
 }
 
-.mars-form.mars-form-label.success input:focus {
+
+.mars-form.green input[type="text"]:focus,
+.mars-form.green input[type="password"]:focus,
+.mars-form.green input[type="email"]:focus,
+.mars-form.green input[type="url"]:focus,
+.mars-form.green input[type="date"]:focus,
+.mars-form.green input[type="month"]:focus,
+.mars-form.green input[type="time"]:focus,
+.mars-form.green input[type="datetime"]:focus,
+.mars-form.green input[type="datetime-local"]:focus,
+.mars-form.green input[type="week"]:focus,
+.mars-form.green input[type="number"]:focus,
+.mars-form.green input[type="search"]:focus,
+.mars-form.green input[type="tel"]:focus,
+.mars-form.green input[type="color"]:focus,
+.mars-form.green input[type="checkbox"]:focus,
+.mars-form.green input:focus,
+.mars-form.green select:focus,
+.mars-form.green textarea:focus {
+    outline: 0;
+    border-color: rgb(80,200,120);
+}
+
+.mars-form.yellow input[type="text"]:focus,
+.mars-form.yellow input[type="password"]:focus,
+.mars-form.yellow input[type="email"]:focus,
+.mars-form.yellow input[type="url"]:focus,
+.mars-form.yellow input[type="date"]:focus,
+.mars-form.yellow input[type="month"]:focus,
+.mars-form.yellow input[type="time"]:focus,
+.mars-form.yellow input[type="datetime"]:focus,
+.mars-form.yellow input[type="datetime-local"]:focus,
+.mars-form.yellow input[type="week"]:focus,
+.mars-form.yellow input[type="number"]:focus,
+.mars-form.yellow input[type="search"]:focus,
+.mars-form.yellow input[type="tel"]:focus,
+.mars-form.yellow input[type="color"]:focus,
+.mars-form.yellow input[type="checkbox"]:focus,
+.mars-form.yellow input:focus,
+.mars-form.yellow select:focus,
+.mars-form.yellow textarea:focus {
+    outline: 0;
+    border-color: rgb(248,235,0);
+}
+
+.mars-form.pink input[type="text"]:focus,
+.mars-form.pink input[type="password"]:focus,
+.mars-form.pink input[type="email"]:focus,
+.mars-form.pink input[type="url"]:focus,
+.mars-form.pink input[type="date"]:focus,
+.mars-form.pink input[type="month"]:focus,
+.mars-form.pink input[type="time"]:focus,
+.mars-form.pink input[type="datetime"]:focus,
+.mars-form.pink input[type="datetime-local"]:focus,
+.mars-form.pink input[type="week"]:focus,
+.mars-form.pink input[type="number"]:focus,
+.mars-form.pink input[type="search"]:focus,
+.mars-form.pink input[type="tel"]:focus,
+.mars-form.pink input[type="color"]:focus,
+.mars-form.pink input[type="checkbox"]:focus,
+.mars-form.pink input:focus,
+.mars-form.pink select:focus,
+.mars-form.pink textarea:focus {
+    outline: 0;
+    border-color: rgb(217,130,181);
+}
+
+.mars-form.purple input[type="text"]:focus,
+.mars-form.purple input[type="password"]:focus,
+.mars-form.purple input[type="email"]:focus,
+.mars-form.purple input[type="url"]:focus,
+.mars-form.purple input[type="date"]:focus,
+.mars-form.purple input[type="month"]:focus,
+.mars-form.purple input[type="time"]:focus,
+.mars-form.purple input[type="datetime"]:focus,
+.mars-form.purple input[type="datetime-local"]:focus,
+.mars-form.purple input[type="week"]:focus,
+.mars-form.purple input[type="number"]:focus,
+.mars-form.purple input[type="search"]:focus,
+.mars-form.purple input[type="tel"]:focus,
+.mars-form.purple input[type="color"]:focus,
+.mars-form.purple input[type="checkbox"]:focus,
+.mars-form.purple input:focus,
+.mars-form.purple select:focus,
+.mars-form.purple textarea:focus {
+    outline: 0;
+    border-color: rgba(138, 43, 226, 1);
+}
+
+/* color size input */
+.mars-form.size.blue input[type="text"]:focus,
+.mars-form.size.blue input[type="password"]:focus,
+.mars-form.size.blue input[type="email"]:focus,
+.mars-form.size.blue input[type="url"]:focus,
+.mars-form.size.blue input[type="date"]:focus,
+.mars-form.size.blue input[type="month"]:focus,
+.mars-form.size.blue input[type="time"]:focus,
+.mars-form.size.blue input[type="datetime"]:focus,
+.mars-form.size.blue input[type="datetime-local"]:focus,
+.mars-form.size.blue input[type="week"]:focus,
+.mars-form.size.blue input[type="number"]:focus,
+.mars-form.size.blue input[type="search"]:focus,
+.mars-form.size.blue input[type="tel"]:focus,
+.mars-form.size.blue input[type="color"]:focus,
+.mars-form.size.blue input:focus,
+.mars-form.size.blue select:focus {
+    outline: 0;
+    border: 2px solid transparent;
+    border-radius: 3px;
+    border-width: 2px 0px;
+    border-bottom: 2px solid  rgb(0,83,156);
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
+} 
+
+.mars-form.size.green input[type="text"]:focus,
+.mars-form.size.green input[type="password"]:focus,
+.mars-form.size.green input[type="email"]:focus,
+.mars-form.size.green input[type="url"]:focus,
+.mars-form.size.green input[type="date"]:focus,
+.mars-form.size.green input[type="month"]:focus,
+.mars-form.size.green input[type="time"]:focus,
+.mars-form.size.green input[type="datetime"]:focus,
+.mars-form.size.green input[type="datetime-local"]:focus,
+.mars-form.size.green input[type="week"]:focus,
+.mars-form.size.green input[type="number"]:focus,
+.mars-form.size.green input[type="search"]:focus,
+.mars-form.size.green input[type="tel"]:focus,
+.mars-form.size.green input[type="color"]:focus,
+.mars-form.size.green input:focus,
+.mars-form.size.green select:focus {
+    outline: 0;
+    border: 2px solid transparent;
+    border-radius: 3px;
+    border-width: 2px 0px;
+    border-bottom: 2px solid  rgb(80,200,120);
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
+}
+
+.mars-form.size.yellow input[type="text"]:focus,
+.mars-form.size.yellow input[type="password"]:focus,
+.mars-form.size.yellow input[type="email"]:focus,
+.mars-form.size.yellow input[type="url"]:focus,
+.mars-form.size.yellow input[type="date"]:focus,
+.mars-form.size.yellow input[type="month"]:focus,
+.mars-form.size.yellow input[type="time"]:focus,
+.mars-form.size.yellow input[type="datetime"]:focus,
+.mars-form.size.yellow input[type="datetime-local"]:focus,
+.mars-form.size.yellow input[type="week"]:focus,
+.mars-form.size.yellow input[type="number"]:focus,
+.mars-form.size.yellow input[type="search"]:focus,
+.mars-form.size.yellow input[type="tel"]:focus,
+.mars-form.size.yellow input[type="color"]:focus,
+.mars-form.size.yellow input:focus
+.mars-form.size.yellow select:focus {
+    outline: 0;
+    border: 2px solid transparent;
+    border-radius: 3px;
+    border-width: 2px 0px;
+    border-bottom: 2px solid  rgb(248,235,0);
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
+}
+
+.mars-form.size.pink input[type="text"]:focus,
+.mars-form.size.pink input[type="password"]:focus,
+.mars-form.size.pink input[type="email"]:focus,
+.mars-form.size.pink input[type="url"]:focus,
+.mars-form.size.pink input[type="date"]:focus,
+.mars-form.size.pink input[type="month"]:focus,
+.mars-form.size.pink input[type="time"]:focus,
+.mars-form.size.pink input[type="datetime"]:focus,
+.mars-form.size.pink input[type="datetime-local"]:focus,
+.mars-form.size.pink input[type="week"]:focus,
+.mars-form.size.pink input[type="number"]:focus,
+.mars-form.size.pink input[type="search"]:focus,
+.mars-form.size.pink input[type="tel"]:focus,
+.mars-form.size.pink input[type="color"]:focus,
+.mars-form.size.pink input:focus,
+.mars-form.size.pink select:focus {
+    outline: 0;
+    border: 2px solid transparent;
+    border-radius: 3px;
+    border-width: 2px 0px;
+    border-bottom: 2px solid  rgb(217,130,181);
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
+}
+
+.mars-form.size.purple input[type="text"]:focus,
+.mars-form.size.purple input[type="password"]:focus,
+.mars-form.size.purple input[type="email"]:focus,
+.mars-form.size.purple input[type="url"]:focus,
+.mars-form.size.purple input[type="date"]:focus,
+.mars-form.size.purple input[type="month"]:focus,
+.mars-form.size.purple input[type="time"]:focus,
+.mars-form.size.purple input[type="datetime"]:focus,
+.mars-form.size.purple input[type="datetime-local"]:focus,
+.mars-form.size.purple input[type="week"]:focus,
+.mars-form.size.purple input[type="number"]:focus,
+.mars-form.size.purple input[type="search"]:focus,
+.mars-form.size.purple input[type="tel"]:focus,
+.mars-form.size.purple input[type="color"]:focus,
+.mars-form.size.purple input:focus,
+.mars-form.size.purple select:focus {
+    outline: 0;
+    border: 2px solid transparent;
+    border-radius: 3px;
+    border-width: 2px 0px;
+    border-bottom: 2px solid rgba(138, 43, 226, 1);
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
+}
+
+
+/* checkbox color */
+
+.mars-form.checkbox.blue input:hover {
+    border-color: rgb(0,83,156);
+}
+
+.mars-form.checkbox.blue input:checked {
+    background-color: rgb(0,83,156);
+    border-width: 3px;
+    border-style: solid;
+    border-color: rgb(0,83,156); 
+}
+
+/* status color*/
+.mars-form.size.success input:focus {
     border-bottom: 2px solid rgb(3,192,74);  
 }
 
-.mars-form.mars-form-label.warning input:focus {
+.mars-form.size.warning input:focus {
     border-bottom: 2px solid rgb(237,135,45);  
 }
 
-.mars-form.mars-form-label.error input:focus {
+.mars-form.size.error input:focus {
     border-bottom: 2px solid rgb(227, 0, 34);  
 }
 
+/*************************** checkbox area ******************************/
+
+/* checkbox default */
+
+.mars-form input[type="checkbox"] {
+     margin: 3px 3px 3px 4px;
+     padding: initial;         
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    height: 20px;   
+}
+
+.checkbox-check-icon {
+    position: absolute;
+    display: block;
+    top: 15%;
+    left: 10px;
+    color: #ffffff;
+}
+
+.check {
+    fill: #ffffff;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+.mars-form .mars-checkbox {
+    all: unset;
+    width: 20px;
+    height: 20px;
+    display: block;
+    background: none;
+    border-radius: 3px;
+    border-width: 3px;
+    border-style: solid;
+    border-image: initial;
+    transition: all 0.2s ease-in-out 0s;
+    border-color: rgb(223, 223, 223);
+    cursor: pointer;
+}
 
 
-
+.checkbox-label  {
+    font-size: 14px;
+    margin-left: 10px;
+    cursor: pointer;    
+}
 
 
 

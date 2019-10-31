@@ -1,0 +1,50 @@
+/* form main page */
+.form-wrap {
+    padding: 130px;
+    color: rgb(0,0,0);
+    font-size: 14px;  
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-contents {
+    margin-bottom: 50px;
+}
+
+.form-contents > * {
+    margin-bottom: 50px;
+}
+ 
+h1.form-title {
+    font-size: 32px;
+    font-weight: 400;
+    font-family: inherit;
+    cursor: default;
+    margin-bottom: 40px;
+}
+ 
+.form-area {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    font-family: inherit;
+}
+
+.form-label {
+     display: block;
+     font-weight: 700;
+     font-size: 1em;
+}
+
+
+
+
+
+
+
+
+
+

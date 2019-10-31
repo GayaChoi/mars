@@ -9,119 +9,117 @@
     <link rel="stylesheet" href="../../Assets/common/common.css">
     <link rel="stylesheet" href="../../forms/css/forms.css">
     <link rel="stylesheet" href="../../forms/css/forms-r.css">
+    <link rel="stylesheet" href="../../forms/css/forms-main.css">
     <link rel="stylesheet" href="../../buttons/css/buttons.css">
     <link rel="stylesheet" href="../../base/css/base.css">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 </head>
 <body>
    <div id="wrap">
-        <div class="form-wrap">
-              <!-- test ui kit -->
-           <!--  <form class="mars-form mars-form-base">
-                <h2>Form-ui-kit test</h2>
-                <fieldset>
-                  <legend>form-ui-kit-test</legend>
-                  <ul>
-                    <li>
-                      <h4>not round</h4>
-                      <input type="email" placeholder="Email"> 
-                      <input type="password" placeholder="Password">
-                    </li>      
-                  </ul>   
-                </fieldset>
-              </form>
-              <form class="mars-form mars-form-little">
-                  <fieldset>
-                    <ul>
-                      <li>
-                        <h4>little round</h4>
-                        <input type="email" placeholder="Email"> 
-                        <input type="password" placeholder="Password">
-                      </li>      
-                    </ul>   
-                  </fieldset>
-              </form>
-              <form class="mars-form mars-form-round">
-                  <fieldset>
-                    <ul>
-                      <li>
-                        <h4>round</h4>
-                        <input type="email" placeholder="Email"> 
-                        <input type="password" placeholder="Password">
-                      </li>      
-                    </ul>   
-                  </fieldset>
-              </form>
-              <form class="mars-form mars-form-stacked">
-                  <fieldset>
-                    <ul>
-                      <li>
-                        <h4>stacked</h4>
-                        <input type="email" placeholder="Email">
-                        <input type="password" placeholder="Password">
-                      </li>      
-                    </ul>   
-                  </fieldset>
-              </form>  
-              <form class="mars-form mars-form-base">
-                  <fieldset>
-                    <ul>
-                      <li>
-                        <h4>Disabled</h4>
-                        <input type="text" placeholder="Disabled input here..."  disabled>
-                      </li>      
-                    </ul>   
-                  </fieldset>
-              </form> -->
-              <form class="mars-form mars-form-label">
-                <fieldset>
-                  <div class="label-area">
-                    <label for="input">This is default Label</label>
-                    <input type="text" placeholder="This is default label...">
-                    <textarea name="input" id="input" placeholder="This is default label..."></textarea>
-                  </div>     
-                </fieldset>
-              </form>
-              <form class="mars-form mars-form-label success">
-                  <fieldset>
-                    <div class="label-area">
-                      <label for="input">This is success Label</label>
-                      <input type="text" placeholder="This is success label...">
-                    </div>     
-                  </fieldset>
-              </form>
-              <form class="mars-form mars-form-label warning">
-                  <fieldset>
-                    <div class="label-area">
-                        <label for="input">This is warning Label</label>
-                      <input type="text" placeholder="This is warning label...">
-                    </div>     
-                  </fieldset>
-              </form>
-              <form class="mars-form mars-form-label error">
-                  <fieldset>
-                    <div class="label-area">
-                      <label for="input">This is error Label</label>
-                      <input type="text" placeholder="This is error label">
-                    </div>     
-                  </fieldset>
-              </form> 
-            <!--  <ul>
-                <li>
-                  <input class="mars-checkbox-style" id="checkbox" type="checkbox">
-                  <label for="checkbox">Checkbox1</label>
-                </li>
-                <li>
-                  <input class="mars-checkbox-style" id="checkbox" type="checkbox" checked>
-                  <label for="checkbox">Checkbox2</label>
-                </li>
-                <li>
-                  <input class="mars-checkbox-style" id="checkbox" type="checkbox" disabled>
-                  <label for="checkbox">Checkbox3</label> 
-                </li>
-            </ul>  -->
-        </div> 
-    </div>
+      <div class="form-wrap">
+         <div class="form-container">  
+           <div class="form-contents">
+              <h1 class="form-title">Inputs</h1>
+              <div class="form-area">
+                 <form class="mars-form base">
+                    <label for="input" class="form-label">This is input default</label>
+                    <input type="text" class="form-input" placeholder="mars is ui kit...">     
+                 </form>  
+              </div>
+              <div class="form-area">
+                  <form class="mars-form little yellow">
+                     <label for="input" class="form-label">This is input little round</label>
+                     <input type="text" class="form-input" placeholder="mars is ui kit...">     
+                  </form>  
+               </div>
+               <div class="form-area">
+                  <form class="mars-form round pink">
+                     <label for="input" class="form-label">This is input round</label>
+                     <input type="email" class="form-input" placeholder="Email">
+                     <input type="password" class="form-input" placeholder="Password">     
+                  </form>  
+               </div>
+               <div class="form-area">
+                  <form class="mars-form round purple">
+                     <label for="input" class="form-label">This is an textarea round</label>
+                     <textarea class="form-input" placeholder="This is an textarea..."></textarea>    
+                  </form>  
+               </div>
+               <div class="form-area">
+                  <form class="mars-form size">
+                     <label for="input" class="form-label">This is the 100% size input</label>
+                     <input type="text" class="mars-input-1 form-input" placeholder="mars-size-1">    
+                  </form>  
+               </div>
+               <div class="form-area">
+                  <form class="mars-form size">
+                     <label for="input" class="form-label">This is the 75% size input</label>
+                     <input type="text" class="mars-input-3-4 form-input" placeholder="mars-size-3-4">    
+                  </form>  
+               </div> 
+               <div class="form-area">
+                  <form class="mars-form size">
+                     <label for="input" class="form-label">This is the  66% size input</label>
+                     <input type="text" class="mars-input-2-3 form-input" placeholder="mars-size-2-3">    
+                  </form>  
+               </div> 
+               <div class="form-area">
+                  <form class="mars-form size">
+                     <label for="input" class="form-label">This is the  50% size input</label>
+                     <input type="text" class="mars-input-1-2 form-input" placeholder="mars-size-1-2">    
+                  </form>  
+               </div> 
+               <div class="form-area">
+                  <form class="mars-form size">
+                     <label for="input" class="form-label">This is the  33% size input</label>
+                     <input type="text" class="mars-input-1-3 form-input" placeholder="mars-size-1-3">    
+                  </form>  
+               </div> 
+               <div class="form-area">
+                  <form class="mars-form size">
+                     <label for="input" class="form-label">This is the  25% size input</label>
+                     <input type="text" class="mars-input-1-4 form-input" placeholder="mars-size-1-4">    
+                  </form>  
+               </div>
+               <div class="form-area">
+                  <form class="mars-form size success">
+                     <label for="input" class="form-label">This is the 100% size success input</label>
+                     <input type="text" class="mars-input-1 form-input" placeholder="This is the success input...">     
+                  </form>  
+               </div>  
+               <div class="form-area">
+                  <form class="mars-form size warning">
+                     <label for="input" class="form-label">This is the 100% size warning input</label>
+                     <input type="text" class="mars-input-1 form-input" placeholder="This is the warning input...">     
+                  </form>  
+               </div>  
+               <div class="form-area">
+                  <form class="mars-form size error">
+                     <label for="input" class="form-label">This is the 100% size error input</label>
+                     <input type="text" class="mars-input-1 form-input" placeholder="This is the error input...">     
+                  </form>  
+               </div>
+           </div>
+           <div class="form-contents">
+               <h1 class="form-title">Checkboxes,Radios</h1>
+               <form class="mars-form checkbox blue"> 
+                  <input class="mars-checkbox" type="checkbox">
+                  <div class="checkbox-check-icon"></div>
+                  <label for="checkbox" class="checkbox-label">Unchecked</label>
+               </form>  
+               <form class="mars-form checkbox blue"> 
+                  <input class="mars-checkbox" type="checkbox" checked>
+                  <div class="checkbox-check-icon"></div>
+                  <label for="checkbox" class="checkbox-label">Checked</label>
+               </form>  
+               <form class="mars-form checkbox blue"> 
+                  <input class="mars-checkbox" type="checkbox" disabled>
+                  <div class="checkbox-check-icon"></div>
+                  <label for="checkbox" class="checkbox-label">Disabled</label>
+               </form> 
+           </div> 
+         </div> 
+      </div>
 </body>
 <script src="../../forms/js/app.js"></script>
 </html>

@@ -6,7 +6,7 @@
     color: rgba(0, 0, 0, 0.80); /* rgba supported */
     border: 1px solid #999999;  /*IE 6/7/8*/
     border: none rgba(0, 0, 0, 0);  /*IE9 + everything else*/
-    background-color: #E6E6E6;
+    background-color: #e6e6e6;
     text-decoration: none;
     border-radius: 4px;
 }
@@ -21,7 +21,7 @@
 .mars-button:focus {
     outline: 0;
 }
-
+    
 .mars-button-active,
 .mars-button:active {
     box-shadow: 0 0 0 1px rgba(0,0,0, 0.15) inset, 0 0 6px rgba(0,0,0, 0.20) inset;
@@ -32,6 +32,6 @@
 .mars-button-selected,
 a.mars-button-primary,
 a.mars-button-selected {
-    background-color: #4166f5;
-    color: #fff;
+    background-color: rgb(0,71,171);
+    color: #ffffff;
 }
