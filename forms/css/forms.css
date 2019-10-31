@@ -122,6 +122,7 @@
 .mars-form input[type="search"][disabled],
 .mars-form input[type="tel"][disabled],
 .mars-form input[type="color"][disabled],
+.mars-form input[type="checkbox"][disabled],
 .mars-form select[disabled],
 .mars-form textarea[disabled] {
     cursor: not-allowed;
@@ -511,7 +512,7 @@
 
 /* checkbox color */
 
-.mars-form.checkbox.blue input:hover {
+.mars-form.checkbox.blue input:not(:disabled):hover {
     border-color: rgb(0,83,156);
 }
 
@@ -521,6 +522,15 @@
     border-style: solid;
     border-color: rgb(0,83,156); 
 }
+
+.mars-form.checkbox input:disabled {
+    color: #949494;
+    background-color:#eaeded;
+    border-color: #bebebe;
+    border-width: 3px;
+    border-style: solid;
+}
+
 
 /* status color*/
 .mars-form.size.success input:focus {
