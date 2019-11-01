@@ -1,23 +1,22 @@
 /* checkbox event */
 var icon = {
-       checkbox: 
+        checkbox: 
           `<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewbox="0 0 24 24" class="checkbox-check">
               <path d="M9 21.035l-9-8.638 2.791-2.87 6.156 5.874 12.21-12.436 2.843 2.817z"></path>
            </svg>`,
-       radio:
+        radio: 
           `<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewbox="0 0 24 24" class="radio-check">
-              <circle cx="12" cy="12" r="12"></circle>   
-           </svg>`,
-          
+               <circle cx="12" cy="12" r="12"></circle>
+           </svg>`,   
 };        
 
 var func = {
         checkbox: {
             check: 
               function(index) {
-                 if ($('.mars-checkbox').eq(index).is(':checked')) {
-                   $('.checkbox-check-icon').eq(index).html(icon.checkbox); 
-                 }       
+                 if ($('.mars-checkbox').eq(index).is(':checked') || $('.mars-checkbox').eq(index).is(':disabled')) {
+                      $('.checkbox-check-icon').eq(index).append(icon.checkbox);
+                  }       
               },
             
             click: 
@@ -33,17 +32,17 @@ var func = {
         radio: {
             check: 
               function(index) {
-                 if ($('.mars-radio').eq(index).is(':checked')) {
-                   $('.radio-check-icon').eq(index).html(icon.radio); 
+                 if ($('.mars-radio').eq(index).is(':checked') || $('.mars-radio').eq(index).is(':disabled')) {
+                    $('.radio-check-icon').eq(index).html(icon.radio);
                  }  
               },
             
             click: 
               function(index) {
                 if ($('.mars-radio').eq(index).is(':checked')) {
-                    $('.radio-check-icon').eq(index).html(icon.radio); 
+                  $('.radio-check-icon').eq(index).html(icon.radio); 
                 } else {
-                    $('.radio-check-icon').eq(index).html('');
+                  $('.radio-check-icon').eq(index).html('');
                 }  
             }
         },
