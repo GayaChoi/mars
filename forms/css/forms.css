@@ -58,7 +58,6 @@
 .mars-form input[type="search"]:focus,
 .mars-form input[type="tel"]:focus,
 .mars-form input[type="color"]:focus,
-.mars-form input[type="checkbox"]:focus,
 .mars-form select:focus,
 .mars-form textarea:focus {
     outline: 0;
@@ -67,13 +66,7 @@
 
 .mars-form input:not([type]):focus {
     outline: 0;
-    border-color: #129FEA;
-}
-
-.mars-form input[type="file"]:focus,
-.mars-form input[type="radio"]:focus {
-    outline: thin solid #129FEA;
-    outline: 1px auto #129FEA;
+    border-color: rgb(223, 223, 223);
 }
 
 .mars-form input:focus:invalid,
@@ -153,7 +146,6 @@
 .mars-form.base input[type="search"],
 .mars-form.base input[type="tel"],
 .mars-form.base input[type="color"],
-.mars-form.base input,
 .mars-form.base select,
 .mars-form.base textarea {   
     border-radius: 0px;
@@ -263,7 +255,6 @@
 .mars-form.size input[type="search"]:focus,
 .mars-form.size input[type="tel"]:focus,
 .mars-form.size input[type="color"]:focus,
-.mars-form.size input:focus,
 .mars-form.size select:focus,
 .mars-form.size textarea:focus {
     outline: 0;
@@ -292,8 +283,6 @@
 .mars-form.blue input[type="search"]:focus,
 .mars-form.blue input[type="tel"]:focus,
 .mars-form.blue input[type="color"]:focus,
-.mars-form.blue input[type="checkbox"]:focus,
-.mars-form.blue input:focus,
 .mars-form.blue select:focus,
 .mars-form.blue textarea:focus {
     outline: 0;
@@ -315,8 +304,6 @@
 .mars-form.green input[type="search"]:focus,
 .mars-form.green input[type="tel"]:focus,
 .mars-form.green input[type="color"]:focus,
-.mars-form.green input[type="checkbox"]:focus,
-.mars-form.green input:focus,
 .mars-form.green select:focus,
 .mars-form.green textarea:focus {
     outline: 0;
@@ -337,8 +324,6 @@
 .mars-form.yellow input[type="search"]:focus,
 .mars-form.yellow input[type="tel"]:focus,
 .mars-form.yellow input[type="color"]:focus,
-.mars-form.yellow input[type="checkbox"]:focus,
-.mars-form.yellow input:focus,
 .mars-form.yellow select:focus,
 .mars-form.yellow textarea:focus {
     outline: 0;
@@ -359,8 +344,6 @@
 .mars-form.pink input[type="search"]:focus,
 .mars-form.pink input[type="tel"]:focus,
 .mars-form.pink input[type="color"]:focus,
-.mars-form.pink input[type="checkbox"]:focus,
-.mars-form.pink input:focus,
 .mars-form.pink select:focus,
 .mars-form.pink textarea:focus {
     outline: 0;
@@ -381,8 +364,6 @@
 .mars-form.purple input[type="search"]:focus,
 .mars-form.purple input[type="tel"]:focus,
 .mars-form.purple input[type="color"]:focus,
-.mars-form.purple input[type="checkbox"]:focus,
-.mars-form.purple input:focus,
 .mars-form.purple select:focus,
 .mars-form.purple textarea:focus {
     outline: 0;
@@ -403,9 +384,7 @@
 .mars-form.size.blue input[type="number"]:focus,
 .mars-form.size.blue input[type="search"]:focus,
 .mars-form.size.blue input[type="tel"]:focus,
-.mars-form.size.blue input[type="color"]:focus,
-.mars-form.size.blue input:focus,
-.mars-form.size.blue select:focus {
+.mars-form.size.blue input[type="color"]:focus {
     outline: 0;
     border: 2px solid transparent;
     border-radius: 3px;
@@ -427,9 +406,7 @@
 .mars-form.size.green input[type="number"]:focus,
 .mars-form.size.green input[type="search"]:focus,
 .mars-form.size.green input[type="tel"]:focus,
-.mars-form.size.green input[type="color"]:focus,
-.mars-form.size.green input:focus,
-.mars-form.size.green select:focus {
+.mars-form.size.green input[type="color"]:focus {
     outline: 0;
     border: 2px solid transparent;
     border-radius: 3px;
@@ -451,9 +428,7 @@
 .mars-form.size.yellow input[type="number"]:focus,
 .mars-form.size.yellow input[type="search"]:focus,
 .mars-form.size.yellow input[type="tel"]:focus,
-.mars-form.size.yellow input[type="color"]:focus,
-.mars-form.size.yellow input:focus
-.mars-form.size.yellow select:focus {
+.mars-form.size.yellow input[type="color"]:focus {
     outline: 0;
     border: 2px solid transparent;
     border-radius: 3px;
@@ -475,9 +450,7 @@
 .mars-form.size.pink input[type="number"]:focus,
 .mars-form.size.pink input[type="search"]:focus,
 .mars-form.size.pink input[type="tel"]:focus,
-.mars-form.size.pink input[type="color"]:focus,
-.mars-form.size.pink input:focus,
-.mars-form.size.pink select:focus {
+.mars-form.size.pink input[type="color"]:focus {
     outline: 0;
     border: 2px solid transparent;
     border-radius: 3px;
@@ -499,9 +472,7 @@
 .mars-form.size.purple input[type="number"]:focus,
 .mars-form.size.purple input[type="search"]:focus,
 .mars-form.size.purple input[type="tel"]:focus,
-.mars-form.size.purple input[type="color"]:focus,
-.mars-form.size.purple input:focus,
-.mars-form.size.purple select:focus {
+.mars-form.size.purple input[type="color"]:focus {
     outline: 0;
     border: 2px solid transparent;
     border-radius: 3px;
@@ -511,8 +482,11 @@
 }
 
 
-/* common color */
+/* common default color */
 /* checkbox */
+.mars-form.checkbox input {
+    border-color: rgb(233,233,233);
+}
 
 .mars-form.checkbox input:not(:disabled):hover {
     border-color: #129FEA;
@@ -524,6 +498,9 @@
 }
 
 /* radio */
+.mars-form.radio input {
+    border-color: rgb(233,233,233);
+}
 
 .mars-form.radio input:not(:disabled):hover {
     border-color: #129FEA;
@@ -533,7 +510,7 @@
     border-color: #129FEA;
 }
 
-.mars-form.radio.blue .radio-check-icon svg {
+.mars-form.radio .radio-check-icon svg {
     fill: #129FEA;
 }
 
@@ -650,8 +627,6 @@
     fill: rgba(138,43,226,1);
 }
 
-
-
 /* status color */
 .mars-form.size.success input:focus {
     border-bottom: 2px solid rgb(3,192,74);  
@@ -680,6 +655,7 @@
     border-width: 3px;
     border-style: solid;
 }
+
 
 /* disabled attribute */
 .mars-form.checkbox input:disabled {    

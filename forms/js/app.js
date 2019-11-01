@@ -67,7 +67,6 @@ $('.mars-radio').each(function(index) {
     /* 체크가 되었는 지 확인 */
     func.radio.check(index);
 
-    
     $('.mars-radio').eq(index).on('click',function() {
         func.radio.click(index);
     });
