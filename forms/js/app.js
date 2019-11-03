@@ -15,7 +15,7 @@ var func = {
             check: 
               function(index) {
                  if ($('.mars-checkbox').eq(index).is(':checked') || $('.mars-checkbox').eq(index).is(':disabled')) {
-                      $('.checkbox-check-icon').eq(index).append(icon.checkbox);
+                      $('.checkbox-check-icon').eq(index).html(icon.checkbox);
                   }       
               },
             
