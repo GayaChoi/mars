@@ -1,0 +1,20 @@
+.buttons-wrap {
+    padding: 130px;
+    color: rgb(0,0,0);
+    font-size: 14px;  
+}
+
+.buttons-contents > * {
+    margin-bottom: 30px;
+}
+
+.buttons-area {
+    display: flex;
+    flex-direction: column;
+}
+
+h1.buttons-title {
+    margin-bottom: 50px;
+    font-size: 32px;
+}
+

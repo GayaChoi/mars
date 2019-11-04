@@ -1,24 +1,21 @@
 /* form main page */
-.form-wrap {
+.forms-wrap {
     padding: 130px;
     color: rgb(0,0,0);
     font-size: 14px;  
 }
 
-.form-container {
+.forms-contents {
     display: flex;
     flex-direction: column;
-}
-
-.form-contents {
     margin-bottom: 50px;
 }
 
-.form-contents > * {
+.forms-contents > * {
     margin-bottom: 50px;
 }
  
-h1.form-title {
+h1.forms-title {
     font-size: 32px;
     font-weight: 400;
     font-family: inherit;
@@ -26,14 +23,14 @@ h1.form-title {
     margin-bottom: 40px;
 }
  
-.form-area {
+.forms-area {
     display: flex;
     flex-direction: column;
     width: 500px;
     font-family: inherit;
 }
 
-.form-label {
+.forms-label {
      display: block;
      font-weight: 700;
      font-size: 1em;
