@@ -10,11 +10,16 @@
 
 .buttons-area {
     display: flex;
-    flex-direction: column;
+    flex-direction: column;  
+}
+
+.buttons-area button,a {
+    width: 160px;
+    text-align: center;
 }
 
 h1.buttons-title {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     font-size: 32px;
 }
 

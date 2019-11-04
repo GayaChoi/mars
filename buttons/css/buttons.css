@@ -5,5 +5,124 @@
 .mars-button {
     font-family: inherit;
     font-size: 100%;
-    padding: 0.5em 1em;
+    font-weight: 500;
+    border: 2px solid #129FEA;/* IE6/7/8/9 + everything */
+    border-width: 2px;
+    border-image: initial;
+    padding: 0.85em 1em;
+    background-color: #129FEA;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out 0s;
+    box-shadow:  0px 10px 25px  rgba(18, 159, 234, 0.5);   
+    width: 160px;
+    color: white;
 }
+
+/* button color */
+.mars-button.is-color-blue {
+    outline: 0;
+    background-color: rgb(0, 83, 156);
+    border-color: rgb(0, 83, 156);
+    box-shadow: 0px 10px 25px rgba(0, 83, 156, 0.5);  /* offset-x | offset-y | blur-radius | spread-radius | color */ 
+}
+
+.mars-button.is-color-green {
+    outline: 0;
+    background-color: rgb(80, 200, 120);
+    border-color: rgb(80, 200, 120);
+    box-shadow: 0px 10px 25px rgba(80, 200, 120, 0.5);  /* offset-x | offset-y | blur-radius | spread-radius | color */ 
+}
+
+.mars-button.is-color-yellow {
+    outline: 0;
+    background-color: rgb(248, 235, 0);
+    border-color: rgb(248, 235, 0);
+    box-shadow: 0px 10px 25px rgba(248, 235, 0, 0.5);  /* offset-x | offset-y | blur-radius | spread-radius | color */ 
+}
+
+.mars-button.is-color-pink {
+    outline: 0;
+    background-color: rgb(217, 130, 181);
+    border-color: rgb(217, 130, 181);
+    box-shadow: 0px 10px 25px rgba(217, 130, 181, 0.5);  /* offset-x | offset-y | blur-radius | spread-radius | color */ 
+}
+
+.mars-button.is-color-purple {
+    outline: 0;
+    background-color: rgb(138, 43, 226);  
+    border-color: rgb(138, 43, 226);
+    box-shadow: 0px 10px 25px rgba(138, 43, 226, 0.5);  /* offset-x | offset-y | blur-radius | spread-radius | color */ 
+}
+
+.mars-button.is-hover,
+.mars-button:hover {
+    opacity: 0.75;  
+    cursor: pointer;
+}
+
+.mars-button.is-hover,
+.mars-button:hover {
+    box-shadow: 0px 10px 25px rgba(18, 159, 234, 0.85);    
+}
+
+.mars-button.is-hover.is-color-blue,
+.mars-button.is-color-blue:hover {
+    box-shadow: 0px 10px 25px rgba(0, 83, 156, 0.85);
+}
+
+.mars-button.is-hover.is-color-green,
+.mars-button.is-color-green:hover {
+    box-shadow: 0px 10px 25px rgba(80, 200, 120, 0.85);
+}
+
+.mars-button.is-hover.is-color-yellow,
+.mars-button.is-color-yellow:hover {
+    box-shadow: 0px 10px 25px rgba(248, 235, 0, 0.85);
+}
+
+.mars-button.is-hover.is-color-pink,
+.mars-button.is-color-pink:hover {
+    box-shadow: 0px 10px 25px rgba(217, 130, 181, 0.85);
+}
+
+.mars-button.is-hover.is-color-purple,
+.mars-button.is-color-purple:hover {
+    box-shadow: 0px 10px 25px rgba(138, 43, 226, 0.85);
+}
+
+.mars-button.is-focused,
+.mars-button:focus {
+    outline: 0;
+    border: 2px solid rgba(18, 159, 234, 0.5);
+    border-radius: 4px;
+}
+
+.mars-button.is-pressed,
+.mars-button:active {
+    outline: 0;
+    box-shadow: 0 0 0 1px rgba(0,0,0, 0.12) inset;  
+} 
+
+
+.mars-button[disabled],
+.mars-button.is-disabled,
+.mars-button.is-disabled:hover,
+.mars-button.is-disabled:focus,
+.mars-button.is-disabled:active {
+    border: none;
+    background-image: none;
+    /* TODO: csslint ignore 분석해보기 */
+    /* csslint ignore:start */
+    filter: alpha(opacity=40);
+    /* csslint ignore:end */
+    opacity: 1;
+    cursor: not-allowed;
+    box-shadow: none;
+    background-color: #eaeded;
+    color: #cad2d3;
+    pointer-events: none;
+}
+

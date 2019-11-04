@@ -167,57 +167,57 @@
 }
 
 /* little round */
-.mars-form.is-little-round input[type="text"],
-.mars-form.is-little-round input[type="password"],
-.mars-form.is-little-round input[type="email"],
-.mars-form.is-little-round input[type="url"],
-.mars-form.is-little-round input[type="date"],
-.mars-form.is-little-round input[type="month"],
-.mars-form.is-little-round input[type="time"],
-.mars-form.is-little-round input[type="datetime"],
-.mars-form.is-little-round input[type="datetime-local"],
-.mars-form.is-little-round input[type="week"],
-.mars-form.is-little-round input[type="number"],
-.mars-form.is-little-round input[type="search"],
-.mars-form.is-little-round input[type="tel"],
-.mars-form.is-little-round input[type="color"],
-.mars-form.is-little-round input[type="readonly"],
-.mars-form.is-little-round input,
-.mars-form.is-little-round select,
-.mars-form.is-little-round textarea {   
+.mars-form.is-little-rounded input[type="text"],
+.mars-form.is-little-rounded input[type="password"],
+.mars-form.is-little-rounded input[type="email"],
+.mars-form.is-little-rounded input[type="url"],
+.mars-form.is-little-rounded input[type="date"],
+.mars-form.is-little-rounded input[type="month"],
+.mars-form.is-little-rounded input[type="time"],
+.mars-form.is-little-rounded input[type="datetime"],
+.mars-form.is-little-rounded input[type="datetime-local"],
+.mars-form.is-little-rounded input[type="week"],
+.mars-form.is-little-rounded input[type="number"],
+.mars-form.is-little-rounded input[type="search"],
+.mars-form.is-little-rounded input[type="tel"],
+.mars-form.is-little-rounded input[type="color"],
+.mars-form.is-little-rounded input[type="readonly"],
+.mars-form.is-little-rounded input,
+.mars-form.is-little-rounded select,
+.mars-form.is-little-rounded textarea {   
     border-radius: 0.5em;
     padding: 0.5em 1em;
 }
 
-.mars-form.is-little-round input:not([type]) {
+.mars-form.is-little-rounded input:not([type]) {
     border-radius: 0.5em;
     padding: 0.5em 1em;
 }
 
 /* round */
-.mars-form.is-round input[type="text"],
-.mars-form.is-round input[type="password"],
-.mars-form.is-round input[type="email"],
-.mars-form.is-round input[type="url"],
-.mars-form.is-round input[type="date"],
-.mars-form.is-round input[type="month"],
-.mars-form.is-round input[type="time"],
-.mars-form.is-round input[type="datetime"],
-.mars-form.is-round input[type="datetime-local"],
-.mars-form.is-round input[type="week"],
-.mars-form.is-round input[type="number"],
-.mars-form.is-round input[type="search"],
-.mars-form.is-round input[type="tel"],
-.mars-form.is-round input[type="color"],
-.mars-form.is-round input[type="readonly"],
-.mars-form.is-round input,
-.mars-form.is-round select,
-.mars-form.is-round textarea {   
+.mars-form.is-rounded input[type="text"],
+.mars-form.is-rounded input[type="password"],
+.mars-form.is-rounded input[type="email"],
+.mars-form.is-rounded input[type="url"],
+.mars-form.is-rounded input[type="date"],
+.mars-form.is-rounded input[type="month"],
+.mars-form.is-rounded input[type="time"],
+.mars-form.is-rounded input[type="datetime"],
+.mars-form.is-rounded input[type="datetime-local"],
+.mars-form.is-rounded input[type="week"],
+.mars-form.is-rounded input[type="number"],
+.mars-form.is-rounded input[type="search"],
+.mars-form.is-rounded input[type="tel"],
+.mars-form.is-rounded input[type="color"],
+.mars-form.is-rounded input[type="readonly"],
+.mars-form.is-rounded input,
+.mars-form.is-rounded select,
+.mars-form.is-rounded textarea {   
     border-radius: 2em;
     padding: 0.5em 1em;
 }
 
-.mars-form.is-round input:not([type]) {
+.mars-form.is-rounded input:not([type]) {
     border-radius: 2em;
     padding: 0.5em 1em;
 }
@@ -327,7 +327,7 @@
 .mars-form.is-color-purple select:focus,
 .mars-form.is-color-purple textarea:focus {
     outline: 0;
-    border-color: rgba(138, 43, 226, 1);
+    border-color: rgb(138, 43, 226, 1);
 }
 
 /****** sizing area *****/
