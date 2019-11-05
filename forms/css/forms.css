@@ -123,14 +123,14 @@
 .mars-form select[disabled],
 .mars-form textarea[disabled] {
     cursor: not-allowed;
-    background-color:#eaeded;
-    color: #cad2d3;
+    background-color:rgb(234,237,237);
+    color: rgb(202,210,211);
 }
 
 .mars-form input:not([type])[disabled] {
     cursor: not-allowed;
-    background-color: #eaeded;
-    color: #cad2d3;
+    background-color:rgb(234,237,237);
+    color: rgb(202,210,211);
 }
 
 .mars-form input[readonly], 

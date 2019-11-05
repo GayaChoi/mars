@@ -61,6 +61,7 @@
 .mars-button:hover {
     opacity: 0.75;  
     cursor: pointer;
+    border-color: transparent;
 }
 
 .mars-button.is-hover,
@@ -106,12 +107,12 @@
     box-shadow: 0 0 0 1px rgba(0,0,0, 0.12) inset;  
 } 
 
-
 .mars-button[disabled],
 .mars-button.is-disabled,
 .mars-button.is-disabled:hover,
 .mars-button.is-disabled:focus,
 .mars-button.is-disabled:active {
+    padding: calc(1em - 0.2px);
     border: none;
     background-image: none;
     /* TODO: csslint ignore 분석해보기 */
@@ -121,8 +122,68 @@
     opacity: 1;
     cursor: not-allowed;
     box-shadow: none;
-    background-color: #eaeded;
-    color: #cad2d3;
+    background-color:rgb(234,237,237);
+    color: rgb(202,210,211);
     pointer-events: none;
 }
+
+/* loading button */
+@-webkit-keyframes spinAround {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+  @keyframes spinAround {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+
+.mars-button.is-loading {
+    cursor: default;
+    color: transparent !important;
+    justify-content: center;
+    padding-bottom: calc(1em - 1px);
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: calc(1em - 1px);
+    text-align: center;
+    white-space: nowrap;
+    pointer-events: none;
+    height: 2.5em;
+    font-size: 1rem;
+    line-height: 1.5;
+    align-items: center;
+    position: relative;
+    vertical-align: top;
+}  
+
+.mars-button.is-loading::after {
+    -webkit-animation: spinAround 500ms infinite linear;
+    animation: spinAround 500ms infinite linear;  
+    border: 2px solid #dbdbdb;
+    border-radius: 290486px;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    content: "";
+    display: block;
+    width: 1em;
+    height: 1em;
+}
+
+.mars-button.is-loading::after {
+    position: absolute;
+    left: calc(50% - (1em / 2));
+    top: calc(45% - (1em / 2));
+    position: absolute !important;
+}
+
 
