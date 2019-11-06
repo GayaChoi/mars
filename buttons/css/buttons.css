@@ -4,7 +4,7 @@
 
 .mars-button {
     font-family: inherit;
-    font-size: 100%;
+    font-size: 1rem;
     font-weight: 500;
     border: 2px solid #129FEA;/* IE6/7/8/9 + everything */
     border-width: 2px;
@@ -17,16 +17,17 @@
     cursor: pointer;
     transition: all 0.2s ease-in-out 0s;
     box-shadow:  0px 10px 25px  rgba(18, 159, 234, 0.5);   
-    width: 160px;
+    width: 10rem;
     color: white;
+    text-align: center;
 }
 
 /* button color */
 .mars-button.is-color-blue {
     outline: 0;
-    background-color: rgb(0, 83, 156);
-    border-color: rgb(0, 83, 156);
-    box-shadow: 0px 10px 25px rgba(0, 83, 156, 0.5);  /* offset-x | offset-y | blur-radius | spread-radius | color */ 
+    background-color: rgb(0, 110, 207);
+    border-color: rgb(0, 110, 207);
+    box-shadow: 0px 10px 25px rgba(0, 110, 207, 0.5);  /* offset-x | offset-y | blur-radius | spread-radius | color */ 
 }
 
 .mars-button.is-color-green {
@@ -45,16 +46,16 @@
 
 .mars-button.is-color-pink {
     outline: 0;
-    background-color: rgb(217, 130, 181);
-    border-color: rgb(217, 130, 181);
-    box-shadow: 0px 10px 25px rgba(217, 130, 181, 0.5);  /* offset-x | offset-y | blur-radius | spread-radius | color */ 
+    background-color: rgb(223,150,193);
+    border-color: rgb(223,150,193);
+    box-shadow: 0px 10px 25px rgba(223, 150, 193, 0.5);  /* offset-x | offset-y | blur-radius | spread-radius | color */ 
 }
 
 .mars-button.is-color-purple {
     outline: 0;
-    background-color: rgb(138, 43, 226);  
-    border-color: rgb(138, 43, 226);
-    box-shadow: 0px 10px 25px rgba(138, 43, 226, 0.5);  /* offset-x | offset-y | blur-radius | spread-radius | color */ 
+    background-color: rgb(162,88,232);
+    border-color: rgb(162,88,232);
+    box-shadow: 0px 10px 25px rgba(162, 88, 232, 0.5);  /* offset-x | offset-y | blur-radius | spread-radius | color */ 
 }
 
 .mars-button.is-hover,
@@ -71,7 +72,7 @@
 
 .mars-button.is-hover.is-color-blue,
 .mars-button.is-color-blue:hover {
-    box-shadow: 0px 10px 25px rgba(0, 83, 156, 0.85);
+    box-shadow: 0px 10px 25px rgba(0, 110, 207, 0.85);
 }
 
 .mars-button.is-hover.is-color-green,
@@ -86,12 +87,12 @@
 
 .mars-button.is-hover.is-color-pink,
 .mars-button.is-color-pink:hover {
-    box-shadow: 0px 10px 25px rgba(217, 130, 181, 0.85);
+    box-shadow: 0px 10px 25px rgba(223, 150, 193, 0.85);
 }
 
 .mars-button.is-hover.is-color-purple,
 .mars-button.is-color-purple:hover {
-    box-shadow: 0px 10px 25px rgba(138, 43, 226, 0.85);
+    box-shadow: 0px 10px 25px rgba(162, 88, 232, 0.85);
 }
 
 .mars-button.is-focused,
@@ -149,7 +150,7 @@
 
 .mars-button.is-loading {
     cursor: default;
-    color: transparent !important;
+    color: transparent;
     justify-content: center;
     padding-bottom: calc(1em - 1px);
     padding-left: 1em;
@@ -160,13 +161,13 @@
     pointer-events: none;
     height: 2.5em;
     font-size: 1rem;
-    line-height: 1.5;
+    line-height: 2.5em;
     align-items: center;
     position: relative;
     vertical-align: top;
 }  
 
-.mars-button.is-loading::after {
+.mars-button.is-loading:after {
     -webkit-animation: spinAround 500ms infinite linear;
     animation: spinAround 500ms infinite linear;  
     border: 2px solid #dbdbdb;
@@ -179,11 +180,79 @@
     height: 1em;
 }
 
-.mars-button.is-loading::after {
+.mars-button.is-loading:after {
     position: absolute;
     left: calc(50% - (1em / 2));
     top: calc(45% - (1em / 2));
     position: absolute !important;
 }
+
+.mars-button.is-gradient {
+    padding: calc(1em - 0.2px);
+    cursor: pointer;
+    outline: 0;
+    border: 0 !important;
+}
+
+.mars-button.is-gradient {
+    background-image: linear-gradient(90deg,#1233ea,#129fea);   
+    box-shadow:  0px 10px 25px  rgba(18, 159, 234, 0.65);  
+}
+
+.mars-button.is-gradient.is-color-blue {
+    background-image: linear-gradient(90deg,#002a50,#006ecf);
+    box-shadow:  0px 10px 25px  rgba(0, 110, 207, 0.65);   
+}
+
+.mars-button.is-gradient.is-color-green {
+    background-image: linear-gradient(90deg,#319b54,#50c878);
+    box-shadow:  0px 10px 25px  rgba(80, 200, 120, 0.65);   
+}
+
+.mars-button.is-gradient.is-color-yellow {
+    background-image: linear-gradient(90deg,#aca300,#f8eb00);
+    box-shadow:  0px 10px 25px  rgba(248, 235, 0, 0.65);   
+}
+
+.mars-button.is-gradient.is-color-pink {
+    background-image: linear-gradient(90deg,#c74792,#df96c1);
+    box-shadow:  0px 10px 25px  rgba(223, 150, 193, 0.65);   
+}
+
+.mars-button.is-gradient.is-color-purple {
+    background-image: linear-gradient(90deg,#6217a9,#a258e8);
+    box-shadow:  0px 10px 25px  rgba(162, 88, 232, 0.65);   
+}
+
+
+@-webkit-keyframes bgAnim {
+    0% {
+      background-position: 0% 50%;
+    }
+    
+    50% {
+      background-position: 100% 50%;
+    }
+}
+
+@keyframes bgAnim {
+    0% {
+        background-position: 0% 50%;
+    }
+      
+    50% {
+        background-position: 100% 50%;
+    }  
+}
+
+.mars-button.is-anim {
+   animation: bgAnim 3s linear infinite;
+   background-size: 400% 400% !important;
+}
+
+
+
+
+
 
 
