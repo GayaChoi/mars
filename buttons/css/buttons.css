@@ -99,7 +99,6 @@
 .mars-button:focus {
     outline: 0;
     border: 2px solid rgba(18, 159, 234, 0.5);
-    border-radius: 4px;
 }
 
 .mars-button.is-pressed,
@@ -250,6 +249,60 @@
    background-size: 400% 400% !important;
 }
 
+.mars-button.is-small {
+    font-size: 0.75rem;
+}
+
+.mars-button.is-medium {
+    font-size: 1.25rem;
+}
+
+.mars-button.is-normal {
+    font-size: 1rem;
+}
+
+.mars-button.is-large {
+    font-size: 1.5rem;
+}
+
+/* state color */
+.mars-button.is-primary {
+   background-color: #00B0FF;
+   box-shadow:  0px 10px 25px  rgba(0, 176, 255, 0.5);   
+}
+
+.mars-button.is-success {
+   background-color: #00B248;
+   box-shadow:  0px 10px 25px  rgba(0, 178, 72, 0.5);   
+}
+
+.mars-button.is-warning {
+    background-color: #FF9D3F;
+    box-shadow:  0px 10px 25px  rgba(255, 157, 63, 0.5);
+}
+
+.mars-button.is-error {
+    background-color: #FF5722;
+    box-shadow:  0px 10px 25px  rgba(255, 87, 34, 0.5);
+}
+
+.mars-button.is-primary,
+.mars-button.is-success,
+.mars-button.is-warning,
+.mars-button.is-error {
+    outline: 0; 
+    border-color: transparent;
+}
+ 
+/* icon button */
+.mars-button .icon, 
+.mars-button .icon.is-small,
+.mars-button .icon.is-normal,  
+.mars-button .icon.is-medium,
+.mars-button .icon.is-large {
+    width: 1em;
+    height: 1em;
+}
 
 
 

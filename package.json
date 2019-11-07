@@ -1,0 +1,20 @@
+{
+  "name": "css-ui-kit",
+  "version": "1.0.0",
+  "description": "==========",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GayaChoi/css-ui-kit.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GayaChoi/css-ui-kit/issues"
+  },
+  "homepage": "https://github.com/GayaChoi/css-ui-kit#readme",
+  "dependencies": {}
+}
