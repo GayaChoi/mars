@@ -6,7 +6,7 @@
     font-family: inherit;
     font-size: 1rem;
     font-weight: 500;
-    border: 2px solid #129FEA;/* IE6/7/8/9 + everything */
+    border: 2px solid transparent;/* IE6/7/8/9 + everything */
     border-width: 2px;
     border-image: initial;
     padding: 0.85em 1em;
@@ -150,7 +150,6 @@
 .mars-button.is-loading {
     cursor: default;
     color: transparent;
-    justify-content: center;
     padding-bottom: calc(1em - 1px);
     padding-left: 1em;
     padding-right: 1em;
@@ -163,7 +162,6 @@
     line-height: 2.5em;
     align-items: center;
     position: relative;
-    vertical-align: top;
 }  
 
 .mars-button.is-loading:after {
@@ -294,14 +292,28 @@
     border-color: transparent;
 }
  
+.mars-button.is-icon-button {
+    display: inline-flex;
+    font-size: 1rem;
+    height: 2.5em;
+    justify-content: flex-start;
+    line-height: 1.5;
+    padding-bottom: calc(0.5em - 1px);
+    padding-left: calc(0.75em - 1px);
+    padding-right: calc(0.75em - 1px);
+    padding-top: calc(0.5em - 1px);
+    position: relative;
+    vertical-align: top;
+}
+
 /* icon button */
-.mars-button .icon, 
-.mars-button .icon.is-small,
-.mars-button .icon.is-normal,  
-.mars-button .icon.is-medium,
-.mars-button .icon.is-large {
-    width: 1em;
-    height: 1em;
+.mars-button.is-icon-button .icon,
+.mars-button.is-icon-button .icon.is-small,
+.mars-button.is-icon-button .icon.is-normal,
+.mars-button.is-icon-button .icon.is-medium,
+.mars-button.is-icon-button .icon.is-large {
+    width: 1.5em;
+    height: 1.5em;
 }
 
 

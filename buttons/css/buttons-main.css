@@ -11,6 +11,8 @@
 .buttons-area {
     display: flex;
     flex-direction: column;  
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 .buttons-area button,a {
