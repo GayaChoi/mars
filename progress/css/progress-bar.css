@@ -11,195 +11,7 @@
   width: 50vw;
 }
 
-
-.mars-progress::-webkit-progress-bar {
-    background-color:#ededed;
-}
-  
-.mars-progress::-webkit-progress-value {
-    background-color: #129FEA;  
-}
-
-.mars-progress::-moz-progress-bar {
-    background-color: #129FEA;
-}
-  
-.mars-progress::-ms-fill {
-    background-color: #129FEA;
-    border: none;
-}
-
-/* chrome support */
-.mars-progress.is-color-blue::-webkit-progress-value {
-    background-color: #006ecf;
-}
-
-/* mozzila support */
-.mars-progress.is-color-blue::-moz-progress-bar {
-    background-color: #006ecf;
-}
-
-/* ie support */
-.mars-progress.is-color-blue::-ms-fill {
-    background-color: #006ecf;
-}
-
-.mars-progress.is-color-blue:indeterminate {
-    background-image: linear-gradient(to right #006ecf 30%, #ededed 30%);
-}
-
-/* chrome support */
-.mars-progress.is-color-green::-webkit-progress-value {
-    background-color: #50c878;
-}
-
-/* mozzila support */
-.mars-progress.is-color-green::-moz-progress-bar {
-    background-color: #50c878;
-}
-
-/* ie support */
-.mars-progress.is-color-green::-ms-fill {
-    background-color: #50c878;
-}
-
-.mars-progress.is-color-green:indeterminate {
-    background-image: linear-gradient(to right #50c878 30%, #ededed 30%);
-}
-
-/* chrome support */
-.mars-progress.is-color-yellow::-webkit-progress-value {
-    background-color: #f8eb00;
-}
-
-/* mozzila support */
-.mars-progress.is-color-yellow::-moz-progress-bar {
-    background-color: #f8eb00;
-}
-
-/* ie support */
-.mars-progress.is-color-yellow::-ms-fill {
-    background-color: #f8eb00;
-}
-
-.mars-progress.is-color-green:indeterminate {
-    background-image: linear-gradient(to right #f8eb00 30%, #ededed 30%);
-}
-
-/* chrome support */
-.mars-progress.is-color-pink::-webkit-progress-value {
-    background-color: #df96c1;
-}
-
-/* mozzila support */
-.mars-progress.is-color-pink::-moz-progress-bar {
-    background-color: #df96c1;
-}
-
-/* ie support */
-.mars-progress.is-color-pink::-ms-fill {
-    background-color: #df96c1;
-}
-
-.mars-progress.is-color-pink:indeterminate {
-    background-image: linear-gradient(to right #df96c1 30%, #ededed 30%);
-}
-
-/* chrome support */
-.mars-progress.is-color-purple::-webkit-progress-value {
-    background-color: #a258e8;
-}
-
-/* mozzila support */
-.mars-progress.is-color-purple::-moz-progress-bar {
-    background-color: #a258e8;
-}
-
-/* ie support */
-.mars-progress.is-color-purple::-ms-fill {
-    background-color: #a258e8;
-}
-
-.mars-progress.is-color-purple:indeterminate {
-    background-image: linear-gradient(to right #a258e8 30%, #ededed 30%);
-}
-
-/* chrome support */
-.mars-progress.is-primary::-webkit-progress-value {
-    background-color: #00B0FF;
-}
-
-/* mozzila support */
-.mars-progress.is-primary::-moz-progress-bar {
-    background-color: #00B0FF;
-}
-
-/* ie support */
-.mars-progress.is-primary::-ms-fill {
-    background-color: #00B0FF;
-}
-
-.mars-progress.is-primary:indeterminate {
-    background-image: linear-gradient(to right #00B0FF 30%, #ededed 30%);
-}
-
-/* chrome support */
-.mars-progress.is-success::-webkit-progress-value {
-    background-color: #00B248;
-}
-
-/* mozzila support */
-.mars-progress.is-success::-moz-progress-bar {
-    background-color: #00B248;
-}
-
-/* ie support */
-.mars-progress.is-success::-ms-fill {
-    background-color: #00B248;
-}
-
-.mars-progress.is-success:indeterminate {
-    background-image: linear-gradient(to right #00B248 30%, #ededed 30%);
-}
-
-/* chrome support */
-.mars-progress.is-warning::-webkit-progress-value {
-    background-color: #FF9D3F;
-}
-
-/* mozzila support */
-.mars-progress.is-warning::-moz-progress-bar {
-    background-color: #FF9D3F;
-}
-
-/* ie support */
-.mars-progress.is-warning::-ms-fill {
-    background-color: #FF9D3F;
-}
-
-.mars-progress.is-warning:indeterminate {
-    background-image: linear-gradient(to right #FF9D3F 30%, #ededed 30%);
-}
-
-/* chrome support */
-.mars-progress.is-error::-webkit-progress-value {
-    background-color: #FF5722;
-}
-
-/* mozzila support */
-.mars-progress.is-error::-moz-progress-bar {
-    background-color: #FF5722;
-}
-
-/* ie support */
-.mars-progress.is-error::-ms-fill {
-    background-color: #FF5722;
-}
-
-.mars-progress.is-error:indeterminate {
-    background-image: linear-gradient(to right #FF5722 30%, #ededed 30%);
-}
-
+/* progress bar size */
 .mars-progress.is-small {
     height: 0.75rem;
 }
@@ -213,6 +25,94 @@
 }
 
 
+/* default bar */
+.mars-progress::-webkit-progress-bar {
+    background-color: #ededed;
+}
+  
+.mars-progress::-webkit-progress-value {
+    background-color: #4a4a4a;
+}
+  
+.mars-progress::-moz-progress-bar {
+    background-color: #4a4a4a;
+}
+  
+.mars-progress::-ms-fill {
+    background-color: #4a4a4a;
+    border: none;
+}
+
+/* primary bar */  
+.mars-progress.is-primary::-webkit-progress-value {
+    background-color: #00B0FF;
+}
+  
+.mars-progress.is-primary::-moz-progress-bar {
+    background-color: #00B0FF;
+}
+  
+.mars-progress.is-primary::-ms-fill {
+    background-color: #00B0FF;
+    border: none;
+}
+
+.mars-progress.is-primary:indeterminate {
+    background-image: linear-gradient(to right, #00B0FF 30%, #00B0FF 30%);
+}
+ 
+/* success bar */
+.mars-progress.is-success::-webkit-progress-value {
+    background-color: #00B248;
+}
+  
+.mars-progress.is-success::-moz-progress-bar {
+    background-color: #00B248;
+}
+  
+.mars-progress.is-success::-ms-fill {
+    background-color: #00B248;
+}
+
+.mars-progress.is-success:indeterminate {
+    background-image: linear-gradient(to right, #00B248 30%, #00B248 30%);
+}
+
+/* warning bar */
+.mars-progress.is-warning::-webkit-progress-value {
+    background-color: #FF9D3F;
+}
+  
+.mars-progress.is-warning::-moz-progress-bar {
+    background-color: #FF9D3F;
+}
+  
+.mars-progress.is-warning::-ms-fill {
+    background-color: #FF9D3F;
+}
+
+.mars-progress.is-warning:indeterminate {
+    background-image: linear-gradient(to right,  #FF9D3F 30%,  #FF9D3F 30%);
+}
+
+/* error bar */  
+.mars-progress.is-error::-webkit-progress-value {
+    background-color: #FF5722;
+}
+  
+.mars-progress.is-error::-moz-progress-bar {
+    background-color: #FF5722;
+}
+  
+.mars-progress.is-error::-ms-fill {
+    background-color: #FF5722;
+}
+
+.mars-progress.is-error:indeterminate {
+    background-image: linear-gradient(to right,  #FF5722 30%,  #FF5722 30%);
+}
+
+
 @-webkit-keyframes moveIndeterminate {
     from {
       background-position: 200% 0;
@@ -220,16 +120,16 @@
     to {
       background-position: -200% 0;
     }
-  }
+}
   
-  @keyframes moveIndeterminate {
+@keyframes moveIndeterminate {
     from {
       background-position: 200% 0;
     }
     to {
       background-position: -200% 0;
     }
-  }
+}
 
 .mars-progress:indeterminate {
     -webkit-animation-duration: 1.5s;
@@ -241,11 +141,11 @@
     -webkit-animation-timing-function: linear;
             animation-timing-function: linear;
     background-color: #ededed;
-    background-image: linear-gradient(to right, #129FEA 30%, #ededed 30%);
+    background-image: linear-gradient(to right, #4a4a4a 30%, #ededed 30%);
     background-position: top left;
     background-repeat: no-repeat;
     background-size: 150% 150%;
-} 
+}
 
 .mars-progress:indeterminate::-webkit-progress-bar {
     background-color: transparent;
@@ -254,3 +154,6 @@
 .mars-progress:indeterminate::-moz-progress-bar {
     background-color: transparent;
 }
+
+
+
