@@ -188,7 +188,7 @@
     padding: calc(1em - 0.2px);
     cursor: pointer;
     outline: 0;
-    border: 0;
+    border: none;
 }
 
 .mars-button.is-gradient {
@@ -330,7 +330,7 @@
     color: rgba(18, 159, 234, 1); /* IE 8 supported */
     border-radius: 0px;
     transition: all 0.2s ease-in-out 0s;
-    border: 0;
+    border: none;
     box-shadow: none;
 }
 
@@ -370,7 +370,7 @@
 .mars-button.is-outlined.is-color-yellow,
 .mars-button.is-outlined.is-color-pink,
 .mars-button.is-outlined.is-color-purple {
-    border: 0;
+    border: none;
     box-shadow: none; 
 }
 
