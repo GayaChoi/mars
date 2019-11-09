@@ -34,6 +34,7 @@
     vertical-align: middle;
     box-sizing: border-box;
     box-shadow: rgba(0,0,0,0.1) 0px 2px 4px 0px;
+    outline: 0;
 }
 
 .mars-form input:not([type]) {
