@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+}
+
+.mars-modal {
+   position: relative;
+   background-color: white;
+   padding: 1.25rem 2.5rem 1.25rem 1.5rem;
+   border-radius: 4px;
+} 
+
+.mars-modal a:not(.mars-button) {
+    color: currentColor;
+    text-decoration: underline;
+}
+
+.mars-modal strong {
+    color: currentColor;
+}
+
+.mars-modal code,
+.mars-modal pre {
+    background: white
+}
+
+.mars-modal pre code {
+    background: transparent;
+}
+
+.mars-modal > .delete {
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+}
+
+.mars-modal .title,
+.mars-modal .subtitle,
+.mars-modal .content {
+    color: currentColor;
+}
+
+.mars-modal .delete, .modal-close {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background-color: rgba(51, 50, 56, 0.2);
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    pointer-events: auto;
+    display: inline-block;
+    flex-grow: 0;
+    flex-shrink: 0;
+    font-size: 0;
+    height: 20px;
+    max-width: 20px;
+    max-height: 20px;
+    min-height: 20px;
+    min-width: 20px;
+    outline: 0;
+    position: relative;
+    vertical-align: top;
+    width: 20px;
+}
+
+.delete::before, .delete::after {
+    background-color: white;
+    content: "";
+    display: block;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    transform-origin: center center; 
+}
+
+.delete::before {
+    height: 2px;
+    width: 50px;
+}
+
+.delete::after {
+    height: 50px;
+    width: 2px;
+}
+
+

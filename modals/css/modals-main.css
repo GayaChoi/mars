@@ -1,25 +1,25 @@
-.buttons-wrap {
+.modals-wrap {
     padding: 130px;
     color: rgb(0,0,0);
     font-size: 14px;  
 }
 
-.buttons-contents > * {
+.modals-contents > * {
     margin-bottom: 30px;
 }
 
-.buttons-area {
+.modals-area {
     display: flex;
     flex-direction: column;  
     flex-wrap: wrap;
     justify-content: flex-start;
 }
 
-.buttons-area button,a {
+.modals-area button,a {
     text-align: center;
 }
 
-h1.buttons-title {
+h1.modals-title {
     margin-bottom: 30px;
     font-size: 32px;
     font-weight: 400;
