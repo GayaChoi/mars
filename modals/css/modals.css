@@ -27,18 +27,6 @@
     background: transparent;
 }
 
-.mars-modal > .delete {
-    position: absolute;
-    right: 0.5rem;
-    top: 0.5rem;
-}
-
-.mars-modal .title,
-.mars-modal .subtitle,
-.mars-modal .content {
-    color: currentColor;
-}
-
 .mars-modal .delete, .modal-close {
     -moz-appearance: none;
     -webkit-appearance: none;
@@ -62,6 +50,12 @@
     width: 20px;
 }
 
+.mars-modal > .delete {
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+}
+
 .delete::before, .delete::after {
     background-color: white;
     content: "";
@@ -83,4 +77,22 @@
     width: 2px;
 }
 
+.mars-modal .title,
+.mars-modal .subtitle,
+.mars-modal .content {
+    color: currentColor;
+}
 
+.modal-title-area {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.modal-title {
+    display: block;
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: rgb(0,0,0);
+}
