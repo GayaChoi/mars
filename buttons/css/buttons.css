@@ -10,15 +10,14 @@
     border-width: 2px;
     border-image: initial;
     padding: 0.85em 1em;
-    background-color: #129FEA;
+    background-color: #fafafa;
     text-decoration: none;
     border-radius: 4px;
     margin-bottom: 30px;
     cursor: pointer;
     transition: all 0.2s ease-in-out 0s;
-    box-shadow:  0px 10px 25px  rgba(18, 159, 234, 0.5);   
     width: 10rem;
-    color: white;
+    color: rgba(139,139,139,0.8);
     text-align: center;
 }
 
