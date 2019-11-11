@@ -10,15 +10,16 @@
     border-width: 2px;
     border-image: initial;
     padding: 0.85em 1em;
-    background-color: #fafafa;
+    background-color: #129fea;
     text-decoration: none;
     border-radius: 4px;
     margin-bottom: 30px;
     cursor: pointer;
     transition: all 0.2s ease-in-out 0s;
     width: 10rem;
-    color: rgba(139,139,139,0.8);
+    color: #ffffff;
     text-align: center;
+    box-shadow: 0px 10px 25px rgba(18, 159, 234, 0.5);   
 }
 
 /* button color */
@@ -333,7 +334,6 @@
     box-shadow: none;
 }
 
-
 .mars-button.is-outlined.is-color-blue {
     outline: 2px solid rgb(0, 110, 207);
     color: #006ecf;
@@ -373,3 +373,59 @@
     box-shadow: none; 
 }
 
+/* modals button */
+.mars-button.is-cancel {
+    background-color: #ffffff;
+    border: 2px solid #D3D3D3;
+    border-radius: 2px;
+    width: 6.5rem;
+    height: 3.5rem;
+    color:rgb(139,139,139,0.83);
+    box-shadow: none;
+}
+
+.mars-button.is-submit {
+    background-color: #005CFF;
+    border: 2px solid transparent;
+    color: #ffffff;
+    box-shadow: none;
+}
+
+.mars-button.is-submit:hover,
+.mars-button.is-submit:active {
+    opacity: 1; 
+    box-shadow: none;
+    color: #ffffff;
+    border: 2px solid transparent;
+}
+
+.mars-button.is-cancel:hover,
+.mars-button.is-cancel:active {
+    opacity: 1; 
+    border: 2px solid #D3D3D3;
+    box-shadow: none;
+}
+
+/* focused */
+.mars-button.is-submit.is-focused,
+.mars-button.is-submit:focus {
+    outline: 0;
+    border: 2px solid transparent;
+    box-shadow: none;
+}
+
+.mars-button.is-cancel.is-focused,
+.mars-button.is-cancel:focus,
+.mars-button.is-cancel.is-pressed,
+.mars-button.is-cancel:active {
+    outline: 0;
+    border: 2px solid #D3D3D3;
+    box-shadow: none;
+}
+
+.mars-button.is-submit.is-pressed,
+.mars-button.is-submit:active {
+    outline: 0;
+    border: 2px solid transparent;
+    box-shadow: none;
+} 

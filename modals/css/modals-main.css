@@ -29,87 +29,12 @@ h1.modals-title {
     display: flex;
     justify-content: space-around;
     padding-top: 30px;
-    padding-left: 80px;
 }
 
-/* status color */
-.mars-modal.is-primary .mars-button.submit {
-    background-color: #00B0FF;
-    color: #ffffff;
+.mars-modal a {
+    cursor: pointer;
 }
 
-.mars-modal.is-success .mars-button.submit {
-    background-color: #00B248;
-    color: #ffffff;
+.modal-title-area {
+    margin-bottom: 40px;
 }
-
-.mars-modal.is-warning .mars-button.submit {
-    background-color: #FF9D3F;
-    color: #ffffff;
-}
-
-.mars-modal.is-error .mars-button.submit {
-    background-color: #FF5722;
-    color: #ffffff;
-}
-
-.mars-modal.is-primary .modal-title {
-    color: #00B0FF;
-}
-
-.mars-modal.is-success .modal-title {
-    color: #00B248;
-}
-
-.mars-modal.is-warning .modal-title {
-    color: #FF9D3F;
-}
-
-.mars-modal.is-error .modal-title {
-    color: #FF5722;
-}
-
-
-/* mars button setting */
-.modal-button-area .mars-button.cancel {
-    border-radius: 2px;
-    width: 6.5rem;
-    height: 3.5rem;
-}
-
-.modal-button-area .mars-button.cancel:hover,
-.modal-button-area .mars-button.submit:hover {
-    opacity: 1; 
-    box-shadow: none;
-}
-
-.modal-button-area .mars-button.cancel:active,
-.modal-button-area .mars-button.submit:active {
-    opacity: 1; 
-    box-shadow: none;
-}
-
-
-/* focused */
-.mars-button.cancel.is-focused,
-.mars-button.cancel:focus,
-.mars-button.submit.is-focused,
-.mars-button.submit:focus {
-    outline: 0;
-    border: none;
-}
-
-.mars-button.cancel.is-pressed,
-.mars-button.cancel:active,
-.mars-button.submit.is-pressed,
-.mars-button.submit:active {
-    outline: 0;
-    border: none;  
-    box-shadow: none;
-} 
- 
-.mars-button.submit {
-    background-color: #005CFF;
-    color: #ffffff;
-}
-
