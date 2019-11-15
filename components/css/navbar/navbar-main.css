@@ -1,0 +1,32 @@
+/* nav main page */
+.nav-wrap {
+    padding: 130px;
+    color: rgb(0,0,0);
+    font-size: 14px;  
+}
+
+.nav-contents {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.nav-contents > * {
+    margin-bottom: 50px;
+}
+ 
+h1.nav-title {
+    font-size: 32px;
+    font-weight: 400;
+    font-family: inherit;
+    cursor: default;
+    margin-bottom: 40px;
+}
+
+
+
+
+
+
+
+

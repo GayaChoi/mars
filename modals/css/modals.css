@@ -57,8 +57,8 @@
 
 .mars-modal > .delete {
     position: absolute;
-    right: 0.5rem;
-    top: 0.5rem;
+    right: 1.5rem;
+    top: 1.5rem;
 }
 
 .mars-modal .delete::before, .mars-modal .delete::after {

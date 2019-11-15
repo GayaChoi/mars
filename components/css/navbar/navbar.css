@@ -1,0 +1,75 @@
+.mars-navbar {
+    background-color: white;
+    min-height: 5rem;
+    position: relative;
+    z-index: 30000;
+    border: 1px solid tomato;
+}
+
+.mars-navbar-brand {
+    align-items: stretch;
+    display: flex;
+    flex-shrink: 0;
+    min-height: 3.25rem;
+}
+
+.mars-navbar-item,
+.mars-navbar-link {
+    color: #4a4a4a;
+    display: block;
+    line-height: 1.5;
+    padding: 0.5rem 0.75rem;
+    position: relative;
+}
+
+a.mars-navbar-item,
+.mars-navbar-link {
+    cursor: pointer;
+}
+
+a.mars-navbar-item:focus,
+a.mars-navbar-item:focus-within,
+a.mars-navbar-item:hover,
+a.mars-navbar-item.is-active,
+.mars-navbar-link:focus,
+.mars-navbar-link:focus-within,
+.mars-navbar-link:hover,
+.mars-navbar-link.is-active {
+    background-color: #fafafa;
+    color: #3273dc;
+}
+
+.mars-navbar-brand a.mars-navbar-item:focus, 
+.mars-navbar-brand a.mars-navbar-item:hover {
+    background-color: transparent;
+}
+
+.mars-navbar-item {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.mars-navbar-item img {
+    max-height: 1.75rem;
+}
+
+.mars-navbar-menu {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
