@@ -1,3 +1,4 @@
+/*  >= 1024px nav item hiddden */
 .mars-navbar {
     background-color: white;
     min-height: 5rem;
@@ -57,6 +58,72 @@ a.mars-navbar-item.is-active,
 .mars-navbar-menu {
     display: none;
 }
+
+.mars-navbar-dropdown {
+    font-size: 0.875rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+}
+
+.mars-navbar-dropdown .mars-navbar-item {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.mars-navbar-divider {
+    background-color: whitesmoke;
+    border: none;
+    display: none;
+    height: 2px;
+    margin: 0.5rem 0;
+}
+
+.buttons {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.buttons .mars-button {
+    margin-bottom: 0.5rem;  
+}
+
+.buttons .mars-button:not(:last-child) {
+   margin-right: 0.5rem; 
+}
+
+.buttons:last-child {
+    margin-bottom: -0.5rem;
+}
+
+.buttons:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.mars-button.is-logined {
+    padding-bottom: calc(0.5em - 1px);
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: calc(0.5em - 1px);
+    justify-content: center;
+    white-space: nowrap;
+    box-shadow: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

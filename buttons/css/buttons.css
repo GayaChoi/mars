@@ -16,7 +16,6 @@
     margin-bottom: 30px;
     cursor: pointer;
     transition: all 0.2s ease-in-out 0s;
-    width: 10rem;
     color: #ffffff;
     text-align: center;
     box-shadow: 0px 10px 25px rgba(18, 159, 234, 0.5);   
@@ -58,6 +57,14 @@
     box-shadow: 0px 10px 25px rgba(162, 88, 232, 0.5);  /* offset-x | offset-y | blur-radius | spread-radius | color */ 
 }
 
+.mars-button.is-color-smoke {
+    outline: 0;
+    background-color: whitesmoke;
+    border-color: transparent;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+
 .mars-button.is-hovered,
 .mars-button:not(.is-outlined):hover {
     opacity: 0.75;  
@@ -93,6 +100,13 @@
 .mars-button.is-hovered.is-color-purple,
 .mars-button.is-color-purple:hover {
     box-shadow: 0px 10px 25px rgba(162, 88, 232, 0.85);
+}
+
+.mars-button.is-hovered.is-color-smoke,
+.mars-button.is-color-smoke:hover {
+     background-color: #eeeeee;
+     border-color: transparent;
+     color: rgba(0, 0, 0, 0.7);  
 }
 
 .mars-button.is-focused,
