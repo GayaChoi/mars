@@ -57,14 +57,6 @@
     box-shadow: 0px 10px 25px rgba(162, 88, 232, 0.5);  /* offset-x | offset-y | blur-radius | spread-radius | color */ 
 }
 
-.mars-button.is-color-smoke {
-    outline: 0;
-    background-color: whitesmoke;
-    border-color: transparent;
-    color: rgba(0, 0, 0, 0.7);
-}
-
-
 .mars-button.is-hovered,
 .mars-button:not(.is-outlined):hover {
     opacity: 0.75;  
@@ -102,12 +94,6 @@
     box-shadow: 0px 10px 25px rgba(162, 88, 232, 0.85);
 }
 
-.mars-button.is-hovered.is-color-smoke,
-.mars-button.is-color-smoke:hover {
-     background-color: #eeeeee;
-     border-color: transparent;
-     color: rgba(0, 0, 0, 0.7);  
-}
 
 .mars-button.is-focused,
 .mars-button:focus {

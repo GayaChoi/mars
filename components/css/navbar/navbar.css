@@ -28,10 +28,7 @@ a.mars-navbar-item,
     cursor: pointer;
 }
 
-a.mars-navbar-item:focus,
-a.mars-navbar-item:focus-within,
-a.mars-navbar-item:hover,
-a.mars-navbar-item.is-active,
+a.mars-navbar-item:focus, a.mars-navbar-item:focus-within, a.mars-navbar-item:hover, a.mars-navbar-item.is-active,
 .mars-navbar-link:focus,
 .mars-navbar-link:focus-within,
 .mars-navbar-link:hover,
@@ -40,9 +37,85 @@ a.mars-navbar-item.is-active,
     color: #3273dc;
 }
 
-.mars-navbar-brand a.mars-navbar-item:focus, 
-.mars-navbar-brand a.mars-navbar-item:hover {
+.mars-navbar-item {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.mars-navbar-item img {
+    max-height: 1.75rem;
+}
+
+.mars-navbar-item.has-dropdown {
+    padding: 0;
+}
+
+.mars-navbar-link {
+    padding-right: 2.5em;
+}
+
+.mars-navbar-link:after {
+    border-color: #3273dc;
+    margin-top: -0.375em;
+    right: 1.125em;
+}
+
+.mars-navbar-link:after {
+    border: 3px solid transparent;
+    border-radius: 2px;
+    border-right: 0;
+    border-top: 0;
+    content: " ";
+    display: block;
+    height: 0.625em;
+    margin-top: -0.4375em;
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    transform: rotate(-45deg);
+    transform-origin: center;
+    width: 0.625em;
+}
+
+.mars-navbar-dropdown {
+    font-size: 0.875rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+}
+
+.mars-navbar-dropdown .mars-navbar-item {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+
+
+.mars-navbar-brand a.mars-navbar-item:focus, .mars-navbar-brand a.mars-navbar-item:hover {
     background-color: transparent;
+}
+
+/* color setting */
+.mars-navbar.is-color-white {
+    background-color: white;
+    color: rgb(10, 10, 10);
+}
+
+.mars-navbar.is-color-white .mars-navbar-brand > .mars-navbar-item,
+.mars-navbar.is-color-white .mars-navbar-brand .mars-navbar-link {
+    color: rgb(10, 10, 10);
+}
+
+.mars-navbar.is-color-white .mars-navbar-brand > a.mars-navbar-item:focus, .mars-navbar.is-color-white .mars-navbar-brand > a.mars-navbar-item:hover, .mars-navbar.is-color-white .mars-navbar-brand > a.navbar-item.is-active,
+.mars-navbar.is-color-white .mars-navbar-brand .mars-navbar-link:focus,
+.mars-navbar.is-color-white .mars-navbar-brand .mars-navbar-link:hover,
+.mars-navbar.is-color-white .mars-navbar-brand .mars-navbar-link.is-active {
+    background-color: #f2f2f2;
+    color: rgb(10, 10, 10);    
+}
+
+.mars-navbar.is-color-white .mars-navbar-brand .mars-navbar-link:after {
+    border-color: rgb(10, 10, 10);
 }
 
 .mars-navbar-item {
@@ -78,6 +151,7 @@ a.mars-navbar-item.is-active,
     margin: 0.5rem 0;
 }
 
+/* button setting */
 .buttons {
     align-items: center;
     display: flex;
@@ -111,6 +185,20 @@ a.mars-navbar-item.is-active,
     box-shadow: none;
 }
 
+/* button add */
+.mars-button.is-color-smoke {
+    outline: 0;
+    background-color: whitesmoke;
+    border-color: transparent;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.mars-button.is-hovered.is-color-smoke,
+.mars-button.is-color-smoke:hover {
+     background-color: #eeeeee;
+     border-color: transparent;
+     color: rgba(0, 0, 0, 0.7);  
+}
 
 
 

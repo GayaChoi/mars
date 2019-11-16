@@ -2,7 +2,7 @@
 .nav-wrap {
     padding: 130px;
     color: rgb(0,0,0);
-    font-size: 14px;  
+    font-size: 16px;  
 }
 
 .nav-contents {
@@ -22,7 +22,6 @@ h1.nav-title {
     cursor: default;
     margin-bottom: 40px;
 }
-
 
 
 
