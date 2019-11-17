@@ -1,0 +1,72 @@
+@mixin color($name) {
+    border-color: $name; 
+}
+
+@mixin base() {
+    color: #000000;
+    /* color: rgba(0, 0, 0, 0.80); */ /* IE 8 supported */
+    font-family: inherit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: inherit;
+    display: inline-block;
+    padding: 0.5em 1em;
+    border: 1px solid transparent;
+    background: white;
+    vertical-align: middle;
+    box-sizing: border-box;
+    box-shadow: rgba(0,0,0,0.1) 0px 2px 4px 0px;
+    outline: 0;
+
+    &:focus {
+        outline: 0;
+        @include color(rgb(18,159,234));
+    }
+}
+
+.mars-form {
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    input[type="url"],
+    input[type="date"],
+    input[type="month"],
+    input[type="time"],
+    input[type="datetime"],
+    input[type="datetime-local"],
+    input[type="week"],
+    input[type="number"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="color"],
+    input,
+    select,
+    textarea {
+        @include base;
+    }
+
+    input[type="color"] {
+        padding: 0.2em 0.5em;
+    }
+
+    input {
+        &:not([type]) {
+            padding: 0.5em 0.6em;
+        }
+
+        &:not([type]):focus {
+            outline: 0;
+            border-color: rgb(223, 223, 223); 
+        }
+
+        &:focus:invalid {
+            color: #b94a48;
+            border-color: #e9322d !important;
+        }
+    } 
+
+    textarea:focus:invalid {
+        color: #b94a48;
+        border-color: #e9322d !important;        
+    }
+}

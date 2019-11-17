@@ -1,0 +1,80 @@
+.mars-form input[type="text"],
+.mars-form input[type="password"],
+.mars-form input[type="email"],
+.mars-form input[type="url"],
+.mars-form input[type="date"],
+.mars-form input[type="month"],
+.mars-form input[type="time"],
+.mars-form input[type="datetime"],
+.mars-form input[type="datetime-local"],
+.mars-form input[type="week"],
+.mars-form input[type="number"],
+.mars-form input[type="search"],
+.mars-form input[type="tel"],
+.mars-form input[type="color"],
+.mars-form input,
+.mars-form select,
+.mars-form textarea {
+  color: #000000;
+  /* color: rgba(0, 0, 0, 0.80); */
+  /* IE 8 supported */
+  font-family: inherit;
+  font-style: normal;
+  font-weight: normal;
+  font-size: inherit;
+  display: inline-block;
+  padding: 0.5em 1em;
+  border: 1px solid transparent;
+  background: white;
+  vertical-align: middle;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
+  outline: 0;
+}
+
+.mars-form input[type="text"]:focus,
+.mars-form input[type="password"]:focus,
+.mars-form input[type="email"]:focus,
+.mars-form input[type="url"]:focus,
+.mars-form input[type="date"]:focus,
+.mars-form input[type="month"]:focus,
+.mars-form input[type="time"]:focus,
+.mars-form input[type="datetime"]:focus,
+.mars-form input[type="datetime-local"]:focus,
+.mars-form input[type="week"]:focus,
+.mars-form input[type="number"]:focus,
+.mars-form input[type="search"]:focus,
+.mars-form input[type="tel"]:focus,
+.mars-form input[type="color"]:focus,
+.mars-form input:focus,
+.mars-form select:focus,
+.mars-form textarea:focus {
+  outline: 0;
+  border-color: #129fea;
+}
+
+.mars-form input[type="color"] {
+  padding: 0.2em 0.5em;
+}
+
+.mars-form input:not([type]) {
+  padding: 0.5em 0.6em;
+}
+
+.mars-form input:not([type]):focus {
+  outline: 0;
+  border-color: #dfdfdf;
+}
+
+.mars-form input:focus:invalid {
+  color: #b94a48;
+  border-color: #e9322d !important;
+}
+
+.mars-form textarea:focus:invalid {
+  color: #b94a48;
+  border-color: #e9322d !important;
+}
+/*# sourceMappingURL=input.css.map */

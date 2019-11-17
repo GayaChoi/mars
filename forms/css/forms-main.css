@@ -36,6 +36,13 @@ h1.forms-title {
     font-size: 1em;
 }
 
+.mars-form legend {
+    display: block;
+    padding: 0.3em 0;
+    margin-bottom: 0.3em;
+    color: #000000;
+    border-bottom: 1px solid #e5e5e5;
+}
 
 
 
