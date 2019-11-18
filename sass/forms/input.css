@@ -1,20 +1,7 @@
-.mars-form input[type="text"],
-.mars-form input[type="password"],
-.mars-form input[type="email"],
-.mars-form input[type="url"],
-.mars-form input[type="date"],
-.mars-form input[type="month"],
-.mars-form input[type="time"],
-.mars-form input[type="datetime"],
-.mars-form input[type="datetime-local"],
-.mars-form input[type="week"],
-.mars-form input[type="number"],
-.mars-form input[type="search"],
-.mars-form input[type="tel"],
-.mars-form input[type="color"],
-.mars-form input,
-.mars-form select,
-.mars-form textarea {
+.mars-form,
+input.mars-form {
+  width: 100%;
+  height: 2.5rem;
   color: #000000;
   /* color: rgba(0, 0, 0, 0.80); */
   /* IE 8 supported */
@@ -32,49 +19,96 @@
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
           box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
   outline: 0;
+  margin-bottom: 15px;
 }
 
-.mars-form input[type="text"]:focus,
-.mars-form input[type="password"]:focus,
-.mars-form input[type="email"]:focus,
-.mars-form input[type="url"]:focus,
-.mars-form input[type="date"]:focus,
-.mars-form input[type="month"]:focus,
-.mars-form input[type="time"]:focus,
-.mars-form input[type="datetime"]:focus,
-.mars-form input[type="datetime-local"]:focus,
-.mars-form input[type="week"]:focus,
-.mars-form input[type="number"]:focus,
-.mars-form input[type="search"]:focus,
-.mars-form input[type="tel"]:focus,
-.mars-form input[type="color"]:focus,
-.mars-form input:focus,
-.mars-form select:focus,
-.mars-form textarea:focus {
+.mars-form:active,
+input.mars-form:active {
   outline: 0;
-  border-color: #129fea;
+  border-color: #129FEA;
 }
 
-.mars-form input[type="color"] {
+.mars-form.is-not-rounded,
+input.mars-form.is-not-rounded {
+  border-radius: 0px;
+}
+
+.mars-form.is-little-rounded,
+input.mars-form.is-little-rounded {
+  border-radius: 0.5em;
+  padding: 0.5em 1em;
+}
+
+.mars-form.is-rounded,
+input.mars-form.is-rounded {
+  border-radius: 2em;
+  padding: 0.5em 1em;
+}
+
+.mars-form.is-color-blue:focus,
+input.mars-form.is-color-blue:focus {
+  outline: 0;
+  border-color: #006ecf;
+}
+
+.mars-form.is-color-green:focus,
+input.mars-form.is-color-green:focus {
+  outline: 0;
+  border-color: #50c878;
+}
+
+.mars-form.is-color-yellow:focus,
+input.mars-form.is-color-yellow:focus {
+  outline: 0;
+  border-color: #f8eb00;
+}
+
+.mars-form.is-color-pink:focus,
+input.mars-form.is-color-pink:focus {
+  outline: 0;
+  border-color: #df96c1;
+}
+
+.mars-form.is-color-purple:focus,
+input.mars-form.is-color-purple:focus {
+  outline: 0;
+  border-color: #a258e8;
+}
+
+input.mars-form[type="color"] {
   padding: 0.2em 0.5em;
 }
 
-.mars-form input:not([type]) {
-  padding: 0.5em 0.6em;
-}
-
-.mars-form input:not([type]):focus {
+input.mars-form:focus {
   outline: 0;
-  border-color: #dfdfdf;
+  border-color: #129FEA;
 }
 
-.mars-form input:focus:invalid {
+input.mars-form:focus:invalid {
   color: #b94a48;
-  border-color: #e9322d !important;
+  border-color: #e9322d;
 }
 
-.mars-form textarea:focus:invalid {
+input.mars-form:focus:invalid:focus {
   color: #b94a48;
-  border-color: #e9322d !important;
+  border-color: #e9322d;
+}
+
+input.mars-form[disabled] {
+  cursor: not-allowed;
+  background-color: #eaeded;
+  color: #cad2d3;
+}
+
+input.mars-form[readonly] {
+  background-color: #eeeeee;
+  /* menu hover bg color */
+  color: #777777;
+  /* menu text color */
+  border-color: #cccccc;
+}
+
+label.forms-label {
+  margin: 0.5em 0.75em 0.5em;
 }
 /*# sourceMappingURL=input.css.map */

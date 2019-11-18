@@ -1,9 +1,8 @@
-@mixin color($name) {
-    border-color: $name; 
-}
-
-@mixin base() {
-    color: #000000;
+.mars-form,
+input.mars-form {
+    width: 100%;
+    height: 2.5rem;
+    color: #000000;  
     /* color: rgba(0, 0, 0, 0.80); */ /* IE 8 supported */
     font-family: inherit;
     font-style: normal;
@@ -17,56 +16,90 @@
     box-sizing: border-box;
     box-shadow: rgba(0,0,0,0.1) 0px 2px 4px 0px;
     outline: 0;
+    margin-bottom: 15px;
 
-    &:focus {
+    &:active {
         outline: 0;
-        @include color(rgb(18,159,234));
-    }
-}
-
-.mars-form {
-    input[type="text"],
-    input[type="password"],
-    input[type="email"],
-    input[type="url"],
-    input[type="date"],
-    input[type="month"],
-    input[type="time"],
-    input[type="datetime"],
-    input[type="datetime-local"],
-    input[type="week"],
-    input[type="number"],
-    input[type="search"],
-    input[type="tel"],
-    input[type="color"],
-    input,
-    select,
-    textarea {
-        @include base;
+        border-color: #129FEA;  
     }
 
-    input[type="color"] {
+    &.is-not-rounded {
+        border-radius: 0px;
+    }
+
+    &.is-little-rounded {
+        border-radius: 0.5em;
+        padding: 0.5em 1em;
+    }
+
+    &.is-rounded {
+        border-radius: 2em;
+        padding: 0.5em 1em;
+    }
+
+    &.is-color-blue:focus {
+        outline: 0;
+        border-color: rgb(0,110,207);
+    }
+
+    &.is-color-green:focus {
+        outline: 0;
+        border-color: rgb(80,200,120);
+    }
+
+    &.is-color-yellow:focus {
+        outline: 0;
+        border-color: rgb(248,235,0);
+    }
+
+    &.is-color-pink:focus {
+        outline: 0;
+        border-color: rgb(223,150,193);
+    }
+
+    &.is-color-purple:focus {
+        outline: 0;
+        border-color: rgb(162,88,232);
+    }
+} 
+
+input.mars-form {
+    &[type="color"] {
         padding: 0.2em 0.5em;
     }
 
-    input {
-        &:not([type]) {
-            padding: 0.5em 0.6em;
-        }
+    &:focus {
+        outline: 0;
+        border-color: #129FEA;
+    }
 
-        &:not([type]):focus {
-            outline: 0;
-            border-color: rgb(223, 223, 223); 
-        }
-
-        &:focus:invalid {
-            color: #b94a48;
-            border-color: #e9322d !important;
-        }
-    } 
-
-    textarea:focus:invalid {
+    &:focus:invalid {
         color: #b94a48;
-        border-color: #e9322d !important;        
+        border-color: #e9322d;
+    }
+
+    &:focus:invalid:focus {
+        color: #b94a48;
+        border-color: #e9322d;
+    }
+
+    &[disabled] {
+        cursor: not-allowed;
+        background-color:rgb(234,237,237);
+        color: rgb(202,210,211); 
+    }
+    
+    &[readonly] {
+        background-color: #eeeeee; /* menu hover bg color */
+        color: #777777; /* menu text color */
+        border-color: #cccccc;
     }
 }
+
+label.forms-label {
+    margin: 0.5em 0.75em 0.5em;
+}
+
+
+
+

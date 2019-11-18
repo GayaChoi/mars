@@ -315,6 +315,12 @@
     height: 1.5em;
 }
 
+
+/* not rounded */
+.mars-button.is-not-rounded {
+    border-radius: 0px;
+}
+
 /* rounded button */
 .mars-button.is-rounded {
     border-radius: 2em;
@@ -330,7 +336,7 @@
     color: rgba(18, 159, 234, 1); /* IE 8 supported */
     border-radius: 0px;
     transition: all 0.2s ease-in-out 0s;
-    border: none;
+    border: none !important;
     box-shadow: none;
 }
 
@@ -369,7 +375,7 @@
 .mars-button.is-outlined.is-color-yellow,
 .mars-button.is-outlined.is-color-pink,
 .mars-button.is-outlined.is-color-purple {
-    border: none;
+    border: none !important;
     box-shadow: none; 
 }
 

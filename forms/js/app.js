@@ -14,14 +14,14 @@ var func = {
         checkbox: {
             check: 
               function(index) {
-                 if ($('.mars-checkbox').eq(index).is(':checked') || $('.mars-checkbox').eq(index).is(':disabled')) {
+                 if ($('.mars-form-checkbox .is-checked').eq(index).is(':checked') || $('.mars-form-checkbox .is-checked').eq(index).is(':disabled')) {
                       $('.checkbox-check-icon').eq(index).html(icon.checkbox);
                   }       
               },
             
             click: 
               function(index) {
-                if ($('.mars-checkbox').eq(index).is(':checked')) {
+                if ($('.mars-form-checkbox .is-checked').eq(index).is(':checked')) {
                     $('.checkbox-check-icon').eq(index).html(icon.checkbox); 
                 } else {
                     $('.checkbox-check-icon').eq(index).html('');
@@ -32,14 +32,14 @@ var func = {
         radio: {
             check: 
               function(index) {
-                 if ($('.mars-radio').eq(index).is(':checked') || $('.mars-radio').eq(index).is(':disabled')) {
+                 if ($('.mars-form-radio .is-checked').eq(index).is(':checked') || $('.mars-form-radio .is-checked').eq(index).is(':disabled')) {
                     $('.radio-check-icon').eq(index).html(icon.radio);
                  }  
               },
             
             click: 
               function(index) {
-                if ($('.mars-radio').eq(index).is(':checked')) {
+                if ($('.mars-form-radio .is-checked').eq(index).is(':checked')) {
                   $('.radio-check-icon').eq(index).html(icon.radio); 
                 } else {
                   $('.radio-check-icon').eq(index).html('');
@@ -50,23 +50,21 @@ var func = {
 
 
 /* checkbox */
-
-$('.mars-checkbox').each(function(index) { 
+$('.mars-form-checkbox .is-checked').each(function(index) { 
     /* 체크가 되었는 지 확인 */
     func.checkbox.check(index);
     
-    $('.mars-checkbox').eq(index).on('click',function() {
+    $('.mars-form-checkbox .is-checked').eq(index).on('click',function() {
         func.checkbox.click(index);
     });
 });
 
 /* radio */
-
-$('.mars-radio').each(function(index) { 
+$('.mars-form-radio .is-checked').each(function(index) { 
     /* 체크가 되었는 지 확인 */
     func.radio.check(index);
 
-    $('.mars-radio').eq(index).on('click',function() {
+    $('.mars-form-radio .is-checked').eq(index).on('click',function() {
         func.radio.click(index);
     });
 });
