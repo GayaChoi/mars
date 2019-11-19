@@ -35,12 +35,15 @@
       padding: 0.2em 0.5em;
   }
 
-  .mars-form:active, input.mars-form:active, select.mars-form:active, textarea.mars-form:active,
-  input.mars-form:focus, select.mars-form:focus, textarea.mars-form:focus {
+  .mars-form:active, 
+  input.mars-form:active, input.mars-form:focus,
+  select.mars-form:active, select.mars-form:focus, 
+  textarea.mars-form:active, textarea.mars-form:focus {
       outline: 0;
       border-color: #129FEA;
   }
   
+  .mars-form:focus:invalid, 
   input.mars-form:focus:invalid,
   textarea.mars-form:focus:invalid,
   select.mars-form:focus:invalid {
@@ -48,6 +51,7 @@
       border-color: #e9322d;
   }
 
+  .mars-form:focus:invalid,
   input.mars-form:focus:invalid:focus,
   textarea.mars-form:focus:invalid:focus,
   select.mars-form:focus:invalid:focus {
@@ -90,16 +94,14 @@
   select.mars-form.is-little-rounded,
   textarea.mars-form.is-little-rounded {   
       border-radius: 0.5em;
-      padding: 0.5em 1em;
   }
   
   /* round */
-  .mars-form.is-rounded
+  .mars-form.is-rounded,
   input.mars-form.is-rounded,
   select.mars-form.is-rounded,
   textarea.mars-form.is-rounded {   
       border-radius: 2em;
-      padding: 0.5em 1em;
   }
   
   /* color */
@@ -144,33 +146,38 @@
   }
   
   /****** sizing area *****/
-  
-  /* input sizing */
-  input.mars-form.is-size-1 {
-      width: 100%;
+  .mars-form.is-size-1,
+  input.mars-form.is-size-1 { 
+      width: 100%; 
   }
   
-  input.mars-form.is-size-3-4 {
-      width: 75%;
+  .mars-form.is-size-3-4,
+  input.mars-form.is-size-3-4 { 
+      width: 75%; 
   }
   
-  input.mars-form.is-size-2-3 {
-      width: 66%;
+  .mars-form.is-size-2-3,
+  input.mars-form.is-size-2-3 { 
+      width: 66%; 
   }
   
-  input.mars-form.is-size-1-2 {
-      width: 50%;
+  .mars-form.is-size-1-2,
+  input.mars-form.is-size-1-2 { 
+      width: 50%; 
   }
   
-  input.mars-form.is-size-1-3 {
-      width: 33%;
+  .mars-form.is-size-1-3,
+  input.mars-form.is-size-1-3 { 
+      width: 33%; 
   }
   
-  input.mars-form.is-size-1-4 {
-      width: 25%;
+  .mars-form.is-size-1-4,
+  input.mars-form.is-size-1-4 { 
+      width: 25%; 
   }
   
   /* default */
+  .mars-form.is-underline,
   input.mars-form.is-underline,
   select.mars-form.is-underline,
   textarea.mars-form.is-underline {
@@ -183,6 +190,7 @@
       transition: all 0.2s ease-in-out 0s;
   }
   
+  .mars-form.is-underline:focus,
   input.mars-form.is-underline:focus,
   select.mars-form.is-underline:focus,
   textarea.mars-form.is-underline:focus {
@@ -195,6 +203,7 @@
   } 
   
   /* color size input */
+  .mars-form.is-underline.is-color-blue:focus,
   input.mars-form.is-underline.is-color-blue:focus,
   select.mars-form.is-underline.is-color-blue:focus,
   textarea.mars-form.is-underline.is-color-blue:focus {
@@ -206,6 +215,7 @@
       box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
   } 
   
+  .mars-form.is-underline.is-color-green:focus,
   input.mars-form.is-underline.is-color-green:focus,
   select.mars-form.is-underline.is-color-green:focus,
   textarea.mars-form.is-underline.is-color-green:focus {
@@ -217,6 +227,7 @@
       box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
   }
   
+  .mars-form.is-underline.is-color-yellow:focus,
   input.mars-form.is-underline.is-color-yellow:focus,
   select.mars-form.is-underline.is-color-yellow:focus,
   textarea.mars-form.is-underline.is-color-yellow:focus {
@@ -228,6 +239,7 @@
       box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
   }
   
+  .mars-form.is-underline.is-color-pink:focus,
   input.mars-form.is-underline.is-color-pink:focus,
   select.mars-form.is-underline.is-color-pink:focus,
   textarea.mars-form.is-underline.is-color-pink:focus {
@@ -239,6 +251,7 @@
       box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
   }
   
+  .mars-form.is-underline.is-color-purple:focus,
   input.mars-form.is-underline.is-color-purple:focus,
   select.mars-form.is-underline.is-color-purple:focus,
   textarea.mars-form.is-underline.is-color-purple:focus {
