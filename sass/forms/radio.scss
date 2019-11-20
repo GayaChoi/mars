@@ -1,0 +1,80 @@
+@import './color';
+@import './input-box';
+
+/* checkbox-radio */
+.mars-form-radio {
+    @include box();
+
+    & > .is-checked {
+        @include check(50%);
+    }
+
+    /* defualt color icon */
+    & > .radio-check-icon {
+        @include checkIcon();        
+        /* radio-check-icon color */
+        & > svg {
+            fill: $defualt-color;
+        }
+    }
+
+    & > input {
+        border-width: 3px;
+        border-style: solid;
+
+        &[type="checkbox"] {
+            margin: 3px 3px 3px 4px;
+            padding: initial;       
+        }
+
+        /* disabled attribute */
+        &:disabled {
+            color: #949494;
+            background-color:#eaeded;
+            border-color: #bebebe;
+            border-width: 3px;
+            border-style: solid;
+        }
+
+        &:not(:disabled) {
+            border-color: rgb(233, 233, 233);
+        }
+
+        /* defualt hover */
+        &:not(:disabled):hover {
+            border-color: $defualt-color;
+        }
+        
+        /* defualt color checked event */
+        &:not(:disabled):checked {
+            border-color: $defualt-color; 
+        }
+
+        &:disabled + .radio-check-icon svg {
+            fill: rgb(204, 204, 204);
+            cursor: not-allowed;
+        }
+    }
+
+    @each $value in $color-value {
+        &.is-color-#{$value} > input:not(:disabled):hover, 
+        &.is-color-#{$value} > input:not(:disabled):checked {
+            border-color: map-get($color,#{$value});
+        }
+
+        &.is-color-#{$value} > .radio-check-icon svg {               
+             fill: map-get($color,#{$value});
+        }
+    }
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+/* label attribute */
+.radio-label {
+    font-size: 14px;
+    margin-left: 10px;
+    cursor: pointer;    
+}

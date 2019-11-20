@@ -1,3 +1,4 @@
+/* default */
 .mars-form,
 input.mars-form,
 select.mars-form,
@@ -22,6 +23,11 @@ textarea.mars-form {
           box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
   outline: 0;
   margin-bottom: 15px;
+  /* default active, focus */
+  /* color focus */
+  /* underline */
+  /* rounded */
+  /* size */
 }
 
 .mars-form:active, .mars-form:focus,
@@ -184,17 +190,6 @@ textarea.mars-form.is-rounded {
   border-radius: 2em;
 }
 
-.mars-form:focus:invalid, .mars-form:focus:invalid:focus,
-input.mars-form:focus:invalid,
-input.mars-form:focus:invalid:focus,
-select.mars-form:focus:invalid,
-select.mars-form:focus:invalid:focus,
-textarea.mars-form:focus:invalid,
-textarea.mars-form:focus:invalid:focus {
-  color: #b94a48;
-  border-color: #e9322d;
-}
-
 .mars-form.is-size-1,
 input.mars-form.is-size-1,
 select.mars-form.is-size-1,
@@ -237,6 +232,7 @@ textarea.mars-form.is-size-1-4 {
   width: 25%;
 }
 
+/* type */
 input.mars-form[disabled],
 textarea.mars-form[disabled],
 select.mars-form[disabled] {
@@ -257,10 +253,17 @@ input.mars-form[type="color"] {
   padding: 0.2em 0.5em;
 }
 
+input.mars-form:focus:invalid, input.mars-form:focus:invalid:focus {
+  color: #b94a48;
+  border-color: #e9322d;
+}
+
+/* textarea */
 textarea.mars-form {
   height: calc(2.5rem * 5);
 }
 
+/* label */
 label.forms-label {
   margin: 0.5em 0.75em 0.5em;
 }

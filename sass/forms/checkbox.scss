@@ -1,0 +1,83 @@
+@import './color';
+@import './input-box';
+
+/* default */
+.mars-form-checkbox {
+    @include box();
+
+    & > .is-checked {
+        @include check(3px);
+    }
+
+    & > .checkbox-check-icon {
+        @include checkIcon();
+        color: #ffffff;
+        & > svg {
+            fill: #ffffff;
+        }    
+    }
+
+    /* defualt color checked event */
+    & > input:not(:disabled):checked {
+        background-color: $defualt-color;
+        border-color: $defualt-color; 
+    }
+
+    & > input:disabled + .checkbox-check-icon svg {
+        fill: rgb(204, 204, 204);
+        cursor: not-allowed;
+    }
+    
+    /* hover,checked event */
+    @each $value in $color-value {
+        &.is-color-#{$value} > input:not(:disabled):hover {
+            border-color: map-get($color,#{$value});
+        }
+
+        &.is-color-#{$value} > input:checked {
+             background-color: map-get($color,#{$value});               
+             border-color: map-get($color,#{$value});
+        }
+    }
+
+    & > input {
+        border-width: 3px;
+        border-style: solid;
+
+        &[type="checkbox"] {
+            margin: 3px 3px 3px 4px;
+            padding: initial;       
+        }
+
+        /* disabled attribute */
+        &:disabled {
+            color: #949494;
+            background-color:#eaeded;
+            border-color: #bebebe;
+            border-width: 3px;
+            border-style: solid;
+        }
+
+        &:not(:disabled) {
+            border-color: rgb(233, 233, 233);
+        }
+
+        /* defualt hover */
+        &:not(:disabled):hover {
+            border-color: $defualt-color;
+        }
+    }
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+/* label attribute */
+.checkbox-label {
+    font-size: 14px;
+    margin-left: 10px;
+    cursor: pointer;    
+}
+
+

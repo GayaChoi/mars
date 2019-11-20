@@ -35,23 +35,21 @@
       padding: 0.2em 0.5em;
   }
 
-  .mars-form:active, 
+  .mars-form:active, .mars-form:focus,
   input.mars-form:active, input.mars-form:focus,
-  select.mars-form:active, select.mars-form:focus, 
+  select.mars-form:active, select.mars-form:focus,  
   textarea.mars-form:active, textarea.mars-form:focus {
       outline: 0;
       border-color: #129FEA;
   }
   
-  .mars-form:focus:invalid, 
-  input.mars-form:focus:invalid,
+  input.mars-form:focus:invalid, 
   textarea.mars-form:focus:invalid,
   select.mars-form:focus:invalid {
       color: #b94a48;
       border-color: #e9322d;
   }
 
-  .mars-form:focus:invalid,
   input.mars-form:focus:invalid:focus,
   textarea.mars-form:focus:invalid:focus,
   select.mars-form:focus:invalid:focus {
@@ -424,7 +422,8 @@
       border-style: solid;
       border-image: initial;
       transition: all 0.2s ease-in-out 0s;
-      border-color: rgb(229, 229, 229);
+      border-color: rgb(223, 223, 223);
+      cursor: pointer;
   }
   
   .mars-form-radio .radio-check-icon {
@@ -437,10 +436,6 @@
   .mars-form-radio input:disabled  + .radio-check-icon svg {
       fill: rgb(204,204,204);
       cursor: not-allowed;
-  }
-  
-  .mars-form-radio .radio-check-icon circle:not(svg) {
-      transform-origin: 0px 0px;
   }
   
   /* disabled attribute */
