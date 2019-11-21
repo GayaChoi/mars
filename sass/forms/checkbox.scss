@@ -1,5 +1,5 @@
 @import './color';
-@import './input-box';
+@import './mixins';
 
 /* default */
 .mars-form-checkbox {
@@ -17,10 +17,10 @@
         }    
     }
 
-    /* defualt color checked event */
+    /* default color checked event */
     & > input:not(:disabled):checked {
-        background-color: $defualt-color;
-        border-color: $defualt-color; 
+        background-color: $default-color;
+        border-color: $default-color; 
     }
 
     & > input:disabled + .checkbox-check-icon svg {
@@ -62,9 +62,9 @@
             border-color: rgb(233, 233, 233);
         }
 
-        /* defualt hover */
+        /* default hover */
         &:not(:disabled):hover {
-            border-color: $defualt-color;
+            border-color: $default-color;
         }
     }
 }

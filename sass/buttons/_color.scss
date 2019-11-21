@@ -1,19 +1,22 @@
 /* common color */
-$default-color: rgb(18, 159, 234);
+$default-color: rgb(18,159,234);
 $blue-color: rgb(0,110,207);
 $green-color: rgb(80,200,120);
 $yellow-color: rgb(248,235,0);
 $pink-color: rgb(223,150,193);
 $purple-color: rgb(162,88,232);
 $disabled-color: rgb(202,210,211);
-$read-only-color:  rgb(238,238,238);
+$read-only-color:rgb(238,238,238);
 
 
 $color-value: "blue","green","yellow","pink","purple";
 $color: (
-    "blue": $blue-color,
-    "green": $green-color,
-    "yellow": $yellow-color,
-    "pink": $pink-color,
-    "purple": $purple-color
-);
+   "blue": $blue-color,
+   "green": $green-color,
+   "yellow": $yellow-color,
+   "pink": $pink-color,
+   "purple": $purple-color
+);  
+
+
+

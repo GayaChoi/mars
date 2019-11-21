@@ -1,5 +1,6 @@
 @import './color';
-@import './input-box';
+@import './mixins';
+
 
 /* checkbox-radio */
 .mars-form-radio {
@@ -9,12 +10,12 @@
         @include check(50%);
     }
 
-    /* defualt color icon */
+    /* default color icon */
     & > .radio-check-icon {
         @include checkIcon();        
         /* radio-check-icon color */
         & > svg {
-            fill: $defualt-color;
+            fill: $default-color;
         }
     }
 
@@ -40,19 +41,20 @@
             border-color: rgb(233, 233, 233);
         }
 
-        /* defualt hover */
+        /* default hover */
         &:not(:disabled):hover {
-            border-color: $defualt-color;
+            border-color: $default-color;
         }
         
-        /* defualt color checked event */
+        /* default color checked event */
         &:not(:disabled):checked {
-            border-color: $defualt-color; 
+            border-color: $default-color; 
         }
 
-        &:disabled + .radio-check-icon svg {
-            fill: rgb(204, 204, 204);
-            cursor: not-allowed;
+        &:disabled 
+          + .radio-check-icon svg {
+              fill: rgb(204, 204, 204);
+              cursor: not-allowed;
         }
     }
 

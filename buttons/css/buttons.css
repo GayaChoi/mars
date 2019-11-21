@@ -94,31 +94,24 @@
     box-shadow: 0px 10px 25px rgba(162, 88, 232, 0.85);
 }
 
-
-.mars-button.is-focused,
-.mars-button:focus {
+.mars-button:focus,
+.mars-button.is-focused {
     outline: 0;
     border: 2px solid rgba(18, 159, 234, 0.5);
 }
 
-.mars-button.is-pressed,
-.mars-button:active {
+.mars-button:active,
+.mars-button.is-actived,
+.mars-button.is-pressed {
     outline: 0;
     box-shadow: 0 0 0 1px rgba(0,0,0, 0.12) inset;  
 } 
 
 .mars-button[disabled],
-.mars-button.is-disabled,
-.mars-button.is-disabled:hover,
-.mars-button.is-disabled:focus,
-.mars-button.is-disabled:active {
+.mars-button.is-disabled {
     padding: calc(1em - 0.2px);
     border: none;
     background-image: none;
-    /* TODO: csslint ignore 분석해보기 */
-    /* csslint ignore:start */
-    filter: alpha(opacity=40);
-    /* csslint ignore:end */
     opacity: 1;
     cursor: not-allowed;
     box-shadow: none;

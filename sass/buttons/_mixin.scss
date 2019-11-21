@@ -1,0 +1,12 @@
+// color button
+@mixin button-color(
+    $background-color,
+    $outline: 0,
+    $border-color: $background-color,
+    $box-shadow: 0px 10px 25px rgba($background-color, 0.5)
+) {
+    outline: $outline;
+    background-color: $background-color;
+    border-color: $border-color;
+    box-shadow: $box-shadow;
+}
