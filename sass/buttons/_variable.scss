@@ -1,0 +1,48 @@
+/* button variable */
+$button-width: 10rem !default;
+$button-font-family: inherit !default;
+$button-font-size: 1rem !default;
+$button-font-weight: 500 !default;
+$button-border-width: 2px !default;
+$button-border-image: initial !default;
+$button-text-decoration: none !default;
+$button-margin-bottom: 30px !default;
+$button-transition: all 0.2s ease-in-out 0s !default;
+$button-outline: 0 !default;
+$button-box-shadow-size: 0px 10px 25px !default; 
+$button-background-size: 400% 400% !default;
+$button-padding-vertical: 0.85em !default;
+$button-padding-horizontal: 1em !default;
+$button-none-border: none !default;
+$button-none-box-shadow: none !default;
+
+/* button actived */
+$button-active-box-shadow-size: 0 0 0 1px !default;
+
+/* button hovered */
+$button-hovered-opacity: 0.75 !default;
+
+/* button disabled variable */
+$button-disabled-opacity: 1 !default;
+$button-disabled-background-image: none !default;
+
+
+/* button size variable */
+$button-small: 0.75rem !default;
+$button-medium: 1.25rem !default;
+$button-normal: 1rem !default;
+$button-large: 1.5rem !default;
+
+/* button radius size */
+$button-radius: 4px !default;
+$button-radius-md: 1em !default;
+$button-radius-lg: 2em !default;
+
+/* size maps */
+$sizes: "small","medium","normal","large";
+$size: (
+    "small": $button-small,
+    "medium": $button-medium,
+    "normal": $button-normal,
+    "large": $button-large
+);

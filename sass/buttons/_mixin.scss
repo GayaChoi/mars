@@ -1,12 +1,95 @@
 // color button
 @mixin button-color(
     $background-color,
-    $outline: 0,
+    $outline: $button-outline,
     $border-color: $background-color,
-    $box-shadow: 0px 10px 25px rgba($background-color, 0.5)
+    $box-shadow: $button-box-shadow-size rgba($background-color, 0.5)
 ) {
     outline: $outline;
     background-color: $background-color;
     border-color: $border-color;
     box-shadow: $box-shadow;
+}
+
+@mixin button-loading() {
+    /* loading button */
+    @-webkit-keyframes spinAround {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(359deg);
+        }
+    }
+
+    @keyframes spinAround {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+           transform: rotate(359deg);
+        }
+    }
+}
+
+@mixin button-anim() {
+    @-webkit-keyframes bgAnim {
+        0% {
+            background-position: 0% 50%;
+        }
+        
+        50% {
+            background-position: 100% 50%;
+        }
+    }
+
+    @keyframes bgAnim {
+        0% {
+            background-position: 0% 50%;
+        }
+        
+        50% {
+            background-position: 100% 50%;
+        }  
+    }
+}
+
+@mixin icon-button() {
+    display: inline-flex;
+    height: 2.5em;
+    justify-content: space-between;
+    line-height: 1.5;
+    padding-bottom: calc(0.5em - 1px);
+    padding-left: calc(0.78em - 1px);
+    padding-right: calc(0.75em - 1px);
+    padding-top: calc(0.5em - 1px);
+    position: relative;
+    vertical-align: top;
+}
+
+@mixin outlined-button(
+    $name,
+    $outline: 2px solid map-get($colors,$name),
+    $color: map-get($colors,$name),
+    $border: $button-none-border,
+    $box-shadow: $button-none-box-shadow
+) {
+    outline: $outline;
+    color: $color;
+    border: $border;
+    box-shadow: $box-shadow;
+}
+
+@mixin modal-button(
+    $name,
+    $outline: $button-outline,
+    $opacity: 1, 
+    $box-shadow: $button-none-box-shadow,
+    $color: $button-color, 
+    $border: 2px solid $name 
+) {
+    opacity: $opacity; 
+    border: $border;
+    box-shadow: $box-shadow;
+    outline: $outline;
 }

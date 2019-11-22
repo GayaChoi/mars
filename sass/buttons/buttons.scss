@@ -1,0 +1,258 @@
+@import './color';
+@import './mixin';
+@import './variable';
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+/* default style */
+.mars-button,
+.mars-button-icon {
+    width: $button-width;
+    font-family: $button-font-family;
+    font-size: $button-font-size;
+    font-weight: $button-font-weight;
+    border: 2px solid $border;
+    border-width: $button-border-width;
+    border-image: $button-border-image;
+    padding: $button-padding-vertical $button-padding-horizontal;
+    background-color: $default;
+    text-decoration: $button-text-decoration;
+    border-radius: $button-radius;
+    margin-bottom: $button-margin-bottom;
+    cursor: pointer;
+    transition: $button-transition;
+    color: $button-color;
+    outline: $button-outline;
+    text-align: center;
+    box-shadow: $button-box-shadow-size rgba($default, 0.5);
+    
+
+    /* button, icon button color */
+    @each $name in $color-names {
+        &.is-color-#{$name} {
+            @include button-color(map-get($colors,#{$name})); 
+        }
+    }
+    
+    /* default hovered */
+    &.is-hovered,
+    &:not(.is-outlined):hover {
+        opacity: $button-hovered-opacity;
+        cursor: pointer;
+        border-color: $button-hovered-color;      
+    }
+
+    /* default hovered box-shadow */
+    &.is-hovered,
+    &:hover {
+        box-shadow: $button-box-shadow-size rgba($default, 0.85);  
+    }
+      
+    /* color hovered */
+    @each $name in $color-names {
+        &.is-hovered.is-color-#{$name},
+        &.is-color-#{$name}:hover {
+           box-shadow: $button-box-shadow-size rgba(map-get($colors,#{$name}), 0.85);
+        }
+    }
+
+    /* focused */
+    &:focus,
+    &.is-focused {
+        outline: $button-outline;
+        border: 2px solid rgba($default, 0.5);
+    }
+     
+    /* actived, pressed */
+    &:active, 
+    &.is-actived,
+    &.is-pressed {
+       outline: $button-outline;
+       box-shadow: $button-active-box-shadow-size rgba($normal,0.12) inset; 
+    }
+
+    /* disabled */
+    &[disabled],
+    &.is-disabled {
+        border: $button-none-border;
+        background-image: $button-disabled-background-image;
+        opacity: 1;
+        cursor: not-allowed;
+        box-shadow: $button-none-box-shadow;
+        background-color: $button-disabled-background-color;
+        color: $disabled;
+        pointer-events: none;
+    }
+    
+
+    /* gradient button */
+    &.is-gradient {
+        border: $button-none-border;
+        background-image: linear-gradient(90deg,$gradient-default,$default);
+        box-shadow: $button-box-shadow-size rgba($default, 0.65);  
+        
+        @each $name in $color-names {
+            &.is-color-#{$name} {
+                background-image: linear-gradient(90deg,map-get($gradient-colors,#{$name}),map-get($colors,#{$name}));
+                box-shadow: $button-box-shadow-size  rgba(map-get($colors,#{$name}),0.65);
+            } 
+        }
+    }
+    
+    /* anim button */
+    &.is-anim {
+        @include button-anim();
+        animation: bgAnim 3s linear infinite;
+        background-size: $button-background-size;
+    }
+    
+    /* button size */
+    @each $value in $sizes {
+       &.is-#{$value} {
+           font-size: map-get($size,#{$value});
+       }
+    }
+    
+    /* state color button */
+    @each $color in $state-color-names {
+        &.is-#{$color} {
+            @include button-color(map-get($state-colors,#{$color}));
+        }     
+    }
+
+    
+    /* normal rounded */
+    &.is-normal-rounded {
+        border-radius: $button-radius;
+    }
+
+    /* little rounded */
+    &.is-little-rounded {
+        border-radius: $button-radius-md;
+    }
+
+    /* rounded button */
+    &.is-rounded {
+        border-radius: $button-radius-lg;
+    }
+
+    /* button outlined */
+    &.is-outlined {
+        opacity: 1;
+        outline: 2px solid $default;
+        border-width: $button-border-width;
+        background-color: $border;  
+        color: $default;
+        border-radius: 0px;
+        transition: $button-transition;
+        border: $button-none-box-shadow;
+        box-shadow: $button-none-box-shadow;
+
+        /* button outlined color */
+        @each $name in $color-names {
+            &.is-outlined.is-color-#{$name} {
+                @include outlined-button(#{$name}); 
+            }
+        }
+
+        /* button outlined state color */
+        @each $name in $state-color-names {
+            &.is-outlined.is-#{$name} {
+                @include outlined-button(#{$name});
+            }
+        }
+    }
+   
+    /* modals button */
+    &.is-cancel {
+        background-color: $button-color;
+        border: 2px solid $button-modal-cancel-border;
+        border-radius: $button-border-width;
+        width: 6.5rem;
+        height: 3.5rem;
+        color: $button-modal-cancel-color;
+        box-shadow: $button-none-box-shadow;
+
+        &:hover, &.is-hovered, 
+        &:focus, &.is-focused, 
+        &:active, &.is-actived,
+        &.is-pressed {
+            @include modal-button($button-modal-cancel-border);
+        }
+    }
+
+    &.is-submit {
+        background-color: $button-modal-submit-color;
+        border: 2px solid $border;
+        color: $button-color;
+        box-shadow: $button-none-box-shadow;
+
+        &:hover, &.is-hovered,
+        &:focus, &.is-focused,  
+        &:active, &.is-actived,
+        &.is-pressed {
+            @include modal-button($border);
+        }
+    }
+}
+
+.mars-button-icon {
+    @include icon-button();
+
+    /* icon button icon size */
+    &.icon,
+    &.icon.is-small,
+    &.icon.is-normal,
+    &.icon.is-medium,
+    &.icon.is-large {
+        width: 1.5em;
+        height: 1.5em;
+    }
+}
+
+/* button loading */
+.mars-button.is-loading {
+        @include button-loading();
+
+        cursor: default;
+        color: transparent !important;
+        padding-bottom: calc(1em - 1px);
+        padding-left: $button-padding-vertical;
+        padding-right: $button-padding-vertical;
+        padding-top: calc(1em - 1px);
+        text-align: center;
+        white-space: nowrap;
+        pointer-events: none;
+        height: 2.5em;
+        font-size: $button-font-size;
+        line-height: 2.5em;
+        align-items: center;
+        position: relative;
+        
+        /* after */
+        &:after {
+            -webkit-animation: spinAround 500ms infinite linear;
+            animation: spinAround 500ms infinite linear;  
+            border: 2px solid #dbdbdb;
+            border-radius: 20000px;
+            border-right-color: $border;
+            border-top-color: $border;
+            content: "";
+            display: block;
+            width: 1em;
+            height: 1em;
+            left: calc(50% - (1em / 2));
+            top: calc(45% - (1em / 2));
+            position: absolute !important;
+        }
+    }
+
+
+
+
+
+

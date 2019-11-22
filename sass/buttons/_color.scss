@@ -1,22 +1,68 @@
 /* common color */
-$default-color: rgb(18,159,234);
-$blue-color: rgb(0,110,207);
-$green-color: rgb(80,200,120);
-$yellow-color: rgb(248,235,0);
-$pink-color: rgb(223,150,193);
-$purple-color: rgb(162,88,232);
-$disabled-color: rgb(202,210,211);
-$read-only-color:rgb(238,238,238);
+$default: rgb(18,159,234) !default;
+$blue: rgb(0,110,207) !default;
+$green: rgb(80,200,120) !default;
+$yellow: rgb(248,235,0) !default;
+$pink: rgb(223,150,193) !default;
+$purple: rgb(162,88,232) !default;
+$disabled: rgb(202,210,211) !default;
+$read-only:rgb(238,238,238) !default;
+$normal: rgb(0,0,0) !default;
+$border: transparent !default;
+$button-color:#ffffff !default;
+
+/* button gradient color */
+$gradient-default: #1233ea !default;
+$gradient-blue: #002a50 !default;
+$gradient-green: #319b54 !default;
+$gradient-yellow:  #aca300 !default;
+$gradient-pink: #c74792 !default;
+$gradient-purple: #6217a9 !default;   
 
 
-$color-value: "blue","green","yellow","pink","purple";
-$color: (
-   "blue": $blue-color,
-   "green": $green-color,
-   "yellow": $yellow-color,
-   "pink": $pink-color,
-   "purple": $purple-color
+/* state color */
+$primary: #00B0FF !default;
+$success: #00B248 !default;
+$warning: #FF9D3F !default;
+$error: #FF5722 !default;
+
+/* button hovered color */
+$button-hovered-color: transparent !default;
+
+/* button disabled color */
+$button-disabled-background-color: rgb(234,237,237) !default; 
+
+/* modal button color */
+$button-modal-cancel-border: #D3D3D3 !default;
+$button-modal-cancel-color:rgba(139,139,139,0.83) !default;
+$button-modal-submit-color: #005CFF !default; 
+
+/* color maps */
+$color-names: "blue","green","yellow","pink","purple";
+$colors: (
+   "blue": $blue,
+   "green": $green,
+   "yellow": $yellow,
+   "pink": $pink,
+   "purple": $purple
 );  
 
+/* button gradient color maps */
+$gradient-colors: (
+   "blue": $gradient-blue, 
+   "green": $gradient-green, 
+   "yellow": $gradient-yellow, 
+   "pink": $gradient-pink,
+   "purple": $gradient-purple 
+);
+
+/* state color maps */
+$state-color-names: "primary","success","warning","error";
+$state-colors: (
+   "primary": $primary,
+   "success": $success,
+   "warning": $warning,
+   "error": $error
+);  
 
 

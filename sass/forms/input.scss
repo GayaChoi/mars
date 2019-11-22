@@ -23,7 +23,8 @@ $border-radius: (
     @include input();
 
     /* default active, focus */
-    &:active, &.is-actived, &:focus, &.is-focused {
+    &:active, &.is-actived, 
+    &:focus, &.is-focused {
         border-color: $default-color;      
     }
 
@@ -39,7 +40,8 @@ $border-radius: (
     /* default color active, focus */
     @each $value in $color-value {
         &.is-color-#{$value} {
-           &:focus, &.is-focused, &:active, &.is-actived {
+           &:focus, &.is-focused,
+            &:active, &.is-actived {
               border-color: map-get($color, #{$value});   
            }
         }          
@@ -86,7 +88,8 @@ $border-radius: (
     }
 
     /* underline default color focus,active */
-    &:active, &.is-actived, &:focus, &.is-focused {
+    &:active, &.is-actived, 
+    &:focus, &.is-focused {
         @include underline($default-color);
     } 
 
