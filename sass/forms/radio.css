@@ -1,4 +1,14 @@
+/* input color */
 /* common color */
+/* input disabled color */
+/* input readonly color */
+/* input checkbox, radio color */
+/* input checkbox radio disabled color */
+/* input checkbox disabled color */
+/* color maps */
+/* input checkbox & radio */
+/* input size variable */
+/* input size maps */
 /* checkbox-radio */
 .mars-form-radio {
   display: -webkit-box;
@@ -64,7 +74,7 @@
 }
 
 .mars-form-radio > input:not(:disabled) {
-  border-color: #e9e9e9;
+  border-color: #dfdfdf;
 }
 
 .mars-form-radio > input:not(:disabled):hover {

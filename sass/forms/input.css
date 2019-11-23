@@ -1,9 +1,19 @@
+/* input color */
 /* common color */
+/* input disabled color */
+/* input readonly color */
+/* input checkbox, radio color */
+/* input checkbox radio disabled color */
+/* input checkbox disabled color */
+/* color maps */
+/* input checkbox & radio */
+/* input size variable */
+/* input size maps */
 /* default */
 .mars-form {
   width: 100%;
   height: 2.5rem;
-  color: #000000;
+  color: black;
   font-family: inherit;
   font-style: normal;
   font-weight: normal;
@@ -38,9 +48,7 @@
 
 .mars-form.is-readonly {
   background-color: #eeeeee;
-  /* menu hover bg color */
   color: #777777;
-  /* menu text color */
   border-color: #cccccc;
 }
 
@@ -104,7 +112,7 @@
 .mars-form-underline {
   width: 100%;
   height: 2.5rem;
-  color: #000000;
+  color: black;
   font-family: inherit;
   font-style: normal;
   font-weight: normal;
@@ -231,9 +239,7 @@ input.mars-form[readonly],
 textarea.mars-form[readonly],
 select.mars-form[readonly] {
   background-color: #eeeeee;
-  /* menu hover bg color */
   color: #777777;
-  /* menu text color */
   border-color: #cccccc;
 }
 

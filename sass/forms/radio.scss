@@ -1,4 +1,5 @@
 @import './color';
+@import './variable';
 @import './mixins';
 
 
@@ -15,45 +16,41 @@
         @include checkIcon();        
         /* radio-check-icon color */
         & > svg {
-            fill: $default-color;
+            fill: $default;
         }
     }
 
     & > input {
-        border-width: 3px;
-        border-style: solid;
+        border-width: $input-box-border-width;
+        border-style: $input-box-border-style;
 
         &[type="checkbox"] {
-            margin: 3px 3px 3px 4px;
-            padding: initial;       
+            margin: $input-box-margin;
+            padding: $input-box-padding;       
         }
 
         /* disabled attribute */
         &:disabled {
-            color: #949494;
-            background-color:#eaeded;
-            border-color: #bebebe;
-            border-width: 3px;
-            border-style: solid;
+           @include box-disabled();
         }
 
         &:not(:disabled) {
-            border-color: rgb(233, 233, 233);
+            border-color: $input-box-border-color;
         }
 
         /* default hover */
         &:not(:disabled):hover {
-            border-color: $default-color;
+            border-color: $default;
         }
         
         /* default color checked event */
         &:not(:disabled):checked {
-            border-color: $default-color; 
+            border-color: $default; 
         }
 
         &:disabled 
           + .radio-check-icon svg {
-              fill: rgb(204, 204, 204);
+              fill: $input-box-disabled-fill;
               cursor: not-allowed;
         }
     }

@@ -1,31 +1,31 @@
 @import './color';
 @import './mixins';
-
-
-$sizes: "1","3-4","2-3","1-2","1-3","1-4";
-$size: (
-   "1": 100%,
-   "3-4": 75%,
-   "2-3": 66%,
-   "1-2": 50%,
-   "1-3": 33%,
-   "1-4": 25%
-);
-
-$border-radius: (
-    "normal": 3px,
-    "little": 0.5em,
-    "rounded": 2em     
-);
+@import './variable';
 
 /* default */
 .mars-form {
-    @include input();
+    width: $input-width;
+    height: $input-height;
+    color: $input-color;  
+    font-family: $input-font-family;
+    font-style: $input-font-style;
+    font-weight: $input-font-weight;
+    font-size: $input-font-size;
+    display: inline-block;
+    padding: $input-padding-vertical $input-padding-horizontal;
+    border: 1px solid $border;
+    background: $white;
+    vertical-align: middle;
+    box-sizing: $input-border-box;
+    box-shadow: rgba(0,0,0,0.1) $input-box-shadow-size;
+    outline: $input-outline;
+    margin-bottom: $input-margin-bottom;
+
 
     /* default active, focus */
     &:active, &.is-actived, 
     &:focus, &.is-focused {
-        border-color: $default-color;      
+        border-color: $default;      
     }
 
     /* default disabled & readonly type */
@@ -49,15 +49,15 @@ $border-radius: (
 
     /* rounded */
     &.is-normal-rounded {
-        border-radius: map-get($border-radius, normal);
+        border-radius: $input-radius;
     }
 
     &.is-little-rounded {
-        border-radius: map-get($border-radius, little);
+        border-radius: $input-radius-md;
     }
 
     &.is-rounded {
-        border-radius: map-get($border-radius, rounded);
+        border-radius: $input-radius-lg;
     }
 
     /* size */
@@ -70,15 +70,30 @@ $border-radius: (
 
 /* input underline */
 .mars-form-underline {
-    @include input();
+    width: $input-width;
+    height: $input-height;
+    color: $input-color;  
+    font-family: $input-font-family;
+    font-style: $input-font-style;
+    font-weight: $input-font-weight;
+    font-size: $input-font-size;
+    display: inline-block;
+    padding: $input-padding-vertical $input-padding-horizontal;
+    border: 1px solid $border;
+    background: $white;
+    vertical-align: middle;
+    box-sizing: $input-border-box;
+    box-shadow: rgba(0,0,0,0.1) $input-box-shadow-size;
+    outline: $input-outline;
+    margin-bottom: $input-margin-bottom;
 
-    border: 2px solid transparent;
-    border-radius: 3px;
-    border-width: 2px 0px;
-    background: white;
-    box-sizing: border-box;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
-    transition: all 0.2s ease-in-out 0s;
+    border: 2px solid $border;
+    border-radius: $input-radius;
+    border-width: $input-border-width 0px;
+    background: $white;
+    box-sizing: $input-border-box;
+    box-shadow: $input-box-shadow-size rgba(0, 0, 0, 0.1);
+    transition: $input-transition;
 
     /* size */
     @each $value in $sizes {
@@ -90,7 +105,7 @@ $border-radius: (
     /* underline default color focus,active */
     &:active, &.is-actived, 
     &:focus, &.is-focused {
-        @include underline($default-color);
+        @include underline($default);
     } 
 
     /* underline color active, focus */

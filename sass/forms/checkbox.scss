@@ -1,5 +1,7 @@
 @import './color';
+@import './variable';
 @import './mixins';
+
 
 /* default */
 .mars-form-checkbox {
@@ -11,20 +13,20 @@
 
     & > .checkbox-check-icon {
         @include checkIcon();
-        color: #ffffff;
+        color: $white;
         & > svg {
-            fill: #ffffff;
+            fill: $white;
         }    
     }
 
     /* default color checked event */
     & > input:not(:disabled):checked {
-        background-color: $default-color;
-        border-color: $default-color; 
+        background-color: $default;
+        border-color: $default; 
     }
 
     & > input:disabled + .checkbox-check-icon svg {
-        fill: rgb(204, 204, 204);
+        fill: $input-box-disabled-fill;
         cursor: not-allowed;
     }
     
@@ -41,30 +43,26 @@
     }
 
     & > input {
-        border-width: 3px;
-        border-style: solid;
+        border-width: $input-box-border-width;
+        border-style: $input-box-border-style;
 
         &[type="checkbox"] {
-            margin: 3px 3px 3px 4px;
-            padding: initial;       
+            margin: $input-box-margin;
+            padding: $input-box-padding;       
         }
 
-        /* disabled attribute */
+        /* checkbox disabled attribute */
         &:disabled {
-            color: #949494;
-            background-color:#eaeded;
-            border-color: #bebebe;
-            border-width: 3px;
-            border-style: solid;
+           @include box-disabled();
         }
 
         &:not(:disabled) {
-            border-color: rgb(233, 233, 233);
+            border-color: $input-box-border-color;
         }
 
         /* default hover */
         &:not(:disabled):hover {
-            border-color: $default-color;
+            border-color: $default;
         }
     }
 }

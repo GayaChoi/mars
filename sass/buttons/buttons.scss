@@ -37,7 +37,22 @@
             @include button-color(map-get($colors,#{$name})); 
         }
     }
-    
+
+     /* focused */
+     &:focus,
+     &.is-focused {
+         outline: $button-outline;
+         border: 2px solid rgba($default, 0.5);
+     }
+      
+     /* actived, pressed */
+     &:active, 
+     &.is-actived,
+     &.is-pressed {
+        outline: $button-outline;
+        box-shadow: $button-active-box-shadow-size rgba($normal,0.12) inset; 
+     }
+ 
     /* default hovered */
     &.is-hovered,
     &:not(.is-outlined):hover {
@@ -60,21 +75,7 @@
         }
     }
 
-    /* focused */
-    &:focus,
-    &.is-focused {
-        outline: $button-outline;
-        border: 2px solid rgba($default, 0.5);
-    }
-     
-    /* actived, pressed */
-    &:active, 
-    &.is-actived,
-    &.is-pressed {
-       outline: $button-outline;
-       box-shadow: $button-active-box-shadow-size rgba($normal,0.12) inset; 
-    }
-
+   
     /* disabled */
     &[disabled],
     &.is-disabled {

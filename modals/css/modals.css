@@ -40,8 +40,6 @@
     cursor: pointer;
     pointer-events: auto;
     display: inline-block;
-    flex-grow: 0;
-    flex-shrink: 0;
     font-size: 0;
     height: 20px;
     max-width: 20px;
@@ -69,7 +67,7 @@
     position: absolute;
     transform: translateX(-50%) translateY(-50%) rotate(45deg);
     transform-origin: center center; 
-    background-color: rgb(51, 50, 56, 0.52);
+    background-color: rgba(51, 50, 56, 0.52);
 }
 
 .mars-modal .delete::before {
@@ -112,7 +110,7 @@
     color: rgb(162,88,232);
 }
 
-/* submit setting */
+/* submit colors */
 .mars-modal.is-color-blue .is-submit {
     background-color:rgb(0,110,207);
 }
@@ -133,7 +131,7 @@
     background-color: rgb(162,88,232);
 }
 
-/* state setting */
+/* state colors */
 .mars-modal.is-primary .is-title {
     color: #00B0FF;
 }
@@ -150,7 +148,7 @@
     color: #FF5722;
 }
 
-/* state submit setting */
+/* state submit */
 .mars-modal.is-primary .is-submit {
     background-color: #00B0FF;
 }
@@ -168,7 +166,7 @@
 }
 
 /* size modals */
-.is-small.delete {
+.mars-modal .delete.is-small {
     height: 16px;
     max-height: 16px;
     max-width: 16px;
@@ -177,7 +175,7 @@
     width: 16px;
 }
   
-.is-medium.delete {
+.mars-modal .delete.is-medium {
     height: 24px;
     max-height: 24px;
     max-width: 24px;
@@ -186,7 +184,7 @@
     width: 24px;
 }
   
-.is-large.delete {
+.mars-modal .delete.is-large {
     height: 32px;
     max-height: 32px;
     max-width: 32px;

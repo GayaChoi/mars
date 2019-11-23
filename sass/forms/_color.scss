@@ -1,19 +1,41 @@
+/* input color */
 /* common color */
-$default-color: rgb(18, 159, 234);
-$blue-color: rgb(0,110,207);
-$green-color: rgb(80,200,120);
-$yellow-color: rgb(248,235,0);
-$pink-color: rgb(223,150,193);
-$purple-color: rgb(162,88,232);
-$disabled-color: rgb(202,210,211);
-$read-only-color:  rgb(238,238,238);
+$default: rgb(18, 159, 234) !default;
+$blue: rgb(0,110,207) !default;
+$green: rgb(80,200,120) !default;
+$yellow: rgb(248,235,0) !default;
+$pink: rgb(223,150,193) !default;
+$purple: rgb(162,88,232) !default;
+$white: white !default;
+$border: transparent !default;
+$input-color: rgb(0,0,0) !default;
 
+/* input disabled color */
+$input-disabled-bg-color: rgb(202,210,211) !default;
+$input-disabled-color: rgb(202, 210, 211) !default;
 
+/* input readonly color */
+$input-readonly-bgcolor: #eeeeee;
+$input-readonly-color: #777777;
+$input-readonly-border: #cccccc; 
+
+/* input checkbox, radio color */
+$input-box-border-color: rgb(223, 223, 223);
+
+/* input checkbox radio disabled color */
+$input-box-disabled-fill: rgb(204, 204, 204);
+
+/* input checkbox disabled color */
+$input-checkbox-disabled-color: #949494;
+$input-checkbox-disabled-bgcolor: #eaeded;
+$input-checkbox-border-color: #bebebe;
+
+/* color maps */
 $color-value: "blue","green","yellow","pink","purple";
 $color: (
-    "blue": $blue-color,
-    "green": $green-color,
-    "yellow": $yellow-color,
-    "pink": $pink-color,
-    "purple": $purple-color
+    "blue": $blue,
+    "green": $green,
+    "yellow": $yellow,
+    "pink": $pink,
+    "purple": $purple
 );
