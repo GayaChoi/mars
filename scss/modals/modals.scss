@@ -18,6 +18,7 @@
     margin-bottom: $modal-margin-bottom;
     box-shadow: $modal-box-shadow rgba(0, 0, 0, 0.1);
 
+
     & a:not(.mars-button) {
         color: $current;
         text-decoration: $modal-text-decoration;
@@ -108,27 +109,8 @@
     
     /* color */
     @each $name in $color-names {
-        &.is-color-#{$name} {
-            & .is-title {
-                color: map-get($colors, #{$name});
-            }
-                
-            & .is-submit {
-                background-color: map-get($colors, #{$name});
-            }
-        }
-    }
-
-    /* state color */
-    @each $name in $state-color-names {
-        &.is-#{$name} {
-            & .is-title {
-                color: map-get($state-colors, #{$name});
-            }
-                
-            & .is-submit {
-                background-color: map-get($state-colors, #{$name});
-            }  
+        & .is-title.is-color-#{$name} {
+            color: map-get($colors, #{$name});
         }
     }
 }

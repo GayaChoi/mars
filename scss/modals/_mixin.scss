@@ -2,16 +2,6 @@
 @import './color';
 
 
-@mixin state-color($name) {
-    .is-title {
-        color: map-get($colors, #{$name});
-    }
-        
-    .is-submit {
-        background-color: map-get($colors, #{$name});
-    }
-}
-
 @mixin delete-sizes($size) {
     height: $size;
     max-height: $size;

@@ -3,10 +3,7 @@
 /* state color */
 /* button hovered color */
 /* button disabled color */
-/* modal button color */
 /* color maps */
-/* button gradient color maps */
-/* state color maps */
 /* button variable */
 /* button actived */
 /* button hovered */
@@ -50,15 +47,14 @@
   /* default hovered box-shadow */
   /* color hovered */
   /* disabled */
+  /* modals button */
   /* gradient button */
   /* anim button */
   /* button size */
-  /* state color button */
   /* normal rounded */
   /* little rounded */
   /* rounded button */
   /* button outlined */
-  /* modals button */
 }
 
 .mars-button.is-color-blue,
@@ -104,6 +100,42 @@
   border-color: #a258e8;
   -webkit-box-shadow: 0px 10px 25px rgba(162, 88, 232, 0.5);
           box-shadow: 0px 10px 25px rgba(162, 88, 232, 0.5);
+}
+
+.mars-button.is-color-primary,
+.mars-button-icon.is-color-primary {
+  outline: 0;
+  background-color: #00b0ff;
+  border-color: #00b0ff;
+  -webkit-box-shadow: 0px 10px 25px rgba(0, 176, 255, 0.5);
+          box-shadow: 0px 10px 25px rgba(0, 176, 255, 0.5);
+}
+
+.mars-button.is-color-success,
+.mars-button-icon.is-color-success {
+  outline: 0;
+  background-color: #00b248;
+  border-color: #00b248;
+  -webkit-box-shadow: 0px 10px 25px rgba(0, 178, 72, 0.5);
+          box-shadow: 0px 10px 25px rgba(0, 178, 72, 0.5);
+}
+
+.mars-button.is-color-warning,
+.mars-button-icon.is-color-warning {
+  outline: 0;
+  background-color: #ff9d3f;
+  border-color: #ff9d3f;
+  -webkit-box-shadow: 0px 10px 25px rgba(255, 157, 63, 0.5);
+          box-shadow: 0px 10px 25px rgba(255, 157, 63, 0.5);
+}
+
+.mars-button.is-color-error,
+.mars-button-icon.is-color-error {
+  outline: 0;
+  background-color: #ff5722;
+  border-color: #ff5722;
+  -webkit-box-shadow: 0px 10px 25px rgba(255, 87, 34, 0.5);
+          box-shadow: 0px 10px 25px rgba(255, 87, 34, 0.5);
 }
 
 .mars-button:focus, .mars-button.is-focused,
@@ -172,6 +204,34 @@
           box-shadow: 0px 10px 25px rgba(162, 88, 232, 0.85);
 }
 
+.mars-button.is-hovered.is-color-primary, .mars-button.is-color-primary:hover,
+.mars-button-icon.is-hovered.is-color-primary,
+.mars-button-icon.is-color-primary:hover {
+  -webkit-box-shadow: 0px 10px 25px rgba(0, 176, 255, 0.85);
+          box-shadow: 0px 10px 25px rgba(0, 176, 255, 0.85);
+}
+
+.mars-button.is-hovered.is-color-success, .mars-button.is-color-success:hover,
+.mars-button-icon.is-hovered.is-color-success,
+.mars-button-icon.is-color-success:hover {
+  -webkit-box-shadow: 0px 10px 25px rgba(0, 178, 72, 0.85);
+          box-shadow: 0px 10px 25px rgba(0, 178, 72, 0.85);
+}
+
+.mars-button.is-hovered.is-color-warning, .mars-button.is-color-warning:hover,
+.mars-button-icon.is-hovered.is-color-warning,
+.mars-button-icon.is-color-warning:hover {
+  -webkit-box-shadow: 0px 10px 25px rgba(255, 157, 63, 0.85);
+          box-shadow: 0px 10px 25px rgba(255, 157, 63, 0.85);
+}
+
+.mars-button.is-hovered.is-color-error, .mars-button.is-color-error:hover,
+.mars-button-icon.is-hovered.is-color-error,
+.mars-button-icon.is-color-error:hover {
+  -webkit-box-shadow: 0px 10px 25px rgba(255, 87, 34, 0.85);
+          box-shadow: 0px 10px 25px rgba(255, 87, 34, 0.85);
+}
+
 .mars-button[disabled], .mars-button.is-disabled,
 .mars-button-icon[disabled],
 .mars-button-icon.is-disabled {
@@ -184,6 +244,57 @@
   background-color: #eaeded;
   color: #cad2d3;
   pointer-events: none;
+}
+
+.mars-button.is-cancel,
+.mars-button-icon.is-cancel {
+  background-color: #ffffff;
+  border: 2px solid #D3D3D3 !important;
+  border-radius: 2px;
+  width: 6.5rem;
+  height: 3.5rem;
+  color: rgba(139, 139, 139, 0.83) !important;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.mars-button.is-cancel:hover, .mars-button.is-cancel.is-hovered, .mars-button.is-cancel:focus, .mars-button.is-cancel.is-focused, .mars-button.is-cancel:active, .mars-button.is-cancel.is-actived, .mars-button.is-cancel.is-pressed,
+.mars-button-icon.is-cancel:hover,
+.mars-button-icon.is-cancel.is-hovered,
+.mars-button-icon.is-cancel:focus,
+.mars-button-icon.is-cancel.is-focused,
+.mars-button-icon.is-cancel:active,
+.mars-button-icon.is-cancel.is-actived,
+.mars-button-icon.is-cancel.is-pressed {
+  opacity: 1;
+  border: 2px solid #D3D3D3 !important;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: 0;
+}
+
+.mars-button.is-submit,
+.mars-button-icon.is-submit {
+  background-color: #005CFF !important;
+  border: 2px solid #005CFF !important;
+  color: #ffffff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.mars-button.is-submit:hover, .mars-button.is-submit.is-hovered, .mars-button.is-submit:focus, .mars-button.is-submit.is-focused, .mars-button.is-submit:active, .mars-button.is-submit.is-actived, .mars-button.is-submit.is-pressed,
+.mars-button-icon.is-submit:hover,
+.mars-button-icon.is-submit.is-hovered,
+.mars-button-icon.is-submit:focus,
+.mars-button-icon.is-submit.is-focused,
+.mars-button-icon.is-submit:active,
+.mars-button-icon.is-submit.is-actived,
+.mars-button-icon.is-submit.is-pressed {
+  opacity: 1;
+  border: 2px solid #005CFF !important;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: 0;
 }
 
 .mars-button.is-gradient,
@@ -235,6 +346,46 @@
           box-shadow: 0px 10px 25px rgba(162, 88, 232, 0.65);
 }
 
+.mars-button.is-gradient.is-color-primary,
+.mars-button-icon.is-gradient.is-color-primary {
+  background-image: -webkit-gradient(linear, left top, right top, from(#0031ff), to(#00b0ff));
+  background-image: linear-gradient(90deg, #0031ff, #00b0ff);
+  -webkit-box-shadow: 0px 10px 25px rgba(0, 176, 255, 0.65);
+          box-shadow: 0px 10px 25px rgba(0, 176, 255, 0.65);
+}
+
+.mars-button.is-gradient.is-color-success,
+.mars-button-icon.is-gradient.is-color-success {
+  background-image: -webkit-gradient(linear, left top, right top, from(#006629), to(#00b248));
+  background-image: linear-gradient(90deg, #006629, #00b248);
+  -webkit-box-shadow: 0px 10px 25px rgba(0, 178, 72, 0.65);
+          box-shadow: 0px 10px 25px rgba(0, 178, 72, 0.65);
+}
+
+.mars-button.is-gradient.is-color-warning,
+.mars-button-icon.is-gradient.is-color-warning {
+  background-image: -webkit-gradient(linear, left top, right top, from(#f27600), to(#ff9d3f));
+  background-image: linear-gradient(90deg, #f27600, #ff9d3f);
+  -webkit-box-shadow: 0px 10px 25px rgba(255, 157, 63, 0.65);
+          box-shadow: 0px 10px 25px rgba(255, 157, 63, 0.65);
+}
+
+.mars-button.is-gradient.is-color-error,
+.mars-button-icon.is-gradient.is-color-error {
+  background-image: -webkit-gradient(linear, left top, right top, from(#d53300), to(#ff5722));
+  background-image: linear-gradient(90deg, #d53300, #ff5722);
+  -webkit-box-shadow: 0px 10px 25px rgba(255, 87, 34, 0.65);
+          box-shadow: 0px 10px 25px rgba(255, 87, 34, 0.65);
+}
+
+.mars-button.is-gradient.is-cancel, .mars-button.is-gradient.is-submit,
+.mars-button-icon.is-gradient.is-cancel,
+.mars-button-icon.is-gradient.is-submit {
+  background-image: none !important;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .mars-button.is-anim,
 .mars-button-icon.is-anim {
   -webkit-animation: bgAnim 3s linear infinite;
@@ -280,42 +431,6 @@
   font-size: 1.5rem;
 }
 
-.mars-button.is-primary,
-.mars-button-icon.is-primary {
-  outline: 0;
-  background-color: #00B0FF;
-  border-color: #00B0FF;
-  -webkit-box-shadow: 0px 10px 25px rgba(0, 176, 255, 0.5);
-          box-shadow: 0px 10px 25px rgba(0, 176, 255, 0.5);
-}
-
-.mars-button.is-success,
-.mars-button-icon.is-success {
-  outline: 0;
-  background-color: #00B248;
-  border-color: #00B248;
-  -webkit-box-shadow: 0px 10px 25px rgba(0, 178, 72, 0.5);
-          box-shadow: 0px 10px 25px rgba(0, 178, 72, 0.5);
-}
-
-.mars-button.is-warning,
-.mars-button-icon.is-warning {
-  outline: 0;
-  background-color: #FF9D3F;
-  border-color: #FF9D3F;
-  -webkit-box-shadow: 0px 10px 25px rgba(255, 157, 63, 0.5);
-          box-shadow: 0px 10px 25px rgba(255, 157, 63, 0.5);
-}
-
-.mars-button.is-error,
-.mars-button-icon.is-error {
-  outline: 0;
-  background-color: #FF5722;
-  border-color: #FF5722;
-  -webkit-box-shadow: 0px 10px 25px rgba(255, 87, 34, 0.5);
-          box-shadow: 0px 10px 25px rgba(255, 87, 34, 0.5);
-}
-
 .mars-button.is-normal-rounded,
 .mars-button-icon.is-normal-rounded {
   border-radius: 4px;
@@ -345,7 +460,6 @@
   -webkit-box-shadow: none;
           box-shadow: none;
   /* button outlined color */
-  /* button outlined state color */
 }
 
 .mars-button.is-outlined.is-outlined.is-color-blue,
@@ -393,87 +507,40 @@
           box-shadow: none;
 }
 
-.mars-button.is-outlined.is-outlined.is-primary,
-.mars-button-icon.is-outlined.is-outlined.is-primary {
-  outline: 2px solid;
+.mars-button.is-outlined.is-outlined.is-color-primary,
+.mars-button-icon.is-outlined.is-outlined.is-color-primary {
+  outline: 2px solid #00b0ff;
+  color: #00b0ff;
   border: none;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
-.mars-button.is-outlined.is-outlined.is-success,
-.mars-button-icon.is-outlined.is-outlined.is-success {
-  outline: 2px solid;
+.mars-button.is-outlined.is-outlined.is-color-success,
+.mars-button-icon.is-outlined.is-outlined.is-color-success {
+  outline: 2px solid #00b248;
+  color: #00b248;
   border: none;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
-.mars-button.is-outlined.is-outlined.is-warning,
-.mars-button-icon.is-outlined.is-outlined.is-warning {
-  outline: 2px solid;
+.mars-button.is-outlined.is-outlined.is-color-warning,
+.mars-button-icon.is-outlined.is-outlined.is-color-warning {
+  outline: 2px solid #ff9d3f;
+  color: #ff9d3f;
   border: none;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
-.mars-button.is-outlined.is-outlined.is-error,
-.mars-button-icon.is-outlined.is-outlined.is-error {
-  outline: 2px solid;
+.mars-button.is-outlined.is-outlined.is-color-error,
+.mars-button-icon.is-outlined.is-outlined.is-color-error {
+  outline: 2px solid #ff5722;
+  color: #ff5722;
   border: none;
   -webkit-box-shadow: none;
           box-shadow: none;
-}
-
-.mars-button.is-cancel,
-.mars-button-icon.is-cancel {
-  background-color: #ffffff;
-  border: 2px solid #D3D3D3;
-  border-radius: 2px;
-  width: 6.5rem;
-  height: 3.5rem;
-  color: rgba(139, 139, 139, 0.83);
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
-.mars-button.is-cancel:hover, .mars-button.is-cancel.is-hovered, .mars-button.is-cancel:focus, .mars-button.is-cancel.is-focused, .mars-button.is-cancel:active, .mars-button.is-cancel.is-actived, .mars-button.is-cancel.is-pressed,
-.mars-button-icon.is-cancel:hover,
-.mars-button-icon.is-cancel.is-hovered,
-.mars-button-icon.is-cancel:focus,
-.mars-button-icon.is-cancel.is-focused,
-.mars-button-icon.is-cancel:active,
-.mars-button-icon.is-cancel.is-actived,
-.mars-button-icon.is-cancel.is-pressed {
-  opacity: 1;
-  border: 2px solid #D3D3D3;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  outline: 0;
-}
-
-.mars-button.is-submit,
-.mars-button-icon.is-submit {
-  background-color: #005CFF;
-  border: 2px solid transparent;
-  color: #ffffff;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
-.mars-button.is-submit:hover, .mars-button.is-submit.is-hovered, .mars-button.is-submit:focus, .mars-button.is-submit.is-focused, .mars-button.is-submit:active, .mars-button.is-submit.is-actived, .mars-button.is-submit.is-pressed,
-.mars-button-icon.is-submit:hover,
-.mars-button-icon.is-submit.is-hovered,
-.mars-button-icon.is-submit:focus,
-.mars-button-icon.is-submit.is-focused,
-.mars-button-icon.is-submit:active,
-.mars-button-icon.is-submit.is-actived,
-.mars-button-icon.is-submit.is-pressed {
-  opacity: 1;
-  border: 2px solid transparent;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  outline: 0;
 }
 
 .mars-button-icon {

@@ -8,8 +8,8 @@ $purple: rgb(162,88,232) !default;
 $disabled: rgb(202,210,211) !default;
 $read-only:rgb(238,238,238) !default;
 $normal: rgb(0,0,0) !default;
-$border: transparent !default;
-$button-color:#ffffff !default;
+$transparent: transparent !default;
+$white:#ffffff !default;
 
 /* button gradient color */
 $gradient-default: #1233ea !default;
@@ -18,7 +18,10 @@ $gradient-green: #319b54 !default;
 $gradient-yellow:  #aca300 !default;
 $gradient-pink: #c74792 !default;
 $gradient-purple: #6217a9 !default;   
-
+$gradient-primary: #0031ff !default;
+$gradient-success: #006629 !default;
+$gradient-warning: #f27600 !default;
+$gradient-error: #d53300 !default;
 
 /* state color */
 $primary: rgb(0,176,255) !default;
@@ -32,37 +35,31 @@ $button-hovered-color: transparent !default;
 /* button disabled color */
 $button-disabled-background-color: rgb(234,237,237) !default; 
 
-/* modal button color */
-$button-modal-cancel-border: #D3D3D3 !default;
-$button-modal-cancel-color:rgba(139,139,139,0.83) !default;
-$button-modal-submit-color: #005CFF !default; 
 
 /* color maps */
-$color-names: "blue","green","yellow","pink","purple";
+$color-names: "blue","green","yellow","pink","purple","primary","success","warning","error";
 $colors: (
    "blue": $blue,
    "green": $green,
    "yellow": $yellow,
    "pink": $pink,
-   "purple": $purple
-);  
-
-/* button gradient color maps */
-$gradient-colors: (
-   "blue": $gradient-blue, 
-   "green": $gradient-green, 
-   "yellow": $gradient-yellow, 
-   "pink": $gradient-pink,
-   "purple": $gradient-purple 
-);
-
-/* state color maps */
-$state-color-names: "primary","success","warning","error";
-$state-colors: (
+   "purple": $purple,
    "primary": $primary,
    "success": $success,
    "warning": $warning,
    "error": $error
 );  
+
+$gradient-colors: (
+   "blue": $gradient-blue,
+   "green": $gradient-green,
+   "yellow": $gradient-yellow,
+   "pink": $gradient-pink,
+   "purple": $gradient-purple, 
+   "primary": $gradient-primary,
+   "success": $gradient-success,
+   "warning": $gradient-warning,
+   "error": $gradient-error
+);
 
 

@@ -19,23 +19,19 @@ $error: #FF5722 !default;
 
 
 /* colors maps */
-$color-names: "blue","green","yellow","pink","purple";
+$color-names: "blue","green","yellow","pink","purple","primary","success","warning","error";
 $colors: (
    "blue": $blue,
    "green": $green,
    "yellow": $yellow,
    "pink": $pink,
-   "purple": $purple
-);  
-
-/* state color maps */
-$state-color-names: "primary","success","warning","error";
-$state-colors: (
+   "purple": $purple,
    "primary": $primary,
    "success": $success,
    "warning": $warning,
    "error": $error
 );  
+  
 
 
 

@@ -6,7 +6,6 @@
 /* input checkbox radio disabled color */
 /* input checkbox disabled color */
 /* color maps */
-/* state color maps */
 /* input checkbox & radio */
 /* input size variable */
 /* input size maps */
@@ -109,38 +108,38 @@
   border-color: #a258e8;
 }
 
-.mars-form-checkbox.is-primary > input:not(:disabled):hover {
+.mars-form-checkbox.is-color-primary > input:not(:disabled):hover {
   border-color: #00b0ff;
 }
 
-.mars-form-checkbox.is-primary > input:checked {
+.mars-form-checkbox.is-color-primary > input:checked {
   background-color: #00b0ff;
   border-color: #00b0ff;
 }
 
-.mars-form-checkbox.is-success > input:not(:disabled):hover {
+.mars-form-checkbox.is-color-success > input:not(:disabled):hover {
   border-color: #00b248;
 }
 
-.mars-form-checkbox.is-success > input:checked {
+.mars-form-checkbox.is-color-success > input:checked {
   background-color: #00b248;
   border-color: #00b248;
 }
 
-.mars-form-checkbox.is-warning > input:not(:disabled):hover {
+.mars-form-checkbox.is-color-warning > input:not(:disabled):hover {
   border-color: #ff9d3f;
 }
 
-.mars-form-checkbox.is-warning > input:checked {
+.mars-form-checkbox.is-color-warning > input:checked {
   background-color: #ff9d3f;
   border-color: #ff9d3f;
 }
 
-.mars-form-checkbox.is-error > input:not(:disabled):hover {
+.mars-form-checkbox.is-color-error > input:not(:disabled):hover {
   border-color: #ff5722;
 }
 
-.mars-form-checkbox.is-error > input:checked {
+.mars-form-checkbox.is-color-error > input:checked {
   background-color: #ff5722;
   border-color: #ff5722;
 }

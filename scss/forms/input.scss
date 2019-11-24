@@ -48,16 +48,6 @@
         }          
     }
 
-    /* state color actived, focused */
-    @each $name in $state-color-names {
-        &.is-#{$name} {
-           &:focus, &.is-focused,
-            &:active, &.is-actived {
-              border-color: map-get($state-colors, #{$name});   
-           }
-        }          
-    }
-
     /* rounded */
     &.is-normal-rounded {
         border-radius: $input-radius;
@@ -125,16 +115,6 @@
            &:focus, &.is-focused, 
            &:active, &.is-actived {
                @include underline(map-get($colors,#{$name}));   
-           }
-        }          
-    }
-
-    /* underline state color active, focus */
-    @each $name in $state-color-names {
-        &.is-#{$name} {
-           &:focus, &.is-focused, 
-           &:active, &.is-actived {
-               @include underline(map-get($state-colors,#{$name}));   
            }
         }          
     }

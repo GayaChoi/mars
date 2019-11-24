@@ -3,6 +3,7 @@
 @import './mixins';
 
 
+
 .mars-form-radio {
     @include box();
 
@@ -60,17 +61,6 @@
 
         &.is-color-#{$name} > .radio-check-icon svg {               
              fill: map-get($colors,#{$name});
-        }
-    }
-
-    @each $name in $state-color-names {
-        &.is-#{$name} > input:not(:disabled):hover, 
-        &.is-#{$name} > input:not(:disabled):checked {
-            border-color: map-get($state-colors,#{$name});
-        }
-
-        &.is-#{$name} > .radio-check-icon svg {               
-             fill: map-get($state-colors,#{$name});
         }
     }
 }

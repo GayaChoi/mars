@@ -36,21 +36,16 @@ $input-checkbox-disabled-bgcolor: #eaeded;
 $input-checkbox-border-color: #bebebe;
 
 /* color maps */
-$color-names: "blue","green","yellow","pink","purple";
+$color-names: "blue","green","yellow","pink","purple","primary","success","warning","error";
 $colors: (
     "blue": $blue,
     "green": $green,
     "yellow": $yellow,
     "pink": $pink,
-    "purple": $purple
+    "purple": $purple,
+    "primary": $primary,
+    "success": $success,
+    "warning": $warning,
+    "error": $error
 );
 
-
-/* state color maps */
-$state-color-names: "primary","success","warning","error";
-$state-colors: (
-   "primary": $primary,
-   "success": $success,
-   "warning": $warning,
-   "error": $error
-);  

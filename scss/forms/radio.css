@@ -6,7 +6,6 @@
 /* input checkbox radio disabled color */
 /* input checkbox disabled color */
 /* color maps */
-/* state color maps */
 /* input checkbox & radio */
 /* input size variable */
 /* input size maps */
@@ -130,39 +129,39 @@
   fill: #a258e8;
 }
 
-.mars-form-radio.is-primary > input:not(:disabled):hover,
-.mars-form-radio.is-primary > input:not(:disabled):checked {
+.mars-form-radio.is-color-primary > input:not(:disabled):hover,
+.mars-form-radio.is-color-primary > input:not(:disabled):checked {
   border-color: #00b0ff;
 }
 
-.mars-form-radio.is-primary > .radio-check-icon svg {
+.mars-form-radio.is-color-primary > .radio-check-icon svg {
   fill: #00b0ff;
 }
 
-.mars-form-radio.is-success > input:not(:disabled):hover,
-.mars-form-radio.is-success > input:not(:disabled):checked {
+.mars-form-radio.is-color-success > input:not(:disabled):hover,
+.mars-form-radio.is-color-success > input:not(:disabled):checked {
   border-color: #00b248;
 }
 
-.mars-form-radio.is-success > .radio-check-icon svg {
+.mars-form-radio.is-color-success > .radio-check-icon svg {
   fill: #00b248;
 }
 
-.mars-form-radio.is-warning > input:not(:disabled):hover,
-.mars-form-radio.is-warning > input:not(:disabled):checked {
+.mars-form-radio.is-color-warning > input:not(:disabled):hover,
+.mars-form-radio.is-color-warning > input:not(:disabled):checked {
   border-color: #ff9d3f;
 }
 
-.mars-form-radio.is-warning > .radio-check-icon svg {
+.mars-form-radio.is-color-warning > .radio-check-icon svg {
   fill: #ff9d3f;
 }
 
-.mars-form-radio.is-error > input:not(:disabled):hover,
-.mars-form-radio.is-error > input:not(:disabled):checked {
+.mars-form-radio.is-color-error > input:not(:disabled):hover,
+.mars-form-radio.is-color-error > input:not(:disabled):checked {
   border-color: #ff5722;
 }
 
-.mars-form-radio.is-error > .radio-check-icon svg {
+.mars-form-radio.is-color-error > .radio-check-icon svg {
   fill: #ff5722;
 }
 

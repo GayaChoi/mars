@@ -42,18 +42,7 @@
             border-color: map-get($colors,#{$name});
         }
     }
-
-    @each $name in $state-color-names {
-        &.is-#{$name} > input:not(:disabled):hover {
-            border-color: map-get($state-colors,#{$name});
-        }
-
-        &.is-#{$name} > input:checked {
-            background-color: map-get($state-colors,#{$name});               
-            border-color: map-get($state-colors,#{$name});
-        }
-    }
-
+    
     & > input {
         border-width: $input-box-border-width;
         border-style: $input-box-border-style;

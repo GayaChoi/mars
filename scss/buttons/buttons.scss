@@ -15,7 +15,7 @@
     font-family: $button-font-family;
     font-size: $button-font-size;
     font-weight: $button-font-weight;
-    border: 2px solid $border;
+    border: 2px solid $transparent;
     border-width: $button-border-width;
     border-image: $button-border-image;
     padding: $button-padding-vertical $button-padding-horizontal;
@@ -25,7 +25,7 @@
     margin-bottom: $button-margin-bottom;
     cursor: pointer;
     transition: $button-transition;
-    color: $button-color;
+    color: $white;
     outline: $button-outline;
     text-align: center;
     box-shadow: $button-box-shadow-size rgba($default, 0.5);
@@ -88,7 +88,38 @@
         color: $disabled;
         pointer-events: none;
     }
-    
+
+    /* modals button */
+    &.is-cancel {
+        background-color: #ffffff;
+        border: 2px solid #D3D3D3 !important;
+        border-radius: $button-border-width;
+        width: 6.5rem;
+        height: 3.5rem;
+        color: rgba(139,139,139,0.83) !important;
+        box-shadow: $button-none-box-shadow;
+
+        &:hover, &.is-hovered, 
+        &:focus, &.is-focused, 
+        &:active, &.is-actived,
+        &.is-pressed {
+            @include modal-button(#D3D3D3);
+        }
+    }
+
+    &.is-submit {
+        background-color: #005CFF !important;
+        border: 2px solid #005CFF !important;
+        color: $white;
+        box-shadow: $button-none-box-shadow;
+
+        &:hover, &.is-hovered,
+        &:focus, &.is-focused,  
+        &:active, &.is-actived,
+        &.is-pressed {
+            @include modal-button(#005CFF);
+        }
+    }
 
     /* gradient button */
     &.is-gradient {
@@ -97,10 +128,16 @@
         box-shadow: $button-box-shadow-size rgba($default, 0.65);  
         
         @each $name in $color-names {
-            &.is-color-#{$name} {
+            &.is-color-#{$name} {   
                 background-image: linear-gradient(90deg,map-get($gradient-colors,#{$name}),map-get($colors,#{$name}));
-                box-shadow: $button-box-shadow-size  rgba(map-get($colors,#{$name}),0.65);
+                box-shadow: $button-box-shadow-size rgba(map-get($colors,#{$name}),0.65);
             } 
+        }
+
+        &.is-cancel,
+        &.is-submit {
+           background-image: none !important;
+           box-shadow: $button-none-box-shadow;
         }
     }
     
@@ -117,15 +154,7 @@
            font-size: map-get($size,#{$value});
        }
     }
-    
-    /* state color button */
-    @each $color in $state-color-names {
-        &.is-#{$color} {
-            @include button-color(map-get($state-colors,#{$color}));
-        }     
-    }
 
-    
     /* normal rounded */
     &.is-normal-rounded {
         border-radius: $button-radius;
@@ -146,7 +175,7 @@
         opacity: 1;
         outline: 2px solid $default;
         border-width: $button-border-width;
-        background-color: $border;  
+        background-color: $transparent;  
         color: $default;
         border-radius: 0px;
         transition: $button-transition;
@@ -158,45 +187,6 @@
             &.is-outlined.is-color-#{$name} {
                 @include outlined-button(#{$name}); 
             }
-        }
-
-        /* button outlined state color */
-        @each $name in $state-color-names {
-            &.is-outlined.is-#{$name} {
-                @include outlined-button(#{$name});
-            }
-        }
-    }
-   
-    /* modals button */
-    &.is-cancel {
-        background-color: $button-color;
-        border: 2px solid $button-modal-cancel-border;
-        border-radius: $button-border-width;
-        width: 6.5rem;
-        height: 3.5rem;
-        color: $button-modal-cancel-color;
-        box-shadow: $button-none-box-shadow;
-
-        &:hover, &.is-hovered, 
-        &:focus, &.is-focused, 
-        &:active, &.is-actived,
-        &.is-pressed {
-            @include modal-button($button-modal-cancel-border);
-        }
-    }
-
-    &.is-submit {
-        background-color: $button-modal-submit-color;
-        border: 2px solid $border;
-        color: $button-color;
-        box-shadow: $button-none-box-shadow;
-
-        &:hover, &.is-hovered,
-        &:focus, &.is-focused,  
-        &:active, &.is-actived,
-        &.is-pressed {
-            @include modal-button($border);
         }
     }
 }
@@ -240,8 +230,8 @@
             animation: spinAround 500ms infinite linear;  
             border: 2px solid #dbdbdb;
             border-radius: 20000px;
-            border-right-color: $border;
-            border-top-color: $border;
+            border-right-color: $transparent;
+            border-top-color: $transparent;
             content: "";
             display: block;
             width: 1em;

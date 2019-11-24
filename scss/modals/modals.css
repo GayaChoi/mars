@@ -3,13 +3,11 @@
 /* modals colors */
 /* state colors */
 /* colors maps */
-/* state color maps */
 /* modal delete class */
 /* modal title */
 /* modals colors */
 /* state colors */
 /* colors maps */
-/* state color maps */
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -27,7 +25,6 @@
   -webkit-box-shadow: 0px 30px 30px 0px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 30px 30px 0px rgba(0, 0, 0, 0.1);
   /* color */
-  /* state color */
 }
 
 .mars-modal a:not(.mars-button) {
@@ -134,75 +131,39 @@
   color: black;
 }
 
-.mars-modal.is-color-blue .is-title {
+.mars-modal .is-title.is-color-blue {
   color: #006ecf;
 }
 
-.mars-modal.is-color-blue .is-submit {
-  background-color: #006ecf;
-}
-
-.mars-modal.is-color-green .is-title {
+.mars-modal .is-title.is-color-green {
   color: #50c878;
 }
 
-.mars-modal.is-color-green .is-submit {
-  background-color: #50c878;
-}
-
-.mars-modal.is-color-yellow .is-title {
+.mars-modal .is-title.is-color-yellow {
   color: #f8eb00;
 }
 
-.mars-modal.is-color-yellow .is-submit {
-  background-color: #f8eb00;
-}
-
-.mars-modal.is-color-pink .is-title {
+.mars-modal .is-title.is-color-pink {
   color: #df96c1;
 }
 
-.mars-modal.is-color-pink .is-submit {
-  background-color: #df96c1;
-}
-
-.mars-modal.is-color-purple .is-title {
+.mars-modal .is-title.is-color-purple {
   color: #a258e8;
 }
 
-.mars-modal.is-color-purple .is-submit {
-  background-color: #a258e8;
-}
-
-.mars-modal.is-primary .is-title {
+.mars-modal .is-title.is-color-primary {
   color: #00B0FF;
 }
 
-.mars-modal.is-primary .is-submit {
-  background-color: #00B0FF;
-}
-
-.mars-modal.is-success .is-title {
+.mars-modal .is-title.is-color-success {
   color: #00B248;
 }
 
-.mars-modal.is-success .is-submit {
-  background-color: #00B248;
-}
-
-.mars-modal.is-warning .is-title {
+.mars-modal .is-title.is-color-warning {
   color: #FF9D3F;
 }
 
-.mars-modal.is-warning .is-submit {
-  background-color: #FF9D3F;
-}
-
-.mars-modal.is-error .is-title {
+.mars-modal .is-title.is-color-error {
   color: #FF5722;
 }
-
-.mars-modal.is-error .is-submit {
-  background-color: #FF5722;
-}
-/*# sourceMappingURL=modal.css.map */
+/*# sourceMappingURL=modals.css.map */
