@@ -1,15 +1,15 @@
-/* input color */
-/* common color */
+/* mars-form input colors */
+/* state color */
 /* input disabled color */
 /* input readonly color */
 /* input checkbox, radio color */
 /* input checkbox radio disabled color */
 /* input checkbox disabled color */
 /* color maps */
+/* state color maps */
 /* input checkbox & radio */
 /* input size variable */
 /* input size maps */
-/* checkbox-radio */
 .mars-form-radio {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -20,7 +20,6 @@
   position: relative;
   cursor: pointer;
   height: 20px;
-  /* default color icon */
 }
 
 .mars-form-radio > .is-checked {
@@ -45,7 +44,6 @@
   display: block;
   top: 15%;
   left: 10px;
-  /* radio-check-icon color */
 }
 
 .mars-form-radio > .radio-check-icon > svg {
@@ -55,9 +53,6 @@
 .mars-form-radio > input {
   border-width: 3px;
   border-style: solid;
-  /* disabled attribute */
-  /* default hover */
-  /* default color checked event */
 }
 
 .mars-form-radio > input[type="checkbox"] {
@@ -135,11 +130,46 @@
   fill: #a258e8;
 }
 
+.mars-form-radio.is-primary > input:not(:disabled):hover,
+.mars-form-radio.is-primary > input:not(:disabled):checked {
+  border-color: #00b0ff;
+}
+
+.mars-form-radio.is-primary > .radio-check-icon svg {
+  fill: #00b0ff;
+}
+
+.mars-form-radio.is-success > input:not(:disabled):hover,
+.mars-form-radio.is-success > input:not(:disabled):checked {
+  border-color: #00b248;
+}
+
+.mars-form-radio.is-success > .radio-check-icon svg {
+  fill: #00b248;
+}
+
+.mars-form-radio.is-warning > input:not(:disabled):hover,
+.mars-form-radio.is-warning > input:not(:disabled):checked {
+  border-color: #ff9d3f;
+}
+
+.mars-form-radio.is-warning > .radio-check-icon svg {
+  fill: #ff9d3f;
+}
+
+.mars-form-radio.is-error > input:not(:disabled):hover,
+.mars-form-radio.is-error > input:not(:disabled):checked {
+  border-color: #ff5722;
+}
+
+.mars-form-radio.is-error > .radio-check-icon svg {
+  fill: #ff5722;
+}
+
 svg:not(:root) {
   overflow: hidden;
 }
 
-/* label attribute */
 .radio-label {
   font-size: 14px;
   margin-left: 10px;

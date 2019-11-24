@@ -3,7 +3,6 @@
 @import './mixins';
 
 
-/* checkbox-radio */
 .mars-form-radio {
     @include box();
 
@@ -11,10 +10,10 @@
         @include check(50%);
     }
 
-    /* default color icon */
+    
     & > .radio-check-icon {
         @include checkIcon();        
-        /* radio-check-icon color */
+      
         & > svg {
             fill: $default;
         }
@@ -29,7 +28,7 @@
             padding: $input-box-padding;       
         }
 
-        /* disabled attribute */
+        
         &:disabled {
            @include box-disabled();
         }
@@ -38,12 +37,10 @@
             border-color: $input-box-border-color;
         }
 
-        /* default hover */
         &:not(:disabled):hover {
             border-color: $default;
         }
         
-        /* default color checked event */
         &:not(:disabled):checked {
             border-color: $default; 
         }
@@ -55,14 +52,25 @@
         }
     }
 
-    @each $value in $color-value {
-        &.is-color-#{$value} > input:not(:disabled):hover, 
-        &.is-color-#{$value} > input:not(:disabled):checked {
-            border-color: map-get($color,#{$value});
+    @each $name in $color-names {
+        &.is-color-#{$name} > input:not(:disabled):hover, 
+        &.is-color-#{$name} > input:not(:disabled):checked {
+            border-color: map-get($colors,#{$name});
         }
 
-        &.is-color-#{$value} > .radio-check-icon svg {               
-             fill: map-get($color,#{$value});
+        &.is-color-#{$name} > .radio-check-icon svg {               
+             fill: map-get($colors,#{$name});
+        }
+    }
+
+    @each $name in $state-color-names {
+        &.is-#{$name} > input:not(:disabled):hover, 
+        &.is-#{$name} > input:not(:disabled):checked {
+            border-color: map-get($state-colors,#{$name});
+        }
+
+        &.is-#{$name} > .radio-check-icon svg {               
+             fill: map-get($state-colors,#{$name});
         }
     }
 }
@@ -71,7 +79,6 @@ svg:not(:root) {
     overflow: hidden;
 }
 
-/* label attribute */
 .radio-label {
     font-size: 14px;
     margin-left: 10px;

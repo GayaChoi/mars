@@ -2,7 +2,8 @@
 @import './mixins';
 @import './variable';
 
-/* default */
+
+
 .mars-form {
     width: $input-width;
     height: $input-height;
@@ -37,12 +38,22 @@
         @include readonly();
     }
 
-    /* default color active, focus */
-    @each $value in $color-value {
-        &.is-color-#{$value} {
+    /* color actived, focused */
+    @each $name in $color-names {
+        &.is-color-#{$name} {
            &:focus, &.is-focused,
             &:active, &.is-actived {
-              border-color: map-get($color, #{$value});   
+              border-color: map-get($colors, #{$name});   
+           }
+        }          
+    }
+
+    /* state color actived, focused */
+    @each $name in $state-color-names {
+        &.is-#{$name} {
+           &:focus, &.is-focused,
+            &:active, &.is-actived {
+              border-color: map-get($state-colors, #{$name});   
            }
         }          
     }
@@ -109,10 +120,21 @@
     } 
 
     /* underline color active, focus */
-    @each $value in $color-value {
-        &.is-color-#{$value} {
-           &:focus, &.is-focused, &:active, &.is-actived {
-               @include underline(map-get($color,#{$value}));   
+    @each $name in $color-names {
+        &.is-color-#{$name} {
+           &:focus, &.is-focused, 
+           &:active, &.is-actived {
+               @include underline(map-get($colors,#{$name}));   
+           }
+        }          
+    }
+
+    /* underline state color active, focus */
+    @each $name in $state-color-names {
+        &.is-#{$name} {
+           &:focus, &.is-focused, 
+           &:active, &.is-actived {
+               @include underline(map-get($state-colors,#{$name}));   
            }
         }          
     }

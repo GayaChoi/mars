@@ -3,6 +3,7 @@
 @import './mixins';
 
 
+
 /* default */
 .mars-form-checkbox {
     @include box();
@@ -30,15 +31,26 @@
         cursor: not-allowed;
     }
     
-    /* hover,checked event */
-    @each $value in $color-value {
-        &.is-color-#{$value} > input:not(:disabled):hover {
-            border-color: map-get($color,#{$value});
+    /* colors checked hovered  */
+    @each $name in $color-names {
+        &.is-color-#{$name} > input:not(:disabled):hover {
+            border-color: map-get($colors,#{$name});
         }
 
-        &.is-color-#{$value} > input:checked {
-             background-color: map-get($color,#{$value});               
-             border-color: map-get($color,#{$value});
+        &.is-color-#{$name} > input:checked {
+            background-color: map-get($colors,#{$name});               
+            border-color: map-get($colors,#{$name});
+        }
+    }
+
+    @each $name in $state-color-names {
+        &.is-#{$name} > input:not(:disabled):hover {
+            border-color: map-get($state-colors,#{$name});
+        }
+
+        &.is-#{$name} > input:checked {
+            background-color: map-get($state-colors,#{$name});               
+            border-color: map-get($state-colors,#{$name});
         }
     }
 

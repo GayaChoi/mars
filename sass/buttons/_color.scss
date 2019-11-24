@@ -21,10 +21,10 @@ $gradient-purple: #6217a9 !default;
 
 
 /* state color */
-$primary: #00B0FF !default;
-$success: #00B248 !default;
-$warning: #FF9D3F !default;
-$error: #FF5722 !default;
+$primary: rgb(0,176,255) !default;
+$success: rgb(0,178,72) !default;
+$warning: rgb(255,157,63) !default;
+$error: rgb(255,87,34) !default;
 
 /* button hovered color */
 $button-hovered-color: transparent !default;

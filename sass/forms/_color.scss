@@ -1,5 +1,4 @@
-/* input color */
-/* common color */
+/* mars-form input colors */
 $default: rgb(18, 159, 234) !default;
 $blue: rgb(0,110,207) !default;
 $green: rgb(80,200,120) !default;
@@ -9,6 +8,12 @@ $purple: rgb(162,88,232) !default;
 $white: white !default;
 $border: transparent !default;
 $input-color: rgb(0,0,0) !default;
+
+/* state color */
+$primary: rgb(0,176,255) !default;
+$success: rgb(0,178,72) !default;
+$warning: rgb(255,157,63) !default;
+$error: rgb(255,87,34) !default;
 
 /* input disabled color */
 $input-disabled-bg-color: rgb(202,210,211) !default;
@@ -31,11 +36,21 @@ $input-checkbox-disabled-bgcolor: #eaeded;
 $input-checkbox-border-color: #bebebe;
 
 /* color maps */
-$color-value: "blue","green","yellow","pink","purple";
-$color: (
+$color-names: "blue","green","yellow","pink","purple";
+$colors: (
     "blue": $blue,
     "green": $green,
     "yellow": $yellow,
     "pink": $pink,
     "purple": $purple
 );
+
+
+/* state color maps */
+$state-color-names: "primary","success","warning","error";
+$state-colors: (
+   "primary": $primary,
+   "success": $success,
+   "warning": $warning,
+   "error": $error
+);  
