@@ -1,0 +1,314 @@
+/* mars-form input colors */
+/* state color */
+/* input disabled color */
+/* input readonly color */
+/* input checkbox, radio color */
+/* input checkbox radio disabled color */
+/* input checkbox disabled color */
+/* color maps */
+/* input checkbox & radio */
+/* input size variable */
+/* input size maps */
+.mars-form {
+  width: 100%;
+  height: 2.5rem;
+  color: black;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: normal;
+  font-size: inherit;
+  display: inline-block;
+  padding: 0.5em 1em;
+  border: 1px solid transparent;
+  background: white;
+  vertical-align: middle;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
+  outline: 0;
+  margin-bottom: 15px;
+  /* default active, focus */
+  /* default disabled & readonly type */
+  /* color actived, focused */
+  /* rounded */
+  /* size */
+}
+
+.mars-form:active, .mars-form.is-actived, .mars-form:focus, .mars-form.is-focused {
+  border-color: #129fea;
+}
+
+.mars-form.is-disabled {
+  cursor: not-allowed;
+  background-color: #cad2d3;
+  color: #cad2d3;
+}
+
+.mars-form.is-readonly {
+  background-color: #eeeeee;
+  color: #777777;
+  border-color: #cccccc;
+}
+
+.mars-form.is-color-blue:focus, .mars-form.is-color-blue.is-focused, .mars-form.is-color-blue:active, .mars-form.is-color-blue.is-actived {
+  border-color: #006ecf;
+}
+
+.mars-form.is-color-green:focus, .mars-form.is-color-green.is-focused, .mars-form.is-color-green:active, .mars-form.is-color-green.is-actived {
+  border-color: #50c878;
+}
+
+.mars-form.is-color-yellow:focus, .mars-form.is-color-yellow.is-focused, .mars-form.is-color-yellow:active, .mars-form.is-color-yellow.is-actived {
+  border-color: #f8eb00;
+}
+
+.mars-form.is-color-pink:focus, .mars-form.is-color-pink.is-focused, .mars-form.is-color-pink:active, .mars-form.is-color-pink.is-actived {
+  border-color: #df96c1;
+}
+
+.mars-form.is-color-purple:focus, .mars-form.is-color-purple.is-focused, .mars-form.is-color-purple:active, .mars-form.is-color-purple.is-actived {
+  border-color: #a258e8;
+}
+
+.mars-form.is-color-primary:focus, .mars-form.is-color-primary.is-focused, .mars-form.is-color-primary:active, .mars-form.is-color-primary.is-actived {
+  border-color: #00b0ff;
+}
+
+.mars-form.is-color-success:focus, .mars-form.is-color-success.is-focused, .mars-form.is-color-success:active, .mars-form.is-color-success.is-actived {
+  border-color: #00b248;
+}
+
+.mars-form.is-color-warning:focus, .mars-form.is-color-warning.is-focused, .mars-form.is-color-warning:active, .mars-form.is-color-warning.is-actived {
+  border-color: #ff9d3f;
+}
+
+.mars-form.is-color-error:focus, .mars-form.is-color-error.is-focused, .mars-form.is-color-error:active, .mars-form.is-color-error.is-actived {
+  border-color: #ff5722;
+}
+
+.mars-form.is-normal-rounded {
+  border-radius: 3px;
+}
+
+.mars-form.is-little-rounded {
+  border-radius: 0.5em;
+}
+
+.mars-form.is-rounded {
+  border-radius: 2em;
+}
+
+.mars-form.is-size-1 {
+  width: 100%;
+}
+
+.mars-form.is-size-3-4 {
+  width: 75%;
+}
+
+.mars-form.is-size-2-3 {
+  width: 66%;
+}
+
+.mars-form.is-size-1-2 {
+  width: 50%;
+}
+
+.mars-form.is-size-1-3 {
+  width: 33%;
+}
+
+.mars-form.is-size-1-4 {
+  width: 25%;
+}
+
+/* input underline */
+.mars-form-underline {
+  width: 100%;
+  height: 2.5rem;
+  color: black;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: normal;
+  font-size: inherit;
+  display: inline-block;
+  padding: 0.5em 1em;
+  border: 1px solid transparent;
+  background: white;
+  vertical-align: middle;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
+  outline: 0;
+  margin-bottom: 15px;
+  border: 2px solid transparent;
+  border-radius: 3px;
+  border-width: 2px 0px;
+  background: white;
+  box-sizing: border-box;
+  -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+  /* size */
+  /* underline default color focus,active */
+  /* underline color active, focus */
+}
+
+.mars-form-underline.is-size-1 {
+  width: 100%;
+}
+
+.mars-form-underline.is-size-3-4 {
+  width: 75%;
+}
+
+.mars-form-underline.is-size-2-3 {
+  width: 66%;
+}
+
+.mars-form-underline.is-size-1-2 {
+  width: 50%;
+}
+
+.mars-form-underline.is-size-1-3 {
+  width: 33%;
+}
+
+.mars-form-underline.is-size-1-4 {
+  width: 25%;
+}
+
+.mars-form-underline:active, .mars-form-underline.is-actived, .mars-form-underline:focus, .mars-form-underline.is-focused {
+  outline: 0;
+  border: 2px solid transparent;
+  border-radius: 3px;
+  border-width: 2px 0px;
+  border-bottom: 2px solid #129fea;
+  -webkit-box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
+}
+
+.mars-form-underline.is-color-blue:focus, .mars-form-underline.is-color-blue.is-focused, .mars-form-underline.is-color-blue:active, .mars-form-underline.is-color-blue.is-actived {
+  outline: 0;
+  border: 2px solid transparent;
+  border-radius: 3px;
+  border-width: 2px 0px;
+  border-bottom: 2px solid #006ecf;
+  -webkit-box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
+}
+
+.mars-form-underline.is-color-green:focus, .mars-form-underline.is-color-green.is-focused, .mars-form-underline.is-color-green:active, .mars-form-underline.is-color-green.is-actived {
+  outline: 0;
+  border: 2px solid transparent;
+  border-radius: 3px;
+  border-width: 2px 0px;
+  border-bottom: 2px solid #50c878;
+  -webkit-box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
+}
+
+.mars-form-underline.is-color-yellow:focus, .mars-form-underline.is-color-yellow.is-focused, .mars-form-underline.is-color-yellow:active, .mars-form-underline.is-color-yellow.is-actived {
+  outline: 0;
+  border: 2px solid transparent;
+  border-radius: 3px;
+  border-width: 2px 0px;
+  border-bottom: 2px solid #f8eb00;
+  -webkit-box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
+}
+
+.mars-form-underline.is-color-pink:focus, .mars-form-underline.is-color-pink.is-focused, .mars-form-underline.is-color-pink:active, .mars-form-underline.is-color-pink.is-actived {
+  outline: 0;
+  border: 2px solid transparent;
+  border-radius: 3px;
+  border-width: 2px 0px;
+  border-bottom: 2px solid #df96c1;
+  -webkit-box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
+}
+
+.mars-form-underline.is-color-purple:focus, .mars-form-underline.is-color-purple.is-focused, .mars-form-underline.is-color-purple:active, .mars-form-underline.is-color-purple.is-actived {
+  outline: 0;
+  border: 2px solid transparent;
+  border-radius: 3px;
+  border-width: 2px 0px;
+  border-bottom: 2px solid #a258e8;
+  -webkit-box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
+}
+
+.mars-form-underline.is-color-primary:focus, .mars-form-underline.is-color-primary.is-focused, .mars-form-underline.is-color-primary:active, .mars-form-underline.is-color-primary.is-actived {
+  outline: 0;
+  border: 2px solid transparent;
+  border-radius: 3px;
+  border-width: 2px 0px;
+  border-bottom: 2px solid #00b0ff;
+  -webkit-box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
+}
+
+.mars-form-underline.is-color-success:focus, .mars-form-underline.is-color-success.is-focused, .mars-form-underline.is-color-success:active, .mars-form-underline.is-color-success.is-actived {
+  outline: 0;
+  border: 2px solid transparent;
+  border-radius: 3px;
+  border-width: 2px 0px;
+  border-bottom: 2px solid #00b248;
+  -webkit-box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
+}
+
+.mars-form-underline.is-color-warning:focus, .mars-form-underline.is-color-warning.is-focused, .mars-form-underline.is-color-warning:active, .mars-form-underline.is-color-warning.is-actived {
+  outline: 0;
+  border: 2px solid transparent;
+  border-radius: 3px;
+  border-width: 2px 0px;
+  border-bottom: 2px solid #ff9d3f;
+  -webkit-box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
+}
+
+.mars-form-underline.is-color-error:focus, .mars-form-underline.is-color-error.is-focused, .mars-form-underline.is-color-error:active, .mars-form-underline.is-color-error.is-actived {
+  outline: 0;
+  border: 2px solid transparent;
+  border-radius: 3px;
+  border-width: 2px 0px;
+  border-bottom: 2px solid #ff5722;
+  -webkit-box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* input, textarea, select disabled & readonly type */
+input.mars-form[disabled],
+textarea.mars-form[disabled],
+select.mars-form[disabled] {
+  cursor: not-allowed;
+  background-color: #cad2d3;
+  color: #cad2d3;
+}
+
+input.mars-form[readonly],
+textarea.mars-form[readonly],
+select.mars-form[readonly] {
+  background-color: #eeeeee;
+  color: #777777;
+  border-color: #cccccc;
+}
+
+input.mars-form[type="color"] {
+  padding: 0.2em 0.5em;
+}
+
+/* textarea */
+textarea.mars-form {
+  height: calc(2.5rem * 5);
+}
+
+/* label */
+label.forms-label {
+  margin: 0.5em 0.75em 0.5em;
+}
+/*# sourceMappingURL=input.css.map */

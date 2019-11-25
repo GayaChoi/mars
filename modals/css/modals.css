@@ -1,196 +1,169 @@
+/* modal delete class */
+/* modal title */
+/* modals colors */
+/* state colors */
+/* colors maps */
+/* modal delete class */
+/* modal title */
+/* modals colors */
+/* state colors */
+/* colors maps */
 * {
-    box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .mars-modal {
-   position: relative;
-   background-color: white;
-   width: 30rem;
-   padding: 3rem 1.5rem 3rem 1.5rem;
-   border-radius: 4px;
-   font-size: 16px;
-   text-align: center;
-   margin-bottom: 100px;
-   box-shadow: rgba(0, 0, 0, 0.1) 0px 30px 30px 0px;
-} 
+  position: relative;
+  background-color: #ffffff;
+  width: 30rem;
+  padding: 3rem 1.5rem 3rem 1.5rem;
+  border-radius: 4px;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 100px;
+  -webkit-box-shadow: 0px 30px 30px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 30px 30px 0px rgba(0, 0, 0, 0.1);
+  /* color */
+}
 
 .mars-modal a:not(.mars-button) {
-    color: currentColor;
-    text-decoration: underline;
+  color: currentColor;
+  text-decoration: underline;
 }
 
 .mars-modal strong {
-    color: currentColor;
+  color: currentColor;
 }
 
-.mars-modal code,
-.mars-modal pre {
-    background: white
+.mars-modal code, .mars-modal pre {
+  background: #ffffff;
 }
 
 .mars-modal pre code {
-    background: transparent;
+  background: transparent;
 }
 
 .mars-modal .delete {
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    pointer-events: auto;
-    display: inline-block;
-    font-size: 0;
-    height: 20px;
-    max-width: 20px;
-    max-height: 20px;
-    min-height: 20px;
-    min-width: 20px;
-    outline: 0;
-    position: relative;
-    vertical-align: top;
-    width: 20px;
-    background-color: white;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  pointer-events: auto;
+  display: inline-block;
+  font-size: 0px;
+  height: 20px;
+  max-width: 20px;
+  max-height: 20px;
+  min-height: 20px;
+  min-width: 20px;
+  outline: 0;
+  position: relative;
+  vertical-align: top;
+  width: 20px;
+  background-color: #ffffff;
 }
 
-.mars-modal > .delete {
-    position: absolute;
-    right: 1.5rem;
-    top: 1.5rem;
+.mars-modal .delete {
+  position: absolute;
+  right: 1.5rem;
+  top: 1.5rem;
+  /* modal delete size */
+}
+
+.mars-modal .delete.is-small {
+  height: 16px;
+  max-height: 16px;
+  max-width: 16px;
+  min-height: 16px;
+  min-width: 16px;
+  width: 16px;
+}
+
+.mars-modal .delete.is-medium {
+  height: 24px;
+  max-height: 24px;
+  max-width: 24px;
+  min-height: 24px;
+  min-width: 24px;
+  width: 24px;
+}
+
+.mars-modal .delete.is-large {
+  height: 32px;
+  max-height: 32px;
+  max-width: 32px;
+  min-height: 32px;
+  min-width: 32px;
+  width: 32px;
 }
 
 .mars-modal .delete::before, .mars-modal .delete::after {
-    content: "";
-    display: block;
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    transform: translateX(-50%) translateY(-50%) rotate(45deg);
-    transform-origin: center center; 
-    background-color: rgba(51, 50, 56, 0.52);
+  content: "";
+  display: block;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+          transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  background-color: rgba(51, 50, 56, 0.52);
 }
 
 .mars-modal .delete::before {
-    height: 2px;
-    width: 100%;
+  height: 2px;
+  width: 100%;
 }
 
 .mars-modal .delete::after {
-    height: 100%;
-    width: 2px;
+  height: 100%;
+  width: 2px;
 }
 
 .mars-modal .is-title {
-    display: block;
-    font-size: 22px;
-    font-weight: 600;
-    margin-top: 15px;
-    margin-bottom: 10px;
-    color: rgb(0,0,0);
+  display: block;
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  color: black;
 }
 
-/* modal color */
-.mars-modal.is-color-blue .is-title {
-    color:rgb(0,110,207);
+.mars-modal .is-title.is-color-blue {
+  color: #006ecf;
 }
 
-.mars-modal.is-color-green .is-title {
-    color: rgb(80,200,120);
+.mars-modal .is-title.is-color-green {
+  color: #50c878;
 }
 
-.mars-modal.is-color-yellow .is-title {
-    color:rgb(248,235,0);
+.mars-modal .is-title.is-color-yellow {
+  color: #f8eb00;
 }
 
-.mars-modal.is-color-pink .is-title {
-    color: rgb(223,150,193);
+.mars-modal .is-title.is-color-pink {
+  color: #df96c1;
 }
 
-.mars-modal.is-color-purple .is-title {
-    color: rgb(162,88,232);
+.mars-modal .is-title.is-color-purple {
+  color: #a258e8;
 }
 
-/* submit colors */
-.mars-modal.is-color-blue .is-submit {
-    background-color:rgb(0,110,207);
+.mars-modal .is-title.is-color-primary {
+  color: #00B0FF;
 }
 
-.mars-modal.is-color-green .is-submit {
-    background-color:rgb(80,200,120);
+.mars-modal .is-title.is-color-success {
+  color: #00B248;
 }
 
-.mars-modal.is-color-yellow .is-submit {
-    background-color:rgb(248,235,0);
+.mars-modal .is-title.is-color-warning {
+  color: #FF9D3F;
 }
 
-.mars-modal.is-color-pink .is-submit {
-    background-color: rgb(223,150,193);
+.mars-modal .is-title.is-color-error {
+  color: #FF5722;
 }
-
-.mars-modal.is-color-purple .is-submit {
-    background-color: rgb(162,88,232);
-}
-
-/* state colors */
-.mars-modal.is-primary .is-title {
-    color: #00B0FF;
-}
-
-.mars-modal.is-success .is-title {
-    color: #00B248;
-}
-
-.mars-modal.is-warning .is-title {
-    color: #FF9D3F;
-}
-
-.mars-modal.is-error .is-title {
-    color: #FF5722;
-}
-
-/* state submit */
-.mars-modal.is-primary .is-submit {
-    background-color: #00B0FF;
-}
-
-.mars-modal.is-success .is-submit {
-    background-color: #00B248;
-}
-
-.mars-modal.is-warning .is-submit {
-    background-color: #FF9D3F;
-}
-
-.mars-modal.is-error .is-submit {
-    background-color: #FF5722;
-}
-
-/* size modals */
-.mars-modal .delete.is-small {
-    height: 16px;
-    max-height: 16px;
-    max-width: 16px;
-    min-height: 16px;
-    min-width: 16px;
-    width: 16px;
-}
-  
-.mars-modal .delete.is-medium {
-    height: 24px;
-    max-height: 24px;
-    max-width: 24px;
-    min-height: 24px;
-    min-width: 24px;
-    width: 24px;
-}
-  
-.mars-modal .delete.is-large {
-    height: 32px;
-    max-height: 32px;
-    max-width: 32px;
-    min-height: 32px;
-    min-width: 32px;
-    width: 32px;
-}
-
-
+/*# sourceMappingURL=modals.css.map */
