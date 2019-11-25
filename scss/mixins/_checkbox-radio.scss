@@ -1,34 +1,3 @@
-// input disabled 
-@mixin disabled() {
-    cursor: not-allowed;
-    background-color: $input-disabled-bg-color;
-    color: $input-disabled-color;
-}
-
-// input readonly 
-@mixin readonly() {
-    background-color: $input-readonly-bgcolor;
-    color: $input-readonly-color;
-    border-color: $input-readonly-border;
-}
-
-// input-underline 
-@mixin underline(
-    $color,
-    $outline: $input-outline,
-    $border: 2px solid $border,
-    $border-radius: $input-radius,
-    $border-width: $input-border-width 0px,
-    $border-bottom: 2px solid $color,
-    $box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1)
-) {
-    outline: $outline;
-    border: $border;
-    border-radius: $border-radius;
-    border-width: $border-width; 
-    border-bottom: $border-bottom;
-    box-shadow: $box-shadow;
-}
 
 // checkbox & radio 
 @mixin box() {

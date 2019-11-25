@@ -1,20 +1,30 @@
-@import './color';
-@import './mixins';
-@import './variable';
+
+// Variables
+// ========================================================================
 
 
+/* input readonly color */
+$input-readonly-bgcolor:                #eeeeee !default;
+$input-readonly-color:                  #777777 !default;
+$input-readonly-border:                 #cccccc !default; 
 
-.mars-form {
+
+/* ========================================================================
+    Components : input
+ ========================================================================== */
+
+
+ .mars-form {
     width: $input-width;
     height: $input-height;
-    color: $input-color;  
+    color: $black;  
     font-family: $input-font-family;
     font-style: $input-font-style;
     font-weight: $input-font-weight;
     font-size: $input-font-size;
     display: inline-block;
     padding: $input-padding-vertical $input-padding-horizontal;
-    border: 1px solid $border;
+    border: 1px solid $transparent;
     background: $white;
     vertical-align: middle;
     box-sizing: $input-border-box;
@@ -31,11 +41,11 @@
 
     /* default disabled & readonly type */
     &.is-disabled {
-        @include disabled();
+        @include input-disabled();
     }
 
     &.is-readonly {
-        @include readonly();
+        @include input-readonly();
     }
 
     /* color actived, focused */
@@ -73,14 +83,14 @@
 .mars-form-underline {
     width: $input-width;
     height: $input-height;
-    color: $input-color;  
+    color: $black;  
     font-family: $input-font-family;
     font-style: $input-font-style;
     font-weight: $input-font-weight;
     font-size: $input-font-size;
     display: inline-block;
     padding: $input-padding-vertical $input-padding-horizontal;
-    border: 1px solid $border;
+    border: 1px solid $transparent;
     background: $white;
     vertical-align: middle;
     box-sizing: $input-border-box;
@@ -88,7 +98,7 @@
     outline: $input-outline;
     margin-bottom: $input-margin-bottom;
 
-    border: 2px solid $border;
+    border: 2px solid $transparent;
     border-radius: $input-radius;
     border-width: $input-border-width 0px;
     background: $white;
@@ -106,7 +116,7 @@
     /* underline default color focus,active */
     &:active, &.is-actived, 
     &:focus, &.is-focused {
-        @include underline($default);
+        @include input-underline($default);
     } 
 
     /* underline color active, focus */
@@ -114,7 +124,7 @@
         &.is-color-#{$name} {
            &:focus, &.is-focused, 
            &:active, &.is-actived {
-               @include underline(map-get($colors,#{$name}));   
+               @include input-underline(map-get($colors,#{$name}));   
            }
         }          
     }
@@ -125,11 +135,11 @@ input.mars-form,
 textarea.mars-form,
 select.mars-form {
     &[disabled] {
-        @include disabled();
+        @include input-disabled();
     }
 
     &[readonly] {
-        @include readonly();
+        @include input-readonly();
     }
 }
 

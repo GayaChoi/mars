@@ -1,0 +1,31 @@
+// input disabled 
+@mixin input-disabled() {
+    cursor: not-allowed;
+    background-color: $disabled;
+    color: $disabled;
+}
+
+// input readonly 
+@mixin input-readonly() {
+    background-color: $input-readonly-bgcolor;
+    color: $input-readonly-color;
+    border-color: $input-readonly-border;
+}
+
+// input-underline 
+@mixin input-underline(
+    $color,
+    $outline: $input-outline,
+    $border: 2px solid $transparent,
+    $border-radius: $input-radius,
+    $border-width: $input-border-width 0px,
+    $border-bottom: 2px solid $color,
+    $box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1)
+) {
+    outline: $outline;
+    border: $transparent;
+    border-radius: $border-radius;
+    border-width: $border-width; 
+    border-bottom: $border-bottom;
+    box-shadow: $box-shadow;
+}

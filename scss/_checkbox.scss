@@ -1,6 +1,18 @@
-@import './color';
-@import './variable';
-@import './mixins';
+
+
+// Variables
+// ========================================================================
+
+
+/* input checkbox disabled color */
+$input-checkbox-disabled-color:         #949494 !default;
+$input-checkbox-disabled-bgcolor:       #eaeded !default;
+$input-checkbox-border-color:           #bebebe !default;
+
+
+/* ========================================================================
+    forms : checkbox
+ ========================================================================== */
 
 
 

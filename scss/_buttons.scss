@@ -1,7 +1,13 @@
-@import './color';
-@import './mixin';
-@import './variable';
 
+// Variables
+// ========================================================================
+
+
+
+
+/* ========================================================================
+    Components : buttons
+ ========================================================================== */
 
 
 * {
@@ -50,7 +56,7 @@
      &.is-actived,
      &.is-pressed {
         outline: $button-outline;
-        box-shadow: $button-active-box-shadow-size rgba($normal,0.12) inset; 
+        box-shadow: $button-active-box-shadow-size rgba($black,0.12) inset; 
      }
  
     /* default hovered */

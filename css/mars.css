@@ -1,483 +1,500 @@
-/* ! mars.css | MIT License | github.com/GayaChoi/mars.css */
-
-/* mars-form */
-.mars-form {
-    width: 100%;
-    height: 2.5rem;
-    color: black;
-    font-family: inherit;
-    font-style: normal;
-    font-weight: normal;
-    font-size: inherit;
-    display: inline-block;
-    padding: 0.5em 1em;
-    border: 1px solid transparent;
-    background: white;
-    vertical-align: middle;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
-            box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
-    outline: 0;
-    margin-bottom: 15px;
-}
-  
-/* actived, focused */
-.mars-form:active, .mars-form.is-actived, .mars-form:focus, .mars-form.is-focused {
-    border-color: #129fea;
-}
-  
-/* disabled */
-.mars-form.is-disabled {
-    cursor: not-allowed;
-    background-color: #cad2d3;
-    color: #cad2d3;
-}
-  
-/* readonly */
-.mars-form.is-readonly {
-    background-color: #eeeeee;
-    color: #777777;
-    border-color: #cccccc;
-}
-  
+/*! mars.css | MIT License | github.com/GayaChoi/mars */
 /* colors */
+/* state color */
+/* input checkbox, radio color */
+/* input checkbox radio disabled color */
+/* button hovered color */
+/* button disabled color */
+/* button gradient color */
+/* color maps */
+/* button gradient maps */
+/* input variables*/
+/* input checkbox & radio */
+/* input size variable */
+/* input size maps */
+/* buttons variables */
+/* button variable */
+/* button actived */
+/* button hovered */
+/* button disabled variable */
+/* button size variable */
+/* button radius size */
+/* size maps */
+/* modals variables */
+/* modal delete class */
+/* modal title */
+/* input readonly color */
+/* ========================================================================
+    Components : input
+ ========================================================================== */
+.mars-form {
+  width: 100%;
+  height: 2.5rem;
+  color: black;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: normal;
+  font-size: inherit;
+  display: inline-block;
+  padding: 0.5em 1em;
+  border: 1px solid transparent;
+  background: #ffffff;
+  vertical-align: middle;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
+  outline: 0;
+  margin-bottom: 15px;
+  /* default active, focus */
+  /* default disabled & readonly type */
+  /* color actived, focused */
+  /* rounded */
+  /* size */
+}
+
+.mars-form:active, .mars-form.is-actived, .mars-form:focus, .mars-form.is-focused {
+  border-color: #129fea;
+}
+
+.mars-form.is-disabled {
+  cursor: not-allowed;
+  background-color: #cad2d3;
+  color: #cad2d3;
+}
+
+.mars-form.is-readonly {
+  background-color: #eeeeee;
+  color: #777777;
+  border-color: #cccccc;
+}
+
 .mars-form.is-color-blue:focus, .mars-form.is-color-blue.is-focused, .mars-form.is-color-blue:active, .mars-form.is-color-blue.is-actived {
-    border-color: #006ecf;
+  border-color: #006ecf;
 }
-  
+
 .mars-form.is-color-green:focus, .mars-form.is-color-green.is-focused, .mars-form.is-color-green:active, .mars-form.is-color-green.is-actived {
-    border-color: #50c878;
+  border-color: #50c878;
 }
-  
+
 .mars-form.is-color-yellow:focus, .mars-form.is-color-yellow.is-focused, .mars-form.is-color-yellow:active, .mars-form.is-color-yellow.is-actived {
-    border-color: #f8eb00;
+  border-color: #f8eb00;
 }
-  
+
 .mars-form.is-color-pink:focus, .mars-form.is-color-pink.is-focused, .mars-form.is-color-pink:active, .mars-form.is-color-pink.is-actived {
-    border-color: #df96c1;
+  border-color: #df96c1;
 }
-  
+
 .mars-form.is-color-purple:focus, .mars-form.is-color-purple.is-focused, .mars-form.is-color-purple:active, .mars-form.is-color-purple.is-actived {
-    border-color: #a258e8;
+  border-color: #a258e8;
 }
-  
-/* state colors */
+
 .mars-form.is-color-primary:focus, .mars-form.is-color-primary.is-focused, .mars-form.is-color-primary:active, .mars-form.is-color-primary.is-actived {
-    border-color: #00b0ff;
+  border-color: #00b0ff;
 }
-  
+
 .mars-form.is-color-success:focus, .mars-form.is-color-success.is-focused, .mars-form.is-color-success:active, .mars-form.is-color-success.is-actived {
-    border-color: #00b248;
+  border-color: #00b248;
 }
-  
+
 .mars-form.is-color-warning:focus, .mars-form.is-color-warning.is-focused, .mars-form.is-color-warning:active, .mars-form.is-color-warning.is-actived {
-    border-color: #ff9d3f;
+  border-color: #ff9d3f;
 }
-  
+
 .mars-form.is-color-error:focus, .mars-form.is-color-error.is-focused, .mars-form.is-color-error:active, .mars-form.is-color-error.is-actived {
-    border-color: #ff5722;
+  border-color: #ff5722;
 }
-  
-/* rounded */
+
 .mars-form.is-normal-rounded {
-    border-radius: 3px;
+  border-radius: 3px;
 }
-  
+
 .mars-form.is-little-rounded {
-    border-radius: 0.5em;
+  border-radius: 0.5em;
 }
-  
+
 .mars-form.is-rounded {
-    border-radius: 2em;
+  border-radius: 2em;
 }
-  
-/* size */
-.mars-form.is-size-1 {
-    width: 100%;
+
+.mars-form.is-size-small {
+  width: 0.75rem;
 }
-  
-.mars-form.is-size-3-4 {
-    width: 75%;
+
+.mars-form.is-size-medium {
+  width: 1.25rem;
 }
-  
-.mars-form.is-size-2-3 {
-    width: 66%;
+
+.mars-form.is-size-normal {
+  width: 1rem;
 }
-  
-.mars-form.is-size-1-2 {
-    width: 50%;
+
+.mars-form.is-size-large {
+  width: 1.5rem;
 }
-  
-.mars-form.is-size-1-3 {
-    width: 33%;
-}
-  
-.mars-form.is-size-1-4 {
-    width: 25%;
-}
-  
-/* underline */
+
+/* input underline */
 .mars-form-underline {
-    width: 100%;
-    height: 2.5rem;
-    color: black;
-    font-family: inherit;
-    font-style: normal;
-    font-weight: normal;
-    font-size: inherit;
-    display: inline-block;
-    padding: 0.5em 1em;
-    border: 1px solid transparent;
-    background: white;
-    vertical-align: middle;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
-            box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
-    outline: 0;
-    margin-bottom: 15px;
-    border: 2px solid transparent;
-    border-radius: 3px;
-    border-width: 2px 0px;
-    background: white;
-    box-sizing: border-box;
-    -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
-            box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
-    -webkit-transition: all 0.2s ease-in-out 0s;
-    transition: all 0.2s ease-in-out 0s;
+  width: 100%;
+  height: 2.5rem;
+  color: black;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: normal;
+  font-size: inherit;
+  display: inline-block;
+  padding: 0.5em 1em;
+  border: 1px solid transparent;
+  background: #ffffff;
+  vertical-align: middle;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
+  outline: 0;
+  margin-bottom: 15px;
+  border: 2px solid transparent;
+  border-radius: 3px;
+  border-width: 2px 0px;
+  background: #ffffff;
+  box-sizing: border-box;
+  -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+  /* size */
+  /* underline default color focus,active */
+  /* underline color active, focus */
 }
-  
-/* underline size */
-.mars-form-underline.is-size-1 {
-    width: 100%;
+
+.mars-form-underline.is-size-small {
+  width: 0.75rem;
 }
-  
-.mars-form-underline.is-size-3-4 {
-    width: 75%;
+
+.mars-form-underline.is-size-medium {
+  width: 1.25rem;
 }
-  
-.mars-form-underline.is-size-2-3 {
-    width: 66%;
+
+.mars-form-underline.is-size-normal {
+  width: 1rem;
 }
-  
-.mars-form-underline.is-size-1-2 {
-    width: 50%;
+
+.mars-form-underline.is-size-large {
+  width: 1.5rem;
 }
-  
-.mars-form-underline.is-size-1-3 {
-    width: 33%;
-}
-  
-.mars-form-underline.is-size-1-4 {
-    width: 25%;
-}
-  
-/* underline actived, focused */
+
 .mars-form-underline:active, .mars-form-underline.is-actived, .mars-form-underline:focus, .mars-form-underline.is-focused {
-    outline: 0;
-    border: 2px solid transparent;
-    border-radius: 3px;
-    border-width: 2px 0px;
-    border-bottom: 2px solid #129fea;
-    -webkit-box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
-            box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
+  outline: 0;
+  border: transparent;
+  border-radius: 3px;
+  border-width: 2px 0px;
+  border-bottom: 2px solid #129fea;
+  -webkit-box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
 }
-  
+
 .mars-form-underline.is-color-blue:focus, .mars-form-underline.is-color-blue.is-focused, .mars-form-underline.is-color-blue:active, .mars-form-underline.is-color-blue.is-actived {
-    outline: 0;
-    border: 2px solid transparent;
-    border-radius: 3px;
-    border-width: 2px 0px;
-    border-bottom: 2px solid #006ecf;
-    -webkit-box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
-            box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
+  outline: 0;
+  border: transparent;
+  border-radius: 3px;
+  border-width: 2px 0px;
+  border-bottom: 2px solid #006ecf;
+  -webkit-box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
 }
-  
+
 .mars-form-underline.is-color-green:focus, .mars-form-underline.is-color-green.is-focused, .mars-form-underline.is-color-green:active, .mars-form-underline.is-color-green.is-actived {
-    outline: 0;
-    border: 2px solid transparent;
-    border-radius: 3px;
-    border-width: 2px 0px;
-    border-bottom: 2px solid #50c878;
-    -webkit-box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
-            box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
+  outline: 0;
+  border: transparent;
+  border-radius: 3px;
+  border-width: 2px 0px;
+  border-bottom: 2px solid #50c878;
+  -webkit-box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
 }
-  
+
 .mars-form-underline.is-color-yellow:focus, .mars-form-underline.is-color-yellow.is-focused, .mars-form-underline.is-color-yellow:active, .mars-form-underline.is-color-yellow.is-actived {
-    outline: 0;
-    border: 2px solid transparent;
-    border-radius: 3px;
-    border-width: 2px 0px;
-    border-bottom: 2px solid #f8eb00;
-    -webkit-box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
-            box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
+  outline: 0;
+  border: transparent;
+  border-radius: 3px;
+  border-width: 2px 0px;
+  border-bottom: 2px solid #f8eb00;
+  -webkit-box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
 }
-  
+
 .mars-form-underline.is-color-pink:focus, .mars-form-underline.is-color-pink.is-focused, .mars-form-underline.is-color-pink:active, .mars-form-underline.is-color-pink.is-actived {
-    outline: 0;
-    border: 2px solid transparent;
-    border-radius: 3px;
-    border-width: 2px 0px;
-    border-bottom: 2px solid #df96c1;
-    -webkit-box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
-            box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
+  outline: 0;
+  border: transparent;
+  border-radius: 3px;
+  border-width: 2px 0px;
+  border-bottom: 2px solid #df96c1;
+  -webkit-box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
 }
-  
+
 .mars-form-underline.is-color-purple:focus, .mars-form-underline.is-color-purple.is-focused, .mars-form-underline.is-color-purple:active, .mars-form-underline.is-color-purple.is-actived {
-    outline: 0;
-    border: 2px solid transparent;
-    border-radius: 3px;
-    border-width: 2px 0px;
-    border-bottom: 2px solid #a258e8;
-    -webkit-box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
-            box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
+  outline: 0;
+  border: transparent;
+  border-radius: 3px;
+  border-width: 2px 0px;
+  border-bottom: 2px solid #a258e8;
+  -webkit-box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
 }
-  
-/* underline state color actived, focused */
+
 .mars-form-underline.is-color-primary:focus, .mars-form-underline.is-color-primary.is-focused, .mars-form-underline.is-color-primary:active, .mars-form-underline.is-color-primary.is-actived {
-    outline: 0;
-    border: 2px solid transparent;
-    border-radius: 3px;
-    border-width: 2px 0px;
-    border-bottom: 2px solid #00b0ff;
-    -webkit-box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
-            box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
+  outline: 0;
+  border: transparent;
+  border-radius: 3px;
+  border-width: 2px 0px;
+  border-bottom: 2px solid #00b0ff;
+  -webkit-box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
 }
-  
+
 .mars-form-underline.is-color-success:focus, .mars-form-underline.is-color-success.is-focused, .mars-form-underline.is-color-success:active, .mars-form-underline.is-color-success.is-actived {
-    outline: 0;
-    border: 2px solid transparent;
-    border-radius: 3px;
-    border-width: 2px 0px;
-    border-bottom: 2px solid #00b248;
-    -webkit-box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
-            box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
+  outline: 0;
+  border: transparent;
+  border-radius: 3px;
+  border-width: 2px 0px;
+  border-bottom: 2px solid #00b248;
+  -webkit-box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
 }
-  
+
 .mars-form-underline.is-color-warning:focus, .mars-form-underline.is-color-warning.is-focused, .mars-form-underline.is-color-warning:active, .mars-form-underline.is-color-warning.is-actived {
-    outline: 0;
-    border: 2px solid transparent;
-    border-radius: 3px;
-    border-width: 2px 0px;
-    border-bottom: 2px solid #ff9d3f;
-    -webkit-box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
-            box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
+  outline: 0;
+  border: transparent;
+  border-radius: 3px;
+  border-width: 2px 0px;
+  border-bottom: 2px solid #ff9d3f;
+  -webkit-box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
 }
-  
+
 .mars-form-underline.is-color-error:focus, .mars-form-underline.is-color-error.is-focused, .mars-form-underline.is-color-error:active, .mars-form-underline.is-color-error.is-actived {
-    outline: 0;
-    border: 2px solid transparent;
-    border-radius: 3px;
-    border-width: 2px 0px;
-    border-bottom: 2px solid #ff5722;
-    -webkit-box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
-            box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
+  outline: 0;
+  border: transparent;
+  border-radius: 3px;
+  border-width: 2px 0px;
+  border-bottom: 2px solid #ff5722;
+  -webkit-box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
 }
-  
+
 /* input, textarea, select disabled & readonly type */
 input.mars-form[disabled],
 textarea.mars-form[disabled],
 select.mars-form[disabled] {
-    cursor: not-allowed;
-    background-color: #cad2d3;
-    color: #cad2d3;
+  cursor: not-allowed;
+  background-color: #cad2d3;
+  color: #cad2d3;
 }
-  
+
 input.mars-form[readonly],
 textarea.mars-form[readonly],
 select.mars-form[readonly] {
-    background-color: #eeeeee;
-    color: #777777;
-    border-color: #cccccc;
+  background-color: #eeeeee;
+  color: #777777;
+  border-color: #cccccc;
 }
-  
+
 input.mars-form[type="color"] {
-    padding: 0.2em 0.5em;
+  padding: 0.2em 0.5em;
 }
-  
+
 /* textarea */
 textarea.mars-form {
-    height: calc(2.5rem * 5);
+  height: calc(2.5rem * 5);
 }
-  
+
 /* label */
 label.forms-label {
-    margin: 0.5em 0.75em 0.5em;
+  margin: 0.5em 0.75em 0.5em;
 }
 
-/* mars-form-checkbox attribute */
+/* input checkbox disabled color */
+/* ========================================================================
+    forms : checkbox
+ ========================================================================== */
+/* default */
 .mars-form-checkbox {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    position: relative;
-    cursor: pointer;
-    height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  cursor: pointer;
+  height: 20px;
+  /* default color checked event */
+  /* colors checked hovered  */
 }
-  
+
 .mars-form-checkbox > .is-checked {
-    all: unset;
-    width: 20px;
-    height: 20px;
-    display: block;
-    background: none;
-    border-radius: 3px;
-    border-width: 3px;
-    border-style: solid;
-    -o-border-image: initial;
-       border-image: initial;
-    -webkit-transition: all 0.2s ease-in-out 0s;
-    transition: all 0.2s ease-in-out 0s;
-    border-color: #dfdfdf;
-    cursor: pointer;
+  all: unset;
+  width: 20px;
+  height: 20px;
+  display: block;
+  background: none;
+  border-radius: 3px;
+  border-width: 3px;
+  border-style: solid;
+  -o-border-image: initial;
+     border-image: initial;
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+  border-color: #dfdfdf;
+  cursor: pointer;
 }
-  
+
 .mars-form-checkbox > .checkbox-check-icon {
-    position: absolute;
-    display: block;
-    top: 15%;
-    left: 10px;
-    color: white;
+  position: absolute;
+  display: block;
+  top: 15%;
+  left: 10px;
+  color: #ffffff;
 }
-  
+
 .mars-form-checkbox > .checkbox-check-icon > svg {
-    fill: white;
+  fill: #ffffff;
 }
-  
+
 .mars-form-checkbox > input:not(:disabled):checked {
-    background-color: #129fea;
-    border-color: #129fea;
+  background-color: #129fea;
+  border-color: #129fea;
 }
-  
+
 .mars-form-checkbox > input:disabled + .checkbox-check-icon svg {
-    fill: #cccccc;
-    cursor: not-allowed;
+  fill: #cccccc;
+  cursor: not-allowed;
 }
-  
+
 .mars-form-checkbox.is-color-blue > input:not(:disabled):hover {
-    border-color: #006ecf;
+  border-color: #006ecf;
 }
-  
+
 .mars-form-checkbox.is-color-blue > input:checked {
-    background-color: #006ecf;
-    border-color: #006ecf;
+  background-color: #006ecf;
+  border-color: #006ecf;
 }
-  
+
 .mars-form-checkbox.is-color-green > input:not(:disabled):hover {
-    border-color: #50c878;
+  border-color: #50c878;
 }
-  
+
 .mars-form-checkbox.is-color-green > input:checked {
-    background-color: #50c878;
-    border-color: #50c878;
+  background-color: #50c878;
+  border-color: #50c878;
 }
-  
+
 .mars-form-checkbox.is-color-yellow > input:not(:disabled):hover {
-    border-color: #f8eb00;
+  border-color: #f8eb00;
 }
-  
+
 .mars-form-checkbox.is-color-yellow > input:checked {
-    background-color: #f8eb00;
-    border-color: #f8eb00;
+  background-color: #f8eb00;
+  border-color: #f8eb00;
 }
-  
+
 .mars-form-checkbox.is-color-pink > input:not(:disabled):hover {
-    border-color: #df96c1;
+  border-color: #df96c1;
 }
-  
+
 .mars-form-checkbox.is-color-pink > input:checked {
-    background-color: #df96c1;
-    border-color: #df96c1;
+  background-color: #df96c1;
+  border-color: #df96c1;
 }
-  
+
 .mars-form-checkbox.is-color-purple > input:not(:disabled):hover {
-    border-color: #a258e8;
+  border-color: #a258e8;
 }
-  
+
 .mars-form-checkbox.is-color-purple > input:checked {
-    background-color: #a258e8;
-    border-color: #a258e8;
+  background-color: #a258e8;
+  border-color: #a258e8;
 }
-  
+
 .mars-form-checkbox.is-color-primary > input:not(:disabled):hover {
-    border-color: #00b0ff;
+  border-color: #00b0ff;
 }
-  
+
 .mars-form-checkbox.is-color-primary > input:checked {
-    background-color: #00b0ff;
-    border-color: #00b0ff;
+  background-color: #00b0ff;
+  border-color: #00b0ff;
 }
-  
+
 .mars-form-checkbox.is-color-success > input:not(:disabled):hover {
-    border-color: #00b248;
+  border-color: #00b248;
 }
-  
+
 .mars-form-checkbox.is-color-success > input:checked {
-    background-color: #00b248;
-    border-color: #00b248;
+  background-color: #00b248;
+  border-color: #00b248;
 }
-  
+
 .mars-form-checkbox.is-color-warning > input:not(:disabled):hover {
-    border-color: #ff9d3f;
+  border-color: #ff9d3f;
 }
-  
+
 .mars-form-checkbox.is-color-warning > input:checked {
-    background-color: #ff9d3f;
-    border-color: #ff9d3f;
+  background-color: #ff9d3f;
+  border-color: #ff9d3f;
 }
-  
+
 .mars-form-checkbox.is-color-error > input:not(:disabled):hover {
-    border-color: #ff5722;
+  border-color: #ff5722;
 }
-  
+
 .mars-form-checkbox.is-color-error > input:checked {
-    background-color: #ff5722;
-    border-color: #ff5722;
+  background-color: #ff5722;
+  border-color: #ff5722;
 }
-  
+
 .mars-form-checkbox > input {
-    border-width: 3px;
-    border-style: solid;
+  border-width: 3px;
+  border-style: solid;
+  /* checkbox disabled attribute */
+  /* default hover */
 }
-  
+
 .mars-form-checkbox > input[type="checkbox"] {
-    margin: 3px 3px 3px 4px;
-    padding: initial;
+  margin: 3px 3px 3px 4px;
+  padding: initial;
 }
-  
+
 .mars-form-checkbox > input:disabled {
-    color: #949494;
-    background-color: #eaeded;
-    border-color: #bebebe;
-    border-width: 3px;
-    border-style: solid;
+  color: #949494;
+  background-color: #eaeded;
+  border-color: #bebebe;
+  border-width: 3px;
+  border-style: solid;
 }
-  
+
 .mars-form-checkbox > input:not(:disabled) {
-    border-color: #dfdfdf;
+  border-color: #dfdfdf;
 }
-  
+
 .mars-form-checkbox > input:not(:disabled):hover {
-    border-color: #129fea;
+  border-color: #129fea;
 }
-  
+
 svg:not(:root) {
-    overflow: hidden;
+  overflow: hidden;
 }
-  
+
 /* label attribute */
 .checkbox-label {
-    font-size: 14px;
-    margin-left: 10px;
-    cursor: pointer;
+  font-size: 14px;
+  margin-left: 10px;
+  cursor: pointer;
 }
 
-/* mars-form-radio attribute */
-/* checkbox-radio */
+/* ========================================================================
+    forms : radio
+ ========================================================================== */
 .mars-form-radio {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -490,7 +507,6 @@ svg:not(:root) {
   height: 20px;
 }
 
-/* mars-form-radio checked */
 .mars-form-radio > .is-checked {
   all: unset;
   width: 20px;
@@ -508,7 +524,6 @@ svg:not(:root) {
   cursor: pointer;
 }
 
-/* mars-form-radio check icon */
 .mars-form-radio > .radio-check-icon {
   position: absolute;
   display: block;
@@ -555,7 +570,6 @@ svg:not(:root) {
   cursor: not-allowed;
 }
 
-/* mars-form-radio colors */
 .mars-form-radio.is-color-blue > input:not(:disabled):hover,
 .mars-form-radio.is-color-blue > input:not(:disabled):checked {
   border-color: #006ecf;
@@ -601,7 +615,6 @@ svg:not(:root) {
   fill: #a258e8;
 }
 
-/* mars-form-radio state-colors */
 .mars-form-radio.is-color-primary > input:not(:disabled):hover,
 .mars-form-radio.is-color-primary > input:not(:disabled):checked {
   border-color: #00b0ff;
@@ -642,272 +655,262 @@ svg:not(:root) {
   overflow: hidden;
 }
 
-/* label attribute */
 .radio-label {
   font-size: 14px;
   margin-left: 10px;
   cursor: pointer;
 }
-/* common color */
-/* button gradient color */
-/* state color */
-/* button hovered color */
-/* button disabled color */
-/* color maps */
-/* button variable */
-/* button actived */
-/* button hovered */
-/* button disabled variable */
-/* button size variable */
-/* button radius size */
-/* size maps */
+
+/* ========================================================================
+    Components : buttons
+ ========================================================================== */
 * {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
-  
+
 /* default style */
 .mars-button,
 .mars-button-icon {
-    width: 10rem;
-    font-family: inherit;
-    font-size: 1rem;
-    font-weight: 500;
-    border: 2px solid transparent;
-    border-width: 2px;
-    -o-border-image: initial;
-       border-image: initial;
-    padding: 0.85em 1em;
-    background-color: #129fea;
-    text-decoration: none;
-    border-radius: 4px;
-    margin-bottom: 30px;
-    cursor: pointer;
-    -webkit-transition: all 0.2s ease-in-out 0s;
-    transition: all 0.2s ease-in-out 0s;
-    color: #ffffff;
-    outline: 0;
-    text-align: center;
-    -webkit-box-shadow: 0px 10px 25px rgba(18, 159, 234, 0.5);
-            box-shadow: 0px 10px 25px rgba(18, 159, 234, 0.5);
-    /* button, icon button color */
-    /* focused */
-    /* actived, pressed */
-    /* default hovered */
-    /* default hovered box-shadow */
-    /* color hovered */
-    /* disabled */
-    /* modals button */
-    /* gradient button */
-    /* anim button */
-    /* button size */
-    /* normal rounded */
-    /* little rounded */
-    /* rounded button */
-    /* button outlined */
+  width: 10rem;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 500;
+  border: 2px solid transparent;
+  border-width: 2px;
+  -o-border-image: initial;
+     border-image: initial;
+  padding: 0.85em 1em;
+  background-color: #129fea;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+  color: #ffffff;
+  outline: 0;
+  text-align: center;
+  -webkit-box-shadow: 0px 10px 25px rgba(18, 159, 234, 0.5);
+          box-shadow: 0px 10px 25px rgba(18, 159, 234, 0.5);
+  /* button, icon button color */
+  /* focused */
+  /* actived, pressed */
+  /* default hovered */
+  /* default hovered box-shadow */
+  /* color hovered */
+  /* disabled */
+  /* modals button */
+  /* gradient button */
+  /* anim button */
+  /* button size */
+  /* normal rounded */
+  /* little rounded */
+  /* rounded button */
+  /* button outlined */
 }
-  
+
 .mars-button.is-color-blue,
 .mars-button-icon.is-color-blue {
-    outline: 0;
-    background-color: #006ecf;
-    border-color: #006ecf;
-    -webkit-box-shadow: 0px 10px 25px rgba(0, 110, 207, 0.5);
-            box-shadow: 0px 10px 25px rgba(0, 110, 207, 0.5);
+  outline: 0;
+  background-color: #006ecf;
+  border-color: #006ecf;
+  -webkit-box-shadow: 0px 10px 25px rgba(0, 110, 207, 0.5);
+          box-shadow: 0px 10px 25px rgba(0, 110, 207, 0.5);
 }
-  
+
 .mars-button.is-color-green,
 .mars-button-icon.is-color-green {
-    outline: 0;
-    background-color: #50c878;
-    border-color: #50c878;
-    -webkit-box-shadow: 0px 10px 25px rgba(80, 200, 120, 0.5);
-            box-shadow: 0px 10px 25px rgba(80, 200, 120, 0.5);
+  outline: 0;
+  background-color: #50c878;
+  border-color: #50c878;
+  -webkit-box-shadow: 0px 10px 25px rgba(80, 200, 120, 0.5);
+          box-shadow: 0px 10px 25px rgba(80, 200, 120, 0.5);
 }
-  
+
 .mars-button.is-color-yellow,
 .mars-button-icon.is-color-yellow {
-    outline: 0;
-    background-color: #f8eb00;
-    border-color: #f8eb00;
-    -webkit-box-shadow: 0px 10px 25px rgba(248, 235, 0, 0.5);
-            box-shadow: 0px 10px 25px rgba(248, 235, 0, 0.5);
+  outline: 0;
+  background-color: #f8eb00;
+  border-color: #f8eb00;
+  -webkit-box-shadow: 0px 10px 25px rgba(248, 235, 0, 0.5);
+          box-shadow: 0px 10px 25px rgba(248, 235, 0, 0.5);
 }
-  
+
 .mars-button.is-color-pink,
 .mars-button-icon.is-color-pink {
-    outline: 0;
-    background-color: #df96c1;
-    border-color: #df96c1;
-    -webkit-box-shadow: 0px 10px 25px rgba(223, 150, 193, 0.5);
-            box-shadow: 0px 10px 25px rgba(223, 150, 193, 0.5);
+  outline: 0;
+  background-color: #df96c1;
+  border-color: #df96c1;
+  -webkit-box-shadow: 0px 10px 25px rgba(223, 150, 193, 0.5);
+          box-shadow: 0px 10px 25px rgba(223, 150, 193, 0.5);
 }
-  
+
 .mars-button.is-color-purple,
 .mars-button-icon.is-color-purple {
-    outline: 0;
-    background-color: #a258e8;
-    border-color: #a258e8;
-    -webkit-box-shadow: 0px 10px 25px rgba(162, 88, 232, 0.5);
-            box-shadow: 0px 10px 25px rgba(162, 88, 232, 0.5);
+  outline: 0;
+  background-color: #a258e8;
+  border-color: #a258e8;
+  -webkit-box-shadow: 0px 10px 25px rgba(162, 88, 232, 0.5);
+          box-shadow: 0px 10px 25px rgba(162, 88, 232, 0.5);
 }
-  
+
 .mars-button.is-color-primary,
 .mars-button-icon.is-color-primary {
-    outline: 0;
-    background-color: #00b0ff;
-    border-color: #00b0ff;
-    -webkit-box-shadow: 0px 10px 25px rgba(0, 176, 255, 0.5);
-            box-shadow: 0px 10px 25px rgba(0, 176, 255, 0.5);
+  outline: 0;
+  background-color: #00b0ff;
+  border-color: #00b0ff;
+  -webkit-box-shadow: 0px 10px 25px rgba(0, 176, 255, 0.5);
+          box-shadow: 0px 10px 25px rgba(0, 176, 255, 0.5);
 }
-  
+
 .mars-button.is-color-success,
 .mars-button-icon.is-color-success {
-    outline: 0;
-    background-color: #00b248;
-    border-color: #00b248;
-    -webkit-box-shadow: 0px 10px 25px rgba(0, 178, 72, 0.5);
-            box-shadow: 0px 10px 25px rgba(0, 178, 72, 0.5);
+  outline: 0;
+  background-color: #00b248;
+  border-color: #00b248;
+  -webkit-box-shadow: 0px 10px 25px rgba(0, 178, 72, 0.5);
+          box-shadow: 0px 10px 25px rgba(0, 178, 72, 0.5);
 }
-  
+
 .mars-button.is-color-warning,
 .mars-button-icon.is-color-warning {
-    outline: 0;
-    background-color: #ff9d3f;
-    border-color: #ff9d3f;
-    -webkit-box-shadow: 0px 10px 25px rgba(255, 157, 63, 0.5);
-            box-shadow: 0px 10px 25px rgba(255, 157, 63, 0.5);
+  outline: 0;
+  background-color: #ff9d3f;
+  border-color: #ff9d3f;
+  -webkit-box-shadow: 0px 10px 25px rgba(255, 157, 63, 0.5);
+          box-shadow: 0px 10px 25px rgba(255, 157, 63, 0.5);
 }
-  
+
 .mars-button.is-color-error,
 .mars-button-icon.is-color-error {
-    outline: 0;
-    background-color: #ff5722;
-    border-color: #ff5722;
-    -webkit-box-shadow: 0px 10px 25px rgba(255, 87, 34, 0.5);
-            box-shadow: 0px 10px 25px rgba(255, 87, 34, 0.5);
+  outline: 0;
+  background-color: #ff5722;
+  border-color: #ff5722;
+  -webkit-box-shadow: 0px 10px 25px rgba(255, 87, 34, 0.5);
+          box-shadow: 0px 10px 25px rgba(255, 87, 34, 0.5);
 }
-  
+
 .mars-button:focus, .mars-button.is-focused,
 .mars-button-icon:focus,
 .mars-button-icon.is-focused {
-    outline: 0;
-    border: 2px solid rgba(18, 159, 234, 0.5);
+  outline: 0;
+  border: 2px solid rgba(18, 159, 234, 0.5);
 }
-  
+
 .mars-button:active, .mars-button.is-actived, .mars-button.is-pressed,
 .mars-button-icon:active,
 .mars-button-icon.is-actived,
 .mars-button-icon.is-pressed {
-    outline: 0;
-    -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.12) inset;
-            box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.12) inset;
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.12) inset;
+          box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.12) inset;
 }
-  
+
 .mars-button.is-hovered, .mars-button:not(.is-outlined):hover,
 .mars-button-icon.is-hovered,
 .mars-button-icon:not(.is-outlined):hover {
-    opacity: 0.75;
-    cursor: pointer;
-    border-color: transparent;
+  opacity: 0.75;
+  cursor: pointer;
+  border-color: transparent;
 }
-  
+
 .mars-button.is-hovered, .mars-button:hover,
 .mars-button-icon.is-hovered,
 .mars-button-icon:hover {
-    -webkit-box-shadow: 0px 10px 25px rgba(18, 159, 234, 0.85);
-            box-shadow: 0px 10px 25px rgba(18, 159, 234, 0.85);
+  -webkit-box-shadow: 0px 10px 25px rgba(18, 159, 234, 0.85);
+          box-shadow: 0px 10px 25px rgba(18, 159, 234, 0.85);
 }
-  
+
 .mars-button.is-hovered.is-color-blue, .mars-button.is-color-blue:hover,
 .mars-button-icon.is-hovered.is-color-blue,
 .mars-button-icon.is-color-blue:hover {
-    -webkit-box-shadow: 0px 10px 25px rgba(0, 110, 207, 0.85);
-            box-shadow: 0px 10px 25px rgba(0, 110, 207, 0.85);
+  -webkit-box-shadow: 0px 10px 25px rgba(0, 110, 207, 0.85);
+          box-shadow: 0px 10px 25px rgba(0, 110, 207, 0.85);
 }
-  
+
 .mars-button.is-hovered.is-color-green, .mars-button.is-color-green:hover,
 .mars-button-icon.is-hovered.is-color-green,
 .mars-button-icon.is-color-green:hover {
-    -webkit-box-shadow: 0px 10px 25px rgba(80, 200, 120, 0.85);
-            box-shadow: 0px 10px 25px rgba(80, 200, 120, 0.85);
+  -webkit-box-shadow: 0px 10px 25px rgba(80, 200, 120, 0.85);
+          box-shadow: 0px 10px 25px rgba(80, 200, 120, 0.85);
 }
-  
+
 .mars-button.is-hovered.is-color-yellow, .mars-button.is-color-yellow:hover,
 .mars-button-icon.is-hovered.is-color-yellow,
 .mars-button-icon.is-color-yellow:hover {
-    -webkit-box-shadow: 0px 10px 25px rgba(248, 235, 0, 0.85);
-            box-shadow: 0px 10px 25px rgba(248, 235, 0, 0.85);
+  -webkit-box-shadow: 0px 10px 25px rgba(248, 235, 0, 0.85);
+          box-shadow: 0px 10px 25px rgba(248, 235, 0, 0.85);
 }
-  
+
 .mars-button.is-hovered.is-color-pink, .mars-button.is-color-pink:hover,
 .mars-button-icon.is-hovered.is-color-pink,
 .mars-button-icon.is-color-pink:hover {
-    -webkit-box-shadow: 0px 10px 25px rgba(223, 150, 193, 0.85);
-            box-shadow: 0px 10px 25px rgba(223, 150, 193, 0.85);
+  -webkit-box-shadow: 0px 10px 25px rgba(223, 150, 193, 0.85);
+          box-shadow: 0px 10px 25px rgba(223, 150, 193, 0.85);
 }
-  
+
 .mars-button.is-hovered.is-color-purple, .mars-button.is-color-purple:hover,
 .mars-button-icon.is-hovered.is-color-purple,
 .mars-button-icon.is-color-purple:hover {
-    -webkit-box-shadow: 0px 10px 25px rgba(162, 88, 232, 0.85);
-            box-shadow: 0px 10px 25px rgba(162, 88, 232, 0.85);
+  -webkit-box-shadow: 0px 10px 25px rgba(162, 88, 232, 0.85);
+          box-shadow: 0px 10px 25px rgba(162, 88, 232, 0.85);
 }
-  
+
 .mars-button.is-hovered.is-color-primary, .mars-button.is-color-primary:hover,
 .mars-button-icon.is-hovered.is-color-primary,
 .mars-button-icon.is-color-primary:hover {
-    -webkit-box-shadow: 0px 10px 25px rgba(0, 176, 255, 0.85);
-            box-shadow: 0px 10px 25px rgba(0, 176, 255, 0.85);
+  -webkit-box-shadow: 0px 10px 25px rgba(0, 176, 255, 0.85);
+          box-shadow: 0px 10px 25px rgba(0, 176, 255, 0.85);
 }
-  
+
 .mars-button.is-hovered.is-color-success, .mars-button.is-color-success:hover,
 .mars-button-icon.is-hovered.is-color-success,
 .mars-button-icon.is-color-success:hover {
-    -webkit-box-shadow: 0px 10px 25px rgba(0, 178, 72, 0.85);
-            box-shadow: 0px 10px 25px rgba(0, 178, 72, 0.85);
+  -webkit-box-shadow: 0px 10px 25px rgba(0, 178, 72, 0.85);
+          box-shadow: 0px 10px 25px rgba(0, 178, 72, 0.85);
 }
-  
+
 .mars-button.is-hovered.is-color-warning, .mars-button.is-color-warning:hover,
 .mars-button-icon.is-hovered.is-color-warning,
 .mars-button-icon.is-color-warning:hover {
-    -webkit-box-shadow: 0px 10px 25px rgba(255, 157, 63, 0.85);
-            box-shadow: 0px 10px 25px rgba(255, 157, 63, 0.85);
+  -webkit-box-shadow: 0px 10px 25px rgba(255, 157, 63, 0.85);
+          box-shadow: 0px 10px 25px rgba(255, 157, 63, 0.85);
 }
-  
+
 .mars-button.is-hovered.is-color-error, .mars-button.is-color-error:hover,
 .mars-button-icon.is-hovered.is-color-error,
 .mars-button-icon.is-color-error:hover {
-    -webkit-box-shadow: 0px 10px 25px rgba(255, 87, 34, 0.85);
-            box-shadow: 0px 10px 25px rgba(255, 87, 34, 0.85);
+  -webkit-box-shadow: 0px 10px 25px rgba(255, 87, 34, 0.85);
+          box-shadow: 0px 10px 25px rgba(255, 87, 34, 0.85);
 }
-  
+
 .mars-button[disabled], .mars-button.is-disabled,
 .mars-button-icon[disabled],
 .mars-button-icon.is-disabled {
-    border: none;
-    background-image: none;
-    opacity: 1;
-    cursor: not-allowed;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-    background-color: #eaeded;
-    color: #cad2d3;
-    pointer-events: none;
-  }
-  
+  border: none;
+  background-image: none;
+  opacity: 1;
+  cursor: not-allowed;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: #eaeded;
+  color: #cad2d3;
+  pointer-events: none;
+}
+
 .mars-button.is-cancel,
 .mars-button-icon.is-cancel {
-    background-color: #ffffff;
-    border: 2px solid #D3D3D3 !important;
-    border-radius: 2px;
-    width: 6.5rem;
-    height: 3.5rem;
-    color: rgba(139, 139, 139, 0.83) !important;
-    -webkit-box-shadow: none;
-            box-shadow: none;
+  background-color: #ffffff;
+  border: 2px solid #D3D3D3 !important;
+  border-radius: 2px;
+  width: 6.5rem;
+  height: 3.5rem;
+  color: rgba(139, 139, 139, 0.83) !important;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
-  
+
 .mars-button.is-cancel:hover, .mars-button.is-cancel.is-hovered, .mars-button.is-cancel:focus, .mars-button.is-cancel.is-focused, .mars-button.is-cancel:active, .mars-button.is-cancel.is-actived, .mars-button.is-cancel.is-pressed,
 .mars-button-icon.is-cancel:hover,
 .mars-button-icon.is-cancel.is-hovered,
@@ -916,22 +919,22 @@ svg:not(:root) {
 .mars-button-icon.is-cancel:active,
 .mars-button-icon.is-cancel.is-actived,
 .mars-button-icon.is-cancel.is-pressed {
-    opacity: 1;
-    border: 2px solid #D3D3D3 !important;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-    outline: 0;
+  opacity: 1;
+  border: 2px solid #D3D3D3 !important;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: 0;
 }
-  
+
 .mars-button.is-submit,
 .mars-button-icon.is-submit {
-    background-color: #005CFF !important;
-    border: 2px solid #005CFF !important;
-    color: #ffffff;
-    -webkit-box-shadow: none;
-            box-shadow: none;
+  background-color: #005CFF !important;
+  border: 2px solid #005CFF !important;
+  color: #ffffff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
-  
+
 .mars-button.is-submit:hover, .mars-button.is-submit.is-hovered, .mars-button.is-submit:focus, .mars-button.is-submit.is-focused, .mars-button.is-submit:active, .mars-button.is-submit.is-actived, .mars-button.is-submit.is-pressed,
 .mars-button-icon.is-submit:hover,
 .mars-button-icon.is-submit.is-hovered,
@@ -940,509 +943,501 @@ svg:not(:root) {
 .mars-button-icon.is-submit:active,
 .mars-button-icon.is-submit.is-actived,
 .mars-button-icon.is-submit.is-pressed {
-    opacity: 1;
-    border: 2px solid #005CFF !important;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-    outline: 0;
+  opacity: 1;
+  border: 2px solid #005CFF !important;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: 0;
 }
-  
+
 .mars-button.is-gradient,
 .mars-button-icon.is-gradient {
-    border: none;
-    background-image: -webkit-gradient(linear, left top, right top, from(#1233ea), to(#129fea));
-    background-image: linear-gradient(90deg, #1233ea, #129fea);
-    -webkit-box-shadow: 0px 10px 25px rgba(18, 159, 234, 0.65);
-            box-shadow: 0px 10px 25px rgba(18, 159, 234, 0.65);
+  border: none;
+  background-image: -webkit-gradient(linear, left top, right top, from(#1233ea), to(#129fea));
+  background-image: linear-gradient(90deg, #1233ea, #129fea);
+  -webkit-box-shadow: 0px 10px 25px rgba(18, 159, 234, 0.65);
+          box-shadow: 0px 10px 25px rgba(18, 159, 234, 0.65);
 }
-  
+
 .mars-button.is-gradient.is-color-blue,
 .mars-button-icon.is-gradient.is-color-blue {
-    background-image: -webkit-gradient(linear, left top, right top, from(#002a50), to(#006ecf));
-    background-image: linear-gradient(90deg, #002a50, #006ecf);
-    -webkit-box-shadow: 0px 10px 25px rgba(0, 110, 207, 0.65);
-            box-shadow: 0px 10px 25px rgba(0, 110, 207, 0.65);
+  background-image: -webkit-gradient(linear, left top, right top, from(#002a50), to(#006ecf));
+  background-image: linear-gradient(90deg, #002a50, #006ecf);
+  -webkit-box-shadow: 0px 10px 25px rgba(0, 110, 207, 0.65);
+          box-shadow: 0px 10px 25px rgba(0, 110, 207, 0.65);
 }
-  
+
 .mars-button.is-gradient.is-color-green,
 .mars-button-icon.is-gradient.is-color-green {
-    background-image: -webkit-gradient(linear, left top, right top, from(#319b54), to(#50c878));
-    background-image: linear-gradient(90deg, #319b54, #50c878);
-    -webkit-box-shadow: 0px 10px 25px rgba(80, 200, 120, 0.65);
-            box-shadow: 0px 10px 25px rgba(80, 200, 120, 0.65);
+  background-image: -webkit-gradient(linear, left top, right top, from(#319b54), to(#50c878));
+  background-image: linear-gradient(90deg, #319b54, #50c878);
+  -webkit-box-shadow: 0px 10px 25px rgba(80, 200, 120, 0.65);
+          box-shadow: 0px 10px 25px rgba(80, 200, 120, 0.65);
 }
-  
+
 .mars-button.is-gradient.is-color-yellow,
 .mars-button-icon.is-gradient.is-color-yellow {
-    background-image: -webkit-gradient(linear, left top, right top, from(#aca300), to(#f8eb00));
-    background-image: linear-gradient(90deg, #aca300, #f8eb00);
-    -webkit-box-shadow: 0px 10px 25px rgba(248, 235, 0, 0.65);
-            box-shadow: 0px 10px 25px rgba(248, 235, 0, 0.65);
+  background-image: -webkit-gradient(linear, left top, right top, from(#aca300), to(#f8eb00));
+  background-image: linear-gradient(90deg, #aca300, #f8eb00);
+  -webkit-box-shadow: 0px 10px 25px rgba(248, 235, 0, 0.65);
+          box-shadow: 0px 10px 25px rgba(248, 235, 0, 0.65);
 }
-  
+
 .mars-button.is-gradient.is-color-pink,
 .mars-button-icon.is-gradient.is-color-pink {
-    background-image: -webkit-gradient(linear, left top, right top, from(#c74792), to(#df96c1));
-    background-image: linear-gradient(90deg, #c74792, #df96c1);
-    -webkit-box-shadow: 0px 10px 25px rgba(223, 150, 193, 0.65);
-            box-shadow: 0px 10px 25px rgba(223, 150, 193, 0.65);
+  background-image: -webkit-gradient(linear, left top, right top, from(#c74792), to(#df96c1));
+  background-image: linear-gradient(90deg, #c74792, #df96c1);
+  -webkit-box-shadow: 0px 10px 25px rgba(223, 150, 193, 0.65);
+          box-shadow: 0px 10px 25px rgba(223, 150, 193, 0.65);
 }
-  
+
 .mars-button.is-gradient.is-color-purple,
 .mars-button-icon.is-gradient.is-color-purple {
-    background-image: -webkit-gradient(linear, left top, right top, from(#6217a9), to(#a258e8));
-    background-image: linear-gradient(90deg, #6217a9, #a258e8);
-    -webkit-box-shadow: 0px 10px 25px rgba(162, 88, 232, 0.65);
-            box-shadow: 0px 10px 25px rgba(162, 88, 232, 0.65);
+  background-image: -webkit-gradient(linear, left top, right top, from(#6217a9), to(#a258e8));
+  background-image: linear-gradient(90deg, #6217a9, #a258e8);
+  -webkit-box-shadow: 0px 10px 25px rgba(162, 88, 232, 0.65);
+          box-shadow: 0px 10px 25px rgba(162, 88, 232, 0.65);
 }
-  
+
 .mars-button.is-gradient.is-color-primary,
 .mars-button-icon.is-gradient.is-color-primary {
-    background-image: -webkit-gradient(linear, left top, right top, from(#0031ff), to(#00b0ff));
-    background-image: linear-gradient(90deg, #0031ff, #00b0ff);
-    -webkit-box-shadow: 0px 10px 25px rgba(0, 176, 255, 0.65);
-            box-shadow: 0px 10px 25px rgba(0, 176, 255, 0.65);
+  background-image: -webkit-gradient(linear, left top, right top, from(#0031ff), to(#00b0ff));
+  background-image: linear-gradient(90deg, #0031ff, #00b0ff);
+  -webkit-box-shadow: 0px 10px 25px rgba(0, 176, 255, 0.65);
+          box-shadow: 0px 10px 25px rgba(0, 176, 255, 0.65);
 }
-  
+
 .mars-button.is-gradient.is-color-success,
 .mars-button-icon.is-gradient.is-color-success {
-    background-image: -webkit-gradient(linear, left top, right top, from(#006629), to(#00b248));
-    background-image: linear-gradient(90deg, #006629, #00b248);
-    -webkit-box-shadow: 0px 10px 25px rgba(0, 178, 72, 0.65);
-            box-shadow: 0px 10px 25px rgba(0, 178, 72, 0.65);
+  background-image: -webkit-gradient(linear, left top, right top, from(#006629), to(#00b248));
+  background-image: linear-gradient(90deg, #006629, #00b248);
+  -webkit-box-shadow: 0px 10px 25px rgba(0, 178, 72, 0.65);
+          box-shadow: 0px 10px 25px rgba(0, 178, 72, 0.65);
 }
-  
+
 .mars-button.is-gradient.is-color-warning,
 .mars-button-icon.is-gradient.is-color-warning {
-    background-image: -webkit-gradient(linear, left top, right top, from(#f27600), to(#ff9d3f));
-    background-image: linear-gradient(90deg, #f27600, #ff9d3f);
-    -webkit-box-shadow: 0px 10px 25px rgba(255, 157, 63, 0.65);
-            box-shadow: 0px 10px 25px rgba(255, 157, 63, 0.65);
+  background-image: -webkit-gradient(linear, left top, right top, from(#f27600), to(#ff9d3f));
+  background-image: linear-gradient(90deg, #f27600, #ff9d3f);
+  -webkit-box-shadow: 0px 10px 25px rgba(255, 157, 63, 0.65);
+          box-shadow: 0px 10px 25px rgba(255, 157, 63, 0.65);
 }
-  
+
 .mars-button.is-gradient.is-color-error,
 .mars-button-icon.is-gradient.is-color-error {
-    background-image: -webkit-gradient(linear, left top, right top, from(#d53300), to(#ff5722));
-    background-image: linear-gradient(90deg, #d53300, #ff5722);
-    -webkit-box-shadow: 0px 10px 25px rgba(255, 87, 34, 0.65);
-            box-shadow: 0px 10px 25px rgba(255, 87, 34, 0.65);
+  background-image: -webkit-gradient(linear, left top, right top, from(#d53300), to(#ff5722));
+  background-image: linear-gradient(90deg, #d53300, #ff5722);
+  -webkit-box-shadow: 0px 10px 25px rgba(255, 87, 34, 0.65);
+          box-shadow: 0px 10px 25px rgba(255, 87, 34, 0.65);
 }
-  
+
 .mars-button.is-gradient.is-cancel, .mars-button.is-gradient.is-submit,
 .mars-button-icon.is-gradient.is-cancel,
 .mars-button-icon.is-gradient.is-submit {
-    background-image: none !important;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-}
-  
-.mars-button.is-anim,
-.mars-button-icon.is-anim {
-    -webkit-animation: bgAnim 3s linear infinite;
-            animation: bgAnim 3s linear infinite;
-    background-size: 400% 400%;
-}
-  
-@-webkit-keyframes bgAnim {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-}
-  
-@keyframes bgAnim {
-  0% {
-      background-position: 0% 50%;
-  }
-  50% {
-      background-position: 100% 50%;
-  }
-}
-  
-.mars-button.is-small,
-.mars-button-icon.is-small {
-    font-size: 0.75rem;
-}
-  
-.mars-button.is-medium,
-.mars-button-icon.is-medium {
-    font-size: 1.25rem;
-}
-  
-.mars-button.is-normal,
-.mars-button-icon.is-normal {
-    font-size: 1rem;
-}
-  
-.mars-button.is-large,
-.mars-button-icon.is-large {
-    font-size: 1.5rem;
-}
-  
-.mars-button.is-normal-rounded,
-.mars-button-icon.is-normal-rounded {
-    border-radius: 4px;
-}
-  
-.mars-button.is-little-rounded,
-.mars-button-icon.is-little-rounded {
-    border-radius: 1em;
-}
-  
-.mars-button.is-rounded,
-.mars-button-icon.is-rounded {
-    border-radius: 2em;
-}
-  
-.mars-button.is-outlined,
-.mars-button-icon.is-outlined {
-    opacity: 1;
-    outline: 2px solid #129fea;
-    border-width: 2px;
-    background-color: transparent;
-    color: #129fea;
-    border-radius: 0px;
-    -webkit-transition: all 0.2s ease-in-out 0s;
-    transition: all 0.2s ease-in-out 0s;
-    border: none;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-    /* button outlined color */
-}
-  
-.mars-button.is-outlined.is-outlined.is-color-blue,
-.mars-button-icon.is-outlined.is-outlined.is-color-blue {
-    outline: 2px solid #006ecf;
-    color: #006ecf;
-    border: none;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-}
-  
-.mars-button.is-outlined.is-outlined.is-color-green,
-.mars-button-icon.is-outlined.is-outlined.is-color-green {
-    outline: 2px solid #50c878;
-    color: #50c878;
-    border: none;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-}
-  
-.mars-button.is-outlined.is-outlined.is-color-yellow,
-.mars-button-icon.is-outlined.is-outlined.is-color-yellow {
-    outline: 2px solid #f8eb00;
-    color: #f8eb00;
-    border: none;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-}
-  
-.mars-button.is-outlined.is-outlined.is-color-pink,
-.mars-button-icon.is-outlined.is-outlined.is-color-pink {
-    outline: 2px solid #df96c1;
-    color: #df96c1;
-    border: none;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-}
-  
-.mars-button.is-outlined.is-outlined.is-color-purple,
-.mars-button-icon.is-outlined.is-outlined.is-color-purple {
-    outline: 2px solid #a258e8;
-    color: #a258e8;
-    border: none;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-}
-  
-.mars-button.is-outlined.is-outlined.is-color-primary,
-.mars-button-icon.is-outlined.is-outlined.is-color-primary {
-    outline: 2px solid #00b0ff;
-    color: #00b0ff;
-    border: none;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-}
-  
-.mars-button.is-outlined.is-outlined.is-color-success,
-.mars-button-icon.is-outlined.is-outlined.is-color-success {
-    outline: 2px solid #00b248;
-    color: #00b248;
-    border: none;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-}
-  
-.mars-button.is-outlined.is-outlined.is-color-warning,
-.mars-button-icon.is-outlined.is-outlined.is-color-warning {
-    outline: 2px solid #ff9d3f;
-    color: #ff9d3f;
-    border: none;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-}
-  
-.mars-button.is-outlined.is-outlined.is-color-error,
-.mars-button-icon.is-outlined.is-outlined.is-color-error {
-    outline: 2px solid #ff5722;
-    color: #ff5722;
-    border: none;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-}
-  
-.mars-button-icon {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    height: 2.5em;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    line-height: 1.5;
-    padding-bottom: calc(0.5em - 1px);
-    padding-left: calc(0.78em - 1px);
-    padding-right: calc(0.75em - 1px);
-    padding-top: calc(0.5em - 1px);
-    position: relative;
-    vertical-align: top;
-    /* icon button icon size */
-}
-  
-.mars-button-icon.icon, .mars-button-icon.icon.is-small, .mars-button-icon.icon.is-normal, .mars-button-icon.icon.is-medium, .mars-button-icon.icon.is-large {
-    width: 1.5em;
-    height: 1.5em;
-}
-  
-/* button loading */
-.mars-button.is-loading {
-    /* loading button */
-    cursor: default;
-    color: transparent !important;
-    padding-bottom: calc(1em - 1px);
-    padding-left: 0.85em;
-    padding-right: 0.85em;
-    padding-top: calc(1em - 1px);
-    text-align: center;
-    white-space: nowrap;
-    pointer-events: none;
-    height: 2.5em;
-    font-size: 1rem;
-    line-height: 2.5em;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    position: relative;
-    /* after */
-}
-  
-@-webkit-keyframes spinAround {
-    from {
-      -webkit-transform: rotate(0deg);
-              transform: rotate(0deg);
-    }
-    to {
-      -webkit-transform: rotate(359deg);
-              transform: rotate(359deg);
-    }
-}
-  
-@keyframes spinAround {
-    from {
-      -webkit-transform: rotate(0deg);
-              transform: rotate(0deg);
-    }
-    to {
-      -webkit-transform: rotate(359deg);
-              transform: rotate(359deg);
-    }
-  }
-  
-.mars-button.is-loading:after {
-    -webkit-animation: spinAround 500ms infinite linear;
-    animation: spinAround 500ms infinite linear;
-    border: 2px solid #dbdbdb;
-    border-radius: 20000px;
-    border-right-color: transparent;
-    border-top-color: transparent;
-    content: "";
-    display: block;
-    width: 1em;
-    height: 1em;
-    left: calc(50% - (1em / 2));
-    top: calc(45% - (1em / 2));
-    position: absolute !important;
+  background-image: none !important;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
-/* modal delete class */
-/* modal title */
-/* modals colors */
-/* state colors */
-/* colors maps */
-/* modal delete class */
-/* modal title */
-/* modals colors */
-/* state colors */
-/* colors maps */
+.mars-button.is-anim,
+.mars-button-icon.is-anim {
+  -webkit-animation: bgAnim 3s linear infinite;
+          animation: bgAnim 3s linear infinite;
+  background-size: 400% 400%;
+}
+
+@-webkit-keyframes bgAnim {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes bgAnim {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.mars-button.is-small,
+.mars-button-icon.is-small {
+  font-size: 0.75rem;
+}
+
+.mars-button.is-medium,
+.mars-button-icon.is-medium {
+  font-size: 1.25rem;
+}
+
+.mars-button.is-normal,
+.mars-button-icon.is-normal {
+  font-size: 1rem;
+}
+
+.mars-button.is-large,
+.mars-button-icon.is-large {
+  font-size: 1.5rem;
+}
+
+.mars-button.is-normal-rounded,
+.mars-button-icon.is-normal-rounded {
+  border-radius: 4px;
+}
+
+.mars-button.is-little-rounded,
+.mars-button-icon.is-little-rounded {
+  border-radius: 1em;
+}
+
+.mars-button.is-rounded,
+.mars-button-icon.is-rounded {
+  border-radius: 2em;
+}
+
+.mars-button.is-outlined,
+.mars-button-icon.is-outlined {
+  opacity: 1;
+  outline: 2px solid #129fea;
+  border-width: 2px;
+  background-color: transparent;
+  color: #129fea;
+  border-radius: 0px;
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  /* button outlined color */
+}
+
+.mars-button.is-outlined.is-outlined.is-color-blue,
+.mars-button-icon.is-outlined.is-outlined.is-color-blue {
+  outline: 2px solid #006ecf;
+  color: #006ecf;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.mars-button.is-outlined.is-outlined.is-color-green,
+.mars-button-icon.is-outlined.is-outlined.is-color-green {
+  outline: 2px solid #50c878;
+  color: #50c878;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.mars-button.is-outlined.is-outlined.is-color-yellow,
+.mars-button-icon.is-outlined.is-outlined.is-color-yellow {
+  outline: 2px solid #f8eb00;
+  color: #f8eb00;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.mars-button.is-outlined.is-outlined.is-color-pink,
+.mars-button-icon.is-outlined.is-outlined.is-color-pink {
+  outline: 2px solid #df96c1;
+  color: #df96c1;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.mars-button.is-outlined.is-outlined.is-color-purple,
+.mars-button-icon.is-outlined.is-outlined.is-color-purple {
+  outline: 2px solid #a258e8;
+  color: #a258e8;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.mars-button.is-outlined.is-outlined.is-color-primary,
+.mars-button-icon.is-outlined.is-outlined.is-color-primary {
+  outline: 2px solid #00b0ff;
+  color: #00b0ff;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.mars-button.is-outlined.is-outlined.is-color-success,
+.mars-button-icon.is-outlined.is-outlined.is-color-success {
+  outline: 2px solid #00b248;
+  color: #00b248;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.mars-button.is-outlined.is-outlined.is-color-warning,
+.mars-button-icon.is-outlined.is-outlined.is-color-warning {
+  outline: 2px solid #ff9d3f;
+  color: #ff9d3f;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.mars-button.is-outlined.is-outlined.is-color-error,
+.mars-button-icon.is-outlined.is-outlined.is-color-error {
+  outline: 2px solid #ff5722;
+  color: #ff5722;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.mars-button-icon {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 2.5em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  line-height: 1.5;
+  padding-bottom: calc(0.5em - 1px);
+  padding-left: calc(0.78em - 1px);
+  padding-right: calc(0.75em - 1px);
+  padding-top: calc(0.5em - 1px);
+  position: relative;
+  vertical-align: top;
+  /* icon button icon size */
+}
+
+.mars-button-icon.icon, .mars-button-icon.icon.is-small, .mars-button-icon.icon.is-normal, .mars-button-icon.icon.is-medium, .mars-button-icon.icon.is-large {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+/* button loading */
+.mars-button.is-loading {
+  /* loading button */
+  cursor: default;
+  color: transparent !important;
+  padding-bottom: calc(1em - 1px);
+  padding-left: 0.85em;
+  padding-right: 0.85em;
+  padding-top: calc(1em - 1px);
+  text-align: center;
+  white-space: nowrap;
+  pointer-events: none;
+  height: 2.5em;
+  font-size: 1rem;
+  line-height: 2.5em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  /* after */
+}
+
+@-webkit-keyframes spinAround {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
+}
+
+@keyframes spinAround {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
+}
+
+.mars-button.is-loading:after {
+  -webkit-animation: spinAround 500ms infinite linear;
+  animation: spinAround 500ms infinite linear;
+  border: 2px solid #dbdbdb;
+  border-radius: 20000px;
+  border-right-color: transparent;
+  border-top-color: transparent;
+  content: "";
+  display: block;
+  width: 1em;
+  height: 1em;
+  left: calc(50% - (1em / 2));
+  top: calc(45% - (1em / 2));
+  position: absolute !important;
+}
+
+/* ========================================================================
+    Components: modals
+ ========================================================================== */
 * {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
-  
+
 .mars-modal {
-    position: relative;
-    background-color: #ffffff;
-    width: 30rem;
-    padding: 3rem 1.5rem 3rem 1.5rem;
-    border-radius: 4px;
-    font-size: 16px;
-    text-align: center;
-    margin-bottom: 100px;
-    -webkit-box-shadow: 0px 30px 30px 0px rgba(0, 0, 0, 0.1);
-            box-shadow: 0px 30px 30px 0px rgba(0, 0, 0, 0.1);
-    /* color */
+  position: relative;
+  background-color: #ffffff;
+  width: 30rem;
+  padding: 3rem 1.5rem 3rem 1.5rem;
+  border-radius: 4px;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 100px;
+  -webkit-box-shadow: 0px 30px 30px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 30px 30px 0px rgba(0, 0, 0, 0.1);
+  /* color */
 }
-  
+
 .mars-modal a:not(.mars-button) {
-    color: currentColor;
-    text-decoration: underline;
+  color: currentColor;
+  text-decoration: underline;
 }
-  
+
 .mars-modal strong {
-    color: currentColor;
+  color: currentColor;
 }
-  
+
 .mars-modal code, .mars-modal pre {
-    background: #ffffff;
+  background: #ffffff;
 }
-  
+
 .mars-modal pre code {
-    background: transparent;
+  background: transparent;
 }
-  
+
 .mars-modal .delete {
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    pointer-events: auto;
-    display: inline-block;
-    font-size: 0px;
-    height: 20px;
-    max-width: 20px;
-    max-height: 20px;
-    min-height: 20px;
-    min-width: 20px;
-    outline: 0;
-    position: relative;
-    vertical-align: top;
-    width: 20px;
-    background-color: #ffffff;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  pointer-events: auto;
+  display: inline-block;
+  font-size: 0px;
+  height: 20px;
+  max-width: 20px;
+  max-height: 20px;
+  min-height: 20px;
+  min-width: 20px;
+  outline: 0;
+  position: relative;
+  vertical-align: top;
+  width: 20px;
+  background-color: #ffffff;
 }
-  
+
 .mars-modal .delete {
-    position: absolute;
-    right: 1.5rem;
-    top: 1.5rem;
-    /* modal delete size */
+  position: absolute;
+  right: 1.5rem;
+  top: 1.5rem;
+  /* modal delete size */
 }
-  
+
 .mars-modal .delete.is-small {
-    height: 16px;
-    max-height: 16px;
-    max-width: 16px;
-    min-height: 16px;
-    min-width: 16px;
-    width: 16px;
+  height: 16px;
+  max-height: 16px;
+  max-width: 16px;
+  min-height: 16px;
+  min-width: 16px;
+  width: 16px;
 }
-  
+
 .mars-modal .delete.is-medium {
-    height: 24px;
-    max-height: 24px;
-    max-width: 24px;
-    min-height: 24px;
-    min-width: 24px;
-    width: 24px;
+  height: 24px;
+  max-height: 24px;
+  max-width: 24px;
+  min-height: 24px;
+  min-width: 24px;
+  width: 24px;
 }
-  
+
 .mars-modal .delete.is-large {
-    height: 32px;
-    max-height: 32px;
-    max-width: 32px;
-    min-height: 32px;
-    min-width: 32px;
-    width: 32px;
+  height: 32px;
+  max-height: 32px;
+  max-width: 32px;
+  min-height: 32px;
+  min-width: 32px;
+  width: 32px;
 }
-  
+
 .mars-modal .delete::before, .mars-modal .delete::after {
-    content: "";
-    display: block;
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
-            transform: translateX(-50%) translateY(-50%) rotate(45deg);
-    -webkit-transform-origin: center center;
-            transform-origin: center center;
-    background-color: rgba(51, 50, 56, 0.52);
+  content: "";
+  display: block;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+          transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  background-color: rgba(51, 50, 56, 0.52);
 }
-  
+
 .mars-modal .delete::before {
-    height: 2px;
-    width: 100%;
+  height: 2px;
+  width: 100%;
 }
 
 .mars-modal .delete::after {
-    height: 100%;
-    width: 2px;
+  height: 100%;
+  width: 2px;
 }
-  
+
 .mars-modal .is-title {
-    display: block;
-    font-size: 22px;
-    font-weight: 600;
-    margin-top: 15px;
-    margin-bottom: 10px;
-    color: black;
+  display: block;
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  color: black;
 }
-  
+
 .mars-modal .is-title.is-color-blue {
-    color: #006ecf;
+  color: #006ecf;
 }
-  
+
 .mars-modal .is-title.is-color-green {
-    color: #50c878;
+  color: #50c878;
 }
-  
+
 .mars-modal .is-title.is-color-yellow {
-    color: #f8eb00;
+  color: #f8eb00;
 }
-  
+
 .mars-modal .is-title.is-color-pink {
-    color: #df96c1;
+  color: #df96c1;
 }
-  
+
 .mars-modal .is-title.is-color-purple {
-    color: #a258e8;
+  color: #a258e8;
 }
-  
+
 .mars-modal .is-title.is-color-primary {
-    color: #00B0FF;
+  color: #00b0ff;
 }
-  
+
 .mars-modal .is-title.is-color-success {
-    color: #00B248;
+  color: #00b248;
 }
-  
+
 .mars-modal .is-title.is-color-warning {
-    color: #FF9D3F;
+  color: #ff9d3f;
 }
-  
+
 .mars-modal .is-title.is-color-error {
-    color: #FF5722;
+  color: #ff5722;
 }
-  
- 
+/*# sourceMappingURL=mars.css.map */
