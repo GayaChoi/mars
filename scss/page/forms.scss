@@ -1,6 +1,7 @@
 @import './variable';
 
 
+
 /* form main page */
 .forms-wrap {
     padding: 130px;
@@ -12,12 +13,13 @@
     display: $forms-display;
     flex-direction: column;
     margin-bottom: 50px;
+
+
+    & > * {
+       margin-bottom: 50px;
+    }
 }
 
-.forms-contents > * {
-    margin-bottom: 50px;
-}
- 
 h1.forms-title {
     font-size: 32px;
     font-weight: 400;
@@ -31,6 +33,46 @@ h1.forms-title {
     flex-direction: column;
     width: 500px;
     font-family: inherit;
+    font-size: 14px;
+
+    &-heading {
+        font-size: 20px;
+        font-weight: normal;
+    }
+    
+    & >  h3 >  a {
+        text-decoration: none;
+        color: rgba(0,0,0,0.85);
+        cursor: pointer;      
+    }
+
+    &-contexts {
+        display: block;
+        height: 5rem;
+        background: $background-color;
+        margin-bottom: 30px; 
+
+        & .code-contents {
+            position: relative;
+            color: #586e75;
+            font-weight: 400;
+            max-width: 100%;
+            overflow: auto;
+            padding: 0;
+            display: block;
+        }
+
+        & .code-contents pre {
+            white-space: pre-wrap;
+            margin: 0;
+            line-height: 1.375;
+        }
+
+        &.code-contents pre code {
+            font-size: 1em;
+            padding: 0;
+        }
+    }
 }
 
 .forms-label {
@@ -46,7 +88,6 @@ h1.forms-title {
     color: #000000;
     border-bottom: 1px solid #e5e5e5;
 }
-
 
 
 

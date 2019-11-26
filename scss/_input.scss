@@ -7,7 +7,6 @@
 
 /* input variables*/
 $input-width:                                                 100% !default;
-$input-height:                                                2.5rem !default;
 $input-font-family:                                           inherit !default;
 $input-font-style:                                            normal !default;
 $input-font-weight:                                           normal !default;
@@ -53,7 +52,6 @@ $size: (
 
  .mars-form {
     width: $input-width;
-    height: $input-height;
     color: $black;  
     font-family: $input-font-family;
     font-style: $input-font-style;
@@ -96,15 +94,15 @@ $size: (
     }
 
     /* rounded */
-    &.is-normal-rounded {
+    &.is-nor-rounded {
         border-radius: $input-radius;
     }
 
-    &.is-little-rounded {
+    &.is-md-rounded {
         border-radius: $input-radius-md;
     }
 
-    &.is-rounded {
+    &.is-lg-rounded {
         border-radius: $input-radius-lg;
     }
 
@@ -119,7 +117,6 @@ $size: (
 /* input underline */
 .mars-form-underline {
     width: $input-width;
-    height: $input-height;
     color: $black;  
     font-family: $input-font-family;
     font-style: $input-font-style;

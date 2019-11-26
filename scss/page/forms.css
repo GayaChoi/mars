@@ -38,6 +38,46 @@ h1.forms-title {
           flex-direction: column;
   width: 500px;
   font-family: inherit;
+  font-size: 14px;
+}
+
+.forms-area-heading {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.forms-area > h3 > a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+}
+
+.forms-area-contexts {
+  display: block;
+  height: 5rem;
+  background: #b4e3f5;
+  margin-bottom: 30px;
+}
+
+.forms-area-contexts .code-contents {
+  position: relative;
+  color: #586e75;
+  font-weight: 400;
+  max-width: 100%;
+  overflow: auto;
+  padding: 0;
+  display: block;
+}
+
+.forms-area-contexts .code-contents pre {
+  white-space: pre-wrap;
+  margin: 0;
+  line-height: 1.375;
+}
+
+.forms-area-contexts.code-contents pre code {
+  font-size: 1em;
+  padding: 0;
 }
 
 .forms-label {

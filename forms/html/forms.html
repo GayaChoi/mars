@@ -7,10 +7,11 @@
     <title>forms</title>
     <link href="https://fonts.googleapis.com/css?family=Nunito|Nunito+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../Assets/common/common.css">
-    <link rel="stylesheet" href="../../scss/mars.css">
-    <link rel="stylesheet" href="../../forms/css/forms-main.css">
+    <link rel="stylesheet" href="../../css/mars.css">
+    <link rel="stylesheet" href="../../scss/page/forms.css">
     <link rel="stylesheet" href="../../response/mars-r.css">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 </head>
 <body>
    <div id="wrap">
@@ -18,28 +19,44 @@
            <div class="forms-contents">
               <h1 class="forms-title">Inputs</h1>
               <div class="forms-area">
+                  <h3 class="forms-area-heading">
+                      <a href="/">
+                         <i class="fas fa-link"></i> Usage
+                       </a>
+                  </h3>  
+                  <div tabindex="0" class="forms-area-contexts mars-form is-md-rounded">
+                     <div class="code-contents">
+                        <pre>
+                           <code class="language-html" data-lang="html">
+                               <span class="tag-html"><</span>
+                               <span class="tag-name">input</span>
+                               <span></span>
+                           </code>
+                        </pre>    
+                     </div>
+                  </div> 
                   <form> 
                      <label for="input" class="forms-label">This is input default</label>
-                     <input class="mars-form is-normal-rounded" type="text" placeholder="mars is ui kit...">  
+                     <input class="mars-form is-nor-rounded" type="text" placeholder="mars is ui kit...">  
                   </form>  
                </div>
               <div class="forms-area">
                   <form>
                      <label for="input" class="forms-label">This is input little round</label>
-                     <input class="mars-form is-little-rounded is-color-pink" type="text" placeholder="mars is ui kit...">     
+                     <input class="mars-form is-md-rounded is-color-pink" type="text" placeholder="mars is ui kit...">     
                   </form>  
                </div>
                <div class="forms-area">
                   <form>
                      <label for="input" class="forms-label">This is input round</label>
-                     <input class="mars-form is-rounded is-color-blue" type="email" placeholder="Email">
-                     <input class="mars-form is-rounded is-color-blue" type="password" placeholder="Password">     
+                     <input class="mars-form is-lg-rounded is-color-blue" type="email" placeholder="Email">
+                     <input class="mars-form is-lg-rounded is-color-blue" type="password" placeholder="Password">     
                   </form>  
                </div>
                <div class="forms-area">
                   <form>
                      <label for="input" class="forms-label">This is an textarea round</label>
-                     <textarea class="mars-form is-rounded is-color-purple" rows="8" cols="50" placeholder="This is an textarea..."></textarea>    
+                     <textarea class="mars-form is-lg-rounded is-color-purple" rows="8" cols="50" placeholder="This is an textarea..."></textarea>    
                   </form>  
                </div>
                <div class="forms-area">
@@ -110,7 +127,7 @@
                   <input class="is-checked" type="checkbox" disabled>
                   <div class="radio-check-icon"></div>
                   <label for="input" class="radio-label">Disabled Radio</label>
-               </form>   
+               </form>  
            </div>
       </div>
    </div>

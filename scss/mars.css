@@ -29,7 +29,6 @@
  ========================================================================== */
 .mars-form {
   width: 100%;
-  height: 2.5rem;
   color: black;
   font-family: inherit;
   font-style: normal;
@@ -105,15 +104,15 @@
   border-color: #ff5722;
 }
 
-.mars-form.is-normal-rounded {
+.mars-form.is-nor-rounded {
   border-radius: 3px;
 }
 
-.mars-form.is-little-rounded {
+.mars-form.is-md-rounded {
   border-radius: 0.5em;
 }
 
-.mars-form.is-rounded {
+.mars-form.is-lg-rounded {
   border-radius: 2em;
 }
 
@@ -144,7 +143,6 @@
 /* input underline */
 .mars-form-underline {
   width: 100%;
-  height: 2.5rem;
   color: black;
   font-family: inherit;
   font-style: normal;
@@ -720,8 +718,8 @@ svg:not(:root) {
   /* anim button */
   /* button size */
   /* normal rounded */
-  /* little rounded */
-  /* rounded button */
+  /* medium rounded */
+  /* large rounded */
   /* button outlined */
 }
 
@@ -1099,18 +1097,18 @@ svg:not(:root) {
   font-size: 1.5rem;
 }
 
-.mars-button.is-normal-rounded,
-.mars-button-icon.is-normal-rounded {
+.mars-button.is-nor-rounded,
+.mars-button-icon.is-nor-rounded {
   border-radius: 4px;
 }
 
-.mars-button.is-little-rounded,
-.mars-button-icon.is-little-rounded {
+.mars-button.is-md-rounded,
+.mars-button-icon.is-md-rounded {
   border-radius: 1em;
 }
 
-.mars-button.is-rounded,
-.mars-button-icon.is-rounded {
+.mars-button.is-lg-rounded,
+.mars-button-icon.is-lg-rounded {
   border-radius: 2em;
 }
 

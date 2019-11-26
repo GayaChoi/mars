@@ -189,17 +189,17 @@ $size: (
     }
 
     /* normal rounded */
-    &.is-normal-rounded {
+    &.is-nor-rounded {
         border-radius: $button-radius;
     }
 
-    /* little rounded */
-    &.is-little-rounded {
+    /* medium rounded */
+    &.is-md-rounded {
         border-radius: $button-radius-md;
     }
 
-    /* rounded button */
-    &.is-rounded {
+    /* large rounded */
+    &.is-lg-rounded {
         border-radius: $button-radius-lg;
     }
 
