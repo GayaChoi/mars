@@ -19,7 +19,7 @@
     $border-width: $input-box-border-width,
     $border-style: $input-box-border-style,
     $border-image: $input-box-border-image,
-    $transition: $input-transition,
+    $transition: $transition,
     $border-color: $input-box-border-color,
     $cursor: pointer
 ) {
@@ -47,7 +47,7 @@
 @mixin box-disabled() {
     color: $input-checkbox-disabled-color;
     background-color: $input-checkbox-disabled-bgcolor;
-    border-color: $input-checkbox-border-color;
+    border-color: $input-checkbox-disabled-border-color;
     border-width: $input-box-border-width;
     border-style: $input-box-border-style;
 }

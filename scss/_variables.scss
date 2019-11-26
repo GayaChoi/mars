@@ -1,4 +1,5 @@
 // Variables
+// Record the global variables, including the variables you need for mixin.
 //
 
 
@@ -27,20 +28,25 @@ $warning: rgb(255,157,63) !default;
 $error: rgb(255,87,34) !default;
 
 
-/* input checkbox, radio color */
+/* input checkbox, radio common color */
 $input-box-border-color: rgb(223, 223, 223) !default;
 
-/* input checkbox radio disabled color */
+/* input checkbox, radio, disabled common color */
 $input-box-disabled-fill: rgb(204, 204, 204) !default;
 
-/* button hovered color */
+/* input checkbox, disabled color */
+$input-checkbox-disabled-color:#949494 !default;
+$input-checkbox-disabled-bgcolor:#eaeded !default;
+$input-checkbox-disabled-border-color:#bebebe !default;
+
+/* buttons hovered color */
 $button-hovered-color: transparent !default;
 
-/* button disabled color */
+/* buttons disabled color */
 $button-disabled-background-color: rgb(234,237,237) !default; 
 
 
-/* button gradient color */
+/* buttons gradient color */
 $gradient-default: #1233ea !default;
 $gradient-blue: #002a50 !default;
 $gradient-green: #319b54 !default;
@@ -53,7 +59,7 @@ $gradient-warning: #f27600 !default;
 $gradient-error: #d53300 !default;
 
 
-/* color maps */
+/* colors maps */
 $color-names: "blue","green","yellow","pink","purple","primary","success","warning","error";
 $colors: (
     "blue": $blue,
@@ -68,7 +74,7 @@ $colors: (
 );
 
 
-/* button gradient maps */
+/* buttons gradient maps */
 $gradient-colors: (
    "blue": $gradient-blue,
    "green": $gradient-green,
@@ -82,25 +88,30 @@ $gradient-colors: (
 );
 
 
-/* input variables*/
-$input-width: 100% !default;
-$input-height: 2.5rem !default;
-$input-font-family: inherit !default;
-$input-font-style: normal !default;
-$input-font-weight: normal !default;
-$input-font-size: inherit !default;
-$input-padding-vertical: 0.5em !default;
-$input-padding-horizontal: 1em !default;
-$input-border-box: border-box !default;
-$input-box-shadow-size: 0px 2px 4px 0px !default;
-$input-outline: 0 !default;
-$input-margin-bottom: 15px !default;
-$input-radius: 3px !default;
-$input-radius-md: 0.5em !default;
-$input-radius-lg: 2em !default;  
-$input-border-width: 2px !default; 
-$input-transition: all 0.2s ease-in-out 0s !default;
+/* input readonly color */
+$input-readonly-bgcolor:                       #eeeeee !default;
+$input-readonly-color:                         #777777 !default;
+$input-readonly-border:                        #cccccc !default; 
 
+
+
+/* common variable transition */
+$transition:                                    all 0.2s ease-in-out 0s !default;
+
+
+/* input variables */
+/* input outline */
+$input-outline:                                 0 !default;
+
+
+/* input radius */
+$input-radius:                                  3px !default;
+$input-radius-md:                               0.5em !default;
+$input-radius-lg:                               2em !default;
+
+
+/* input border width */
+$input-border-width:                            2px !default;
 
 
 /* input checkbox & radio */
@@ -118,36 +129,9 @@ $input-box-border-image: initial !default;
 $input-box-padding: initial !default;
 $input-box-margin: 3px 3px 3px 4px !default;
 
-/* input size variable */
-$input-1: 100% !default;
-$input-3-4: 75% !default;
-$input-2-3: 66% !default;
-$input-1-2: 50% !default;
-$input-1-3: 33% !default;
-$input-1-4: 25% !default;
 
-/* input size maps */
-$sizes: "1","3-4","2-3","1-2","1-3","1-4";
-$size: (
-   "1": $input-1,
-   "3-4": $input-3-4,
-   "2-3": $input-2-3,
-   "1-2": $input-1-2,
-   "1-3": $input-1-3,
-   "1-4": $input-1-4
-);
 
 /* buttons variables */
-/* button variable */
-$button-width: 10rem !default;
-$button-font-family: inherit !default;
-$button-font-size: 1rem !default;
-$button-font-weight: 500 !default;
-$button-border-width: 2px !default;
-$button-border-image: initial !default;
-$button-text-decoration: none !default;
-$button-margin-bottom: 30px !default;
-$button-transition: all 0.2s ease-in-out 0s !default;
 $button-outline: 0 !default;
 $button-box-shadow-size: 0px 10px 25px !default; 
 $button-background-size: 400% 400% !default;
@@ -156,80 +140,23 @@ $button-padding-horizontal: 1em !default;
 $button-none-border: none !default;
 $button-none-box-shadow: none !default;
 
-/* button actived */
+
+
+/* buttons actived */
 $button-active-box-shadow-size: 0 0 0 1px !default;
 
-/* button hovered */
+/* buttons hovered */
 $button-hovered-opacity: 0.75 !default;
 
-/* button disabled variable */
+/* buttons disabled variable */
 $button-disabled-opacity: 1 !default;
 $button-disabled-background-image: none !default;
 
 
-/* button size variable */
-$button-small: 0.75rem !default;
-$button-medium: 1.25rem !default;
-$button-normal: 1rem !default;
-$button-large: 1.5rem !default;
-
-/* button radius size */
+/* buttons radius size */
 $button-radius: 4px !default;
 $button-radius-md: 1em !default;
 $button-radius-lg: 2em !default;
-
-/* size maps */
-$sizes: "small","medium","normal","large";
-$size: (
-    "small": $button-small,
-    "medium": $button-medium,
-    "normal": $button-normal,
-    "large": $button-large
-);
-
-
-/* modals variables */
-$modal-pos-1: relative !default;
-$modal-pos-2: absolute !default;
-$modal-pos-2-top: 1.5rem !default;
-$modal-pos-2-right: 1.5rem !default;
-$modal-width: 30rem !default;
-$modal-padding: 3rem 1.5rem 3rem 1.5rem !default;
-$modal-border-radius: 4px !default;
-$modal-font-size: 16px !default;
-$modal-font-weight: 600 !default;
-$modal-margin-bottom: 100px !default;
-$modal-box-shadow: 0px 30px 30px 0px !default;
-$modal-text-decoration: underline !default;
-$modal-none-border: none !default; 
-$modal-display-inline-block: inline-block !default;
-$modal-display-block: block !default;
-$modal-outline: 0 !default;
-$modal-vertical-align: top !default;
-
-/* modal delete class */
-$modal-delete-font-size: 0px !default;
-$modal-delete-width: 20px !default;
-$modal-delete-height: 20px !default;
-$modal-delete-max-width: 20px !default;
-$modal-delete-max-height: 20px !default;
-$modal-delete-min-width: 20px !default;
-$modal-delete-min-height: 20px !default;
-$modal-delete-pos-top: 50% !default;
-$modal-delete-pos-left: 50% !default;
-$modal-delete-transform: translateX(-50%) translateY(-50%) rotate(45deg) !default;
-$modal-delete-transform-origin: center center !default;
-$modal-delete-before-width: 100% !default;
-$modal-delete-before-height: 2px !default;
-$modal-delete-after-width: 2px !default;
-$modal-delete-after-height: 100% !default;
-$modal-delete-small: 16px !default;
-$modal-delete-medium: 24px !default;
-$modal-delete-large: 32px !default;
-
-/* modal title */
-$modal-title-margin-top: 15px !default;
-$modal-title-margin-bottom: 10px !default;
 
 
 

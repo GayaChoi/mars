@@ -3,6 +3,51 @@
 // Variables
 // ========================================================================
 
+/* modals variables */
+$modal-pos-1:                                             relative !default;
+$modal-pos-2:                                             absolute !default;
+$modal-pos-2-top:                                         1.5rem !default;
+$modal-pos-2-right:                                       1.5rem !default;
+$modal-width:                                             30rem !default;
+$modal-padding:                                           3rem 1.5rem 3rem 1.5rem !default;
+$modal-border-radius:                                     4px !default;
+$modal-font-size:                                         16px !default;
+$modal-font-weight:                                       600 !default;
+$modal-margin-bottom:                                     100px !default;
+$modal-box-shadow:                                        0px 30px 30px 0px !default;
+$modal-text-decoration:                                   underline !default;
+$modal-none-border:                                       none !default; 
+$modal-display-inline-block:                              inline-block !default;
+$modal-display-block:                                     block !default;
+$modal-outline:                                           0 !default;
+$modal-vertical-align:                                    top !default;
+
+
+/* modal delete */
+$modal-delete-font-size:                                  0px !default;
+$modal-delete-width:                                      20px !default;
+$modal-delete-height:                                     20px !default;
+$modal-delete-max-width:                                  20px !default;
+$modal-delete-max-height:                                 20px !default;
+$modal-delete-min-width:                                  20px !default;
+$modal-delete-min-height:                                 20px !default;
+$modal-delete-pos-top:                                    50% !default;
+$modal-delete-pos-left:                                   50% !default;
+$modal-delete-transform:                                  translateX(-50%) translateY(-50%) rotate(45deg) !default;
+$modal-delete-transform-origin:                           center center !default;
+$modal-delete-before-width:                               100% !default;
+$modal-delete-before-height:                              2px !default;
+$modal-delete-after-width:                                2px !default;
+$modal-delete-after-height:                               100% !default;
+$modal-delete-small:                                      16px !default;
+$modal-delete-medium:                                     24px !default;
+$modal-delete-large:                                      32px !default;
+
+
+/* modal title */
+$modal-title-margin-top:                                  15px !default;
+$modal-title-margin-bottom:                               10px !default;
+
 
 
 /* ========================================================================
@@ -11,10 +56,6 @@
 
 
 
-
-* {
-    box-sizing: border-box;
-}
 
 .mars-modal {
     position: $modal-pos-1;
@@ -26,7 +67,8 @@
     text-align: center;
     margin-bottom: $modal-margin-bottom;
     box-shadow: $modal-box-shadow rgba(0, 0, 0, 0.1);
-
+    box-sizing: border-box !important;
+    
 
     & a:not(.mars-button) {
         color: $current;
