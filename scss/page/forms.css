@@ -13,19 +13,33 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: 50px;
 }
 
 .forms-contents > * {
   margin-bottom: 50px;
 }
 
+.forms-contents .highlighter-rouge {
+  font-size: 87.5%;
+  color: #e83e8c;
+  word-break: break-word;
+}
+
+.forms-contents .highlighter-rouge.bghr {
+  background-color: #e9e9e9;
+}
+
 h1.forms-title {
-  font-size: 32px;
+  font-size: 40px;
   font-weight: 400;
   font-family: inherit;
   cursor: default;
   margin-bottom: 40px;
+}
+
+h1.forms-title > a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.85);
 }
 
 .forms-area {
@@ -38,11 +52,12 @@ h1.forms-title {
           flex-direction: column;
   width: 500px;
   font-family: inherit;
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .forms-area-heading {
-  font-size: 20px;
+  font-size: 30px;
   font-weight: normal;
 }
 
@@ -52,38 +67,53 @@ h1.forms-title {
   cursor: pointer;
 }
 
-.forms-area-contexts {
+.forms-area .highlight {
   display: block;
-  height: 5rem;
-  background: #b4e3f5;
-  margin-bottom: 30px;
+  background-color: #eeeeee;
+  padding: 1.5rem;
+  margin: 3rem;
 }
 
-.forms-area-contexts .code-contents {
+.forms-area .highlight pre {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  background-color: transparent;
+  border: 0;
+}
+
+.forms-area .highlight pre code {
+  font-size: inherit;
+  color: #212529;
   position: relative;
-  color: #586e75;
-  font-weight: 400;
-  max-width: 100%;
-  overflow: auto;
-  padding: 0;
+  left: -180px;
+}
+
+.forms-area pre {
   display: block;
+  font-size: 87.5%;
+  color: #212529;
+  overflow: auto;
+  word-break: normal;
 }
 
-.forms-area-contexts .code-contents pre {
-  white-space: pre-wrap;
-  margin: 0;
-  line-height: 1.375;
+span.s {
+  color: #ff5252;
 }
 
-.forms-area-contexts.code-contents pre code {
-  font-size: 1em;
-  padding: 0;
+span.nh, span.nt {
+  color: #0051ff;
 }
 
-.forms-label {
+span.na {
+  color: #00d2ff;
+}
+
+label.forms-label {
   display: block;
   font-weight: 700;
   font-size: 1em;
+  margin: 3.5em 0.75em 1.5em;
 }
 
 .mars-form legend {
