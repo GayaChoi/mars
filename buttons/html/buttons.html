@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito|Nunito+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../Assets/common/common.css">
     <link rel="stylesheet" href="../../css/mars.css">
-    <link rel="stylesheet" href="../../buttons/css/buttons-main.css">
+    <link rel="stylesheet" href="../../scss/page/buttons.css">
     <link rel="stylesheet" href="../../response/mars-r.css">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
@@ -17,47 +17,94 @@
    <div id="wrap">
      <div class="buttons-wrap">
         <div class="buttons-contents">
-            <h1 class="buttons-title">Buttons</h1>        
+            <h1 class="buttons-title">Buttons</h1>   
             <div class="buttons-area">
-              <h4>This is Default Button</h4>
-              <div class="mars-button">Default</div>
-              <h4>This is Normal Button</h4>
-              <button class="mars-button is-color-blue">Normal</button>
-              <button class="mars-button is-color-green">Normal</button>
-              <button class="mars-button is-color-yellow">Normal</button>
-              <button class="mars-button is-color-pink">Normal</button>
-              <button class="mars-button is-color-purple">Normal</button>
-            </div>
+                <p>Buttons in mars are denoted by <code class="highlighter-rouge">mars-button</code>.<br>
+                    <code class="highlighter-rouge">mars-button</code> can apply gradient, animation, outline, loading, icon.
+                </p>
+                <h3 class="buttons-area-heading">
+                    <a href="#">
+                        Overview
+                    </a>
+                </h3>
+                <p>
+                   <code class="highlighter-rouge">mars-button</code> is initialized with a fixed 4px round value by default. 
+                   <ul>
+                       <li><code class="highlighter-rouge bghr">is-nor-rounded</code></li> 
+                       <li><code class="highlighter-rouge bghr">is-md-rounded</code></li>
+                       <li><code class="highlighter-rouge bghr">is-lg-rounded</code></li> 
+                   </ul><br>              
+                   Maintain 4px, 1em, and 2em respectively. Customization is available for your convenience.
+                </p>
+                <h4>Default Button</h4>
+                <div class="mars-button">Default</div>
+                <h4>Normal Button</h4>
+                <button class="mars-button is-color-blue">Normal</button>
+                <button class="mars-button is-color-green">Normal</button>
+                <button class="mars-button is-color-yellow">Normal</button>
+                <button class="mars-button is-color-pink">Normal</button>
+                <button class="mars-button is-color-purple">Normal</button>     
+            </div>    
+            <h1 class="buttons-title">Hovered Buttons</h1>
             <div class="buttons-area">
-                <h4>This is Hover Button</h4>
+                <p></p>
+                <h3 class="buttons-area-heading">
+                    <a href="#">
+                        Overview
+                    </a>
+                </h3>
                 <button class="mars-button is-hovered is-color-blue">Hover</button>
                 <button class="mars-button is-hovered is-color-green">Hover</button>
                 <button class="mars-button is-hovered is-color-yellow">Hover</button>
                 <button class="mars-button is-hovered is-color-pink">Hover</button>
                 <button class="mars-button is-hovered is-color-purple">Hover</button>
             </div>
+            <h1 class="buttons-title">Focused Button</h1>
             <div class="buttons-area">
-                <h4>This is Focused Button</h4>
+                <p></p>
+                <h3 class="buttons-area-heading">
+                    <a href="#">
+                        Overview
+                    </a>
+                </h3>
                 <button class="mars-button is-focused is-color-blue">Focused</button>
                 <button class="mars-button is-focused is-color-green">Focused</button>
                 <button class="mars-button is-focused is-color-yellow">Focused</button>
                 <button class="mars-button is-focused is-color-pink">Focused</button>
                 <button class="mars-button is-focused is-color-purple">Focused</button>
             </div>  
+            <h1 class="buttons-title">Pressed Button</h1>
             <div class="buttons-area">
-                <h4>This is Pressed Button</h4>
+                <p></p>
+                <h3 class="buttons-area-heading">
+                    <a href="#">
+                        Overview
+                    </a>
+                </h3>
                 <button class="mars-button is-pressed is-color-blue">Pressed</button>
                 <button class="mars-button is-pressed is-color-green">Pressed</button>
                 <button class="mars-button is-pressed is-color-yellow">Pressed</button>
                 <button class="mars-button is-pressed is-color-pink">Pressed</button>
                 <button class="mars-button is-pressed is-color-purple">Pressed</button>
             </div>
+            <h1 class="buttons-title">Disabled Button</h1>
             <div class="buttons-area">
-                <h4>This is Disabled Button</h4>
+                <p></p>
+                <h3 class="buttons-area-heading">
+                    <a href="#">
+                        Overview
+                    </a>
+                </h3>
                 <button class="mars-button is-disabled" disabled>Disabled</button>
             </div>
+            <h1 class="buttons-title">Loading Button</h1>
             <div class="buttons-area">
-                <h4>This is Loading Button</h4>
+                <p></p>
+                <h3 class="buttons-area-heading">
+                    <a href="#">
+                        Overview
+                    </a>
+                </h3>
                 <button class="mars-button is-loading">Loading</button>
                 <button class="mars-button is-loading is-color-blue"></button>
                 <button class="mars-button is-loading is-color-green"></button>
@@ -65,8 +112,14 @@
                 <button class="mars-button is-loading is-color-pink"></button> 
                 <button class="mars-button is-loading is-color-purple"></button>
             </div>
+            <h1 class="buttons-title">Gradient Button</h1>
             <div class="buttons-area">
-                <h4>This is Gradient Button</h4>
+                <p></p>
+                <h3 class="buttons-area-heading">
+                    <a href="#">
+                        Overview
+                    </a>
+                </h3>
                 <button class="mars-button is-gradient">Default Gradient</button>
                 <button class="mars-button is-gradient is-color-blue">Blue Gradient</button>
                 <button class="mars-button is-gradient is-color-green">Green Gradient</button>
@@ -74,8 +127,14 @@
                 <button class="mars-button is-gradient is-color-pink">Pink Gradient</button>
                 <button class="mars-button is-gradient is-color-purple">Purple Gradient</button>
             </div>    
+            <h1 class="buttons-title">Anim Button</h1>
             <div class="buttons-area">
-                <h4>This is an Anim Button</h4>
+                <p></p>
+                <h3 class="buttons-area-heading">
+                    <a href="#">
+                        Overview
+                    </a>
+                </h3>
                 <button class="mars-button is-gradient is-anim">Default</button>
                 <button class="mars-button is-gradient is-anim is-color-blue">Blue</button>
                 <button class="mars-button is-gradient is-anim is-color-green">Green</button>
@@ -83,22 +142,40 @@
                 <button class="mars-button is-gradient is-anim is-color-pink">Pink</button>
                 <button class="mars-button is-gradient is-anim is-color-purple">Purple</button>   
             </div>
+            <h1 class="buttons-title">Sized Button</h1>
             <div class="buttons-area">
-                <h4>This is Size Button</h4>
+                <p></p>
+                <h3 class="buttons-area-heading">
+                    <a href="#">
+                        Overview
+                    </a>
+                </h3>
                 <button class="mars-button is-small">Small</button>
                 <button class="mars-button is-normal">Normal</button>
                 <button class="mars-button is-medium">Medium</button>
                 <button class="mars-button is-large">Large</button>   
             </div>
+            <h1 class="buttons-title">State Button</h1>
             <div class="buttons-area">
-                <h4>This is State Button</h4>
+                <p></p>
+                <h3 class="buttons-area-heading">
+                    <a href="#">
+                        Overview
+                    </a>
+                </h3>
                 <button class="mars-button is-color-primary">Primary</button>
                 <button class="mars-button is-color-success">Success</button>
                 <button class="mars-button is-color-warning">Warning</button>
                 <button class="mars-button is-color-error">Error</button>   
             </div>
+            <h1 class="buttons-title">Icon Button</h1>
             <div class="buttons-area">
-                <h4>This is Icon Button</h4>
+                <p></p>
+                <h3 class="buttons-area-heading">
+                    <a href="#">
+                        Overview
+                    </a>
+                </h3>
                 <button class="mars-button-icon is-small">
                     <span>Github</span>
                     <span class="icon is-small">
@@ -123,9 +200,15 @@
                         <i class="fab fa-github"></i>
                     </span>
                 </button>  
-            </div>
+            </div> 
+            <h1 class="buttons-title">Rounded Buttons</h1> 
             <div class="buttons-area">
-                <h4>This is Rounded Button</h4>
+                <p></p>
+                <h3 class="buttons-area-heading">
+                    <a href="#">
+                        Overview
+                    </a>
+                </h3>
                 <button class="mars-button is-lg-rounded">
                     Normal
                 </button> 
@@ -142,8 +225,14 @@
                     Disabled
                 </button>     
             </div>
+            <h1 class="buttons-title">Outlined Buttons</h1> 
             <div class="buttons-area">
-                <h4>This is Outlined Button</h4>
+                <p></p>
+                <h3 class="buttons-area-heading">
+                    <a href="#">
+                        Overview
+                    </a>
+                </h3>
                 <button class="mars-button is-outlined">
                     Outline
                 </button> 
