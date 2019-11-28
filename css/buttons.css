@@ -5,7 +5,7 @@
 }
 
 .buttons-contents > * {
-  margin-bottom: 50px;
+  margin-bottom: 80px;
 }
 
 .buttons-contents .highlighter-rouge {
@@ -31,6 +31,8 @@
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  width: 500px;
+  font-family: inherit;
 }
 
 .buttons-area button, .buttons-area a {
@@ -40,6 +42,7 @@
 .buttons-area-heading {
   font-size: 30px;
   font-weight: normal;
+  margin-bottom: 50px;
 }
 
 .buttons-area > h3 > a {
@@ -53,6 +56,7 @@
   background-color: #eeeeee;
   padding: 1.5rem;
   margin: 3rem;
+  margin-bottom: 100px;
 }
 
 .buttons-area .highlight pre {
@@ -76,6 +80,20 @@
   color: #212529;
   overflow: auto;
   word-break: normal;
+}
+
+.buttons-area figure {
+  width: 100%;
+}
+
+.buttons-area p > a.chart-link {
+  color: #a7a7a7;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.buttons-area p {
+  margin-bottom: 50px;
 }
 
 h1.buttons-title {

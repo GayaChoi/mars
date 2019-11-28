@@ -119,7 +119,6 @@ $size: (
         box-shadow: $button-none-box-shadow;
         background-color: $button-disabled-background-color !important;
         color: $disabled !important;
-        pointer-events: none !important;
     }
 
     /* modals button */
@@ -178,7 +177,7 @@ $size: (
     &.is-anim {
         @include button-anim();
         animation: bgAnim 3s linear infinite;
-        background-size: $button-background-size;
+        background-size: $button-background-size !important;
     }
     
     /* button size */
@@ -208,7 +207,7 @@ $size: (
         opacity: 1;
         outline: 2px solid $default;
         border-width: $button-border-width;
-        background-color: $transparent;  
+        background-color: $transparent !important;  
         color: $default;
         border-radius: 0px;
         transition: $transition;
@@ -250,7 +249,7 @@ $size: (
         padding-top: calc(1em - 1px);
         text-align: center;
         white-space: nowrap;
-        pointer-events: none;
+        pointer-events: none !important;
         height: 2.5em;
         font-size: $button-font-size;
         line-height: 2.5em;

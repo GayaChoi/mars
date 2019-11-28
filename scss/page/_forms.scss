@@ -87,6 +87,10 @@ h1.forms-title {
         overflow: auto;
         word-break: normal;
     }
+
+    & figure {
+        width: 100%;
+    }
 }
 
 span {

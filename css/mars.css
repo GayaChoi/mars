@@ -909,7 +909,6 @@ svg:not(:root) {
           box-shadow: none;
   background-color: #eaeded !important;
   color: #cad2d3 !important;
-  pointer-events: none !important;
 }
 
 .mars-button.is-cancel,
@@ -1056,7 +1055,7 @@ svg:not(:root) {
 .mars-button-icon.is-anim {
   -webkit-animation: bgAnim 3s linear infinite;
           animation: bgAnim 3s linear infinite;
-  background-size: 400% 400%;
+  background-size: 400% 400% !important;
 }
 
 @-webkit-keyframes bgAnim {
@@ -1117,7 +1116,7 @@ svg:not(:root) {
   opacity: 1;
   outline: 2px solid #129fea;
   border-width: 2px;
-  background-color: transparent;
+  background-color: transparent !important;
   color: #129fea;
   border-radius: 0px;
   -webkit-transition: all 0.2s ease-in-out 0s;
@@ -1243,7 +1242,7 @@ svg:not(:root) {
   padding-top: calc(1em - 1px);
   text-align: center;
   white-space: nowrap;
-  pointer-events: none;
+  pointer-events: none !important;
   height: 2.5em;
   font-size: 1rem;
   line-height: 2.5em;

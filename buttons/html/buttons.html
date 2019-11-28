@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito|Nunito+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../Assets/common/common.css">
     <link rel="stylesheet" href="../../css/mars.css">
-    <link rel="stylesheet" href="../../scss/page/buttons.css">
+    <link rel="stylesheet" href="../../css/buttons.css">
     <link rel="stylesheet" href="../../response/mars-r.css">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
@@ -38,201 +38,655 @@
                 </p>
                 <h4>Default Button</h4>
                 <div class="mars-button">Default</div>
+                <figure class="highlight">
+                    <pre>
+                       <code class="language-html" data-lang="html">
+                          <span class="nh"><</span><span class="nt">button</span> <span class="na">class=</span><span class="s">"mars-button"</span><span class="nh">></span>Default<span class="nh"><</span><span class="nt">/button</span><span class="nh">></span>
+                       </code>
+                    </pre>       
+                </figure>
                 <h4>Normal Button</h4>
                 <button class="mars-button is-color-blue">Normal</button>
+                <figure class="highlight">
+                    <pre>
+                       <code class="language-html" data-lang="html">
+                          <span class="nh"><</span><span class="nt">button</span> <span class="na">class=</span><span class="s">"mars-button is-color-blue"</span><span class="nh">></span>Normal<span class="nh"><</span><span class="nt">/button</span><span class="nh">></span>
+                       </code>
+                    </pre>       
+                </figure>
                 <button class="mars-button is-color-green">Normal</button>
+                <figure class="highlight">
+                    <pre>
+                       <code class="language-html" data-lang="html">
+                          <span class="nh"><</span><span class="nt">button</span> <span class="na">class=</span><span class="s">"mars-button is-color-green"</span><span class="nh">></span>Normal<span class="nh"><</span><span class="nt">/button</span><span class="nh">></span>
+                       </code>
+                    </pre>       
+                </figure>
                 <button class="mars-button is-color-yellow">Normal</button>
+                <figure class="highlight">
+                    <pre>
+                       <code class="language-html" data-lang="html">
+                          <span class="nh"><</span><span class="nt">button</span> <span class="na">class=</span><span class="s">"mars-button is-color-yellow"</span><span class="nh">></span>Normal<span class="nh"><</span><span class="nt">/button</span><span class="nh">></span>
+                       </code>
+                    </pre>       
+                </figure>
                 <button class="mars-button is-color-pink">Normal</button>
-                <button class="mars-button is-color-purple">Normal</button>     
+                <figure class="highlight">
+                    <pre>
+                       <code class="language-html" data-lang="html">
+                          <span class="nh"><</span><span class="nt">button</span> <span class="na">class=</span><span class="s">"mars-button is-color-pink"</span><span class="nh">></span>Normal<span class="nh"><</span><span class="nt">/button</span><span class="nh">></span>
+                       </code>
+                    </pre>       
+                </figure>
+                <button class="mars-button is-color-purple">Normal</button>  
+                <figure class="highlight">
+                    <pre>
+                       <code class="language-html" data-lang="html">
+                          <span class="nh"><</span><span class="nt">button</span> <span class="na">class=</span><span class="s">"mars-button is-color-purple"</span><span class="nh">></span>Normal<span class="nh"><</span><span class="nt">/button</span><span class="nh">></span>
+                       </code>
+                    </pre>       
+                </figure>   
             </div>    
             <h1 class="buttons-title">Hovered Buttons</h1>
             <div class="buttons-area">
-                <p></p>
+                <p>mars gives hover the functionality of a button, put <code class="highlighter-rouge">is-hovered</code>.
+
+                    Must be placed after <code class="highlighter-rouge">mars-button</code>
+                </p>
                 <h3 class="buttons-area-heading">
                     <a href="#">
                         Overview
                     </a>
                 </h3>
+                <p>
+                    Each color is available.Please refer to the detailed color chart <a class="chart-link" href="#"><i class="fas fa-external-link-alt"></i>here.</a>  
+                </p>
                 <button class="mars-button is-hovered is-color-blue">Hover</button>
+                <figure class="highlight">
+                    <pre>
+                       <code class="language-html" data-lang="html">
+                          <span class="nh"><</span><span class="nt">button</span> <span class="na">class=</span><span class="s">"mars-button is-hovered is-color-blue"</span><span class="nh">></span>Hover<span class="nh"><</span><span class="nt">/button</span><span class="nh">></span>
+                       </code>
+                    </pre>       
+                </figure>   
                 <button class="mars-button is-hovered is-color-green">Hover</button>
+                <figure class="highlight">
+                    <pre>
+                       <code class="language-html" data-lang="html">
+                          <span class="nh"><</span><span class="nt">button</span> <span class="na">class=</span><span class="s">"mars-button is-hovered is-color-green"</span><span class="nh">></span>Hover<span class="nh"><</span><span class="nt">/button</span><span class="nh">></span>
+                       </code>
+                    </pre>       
+                </figure>  
                 <button class="mars-button is-hovered is-color-yellow">Hover</button>
+                <figure class="highlight">
+                    <pre>
+                       <code class="language-html" data-lang="html">
+                          <span class="nh"><</span><span class="nt">button</span> <span class="na">class=</span><span class="s">"mars-button is-hovered is-color-yellow"</span><span class="nh">></span>Hover<span class="nh"><</span><span class="nt">/button</span><span class="nh">></span>
+                       </code>
+                    </pre>       
+                </figure>  
                 <button class="mars-button is-hovered is-color-pink">Hover</button>
+                <figure class="highlight">
+                    <pre>
+                       <code class="language-html" data-lang="html">
+                          <span class="nh"><</span><span class="nt">button</span> <span class="na">class=</span><span class="s">"mars-button is-hovered is-color-pink"</span><span class="nh">></span>Hover<span class="nh"><</span><span class="nt">/button</span><span class="nh">></span>
+                       </code>
+                    </pre>       
+                </figure>  
                 <button class="mars-button is-hovered is-color-purple">Hover</button>
+                <figure class="highlight">
+                    <pre>
+                       <code class="language-html" data-lang="html">
+                          <span class="nh"><</span><span class="nt">button</span> <span class="na">class=</span><span class="s">"mars-button is-hovered is-color-purple"</span><span class="nh">></span>Hover<span class="nh"><</span><span class="nt">/button</span><span class="nh">></span>
+                       </code>
+                    </pre>       
+                </figure>  
             </div>
             <h1 class="buttons-title">Focused Button</h1>
             <div class="buttons-area">
-                <p></p>
+                <p>
+                    The function of focuse uses <code class="highlighter-rouge">is-focused</code>, but it is not an event on click.
+                </p>
                 <h3 class="buttons-area-heading">
                     <a href="#">
                         Overview
                     </a>
                 </h3>
+                <p>
+                    The functionality of is-focused applies to border by default.
+                </p>   
                 <button class="mars-button is-focused is-color-blue">Focused</button>
+                <figure class="highlight">
+                    <pre>
+                       <code class="language-html" data-lang="html">
+                          <span class="nh"><</span><span class="nt">button</span> <span class="na">class=</span><span class="s">"mars-button is-focused is-color-blue"</span><span class="nh">></span>Focused<span class="nh"><</span><span class="nt">/button</span><span class="nh">></span>
+                       </code>
+                    </pre>       
+                </figure>  
                 <button class="mars-button is-focused is-color-green">Focused</button>
+                <figure class="highlight">
+                    <pre>
+                       <code class="language-html" data-lang="html">
+                          <span class="nh"><</span><span class="nt">button</span> <span class="na">class=</span><span class="s">"mars-button is-focused is-color-green"</span><span class="nh">></span>Focused<span class="nh"><</span><span class="nt">/button</span><span class="nh">></span>
+                       </code>
+                    </pre>       
+                </figure>
                 <button class="mars-button is-focused is-color-yellow">Focused</button>
+                <figure class="highlight">
+                    <pre>
+                       <code class="language-html" data-lang="html">
+                          <span class="nh"><</span><span class="nt">button</span> <span class="na">class=</span><span class="s">"mars-button is-focused is-color-yellow"</span><span class="nh">></span>Focused<span class="nh"><</span><span class="nt">/button</span><span class="nh">></span>
+                       </code>
+                    </pre>       
+                </figure>
                 <button class="mars-button is-focused is-color-pink">Focused</button>
+                <figure class="highlight">
+                    <pre>
+                       <code class="language-html" data-lang="html">
+                          <span class="nh"><</span><span class="nt">button</span> <span class="na">class=</span><span class="s">"mars-button is-focused is-color-pink"</span><span class="nh">></span>Focused<span class="nh"><</span><span class="nt">/button</span><span class="nh">></span>
+                       </code>
+                    </pre>       
+                </figure>
                 <button class="mars-button is-focused is-color-purple">Focused</button>
+                <figure class="highlight">
+                    <pre>
+                       <code class="language-html" data-lang="html">
+                          <span class="nh"><</span><span class="nt">button</span> <span class="na">class=</span><span class="s">"mars-button is-focused is-color-purple"</span><span class="nh">></span>Focused<span class="nh"><</span><span class="nt">/button</span><span class="nh">></span>
+                       </code>
+                    </pre>       
+                </figure>
             </div>  
             <h1 class="buttons-title">Pressed Button</h1>
             <div class="buttons-area">
-                <p></p>
+                <p>
+                    pressed uses is-pressed. mars contains is-actived, which has the same functionality as <code class="highlighter-rouge">is-pressed</code>.
+                </p>
                 <h3 class="buttons-area-heading">
                     <a href="#">
                         Overview
                     </a>
                 </h3>
+                <p>
+                    <code class="highlighter-rouge">is-pressed</code> is subject to a border inset. 
+                </p>
                 <button class="mars-button is-pressed is-color-blue">Pressed</button>
+                <figure class="highlight">
+                    <pre>
+                        <code class="language-html" data-lang="html">
+                            <span class="nh"><</span><span class="nt">button</span> <span class="na">class=</span><span class="s">"mars-button is-pressed is-color-blue"</span><span class="nh">></span>Pressed<span class="nh"><</span><span class="nt">/button</span><span class="nh">></span>
+                        </code>
+                    </pre>       
+                </figure>
                 <button class="mars-button is-pressed is-color-green">Pressed</button>
+                <figure class="highlight">
+                    <pre>
+                        <code class="language-html" data-lang="html">
+                            <span class="nh"><</span><span class="nt">button</span> <span class="na">class=</span><span class="s">"mars-button is-pressed is-color-green"</span><span class="nh">></span>Pressed<span class="nh"><</span><span class="nt">/button</span><span class="nh">></span>
+                        </code>
+                    </pre>       
+                </figure>
                 <button class="mars-button is-pressed is-color-yellow">Pressed</button>
+                <figure class="highlight">
+                    <pre>
+                        <code class="language-html" data-lang="html">
+                            <span class="nh"><</span><span class="nt">button</span> <span class="na">class=</span><span class="s">"mars-button is-pressed is-color-yellow"</span><span class="nh">></span>Pressed<span class="nh"><</span><span class="nt">/button</span><span class="nh">></span>
+                        </code>
+                    </pre>       
+                </figure>
                 <button class="mars-button is-pressed is-color-pink">Pressed</button>
+                <figure class="highlight">
+                    <pre>
+                        <code class="language-html" data-lang="html">
+                            <span class="nh"><</span><span class="nt">button</span> <span class="na">class=</span><span class="s">"mars-button is-pressed is-color-pink"</span><span class="nh">></span>Pressed<span class="nh"><</span><span class="nt">/button</span><span class="nh">></span>
+                        </code>
+                    </pre>       
+                </figure>
                 <button class="mars-button is-pressed is-color-purple">Pressed</button>
+                <figure class="highlight">
+                    <pre>
+                        <code class="language-html" data-lang="html">
+                            <span class="nh"><</span><span class="nt">button</span> <span class="na">class=</span><span class="s">"mars-button is-pressed is-color-purple"</span><span class="nh">></span>Pressed<span class="nh"><</span><span class="nt">/button</span><span class="nh">></span>
+                        </code>
+                    </pre>       
+                </figure>
             </div>
             <h1 class="buttons-title">Disabled Button</h1>
             <div class="buttons-area">
-                <p></p>
+                <p>
+                    disabled for mars uses  <code class="highlighter-rouge">is-disabled</code>.
+
+                    This is the same as setting the disable attribute with <code class="highlighter-rouge">mars-button</code> applied.  
+                </p>
                 <h3 class="buttons-area-heading">
                     <a href="#">
                         Overview
                     </a>
                 </h3>
-                <button class="mars-button is-disabled" disabled>Disabled</button>
+                <p>
+                    disabled can be customized as desired.
+                </p>
+                <button class="mars-button is-disabled">Disabled</button>
+                <figure class="highlight">
+                    <pre>
+                        <code class="language-html" data-lang="html">
+                            <span class="nh"><</span><span class="nt">button</span> <span class="na">class=</span><span class="s">"mars-button is-disabled"</span><span class="nh">></span><span class="nh"><</span><span class="nt">/button</span><span class="nh">></span>
+                        </code>
+                    </pre>       
+                </figure>
             </div>
             <h1 class="buttons-title">Loading Button</h1>
             <div class="buttons-area">
-                <p></p>
+                <p>
+                    Set the loading button to  <code class="highlighter-rouge">is-loading</code>
+                    &nbsp The animation for loading uses the  <code class="highlighter-rouge">spinAround name</code>, which is 500ms by default.
+                </p>
                 <h3 class="buttons-area-heading">
                     <a href="#">
                         Overview
                     </a>
                 </h3>
+                <p>
+                    <code class="highlighter-rouge">is-loading</code> and use fontawesome by default, you must use fontawesome together.
+
+                    Include it in your project like this Be careful to insert it after jquery.  
+                </p>
+                <figure class="highlight">
+                    <pre>
+                        <code class="language-html" data-lang="html">
+                            <span class="nh"><</span>script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"><span class="nh"><</span>/script<span class="nh">></span>
+                            <span class="nh"><</span>script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"><span class="nh"><</span>/script<span class="nh">></span>
+                        </code>
+                    </pre>       
+                </figure>
                 <button class="mars-button is-loading">Loading</button>
+                <figure class="highlight">
+                    <pre>
+                        <code class="language-html" data-lang="html">
+                            <span class="nh"><</span><span class="nt">button</span> <span class="na">class=</span><span class="s">"mars-button is-loading"</span><span class="nh">></span><span class="nh"><</span><span class="nt">/button</span><span class="nh">></span>
+                        </code>
+                    </pre>       
+                </figure>
                 <button class="mars-button is-loading is-color-blue"></button>
+                <figure class="highlight">
+                    <pre>
+                        <code class="language-html" data-lang="html">
+                            <span class="nh"><</span><span class="nt">button</span> <span class="na">class=</span><span class="s">"mars-button is-loading is-color-blue"</span><span class="nh">></span><span class="nh"><</span><span class="nt">/button</span><span class="nh">></span>
+                        </code>
+                    </pre>       
+                </figure>
                 <button class="mars-button is-loading is-color-green"></button>
+                <figure class="highlight">
+                    <pre>
+                        <code class="language-html" data-lang="html">
+                            <span class="nh"><</span><span class="nt">button</span> <span class="na">class=</span><span class="s">"mars-button is-loading is-color-green"</span><span class="nh">></span><span class="nh"><</span><span class="nt">/button</span><span class="nh">></span>
+                        </code>
+                    </pre>       
+                </figure>
                 <button class="mars-button is-loading is-color-yellow"></button>
+                <figure class="highlight">
+                    <pre>
+                        <code class="language-html" data-lang="html">
+                            <span class="nh"><</span><span class="nt">button</span> <span class="na">class=</span><span class="s">"mars-button is-loading is-color-yellow"</span><span class="nh">></span><span class="nh"><</span><span class="nt">/button</span><span class="nh">></span>
+                        </code>
+                    </pre>       
+                </figure>
                 <button class="mars-button is-loading is-color-pink"></button> 
+                <figure class="highlight">
+                    <pre>
+                        <code class="language-html" data-lang="html">
+                            <span class="nh"><</span><span class="nt">button</span> <span class="na">class=</span><span class="s">"mars-button is-loading is-color-pink"</span><span class="nh">></span><span class="nh"><</span><span class="nt">/button</span><span class="nh">></span>
+                        </code>
+                    </pre>       
+                </figure>
                 <button class="mars-button is-loading is-color-purple"></button>
+                <figure class="highlight">
+                    <pre>
+                        <code class="language-html" data-lang="html">
+                            <span class="nh"><</span><span class="nt">button</span> <span class="na">class=</span><span class="s">"mars-button is-loading is-color-purple"</span><span class="nh">></span><span class="nh"><</span><span class="nt">/button</span><span class="nh">></span>
+                        </code>
+                    </pre>       
+                </figure>
             </div>
             <h1 class="buttons-title">Gradient Button</h1>
             <div class="buttons-area">
-                <p></p>
+                <p>The gradient button is applied as  <code class="highlighter-rouge">is-gradient</code>. By default, the left color is darker than the color on the right. border is not specified.
+
+
+                    You can also add animation to it using <code class="highlighter-rouge">is-anim</code>, so be sure to set it with <code class="highlighter-rouge">is-gradient</code>.
+                </p>
                 <h3 class="buttons-area-heading">
                     <a href="#">
                         Overview
                     </a>
                 </h3>
+                <p>
+                    The gradient can only be applied to the <a class="chart-link" href="#"><i class="fas fa-external-link-alt"></i>color</a> specified in mars.  
+                </p>
                 <button class="mars-button is-gradient">Default Gradient</button>
+                <figure class="highlight">
+                    <pre>
+                        <code class="language-html" data-lang="html">
+                            <span class="nh"><</span><span class="nt">button</span> <span class="na">class=</span><span class="s">"mars-button is-gradient"</span><span class="nh">></span>Default Gradient<span class="nh"><</span><span class="nt">/button</span><span class="nh">></span>
+                        </code>
+                    </pre>       
+                </figure>
                 <button class="mars-button is-gradient is-color-blue">Blue Gradient</button>
+                <figure class="highlight">
+                    <pre>
+                        <code class="language-html" data-lang="html">
+                            <span class="nh"><</span><span class="nt">button</span> <span class="na">class=</span><span class="s">"mars-button is-gradient is-color-blue"</span><span class="nh">></span>Blue Gradient<span class="nh"><</span><span class="nt">/button</span><span class="nh">></span>
+                        </code>
+                    </pre>       
+                </figure>
                 <button class="mars-button is-gradient is-color-green">Green Gradient</button>
+                <figure class="highlight">
+                    <pre>
+                        <code class="language-html" data-lang="html">
+                            <span class="nh"><</span><span class="nt">button</span> <span class="na">class=</span><span class="s">"mars-button is-gradient is-color-green"</span><span class="nh">></span>Green Gradient<span class="nh"><</span><span class="nt">/button</span><span class="nh">></span>
+                        </code>
+                    </pre>       
+                </figure>
                 <button class="mars-button is-gradient is-color-yellow">Yellow Gradient</button>
+                <figure class="highlight">
+                    <pre>
+                        <code class="language-html" data-lang="html">
+                            <span class="nh"><</span><span class="nt">button</span> <span class="na">class=</span><span class="s">"mars-button is-gradient is-color-yellow"</span><span class="nh">></span>Yellow Gradient<span class="nh"><</span><span class="nt">/button</span><span class="nh">></span>
+                        </code>
+                    </pre>       
+                </figure>
                 <button class="mars-button is-gradient is-color-pink">Pink Gradient</button>
+                <figure class="highlight">
+                    <pre>
+                        <code class="language-html" data-lang="html">
+                            <span class="nh"><</span><span class="nt">button</span> <span class="na">class=</span><span class="s">"mars-button is-gradient is-color-pink"</span><span class="nh">></span>Pink Gradient<span class="nh"><</span><span class="nt">/button</span><span class="nh">></span>
+                        </code>
+                    </pre>       
+                </figure>
                 <button class="mars-button is-gradient is-color-purple">Purple Gradient</button>
+                <figure class="highlight">
+                    <pre>
+                        <code class="language-html" data-lang="html">
+                            <span class="nh"><</span><span class="nt">button</span> <span class="na">class=</span><span class="s">"mars-button is-gradient is-color-purple"</span><span class="nh">></span>Purple Gradient<span class="nh"><</span><span class="nt">/button</span><span class="nh">></span>
+                        </code>
+                    </pre>       
+                </figure>
             </div>    
             <h1 class="buttons-title">Anim Button</h1>
             <div class="buttons-area">
-                <p></p>
+                <p>Anim is a animated feature of gradients. is-anim uses the animation name bgAnim.</p>
                 <h3 class="buttons-area-heading">
                     <a href="#">
                         Overview
                     </a>
                 </h3>
+                <p>
+                    When using <code class="highlighter-rouge">is-anim</code>, please be careful about background-size. It is maintained at 400 x 400. Please be careful when changing.
+                </p>
                 <button class="mars-button is-gradient is-anim">Default</button>
+                <figure class="highlight">
+                    <pre>
+                        <code class="language-html" data-lang="html">
+                            <span class="nh"><</span><span class="nt">button</span> <span class="na">class=</span><span class="s">"mars-button is-gradient is-anim"</span><span class="nh">></span>Default<span class="nh"><</span><span class="nt">/button</span><span class="nh">></span>
+                        </code>
+                    </pre>       
+                </figure>
                 <button class="mars-button is-gradient is-anim is-color-blue">Blue</button>
+                <figure class="highlight">
+                    <pre>
+                        <code class="language-html" data-lang="html">
+                            <span class="nh"><</span><span class="nt">button</span> <span class="na">class=</span><span class="s">"mars-button is-gradient is-anim is-color-blue"</span><span class="nh">></span>Blue<span class="nh"><</span><span class="nt">/button</span><span class="nh">></span>
+                        </code>
+                    </pre>       
+                </figure>
                 <button class="mars-button is-gradient is-anim is-color-green">Green</button>
+                <figure class="highlight">
+                    <pre>
+                        <code class="language-html" data-lang="html">
+                            <span class="nh"><</span><span class="nt">button</span> <span class="na">class=</span><span class="s">"mars-button is-gradient is-anim is-color-green"</span><span class="nh">></span>Green<span class="nh"><</span><span class="nt">/button</span><span class="nh">></span>
+                        </code>
+                    </pre>       
+                </figure>
                 <button class="mars-button is-gradient is-anim is-color-yellow">Yellow</button>
+                <figure class="highlight">
+                    <pre>
+                        <code class="language-html" data-lang="html">
+                            <span class="nh"><</span><span class="nt">button</span> <span class="na">class=</span><span class="s">"mars-button is-gradient is-anim is-color-yellow"</span><span class="nh">></span>Yellow<span class="nh"><</span><span class="nt">/button</span><span class="nh">></span>
+                        </code>
+                    </pre>       
+                </figure>
                 <button class="mars-button is-gradient is-anim is-color-pink">Pink</button>
-                <button class="mars-button is-gradient is-anim is-color-purple">Purple</button>   
+                <figure class="highlight">
+                    <pre>
+                        <code class="language-html" data-lang="html">
+                            <span class="nh"><</span><span class="nt">button</span> <span class="na">class=</span><span class="s">"mars-button is-gradient is-anim is-color-pink"</span><span class="nh">></span>Pink<span class="nh"><</span><span class="nt">/button</span><span class="nh">></span>
+                        </code>
+                    </pre>       
+                </figure>
+                <button class="mars-button is-gradient is-anim is-color-purple">Purple</button> 
+                <figure class="highlight">
+                    <pre>
+                        <code class="language-html" data-lang="html">
+                            <span class="nh"><</span><span class="nt">button</span> <span class="na">class=</span><span class="s">"mars-button is-gradient is-anim is-color-purple"</span><span class="nh">></span>Purple<span class="nh"><</span><span class="nt">/button</span><span class="nh">></span>
+                        </code>
+                    </pre>       
+                </figure>  
             </div>
             <h1 class="buttons-title">Sized Button</h1>
             <div class="buttons-area">
-                <p></p>
+                <p>
+                    size consists of small, normal, medium, large, and consists of the following classes
+                    The unit is specified in <code class="highlighter-rouge">rem</code>. Note the font size.<br>
+                        
+                    <ul>
+                        <li><code class="highlighter-rouge bghr">is-small</code></li> 
+                        <li><code class="highlighter-rouge bghr">is-normal</code></li>
+                        <li><code class="highlighter-rouge bghr">is-medium</code></li>
+                        <li><code class="highlighter-rouge bghr">is-large</code></li> 
+                    </ul><br><br>    
+                        
+                        
+                    0.75rem, 1rem, 1.25rem, 1.5rem respectively.  
+                </p>
                 <h3 class="buttons-area-heading">
                     <a href="#">
                         Overview
                     </a>
                 </h3>
+                <p>
+                    Keep it at 16px by default.          
+                </p>
                 <button class="mars-button is-small">Small</button>
+                <figure class="highlight">
+                    <pre>
+                        <code class="language-html" data-lang="html">
+                            <span class="nh"><</span><span class="nt">button</span> <span class="na">class=</span><span class="s">"mars-button is-small"</span><span class="nh">></span>Small<span class="nh"><</span><span class="nt">/button</span><span class="nh">></span>
+                        </code>
+                    </pre>       
+                </figure>  
                 <button class="mars-button is-normal">Normal</button>
+                <figure class="highlight">
+                    <pre>
+                        <code class="language-html" data-lang="html">
+                            <span class="nh"><</span><span class="nt">button</span> <span class="na">class=</span><span class="s">"mars-button is-normal"</span><span class="nh">></span>Normal<span class="nh"><</span><span class="nt">/button</span><span class="nh">></span>
+                        </code>
+                    </pre>       
+                </figure>  
                 <button class="mars-button is-medium">Medium</button>
-                <button class="mars-button is-large">Large</button>   
+                <figure class="highlight">
+                    <pre>
+                        <code class="language-html" data-lang="html">
+                            <span class="nh"><</span><span class="nt">button</span> <span class="na">class=</span><span class="s">"mars-button is-medium"</span><span class="nh">></span>Medium<span class="nh"><</span><span class="nt">/button</span><span class="nh">></span>
+                        </code>
+                    </pre>       
+                </figure>  
+                <button class="mars-button is-large">Large</button> 
+                <figure class="highlight">
+                    <pre>
+                        <code class="language-html" data-lang="html">
+                            <span class="nh"><</span><span class="nt">button</span> <span class="na">class=</span><span class="s">"mars-button is-large"</span><span class="nh">></span>Large<span class="nh"><</span><span class="nt">/button</span><span class="nh">></span>
+                        </code>
+                    </pre>       
+                </figure>    
             </div>
             <h1 class="buttons-title">State Button</h1>
             <div class="buttons-area">
-                <p></p>
+                <p>
+                    The state, as you know, consists of primary, success, warning, and error.
+                    Just add color to the front to distinguish it from other libraries.  
+                    
+                    <ul>
+                        <li><code class="highlighter-rouge bghr">is-primary</code></li> 
+                        <li><code class="highlighter-rouge bghr">is-success</code></li>
+                        <li><code class="highlighter-rouge bghr">is-warning</code></li>
+                        <li><code class="highlighter-rouge bghr">is-error</code></li> 
+                    </ul>   
+                </p>
                 <h3 class="buttons-area-heading">
                     <a href="#">
                         Overview
                     </a>
                 </h3>
+                <p>
+                    Note that state starts with <code class="highlighter-rouge">is-color-</code>.
+                </p>
                 <button class="mars-button is-color-primary">Primary</button>
+                <figure class="highlight">
+                    <pre>
+                        <code class="language-html" data-lang="html">
+                            <span class="nh"><</span><span class="nt">button</span> <span class="na">class=</span><span class="s">"mars-button is-color-primary"</span><span class="nh">></span>Primary<span class="nh"><</span><span class="nt">/button</span><span class="nh">></span>
+                        </code>
+                    </pre>       
+                </figure>
                 <button class="mars-button is-color-success">Success</button>
+                <figure class="highlight">
+                    <pre>
+                        <code class="language-html" data-lang="html">
+                            <span class="nh"><</span><span class="nt">button</span> <span class="na">class=</span><span class="s">"mars-button is-color-success"</span><span class="nh">></span>Success<span class="nh"><</span><span class="nt">/button</span><span class="nh">></span>
+                        </code>
+                    </pre>       
+                </figure>
                 <button class="mars-button is-color-warning">Warning</button>
-                <button class="mars-button is-color-error">Error</button>   
+                <figure class="highlight">
+                    <pre>
+                        <code class="language-html" data-lang="html">
+                            <span class="nh"><</span><span class="nt">button</span> <span class="na">class=</span><span class="s">"mars-button is-color-warning"</span><span class="nh">></span>Warning<span class="nh"><</span><span class="nt">/button</span><span class="nh">></span>
+                        </code>
+                    </pre>       
+                </figure>
+                <button class="mars-button is-color-error">Error</button> 
+                <figure class="highlight">
+                    <pre>
+                        <code class="language-html" data-lang="html">
+                            <span class="nh"><</span><span class="nt">button</span> <span class="na">class=</span><span class="s">"mars-button is-color-error"</span><span class="nh">></span>Error<span class="nh"><</span><span class="nt">/button</span><span class="nh">></span>
+                        </code>
+                    </pre>       
+                </figure>  
             </div>
             <h1 class="buttons-title">Icon Button</h1>
             <div class="buttons-area">
-                <p></p>
+                <p>
+                    The icon uses <code class="highlighter-rouge">is-icon</code>. The icon in mars uses fontawesome. Be sure to use fontawesome if you want to use it. 
+                </p>
                 <h3 class="buttons-area-heading">
                     <a href="#">
                         Overview
                     </a>
                 </h3>
+                <p>
+                    You need to use fontawesome, always insert the jquery in front of it.
+                </p>
+                <figure class="highlight">
+                    <pre>
+                        <code class="language-html" data-lang="html">
+                            <span class="nh"><</span>script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"><span class="nh"><</span>/script<span class="nh">></span>
+                            <span class="nh"><</span>script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"><span class="nh"><</span>/script<span class="nh">></span>
+                        </code>
+                    </pre>       
+                </figure>
                 <button class="mars-button-icon is-small">
                     <span>Github</span>
                     <span class="icon is-small">
                         <i class="fab fa-github"></i>
                     </span>
                 </button> 
+                <figure class="highlight">
+                    <pre>
+                        <code class="language-html" data-lang="html">
+                            <span class="nh"><</span><span class="nt">button</span> <span class="na">class=</span><span class="s">"mars-button-icon is-small"</span><span class="nh">></span>
+                            <span class="nh"><</span><span class="nt">span</span> Github <span class="nh"><</span><span class="nt">/span</span><span class="nh">></span>
+                                <span class="nh"><</span><span class="nt">span</span> <span class="na">class=</span><span class="s">"icon is-small"</span><span class="nh">></span>
+                                <span class="nh"><</span><span class="nt">i</span> <span class="na">class=</span><span class="s">"fab fa-github"</span><span class="nh">></span><span class="nh"><</span><span class="nt">/i</span><span class="nh">></span> 
+                            <span class="nh"><</span><span class="nt">/span</span><span class="nh">></span>      
+                            <span class="nh"><</span><span class="nt">/button</span><span class="nh">></span>
+                        </code>
+                    </pre>       
+                </figure>  
                 <button class="mars-button-icon is-normal is-color-blue">
                     <span>Github</span>
                     <span class="icon is-normal">
                         <i class="fab fa-github"></i>
                     </span>
                 </button> 
+                <figure class="highlight">
+                    <pre>
+                        <code class="language-html" data-lang="html">
+                            <span class="nh"><</span><span class="nt">button</span> <span class="na">class=</span><span class="s">"mars-button-icon is-normal is-color-blue"</span><span class="nh">></span>
+                            <span class="nh"><</span><span class="nt">span</span> Github <span class="nh"><</span><span class="nt">/span</span><span class="nh">></span>
+                                <span class="nh"><</span><span class="nt">span</span> <span class="na">class=</span><span class="s">"icon is-small"</span><span class="nh">></span>
+                                <span class="nh"><</span><span class="nt">i</span> <span class="na">class=</span><span class="s">"fab fa-github"</span><span class="nh">></span><span class="nh"><</span><span class="nt">/i</span><span class="nh">></span> 
+                            <span class="nh"><</span><span class="nt">/span</span><span class="nh">></span>      
+                            <span class="nh"><</span><span class="nt">/button</span><span class="nh">></span>
+                        </code>
+                    </pre>       
+                </figure>  
                 <button class="mars-button-icon is-medium is-color-green">
                     <span>Github</span>
                     <span class="icon is-medium">
                         <i class="fab fa-github"></i>
                     </span>
                 </button>
+                <figure class="highlight">
+                    <pre>
+                        <code class="language-html" data-lang="html">
+                            <span class="nh"><</span><span class="nt">button</span> <span class="na">class=</span><span class="s">"mars-button-icon is-medium is-color-green"</span><span class="nh">></span>
+                            <span class="nh"><</span><span class="nt">span</span> Github <span class="nh"><</span><span class="nt">/span</span><span class="nh">></span>
+                                <span class="nh"><</span><span class="nt">span</span> <span class="na">class=</span><span class="s">"icon is-small"</span><span class="nh">></span>
+                                <span class="nh"><</span><span class="nt">i</span> <span class="na">class=</span><span class="s">"fab fa-github"</span><span class="nh">></span><span class="nh"><</span><span class="nt">/i</span><span class="nh">></span> 
+                            <span class="nh"><</span><span class="nt">/span</span><span class="nh">></span>      
+                            <span class="nh"><</span><span class="nt">/button</span><span class="nh">></span>
+                        </code>
+                    </pre>       
+                </figure>  
                 <button class="mars-button-icon is-large is-color-yellow">
                     <span>Github</span>
                     <span class="icon is-large">
                         <i class="fab fa-github"></i>
                     </span>
                 </button>  
+                <figure class="highlight">
+                    <pre>
+                        <code class="language-html" data-lang="html">
+                            <span class="nh"><</span><span class="nt">button</span> <span class="na">class=</span><span class="s">"mars-button-icon is-large is-color-yellow"</span><span class="nh">></span>
+                            <span class="nh"><</span><span class="nt">span</span> Github <span class="nh"><</span><span class="nt">/span</span><span class="nh">></span>
+                                <span class="nh"><</span><span class="nt">span</span> <span class="na">class=</span><span class="s">"icon is-small"</span><span class="nh">></span>
+                                <span class="nh"><</span><span class="nt">i</span> <span class="na">class=</span><span class="s">"fab fa-github"</span><span class="nh">></span><span class="nh"><</span><span class="nt">/i</span><span class="nh">></span> 
+                            <span class="nh"><</span><span class="nt">/span</span><span class="nh">></span>      
+                            <span class="nh"><</span><span class="nt">/button</span><span class="nh">></span>
+                        </code>
+                    </pre>       
+                </figure>  
             </div> 
-            <h1 class="buttons-title">Rounded Buttons</h1> 
-            <div class="buttons-area">
-                <p></p>
-                <h3 class="buttons-area-heading">
-                    <a href="#">
-                        Overview
-                    </a>
-                </h3>
-                <button class="mars-button is-lg-rounded">
-                    Normal
-                </button> 
-                <button class="mars-button is-lg-rounded is-hovered is-color-blue">
-                    Hover
-                </button>
-                <button class="mars-button is-lg-rounded is-focused is-color-green">
-                    Focused
-                </button>
-                <button class="mars-button is-lg-rounded is-pressed is-color-yellow">
-                    Pressed
-                </button>
-                <button class="mars-button is-lg-rounded is-disabled is-color-pink" disabled>
-                    Disabled
-                </button>     
-            </div>
             <h1 class="buttons-title">Outlined Buttons</h1> 
             <div class="buttons-area">
-                <p></p>
+                <p>outline uses <code class="highlighter-rouge">is-outlined</code>, by default border is none.</p>
                 <h3 class="buttons-area-heading">
                     <a href="#">
                         Overview
                     </a>
                 </h3>
+                <p>
+                    outlined cannot specify a background color.
+                </p>
                 <button class="mars-button is-outlined">
                     Outline
                 </button> 
