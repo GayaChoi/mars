@@ -19,16 +19,6 @@
   margin-bottom: 50px;
 }
 
-.forms-contents .highlighter-rouge {
-  font-size: 87.5%;
-  color: #e83e8c;
-  word-break: break-word;
-}
-
-.forms-contents .highlighter-rouge.bghr {
-  background-color: #e9e9e9;
-}
-
 h1.forms-title {
   font-size: 40px;
   font-weight: 400;
@@ -40,6 +30,17 @@ h1.forms-title {
 h1.forms-title > a {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.85);
+}
+
+.highlighter-rouge {
+  font-size: 87.5%;
+  color: #e83e8c;
+  word-break: break-word;
+  padding: .25em .5em .25em;
+}
+
+.highlighter-rouge.bghr {
+  background-color: #e9e9e9;
 }
 
 .forms-area {
@@ -54,11 +55,14 @@ h1.forms-title > a {
   font-family: inherit;
   font-size: 16px;
   font-weight: 400;
+  margin-bottom: 0px;
 }
 
 .forms-area-heading {
   font-size: 30px;
   font-weight: normal;
+  line-height: 0.85em;
+  margin-bottom: 25px;
 }
 
 .forms-area > h3 > a {
@@ -95,6 +99,109 @@ h1.forms-title > a {
   color: #212529;
   overflow: auto;
   word-break: normal;
+}
+
+.forms-area figure {
+  width: 100%;
+}
+
+.forms-area .badge {
+  font-size: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.forms-area .badge .mars-button {
+  width: 3rem;
+  padding: 0;
+  margin-right: 10px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.forms-area .badge .mars-button:hover {
+  opacity: 1;
+}
+
+.forms-area .tb-container {
+  overflow: auto;
+  overflow-y: hidden;
+  max-width: 100%;
+}
+
+.forms-area .tb-container .tb {
+  background: #ffffff;
+  color: #363636;
+}
+
+.forms-area .tb-container table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border-color: grey;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.forms-area .tb-container table thead {
+  background-color: transparent;
+  border: 1px solid #dbdbdb;
+}
+
+.forms-area .tb-container tr:last-child th {
+  border-bottom-width: 1px;
+}
+
+.forms-area .tb-container th {
+  border-width: 1px;
+  border: 1px solid #dbdbdb;
+}
+
+.forms-area .tb-container td {
+  border-width: 1px;
+  text-align: left;
+  border: 1px solid #dbdbdb;
+  padding: .5em .75em;
+  vertical-align: top;
+}
+
+.forms-area .tb-container td .tag {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  color: #4a4a4a;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: .75em;
+  height: 2em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  line-height: 1.5;
+  padding-left: .75em;
+  padding-right: .75em;
+  white-space: nowrap;
+}
+
+.forms-area .tb-container td .bd-color {
+  border-radius: 2px;
+  -webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1), inset 0 0 0 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1), inset 0 0 0 1px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
 }
 
 span.s {
