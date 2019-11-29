@@ -7,8 +7,10 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito|Nunito+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../Assets/common/common.css">
     <link rel="stylesheet" href="../../css/mars.css">
-    <link rel="stylesheet" href="../../modals/css/modals-main.css">
+    <link rel="stylesheet" href="../../css/modals.css">
     <link rel="stylesheet" href="../../response/mars-r.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <title>Modals</title>
 </head>
 <body>
@@ -17,13 +19,48 @@
            <div class="modals-contents">
               <h1 class="modals-title">Modals</h1>
               <div class="modals-area">
-                  <h4>This is primary modal</h4>
+                  <p>modals are used with buttons and apply <code class="highlighter-rouge">mars-modals</code>.
+
+
+                     The structure of modals provides closing buttons, titles, information about content, <code class="highlighter-rouge">mars-button.is-cancel</code>, and  <code class="highlighter-rouge">mars-button.is-submit</code>. Events must be implemented directly in JavaScript.
+                     mars does not provide.
+                        
+                        
+                     modals provides a <code class="highlighter-rouge">.delete</code> class that closes a modal window, which must be controlled with a button tag or block element.<br><br>
+                        
+                     We recommend that you use the parent tag of the block element for the element that will contain the title, see the <code class="highlighter-rouge">modal-title-area</code> class in the sample code.
+                        
+                     The title of modals uses <code class="highlighter-rouge">is-title</code> and can be used with color, see  <a class="chart-link" href="#"><i class="fas fa-external-link-alt"></i>here</a> for color.
+                     The content can be implemented after the title, which can be changed according to your project. The sample code is implemented after the title.<br><br>
+
+                     Next, it's the cancel and submit buttons, which must be controlled with the mars-button.
+                     Customization is not possible, but you can put your own ui or buttons with functions provided by mars-button.
+                     
+                     
+                     However, mars-modals has a width of <code class="highlighter-rouge">30rem</code>, so please adjust the length or customize it according to your project.
+                  </p>
+                  <h3 class="modals-area-heading">
+                     <a href="#">
+                        Overview
+                     </a>
+                  </h3>
+                  <p>
+                     modals keeps a default <code class="highlighter-rouge">30rem</code>, delete comes in a variety of sizes by default.
+                     It is different from general mars-button size.Also, cancel and submit can be used as <code class="highlighter-rouge">mars-button-icon</code>. If you want to use the functions provided by mars, fontawesome is recommended.  
+                     
+                     <ul>
+                        <li><code class="highlighter-rouge bghr">is-small</code></li> 
+                        <li><code class="highlighter-rouge bghr">is-medium</code></li>
+                        <li><code class="highlighter-rouge bghr">is-large</code></li> 
+                     </ul><br>
+                  </p> 
+                  <h4>primary modal</h4>
                   <div class="mars-modal">
                      <button class="delete"></button>
                      <div class="modal-title-area">
                         <span class="is-title is-color-primary">Modal Title</span>
                      </div>
-                     <span class="is-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor. Pellentesque risus mi, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum felis venenatis efficitur. Sit amet, consectetur adipiscing elit</span>
+                     <span>Please enter the contents here ...</span>
                      <div class="modal-button-area">
                         <button class="mars-button is-cancel">Cancel</button>
                         <button class="mars-button is-submit">Submit</button>
@@ -31,13 +68,13 @@
                   </div>  
               </div>
               <div class="modals-area">
-                  <h4>This is success modal</h4>
+                  <h4>success modal</h4>
                   <div class="mars-modal">
                      <button class="delete"></button>
                      <div class="modal-title-area">
                         <span class="is-title is-color-success">Modal Title</span>
                      </div>
-                     <span class="is-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor. Pellentesque risus mi, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum felis venenatis efficitur. Sit amet, consectetur adipiscing elit</span>
+                     <span class="is-content">Please enter the contents here ...</span>
                      <div class="modal-button-area">
                         <button class="mars-button is-cancel">Cancel</button>
                         <button class="mars-button is-submit">Submit</button>
@@ -45,13 +82,13 @@
                   </div>  
               </div>
               <div class="modals-area">
-                  <h4>This is warning modal</h4>
+                  <h4>warning modal</h4>
                   <div class="mars-modal">
                      <button class="delete"></button>
                      <div class="modal-title-area">
                         <span class="is-title is-color-warning">Modal Title</span>
                      </div>
-                     <span class="is-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor. Pellentesque risus mi, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum felis venenatis efficitur. Sit amet, consectetur adipiscing elit</span>
+                     <span class="is-content">Please enter the contents here ...</span>
                      <div class="modal-button-area">
                         <button class="mars-button is-cancel">Cancel</button>
                         <button class="mars-button is-submit">Submit</button>
@@ -59,13 +96,13 @@
                   </div>  
                </div>
                <div class="modals-area">
-                     <h4>This is error modal</h4>
+                     <h4>error modal</h4>
                      <div class="mars-modal">
                         <button class="delete"></button>
                         <div class="modal-title-area">
                            <span class="is-title is-color-error">Modal Title</span>
                         </div>
-                        <span class="is-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor. Pellentesque risus mi, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum felis venenatis efficitur. Sit amet, consectetur adipiscing elit</span>
+                        <span class="is-content">Please enter the contents here ...</span>
                         <div class="modal-button-area">
                            <button class="mars-button is-cancel">Cancel</button>
                            <button class="mars-button is-submit">Submit</button>
