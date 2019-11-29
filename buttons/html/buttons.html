@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito|Nunito+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../Assets/common/common.css">
     <link rel="stylesheet" href="../../css/mars.css">
-    <link rel="stylesheet" href="../../css/buttons.css">
+    <link rel="stylesheet" href="../../scss/page/buttons.css">
     <link rel="stylesheet" href="../../response/mars-r.css">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
@@ -17,7 +17,279 @@
    <div id="wrap">
      <div class="buttons-wrap">
         <div class="buttons-contents">
-            <h1 class="buttons-title">Buttons</h1>   
+            <h1 class="buttons-title">Buttons</h1>
+            <div class="buttons-area">
+                <div class="badge">
+                    <span class="mars-button is-color-success">color</span> 
+                    <span class="mars-button is-color-success">size</span>
+                    <span class="mars-button is-color-success">radius</span>
+                    <span class="mars-button is-color-success">stated</span>
+                </div>
+                <h3 class="buttons-area-heading">
+                    <a href="#">
+                        <i class="fas fa-link"></i> Variables
+                    </a>
+                </h3>        
+            </div> 
+            <div class="buttons-area">
+                <p>
+                    Please refer to the following table for variables about default buttons.
+                </p>
+            </div>
+            <div class="buttons-area">
+                <div class="tb-container">
+                    <table class="tb">
+                          <thead>
+                             <tr>
+                                <th>Name</th>
+                                <th>Type</th>
+                                <th>Computed value</th>
+                             </tr>           
+                          </thead>    
+                          <tfoot>
+                             <tr>
+                                <th>Name</th>
+                                <th>Type</th>
+                                <th>Computed value</th>   
+                             </tr> 
+                          </tfoot>
+                          <tbody>
+                             <tr>
+                                <td>
+                                       
+                                </td>
+                                <td>
+                                   <small class="tag">
+                                      color    
+                                   </small>
+                                </td>
+                                <td>
+                                   <span class="bd-color" style="background: hsl(200.8, 85.7%, 49.4%);"></span>
+                                   <code class="highlighter-rouge bghr">hsl(200.8, 85.7%, 49.4%)</code>
+                                </td>
+                             </tr>
+                             <tr>
+                                <td>
+                                   <code class="highlighter-rouge bghr">.is-color-blue</code>
+                                </td>
+                                <td>
+                                   <small class="tag">
+                                      color    
+                                   </small>
+                                </td>
+                                <td>
+                                   <span class="bd-color" style="background: hsl(208.1, 100%, 40.6%);"></span>
+                                   <code class="highlighter-rouge bghr">hsl(200.8, 85.7%, 49.4%)</code>
+                                </td>
+                             </tr>
+                             <tr>
+                                <td>
+                                   <code class="highlighter-rouge bghr">.is-color-green</code>
+                                </td>
+                                <td>
+                                   <small class="tag">
+                                      color    
+                                   </small>
+                                </td>
+                                <td>
+                                   <span class="bd-color" style="background: hsl(140, 52.2%, 54.9%);"></span>
+                                   <code class="highlighter-rouge bghr">hsl(140, 52.2%, 54.9%)</code>
+                                </td>
+                             </tr>
+                             <tr>
+                                <td>
+                                   <code class="highlighter-rouge bghr">.is-color-green</code>
+                                </td>
+                                <td>
+                                   <small class="tag">
+                                      color    
+                                   </small>
+                                </td>
+                                <td>
+                                   <span class="bd-color" style="background: hsl(140, 52.2%, 54.9%);"></span>
+                                   <code class="highlighter-rouge bghr">hsl(140, 52.2%, 54.9%)</code>
+                                </td>
+                             </tr>
+                             <tr>
+                                <td>
+                                   <code class="highlighter-rouge bghr">.is-color-yellow</code>
+                                </td>
+                                <td>
+                                   <small class="tag">
+                                      color    
+                                   </small>
+                                </td>
+                                <td>
+                                   <span class="bd-color" style="background: hsl(56.9, 100%, 48.6%);"></span>
+                                   <code class="highlighter-rouge bghr">hsl(56.9, 100%, 48.6%)</code>
+                                </td>
+                             </tr>
+                             <tr>
+                                <td>
+                                   <code class="highlighter-rouge bghr">.is-color-pink</code>
+                                </td>
+                                <td>
+                                   <small class="tag">
+                                      color    
+                                   </small>
+                                </td>
+                                <td>
+                                   <span class="bd-color" style="background: hsl(324.7, 53.3%, 73.1%);"></span>
+                                   <code class="highlighter-rouge bghr">hsl(324.7, 53.3%, 73.1%)</code>
+                                </td>
+                             </tr>
+                             <tr>
+                                <td>
+                                   <code class="highlighter-rouge bghr">.is-color-purple</code>
+                                </td>
+                                <td>
+                                   <small class="tag">
+                                      color    
+                                   </small>
+                                </td>
+                                <td>
+                                   <span class="bd-color" style="background: hsl(270.8, 75.8%, 62.7%);"></span>
+                                   <code class="highlighter-rouge bghr">hsl(270.8, 75.8%, 62.7%)</code>
+                                </td>
+                             </tr>
+                             <tr>
+                                <td>
+                                   <code class="highlighter-rouge bghr">.is-color-primary</code>
+                                </td>
+                                <td>
+                                   <small class="tag">
+                                      color    
+                                   </small>
+                                </td>
+                                <td>
+                                   <span class="bd-color" style="background: hsl(198.6, 100%, 50%);"></span>
+                                   <code class="highlighter-rouge bghr">hsl(198.6, 100%, 50%)</code>
+                                </td>
+                             </tr>
+                             <tr>
+                                <td>
+                                   <code class="highlighter-rouge bghr">.is-color-success</code>
+                                </td>
+                                <td>
+                                   <small class="tag">
+                                      color    
+                                   </small>
+                                </td>
+                                <td>
+                                   <span class="bd-color" style="background: hsl(144.3, 100%, 34.9%);"></span>
+                                   <code class="highlighter-rouge bghr">hsl(144.3, 100%, 34.9%)</code>
+                                </td>
+                             </tr>
+                             <tr>
+                                <td>
+                                   <code class="highlighter-rouge bghr">.is-color-warning</code>
+                                </td>
+                                <td>
+                                   <small class="tag">
+                                      color    
+                                   </small>
+                                </td>
+                                <td>
+                                   <span class="bd-color" style="background: hsl(29.4, 100%, 62.4%);"></span>
+                                   <code class="highlighter-rouge bghr">hsl(29.4, 100%, 62.4%)</code>
+                                </td>
+                             </tr>
+                             <tr>
+                                <td>
+                                   <code class="highlighter-rouge bghr">.is-color-error</code>
+                                </td>
+                                <td>
+                                   <small class="tag">
+                                      color    
+                                   </small>
+                                </td>
+                                <td>
+                                   <span class="bd-color" style="background: hsl(14.4, 100%, 56.7%);"></span>
+                                   <code class="highlighter-rouge bghr">hsl(14.4, 100%, 56.7%)</code>
+                                </td>
+                             </tr>
+                             <tr>
+                                <td>
+                                   <code class="highlighter-rouge bghr">.is-nor-rounded</code>                              
+                                </td>
+                                <td>
+                                   <small class="tag">
+                                      radius    
+                                   </small>
+                                </td>
+                                <td>
+                                   <code class="highlighter-rouge bghr">4px</code>
+                                </td>
+                             </tr>
+                             <tr>
+                                <td>
+                                   <code class="highlighter-rouge bghr">.is-md-rounded</code>                              
+                                </td>
+                                <td>
+                                   <small class="tag">
+                                      radius    
+                                   </small>
+                                </td>
+                                <td>
+                                   <code class="highlighter-rouge bghr">1em</code>
+                                </td>
+                             </tr>
+                             <tr>
+                                <td>
+                                   <code class="highlighter-rouge bghr">.is-lg-rounded</code>                              
+                                </td>
+                                <td>
+                                   <small class="tag">
+                                      radius    
+                                   </small>
+                                </td>
+                                <td>
+                                   <code class="highlighter-rouge bghr">2em</code>
+                                </td>
+                             </tr>
+                             <tr>
+                                <td>
+                                   <code class="highlighter-rouge bghr">.is-small</code>                              
+                                </td>
+                                <td>
+                                   <small class="tag">
+                                      size   
+                                   </small>
+                                </td>
+                                <td>
+                                   <code class="highlighter-rouge bghr">0.75rem</code>
+                                </td>
+                             </tr>
+                             <tr>
+                                <td>
+                                   <code class="highlighter-rouge bghr">.is-medium</code>                              
+                                </td>
+                                <td>
+                                   <small class="tag">
+                                      size   
+                                   </small>
+                                </td>
+                                <td>
+                                   <code class="highlighter-rouge bghr">1.25rem</code>
+                                </td>
+                             </tr>
+                             <tr>
+                                <td>
+                                   <code class="highlighter-rouge bghr">.is-large</code>                              
+                                </td>
+                                <td>
+                                   <small class="tag">
+                                      size   
+                                   </small>
+                                </td>
+                                <td>
+                                   <code class="highlighter-rouge bghr">1.5rem</code>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
             <div class="buttons-area">
                 <p>Buttons in mars are denoted by <code class="highlighter-rouge">mars-button</code>.<br>
                     <code class="highlighter-rouge">mars-button</code> can apply gradient, animation, outline, loading, icon.
