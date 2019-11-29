@@ -133,7 +133,7 @@ $size: (
     margin-bottom: $input-margin-bottom;
 
     border: 2px solid $transparent;
-    border-radius: $input-radius;
+    border-radius: $input-radius !important;
     border-width: $input-border-width 0px;
     background: $white;
     box-sizing: $input-border-box;

@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito|Nunito+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../Assets/common/common.css">
     <link rel="stylesheet" href="../../css/mars.css">
-    <link rel="stylesheet" href="../../css/forms.css">
+    <link rel="stylesheet" href="../../scss/page/forms.css">
     <link rel="stylesheet" href="../../response/mars-r.css">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
@@ -18,24 +18,337 @@
       <div class="forms-wrap">
            <div class="forms-contents">
               <h1 class="forms-title">Inputs</h1> 
+              <div class="forms-area">
+                  <div class="badge">
+                     <span class="mars-button is-color-success">color</span> 
+                     <span class="mars-button is-color-success">size</span>
+                     <span class="mars-button is-color-success">state</span>
+                     <span class="mars-button is-color-success">radius</span>
+                  </div>
+                  <h3 class="forms-area-heading">
+                        <a href="#">
+                           <i class="fas fa-link"></i> Variables
+                        </a>
+                  </h3>
+              </div>
+              <div class="forms-area">
+                  <p>
+                     Please refer to the following table for variables about default input.
+                  </p>
+              </div>
+              <div class="forms-area">
+                  <div class="tb-container">
+                     <table class="tb">
+                        <thead>
+                           <tr>
+                              <th>Name</th>
+                              <th>Type</th>
+                              <th>Computed value</th>
+                           </tr>           
+                        </thead>    
+                        <tfoot>
+                           <tr>
+                              <th>Name</th>
+                              <th>Type</th>
+                              <th>Computed value</th>   
+                           </tr> 
+                        </tfoot>
+                        <tbody>
+                           <tr>
+                              <td>
+                                     
+                              </td>
+                              <td>
+                                 <small class="tag">
+                                    color    
+                                 </small>
+                              </td>
+                              <td>
+                                 <span class="bd-color" style="background: hsl(200.8, 85.7%, 49.4%);"></span>
+                                 <code class="highlighter-rouge bghr">hsl(200.8, 85.7%, 49.4%)</code>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>
+                                 <code class="highlighter-rouge bghr">.is-color-blue</code>
+                              </td>
+                              <td>
+                                 <small class="tag">
+                                    color    
+                                 </small>
+                              </td>
+                              <td>
+                                 <span class="bd-color" style="background: hsl(208.1, 100%, 40.6%);"></span>
+                                 <code class="highlighter-rouge bghr">hsl(200.8, 85.7%, 49.4%)</code>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>
+                                 <code class="highlighter-rouge bghr">.is-color-green</code>
+                              </td>
+                              <td>
+                                 <small class="tag">
+                                    color    
+                                 </small>
+                              </td>
+                              <td>
+                                 <span class="bd-color" style="background: hsl(140, 52.2%, 54.9%);"></span>
+                                 <code class="highlighter-rouge bghr">hsl(140, 52.2%, 54.9%)</code>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>
+                                 <code class="highlighter-rouge bghr">.is-color-green</code>
+                              </td>
+                              <td>
+                                 <small class="tag">
+                                    color    
+                                 </small>
+                              </td>
+                              <td>
+                                 <span class="bd-color" style="background: hsl(140, 52.2%, 54.9%);"></span>
+                                 <code class="highlighter-rouge bghr">hsl(140, 52.2%, 54.9%)</code>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>
+                                 <code class="highlighter-rouge bghr">.is-color-yellow</code>
+                              </td>
+                              <td>
+                                 <small class="tag">
+                                    color    
+                                 </small>
+                              </td>
+                              <td>
+                                 <span class="bd-color" style="background: hsl(56.9, 100%, 48.6%);"></span>
+                                 <code class="highlighter-rouge bghr">hsl(56.9, 100%, 48.6%)</code>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>
+                                 <code class="highlighter-rouge bghr">.is-color-pink</code>
+                              </td>
+                              <td>
+                                 <small class="tag">
+                                    color    
+                                 </small>
+                              </td>
+                              <td>
+                                 <span class="bd-color" style="background: hsl(324.7, 53.3%, 73.1%);"></span>
+                                 <code class="highlighter-rouge bghr">hsl(324.7, 53.3%, 73.1%)</code>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>
+                                 <code class="highlighter-rouge bghr">.is-color-purple</code>
+                              </td>
+                              <td>
+                                 <small class="tag">
+                                    color    
+                                 </small>
+                              </td>
+                              <td>
+                                 <span class="bd-color" style="background: hsl(270.8, 75.8%, 62.7%);"></span>
+                                 <code class="highlighter-rouge bghr">hsl(270.8, 75.8%, 62.7%)</code>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>
+                                 <code class="highlighter-rouge bghr">.is-color-primary</code>
+                              </td>
+                              <td>
+                                 <small class="tag">
+                                    state    
+                                 </small>
+                              </td>
+                              <td>
+                                 <span class="bd-color" style="background: hsl(198.6, 100%, 50%);"></span>
+                                 <code class="highlighter-rouge bghr">hsl(198.6, 100%, 50%)</code>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>
+                                 <code class="highlighter-rouge bghr">.is-color-success</code>
+                              </td>
+                              <td>
+                                 <small class="tag">
+                                    state    
+                                 </small>
+                              </td>
+                              <td>
+                                 <span class="bd-color" style="background: hsl(144.3, 100%, 34.9%);"></span>
+                                 <code class="highlighter-rouge bghr">hsl(144.3, 100%, 34.9%)</code>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>
+                                 <code class="highlighter-rouge bghr">.is-color-warning</code>
+                              </td>
+                              <td>
+                                 <small class="tag">
+                                    state    
+                                 </small>
+                              </td>
+                              <td>
+                                 <span class="bd-color" style="background: hsl(29.4, 100%, 62.4%);"></span>
+                                 <code class="highlighter-rouge bghr">hsl(29.4, 100%, 62.4%)</code>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>
+                                 <code class="highlighter-rouge bghr">.is-color-error</code>
+                              </td>
+                              <td>
+                                 <small class="tag">
+                                    state    
+                                 </small>
+                              </td>
+                              <td>
+                                 <span class="bd-color" style="background: hsl(14.4, 100%, 56.7%);"></span>
+                                 <code class="highlighter-rouge bghr">hsl(14.4, 100%, 56.7%)</code>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>
+                                 <code class="highlighter-rouge bghr">.is-nor-rounded</code>                              
+                              </td>
+                              <td>
+                                 <small class="tag">
+                                    radius    
+                                 </small>
+                              </td>
+                              <td>
+                                 <code class="highlighter-rouge bghr">3px</code>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>
+                                 <code class="highlighter-rouge bghr">.is-md-rounded</code>                              
+                              </td>
+                              <td>
+                                 <small class="tag">
+                                    radius    
+                                 </small>
+                              </td>
+                              <td>
+                                 <code class="highlighter-rouge bghr">0.5em</code>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>
+                                 <code class="highlighter-rouge bghr">.is-lg-rounded</code>                              
+                              </td>
+                              <td>
+                                 <small class="tag">
+                                    radius    
+                                 </small>
+                              </td>
+                              <td>
+                                 <code class="highlighter-rouge bghr">2em</code>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>
+                                 <code class="highlighter-rouge bghr">is-size-1</code>                              
+                              </td>
+                              <td>
+                                 <small class="tag">
+                                    size   
+                                 </small>
+                              </td>
+                              <td>
+                                 <code class="highlighter-rouge bghr">100%</code>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>
+                                 <code class="highlighter-rouge bghr">.is-size-3-4</code>                              
+                              </td>
+                              <td>
+                                 <small class="tag">
+                                    size   
+                                 </small>
+                              </td>
+                              <td>
+                                 <code class="highlighter-rouge bghr">75%</code>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>
+                                 <code class="highlighter-rouge bghr">.is-size-2-3</code>                              
+                              </td>
+                              <td>
+                                 <small class="tag">
+                                    size   
+                                 </small>
+                              </td>
+                              <td>
+                                 <code class="highlighter-rouge bghr">66%</code>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>
+                                 <code class="highlighter-rouge bghr">.is-size-1-2</code>                              
+                              </td>
+                              <td>
+                                 <small class="tag">
+                                    size   
+                                 </small>
+                              </td>
+                              <td>
+                                 <code class="highlighter-rouge bghr">50%</code>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>
+                                 <code class="highlighter-rouge bghr">.is-size-1-3</code>                              
+                              </td>
+                              <td>
+                                 <small class="tag">
+                                    size   
+                                 </small>
+                              </td>
+                              <td>
+                                 <code class="highlighter-rouge bghr">33%</code>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>
+                                 <code class="highlighter-rouge bghr">.is-size-1-4</code>                              
+                              </td>
+                              <td>
+                                 <small class="tag">
+                                    size   
+                                 </small>
+                              </td>
+                              <td>
+                                 <code class="highlighter-rouge bghr">25%</code>
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+              </div>
               <div class="forms-area"> 
                   <p>The form in mars uses a class called <code class="highlighter-rouge"> mars-form </code> Since mars is basically a block element, We recommend that you use a block element like div.</p>
                   <h3 class="forms-area-heading">
                         <a href="#">
-                           Overview
+                           <i class="fas fa-link"></i> Overview
                         </a>
                   </h3>
                   <p>
                      The mars-form input function can specify round, the default round does not apply.Each round has the following class<br>
 
                      <ul>
-                       <li><code class="highlighter-rouge bghr">is-nor-rounded</code></li> 
-                       <li><code class="highlighter-rouge bghr">is-md-rounded</code></li>
-                       <li><code class="highlighter-rouge bghr">is-lg-rounded</code></li> 
+                       <li><code class="highlighter-rouge bghr">.is-nor-rounded</code></li> 
+                       <li><code class="highlighter-rouge bghr">.is-md-rounded</code></li>
+                       <li><code class="highlighter-rouge bghr">.is-lg-rounded</code></li> 
                      </ul><br>
 
                      3px, 0.5em, 2em in order, customizable as needed.
                      Next you can assign a color to the border-see the color palette for details.   
+
+
                   </p>
                </div>
                <div class="forms-area">
@@ -73,331 +386,799 @@
                   <figure class="highlight">
                      <pre>
                         <code class="language-html" data-lang="html">
-                           <span class="nh"><</span><span class="nt">input</span> <span class="na">class=</span><span class="s">"mars-form is-lg-rounded is-color-pink"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"Please enter it here."</span><span class="nh">></span>
+                           <span class="nh"><</span><span class="nt">input</span> <span class="na">class=</span><span class="s">"mars-form is-lg-rounded is-color-blue"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"Please enter it here."</span><span class="nh">></span>
                         </code>
                      </pre>       
                   </figure>
                </div>
                <h1 class="forms-title">Underline Inputs</h1> 
                <div class="forms-area">
+                     <div class="badge">
+                        <span class="mars-button is-color-success">color</span> 
+                        <span class="mars-button is-color-success">size</span>
+                        <span class="mars-button is-color-success">state</span>
+                     </div>
+                     <h3 class="forms-area-heading">
+                           <a href="#">
+                              <i class="fas fa-link"></i> Variables
+                           </a>
+                     </h3>
+               </div>
+               <div class="forms-area">
+                     <div class="tb-container">
+                        <table class="tb">
+                           <thead>
+                              <tr>
+                                 <th>Name</th>
+                                 <th>Type</th>
+                                 <th>Computed value</th>
+                              </tr>           
+                           </thead>    
+                           <tfoot>
+                              <tr>
+                                 <th>Name</th>
+                                 <th>Type</th>
+                                 <th>Computed value</th>   
+                              </tr> 
+                           </tfoot>
+                           <tbody>
+                              <tr>
+                                 <td>
+                                        
+                                 </td>
+                                 <td>
+                                    <small class="tag">
+                                       color    
+                                    </small>
+                                 </td>
+                                 <td>
+                                    <span class="bd-color" style="background: hsl(200.8, 85.7%, 49.4%);"></span>
+                                    <code class="highlighter-rouge bghr">hsl(200.8, 85.7%, 49.4%)</code>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td>
+                                    <code class="highlighter-rouge bghr">.is-color-blue</code>
+                                 </td>
+                                 <td>
+                                    <small class="tag">
+                                       color    
+                                    </small>
+                                 </td>
+                                 <td>
+                                    <span class="bd-color" style="background: hsl(208.1, 100%, 40.6%);"></span>
+                                    <code class="highlighter-rouge bghr">hsl(200.8, 85.7%, 49.4%)</code>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td>
+                                    <code class="highlighter-rouge bghr">.is-color-green</code>
+                                 </td>
+                                 <td>
+                                    <small class="tag">
+                                       color    
+                                    </small>
+                                 </td>
+                                 <td>
+                                    <span class="bd-color" style="background: hsl(140, 52.2%, 54.9%);"></span>
+                                    <code class="highlighter-rouge bghr">hsl(140, 52.2%, 54.9%)</code>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td>
+                                    <code class="highlighter-rouge bghr">.is-color-green</code>
+                                 </td>
+                                 <td>
+                                    <small class="tag">
+                                       color    
+                                    </small>
+                                 </td>
+                                 <td>
+                                    <span class="bd-color" style="background: hsl(140, 52.2%, 54.9%);"></span>
+                                    <code class="highlighter-rouge bghr">hsl(140, 52.2%, 54.9%)</code>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td>
+                                    <code class="highlighter-rouge bghr">.is-color-yellow</code>
+                                 </td>
+                                 <td>
+                                    <small class="tag">
+                                       color    
+                                    </small>
+                                 </td>
+                                 <td>
+                                    <span class="bd-color" style="background: hsl(56.9, 100%, 48.6%);"></span>
+                                    <code class="highlighter-rouge bghr">hsl(56.9, 100%, 48.6%)</code>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td>
+                                    <code class="highlighter-rouge bghr">.is-color-pink</code>
+                                 </td>
+                                 <td>
+                                    <small class="tag">
+                                       color    
+                                    </small>
+                                 </td>
+                                 <td>
+                                    <span class="bd-color" style="background: hsl(324.7, 53.3%, 73.1%);"></span>
+                                    <code class="highlighter-rouge bghr">hsl(324.7, 53.3%, 73.1%)</code>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td>
+                                    <code class="highlighter-rouge bghr">.is-color-purple</code>
+                                 </td>
+                                 <td>
+                                    <small class="tag">
+                                       color    
+                                    </small>
+                                 </td>
+                                 <td>
+                                    <span class="bd-color" style="background: hsl(270.8, 75.8%, 62.7%);"></span>
+                                    <code class="highlighter-rouge bghr">hsl(270.8, 75.8%, 62.7%)</code>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td>
+                                    <code class="highlighter-rouge bghr">.is-color-primary</code>
+                                 </td>
+                                 <td>
+                                    <small class="tag">
+                                       state    
+                                    </small>
+                                 </td>
+                                 <td>
+                                    <span class="bd-color" style="background: hsl(198.6, 100%, 50%);"></span>
+                                    <code class="highlighter-rouge bghr">hsl(198.6, 100%, 50%)</code>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td>
+                                    <code class="highlighter-rouge bghr">.is-color-success</code>
+                                 </td>
+                                 <td>
+                                    <small class="tag">
+                                       state    
+                                    </small>
+                                 </td>
+                                 <td>
+                                    <span class="bd-color" style="background: hsl(144.3, 100%, 34.9%);"></span>
+                                    <code class="highlighter-rouge bghr">hsl(144.3, 100%, 34.9%)</code>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td>
+                                    <code class="highlighter-rouge bghr">.is-color-warning</code>
+                                 </td>
+                                 <td>
+                                    <small class="tag">
+                                       state    
+                                    </small>
+                                 </td>
+                                 <td>
+                                    <span class="bd-color" style="background: hsl(29.4, 100%, 62.4%);"></span>
+                                    <code class="highlighter-rouge bghr">hsl(29.4, 100%, 62.4%)</code>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td>
+                                    <code class="highlighter-rouge bghr">.is-color-error</code>
+                                 </td>
+                                 <td>
+                                    <small class="tag">
+                                       state    
+                                    </small>
+                                 </td>
+                                 <td>
+                                    <span class="bd-color" style="background: hsl(14.4, 100%, 56.7%);"></span>
+                                    <code class="highlighter-rouge bghr">hsl(14.4, 100%, 56.7%)</code>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td>
+                                    <code class="highlighter-rouge bghr">is-size-1</code>                              
+                                 </td>
+                                 <td>
+                                    <small class="tag">
+                                       size   
+                                    </small>
+                                 </td>
+                                 <td>
+                                    <code class="highlighter-rouge bghr">100%</code>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td>
+                                    <code class="highlighter-rouge bghr">.is-size-3-4</code>                              
+                                 </td>
+                                 <td>
+                                    <small class="tag">
+                                       size   
+                                    </small>
+                                 </td>
+                                 <td>
+                                    <code class="highlighter-rouge bghr">75%</code>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td>
+                                    <code class="highlighter-rouge bghr">.is-size-2-3</code>                              
+                                 </td>
+                                 <td>
+                                    <small class="tag">
+                                       size   
+                                    </small>
+                                 </td>
+                                 <td>
+                                    <code class="highlighter-rouge bghr">66%</code>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td>
+                                    <code class="highlighter-rouge bghr">.is-size-1-2</code>                              
+                                 </td>
+                                 <td>
+                                    <small class="tag">
+                                       size   
+                                    </small>
+                                 </td>
+                                 <td>
+                                    <code class="highlighter-rouge bghr">50%</code>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td>
+                                    <code class="highlighter-rouge bghr">.is-size-1-3</code>                              
+                                 </td>
+                                 <td>
+                                    <small class="tag">
+                                       size   
+                                    </small>
+                                 </td>
+                                 <td>
+                                    <code class="highlighter-rouge bghr">33%</code>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td>
+                                    <code class="highlighter-rouge bghr">.is-size-1-4</code>                              
+                                 </td>
+                                 <td>
+                                    <small class="tag">
+                                       size   
+                                    </small>
+                                 </td>
+                                 <td>
+                                    <code class="highlighter-rouge bghr">25%</code>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                </div> 
+               <div class="forms-area">
                   <p>   
                      <code class="highlighter-rouge">mars-form-underline</code> is applied to the border-bottom of the inputs, which fires an event on click.
-
+      
                      If you use a tag other than the input tag, you must apply the <code class="highlighter-rouge">tabindex</code> attribute.
-                     
+                           
                      mars can apply an <code class="highlighter-rouge">is-focused</code><br> <code class="highlighter-rouge">is-actived</code>  class to its input applying it to <code class="highlighter-rouge">mars-form-underline</code> will invalidate the click event.
-                  </p>
-                  <h3 class="forms-area-heading">
-                     <a href="#">
-                          Overview
-                     </a>
-                  </h3>
-                  <p>You can specify size <code class="highlighter-rouge">mars-form</code>, the default value is to keep width 100%.The following sample is an example of applying the size class to <code class="highlighter-rouge">mars-form-underline.</code></p>
-                  <ul>
-                     <li><code class="highlighter-rouge bghr">is-size-1</code></li> 
-                     <li><code class="highlighter-rouge bghr">is-size-3-4</code></li>
-                     <li><code class="highlighter-rouge bghr">is-size-2-3</code></li>
-                     <li><code class="highlighter-rouge bghr">is-size-1-2</code></li>
-                     <li><code class="highlighter-rouge bghr">is-size-1-3</code></li>
-                     <li><code class="highlighter-rouge bghr">is-size-1-4</code></li> 
-                  </ul><br>
-                  <form>
-                     <label for="input" class="forms-label">100% size underline input</label>
-                     <input type="text" class="mars-form-underline is-size-1" placeholder="mars-size-1">    
-                  </form>
-                  <figure class="highlight">
-                     <pre>
-                        <code class="language-html" data-lang="html">
-                           <span class="nh"><</span><span class="nt">input</span> <span class="na">class=</span><span class="s">"mars-form-underline is-size-1"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"mars-size-1"</span><span class="nh">></span>
-                        </code>
-                     </pre>       
-                  </figure>
+                  </p>  
                </div>
-               <div class="forms-area">
-                  <form>
-                     <label for="input" class="forms-label">75% size green color underline input </label>
-                     <input type="text" class="mars-form-underline is-color-green is-size-3-4" placeholder="mars-size-3-4">    
-                  </form>  
-                  <figure class="highlight">
-                     <pre>
-                        <code class="language-html" data-lang="html">
-                           <span class="nh"><</span><span class="nt">input</span> <span class="na">class=</span><span class="s">"mars-form-underline is-size-3-4"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"mars-size-3-4"</span><span class="nh">></span>
-                        </code>
-                     </pre>       
-                  </figure>
-               </div> 
-               <div class="forms-area">
-                  <form>
-                     <label for="input" class="forms-label">66% size purple color underline input</label>
-                     <input type="text" class="mars-form-underline is-color-purple is-size-2-3" placeholder="mars-size-2-3">    
-                  </form>  
-                  <figure class="highlight">
-                     <pre>
-                        <code class="language-html" data-lang="html">
-                           <span class="nh"><</span><span class="nt">input</span> <span class="na">class=</span><span class="s">"mars-form-underline is-size-2-3"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"mars-size-2-3"</span><span class="nh">></span>
-                        </code>
-                     </pre>       
-                  </figure>
-               </div> 
-               <div class="forms-area">
-                  <form>
-                     <label for="input" class="forms-label">50% size blue color underline input</label>
-                     <input type="text" class="mars-form-underline is-color-blue is-size-1-2" placeholder="mars-size-1-2">    
-                  </form>  
-                  <figure class="highlight">
-                     <pre>
-                        <code class="language-html" data-lang="html">
-                           <span class="nh"><</span><span class="nt">input</span> <span class="na">class=</span><span class="s">"mars-form-underline is-size-1-2"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"mars-size-1-2"</span><span class="nh">></span>
-                        </code>
-                     </pre>       
-                  </figure>
-               </div> 
-               <div class="forms-area">
-                  <form>
-                     <label for="input" class="forms-label">33% size yellow color underline input</label>
-                     <input type="text" class="mars-form-underline is-color-yellow is-size-1-3" placeholder="mars-size-1-3">    
-                  </form>  
-                  <figure class="highlight">
-                     <pre>
-                        <code class="language-html" data-lang="html">
-                           <span class="nh"><</span><span class="nt">input</span> <span class="na">class=</span><span class="s">"mars-form-underline is-size-1-3"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"mars-size-1-3"</span><span class="nh">></span>
-                        </code>
-                     </pre>       
-                  </figure>
-               </div> 
-               <div class="forms-area">
-                  <form>
-                     <label for="input" class="forms-label">25% size pink color underline input</label>
-                     <input type="text" class="mars-form-underline is-color-pink is-size-1-4" placeholder="mars-size-1-4">    
-                  </form>  
-                  <figure class="highlight">
-                     <pre>
-                        <code class="language-html" data-lang="html">
-                           <span class="nh"><</span><span class="nt">input</span> <span class="na">class=</span><span class="s">"mars-form-underline is-size-1-4"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"mars-size-1-4"</span><span class="nh">></span>
-                        </code>
-                     </pre>       
-                  </figure>
-               </div>
-           </div>
-           <div class="forms-contents">
-               <h1 class="forms-title">Checkboxes,Radios</h1>
                <div class="forms-area">
                      <p>
-                        The checkbox in mars applies a <code class="highlighter-rouge">mars-form-checkbox</code>, so you must use one input tag and one block element.
-                        It must first be placed inside the parent block element and must always remain as a child of the parent block element.<br><br>
-                              
-                        If you don't want to, start from <code class="highlighter-rouge">mars-form-checkbox</code> and implement your own internals.<br><br>
-                              
-                              
-                        The is-checked class should be applied to the child element input tag to locate the check icon.
-
-                        <code class="highlighter-rouge">radio</code> is very similar to<code class="highlighter-rouge">mars-checkbox</code> , using <code class="highlighter-rouge">mars-form-radio</code>  and icons for <code class="highlighter-rouge">radio-check-icon</code> .
-
-                        Otherwise it is the same as<code class="highlighter-rouge">mars-form-checkbox</code> 
-                              
-                              
-                        Next, the check icon applies the <code class="highlighter-rouge">checkbox-check-icon</code> class, so make sure to use block elements.
-                        You must set the type to checked in the input tag to use the check function.<br><br>      
-                        The check icon requires JavaScript to be applied to svg. If you don't want JavaScript, use fontawesome
-                        You need to implement
-                     </p>
-                  <h3 class="forms-area-heading">
-                     <a href="#">
-                        Overview
-                     </a>
-                  </h3>
-                  <p>
-                     The <code class="highlighter-rouge">mars-form-checkbox </code> contains JavaScript, which you need to create and check the icon.
-                     And mars is a library that depends on JQuery. 
-                  </p>
-                  <figure class="highlight">
-                     <pre>
-                        <code class="language-html" data-lang="html">
-                            /* checkbox event */
-                              var icon = {
-                                    checkbox: 
-                                       `<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewbox="0 0 24 24" class="checkbox-check">
-                                          <path d="M9 21.035l-9-8.638 2.791-2.87 6.156 5.874 12.21-12.436 2.843 2.817z"></path>
-                                       </svg>`,
-                                    radio: 
-                                       `<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewbox="0 0 24 24" class="radio-check">
-                                             <circle cx="12" cy="12" r="12"></circle>
-                                       </svg>`,   
-                              };        
-
-                              var func = {
-                                    checkbox: {
-                                          check: 
-                                          function(index) {
-                                             if ($('.mars-form-checkbox .is-checked').eq(index).is(':checked') || $('.mars-form-checkbox .is-checked').eq(index).is(':disabled')) {
-                                                   $('.checkbox-check-icon').eq(index).html(icon.checkbox);
-                                                }       
-                                          },
-                                          
-                                          click: 
-                                          function(index) {
-                                             if ($('.mars-form-checkbox .is-checked').eq(index).is(':checked')) {
-                                                $('.checkbox-check-icon').eq(index).html(icon.checkbox); 
-                                             } else {
-                                                $('.checkbox-check-icon').eq(index).html('');
-                                             }  
-                                          }
-                                    },
-
-                                    radio: {
-                                          check: 
-                                          function(index) {
-                                             if ($('.mars-form-radio .is-checked').eq(index).is(':checked') || $('.mars-form-radio .is-checked').eq(index).is(':disabled')) {
-                                                $('.radio-check-icon').eq(index).html(icon.radio);
-                                             }  
-                                          },
-                                          
-                                          click: 
-                                          function(index) {
-                                             if ($('.mars-form-radio .is-checked').eq(index).is(':checked')) {
-                                                $('.radio-check-icon').eq(index).html(icon.radio); 
-                                             } else {
-                                                $('.radio-check-icon').eq(index).html('');
-                                             }  
-                                          }
-                                    },
-                              };
-
-
-                              /* checkbox */
-                              $('.mars-form-checkbox .is-checked').each(function(index) { 
-                                 / * Make sure it's checked * /
-                                 func.checkbox.check(index);
-                                 
-                                 $('.mars-form-checkbox .is-checked').eq(index).on('click',function() {
-                                    func.checkbox.click(index);
-                                 });
-                              });
-
-                              /* radio */
-                              $('.mars-form-radio .is-checked').each(function(index) { 
-                                 / * Make sure it's checked * /
-                                 func.radio.check(index);
-
-                                 $('.mars-form-radio .is-checked').eq(index).on('click',function() {
-                                    func.radio.click(index);
-                                 });
-                              });
-                        </code>
-                     </pre>       
-                  </figure>
+                    
+                           <code class="highlighter-rouge">mars-form-underline</code> is applied to the border-bottom of the inputs, which fires an event on click.
+      
+                           If you use a tag other than the input tag, you must apply the <code class="highlighter-rouge">tabindex</code> attribute.
+                           
+                           mars can apply an <code class="highlighter-rouge">is-focused</code><br> <code class="highlighter-rouge">is-actived</code>  class to its input applying it to <code class="highlighter-rouge">mars-form-underline</code> will invalidate the click event.
+                        </p>
+                        <h3 class="forms-area-heading">
+                           <a href="#">
+                              <i class="fas fa-link"></i> Overview
+                           </a>
+                        </h3>
+                        <p>You can specify size <code class="highlighter-rouge">mars-form</code>, the default value is to keep width 100%.The following sample is an example of applying the size class to <code class="highlighter-rouge">mars-form-underline.</code></p>
+                        <ul>
+                           <li><code class="highlighter-rouge bghr">.is-size-1</code></li> 
+                           <li><code class="highlighter-rouge bghr">.is-size-3-4</code></li>
+                           <li><code class="highlighter-rouge bghr">.is-size-2-3</code></li>
+                           <li><code class="highlighter-rouge bghr">.is-size-1-2</code></li>
+                           <li><code class="highlighter-rouge bghr">.is-size-1-3</code></li>
+                           <li><code class="highlighter-rouge bghr">.is-size-1-4</code></li> 
+                        </ul><br>
+                        <form>
+                           <label for="input" class="forms-label">100% size underline input</label>
+                           <input type="text" class="mars-form-underline is-size-1" placeholder="mars-size-1">    
+                        </form>
+                        <figure class="highlight">
+                           <pre>
+                              <code class="language-html" data-lang="html">
+                                 <span class="nh"><</span><span class="nt">input</span> <span class="na">class=</span><span class="s">"mars-form-underline is-size-1"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"mars-size-1"</span><span class="nh">></span>
+                              </code>
+                           </pre>       
+                        </figure>
+                     </div>
+                     <div class="forms-area">
+                        <form>
+                           <label for="input" class="forms-label">75% size green color underline input </label>
+                           <input type="text" class="mars-form-underline is-color-green is-size-3-4" placeholder="mars-size-3-4">    
+                        </form>  
+                        <figure class="highlight">
+                           <pre>
+                              <code class="language-html" data-lang="html">
+                                 <span class="nh"><</span><span class="nt">input</span> <span class="na">class=</span><span class="s">"mars-form-underline is-size-3-4"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"mars-size-3-4"</span><span class="nh">></span>
+                              </code>
+                           </pre>       
+                        </figure>
+                     </div> 
+                     <div class="forms-area">
+                        <form>
+                           <label for="input" class="forms-label">66% size purple color underline input</label>
+                           <input type="text" class="mars-form-underline is-color-purple is-size-2-3" placeholder="mars-size-2-3">    
+                        </form>  
+                        <figure class="highlight">
+                           <pre>
+                              <code class="language-html" data-lang="html">
+                                 <span class="nh"><</span><span class="nt">input</span> <span class="na">class=</span><span class="s">"mars-form-underline is-size-2-3"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"mars-size-2-3"</span><span class="nh">></span>
+                              </code>
+                           </pre>       
+                        </figure>
+                     </div> 
+                     <div class="forms-area">
+                        <form>
+                           <label for="input" class="forms-label">50% size blue color underline input</label>
+                           <input type="text" class="mars-form-underline is-color-blue is-size-1-2" placeholder="mars-size-1-2">    
+                        </form>  
+                        <figure class="highlight">
+                           <pre>
+                              <code class="language-html" data-lang="html">
+                                 <span class="nh"><</span><span class="nt">input</span> <span class="na">class=</span><span class="s">"mars-form-underline is-size-1-2"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"mars-size-1-2"</span><span class="nh">></span>
+                              </code>
+                           </pre>       
+                        </figure>
+                     </div> 
+                     <div class="forms-area">
+                        <form>
+                           <label for="input" class="forms-label">33% size yellow color underline input</label>
+                           <input type="text" class="mars-form-underline is-color-yellow is-size-1-3" placeholder="mars-size-1-3">    
+                        </form>  
+                        <figure class="highlight">
+                           <pre>
+                              <code class="language-html" data-lang="html">
+                                 <span class="nh"><</span><span class="nt">input</span> <span class="na">class=</span><span class="s">"mars-form-underline is-size-1-3"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"mars-size-1-3"</span><span class="nh">></span>
+                              </code>
+                           </pre>       
+                        </figure>
+                     </div> 
+                     <div class="forms-area">
+                        <form>
+                           <label for="input" class="forms-label">25% size pink color underline input</label>
+                           <input type="text" class="mars-form-underline is-color-pink is-size-1-4" placeholder="mars-size-1-4">    
+                        </form>  
+                     <figure class="highlight">
+                        <pre>
+                           <code class="language-html" data-lang="html">
+                                 <span class="nh"><</span><span class="nt">input</span> <span class="na">class=</span><span class="s">"mars-form-underline is-size-1-4"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"mars-size-1-4"</span><span class="nh">></span>
+                           </code>
+                        </pre>       
+                     </figure>
+                  </div>
                </div>
-               <form class="mars-form-checkbox"> 
-                  <input class="is-checked" type="checkbox">
-                  <div class="checkbox-check-icon"></div>
-                  <label for="input" class="checkbox-label">Unchecked box</label>
-               </form> 
-               <div class="forms-area">
-                  <figure class="highlight">
-                     <pre>
-                        <code class="language-html" data-lang="html">
-                           <span class="nh"><</span><span class="nt">form</span> <span class="na">class=</span><span class="s">"mars-form-checkbox"</span><span class="nh">></span>
-                              <span class="nh"><</span><span class="nt">input</span> <span class="na">class=</span><span class="s">"is-checked"</span> <span class="na">type=</span><span class="s">"checkbox"</span><span class="nh">></span>
-                              <span class="nh"><</span><span class="nt">div</span> <span class="na">class=</span><span class="s">"checkbox-check-icon"</span><span class="nh">></span><span class="nh"><</span><span class="nt">/div</span><span class="nh">></span>
-                              <span class="nh"><</span><span class="nt">label</span> <span class="na">class=</span><span class="s">"checkbox-label"</span><span class="nh">></span>Unchecked box<span class="nh"><</span><span class="nt">/label</span><span class="nh">></span>
-                           <span class="nh"><</span><span class="nt">/form</span><span class="nh">></span>    
-                        </code>
-                     </pre>       
-                  </figure>  
-               </div>  
-               <form class="mars-form-checkbox is-color-primary"> 
-                  <input class="is-checked" type="checkbox" checked>
-                  <div class="checkbox-check-icon"></div>
-                  <label for="input" class="checkbox-label">Checked box</label>
-               </form>   
-               <div class="forms-area">
-                  <figure class="highlight">
-                     <pre>
-                        <code class="language-html" data-lang="html">
-                           <span class="nh"><</span><span class="nt">form</span> <span class="na">class=</span><span class="s">"mars-form-checkbox"</span><span class="nh">></span>
-                              <span class="nh"><</span><span class="nt">input</span> <span class="na">class=</span><span class="s">"is-checked is-color-primary"</span> <span class="na">type=</span><span class="s">"checked"</span><span class="nh">></span>
-                              <span class="nh"><</span><span class="nt">div</span> <span class="na">class=</span><span class="s">"checkbox-check-icon"</span><span class="nh">></span><span class="nh"><</span><span class="nt">/div</span><span class="nh">></span>
-                              <span class="nh"><</span><span class="nt">label</span> <span class="na">class=</span><span class="s">"checkbox-label"</span><span class="nh">></span>Checked box<span class="nh"><</span><span class="nt">/label</span><span class="nh">></span>
-                           <span class="nh"><</span><span class="nt">/form</span><span class="nh">></span>    
-                        </code>
-                     </pre>       
-                  </figure>  
-               </div>  
-               <form class="mars-form-checkbox"> 
-                  <input class="is-checked" type="checkbox" disabled>
-                  <div class="checkbox-check-icon"></div>
-                  <label for="input" class="checkbox-label">Disabled box</label>
-               </form>
-               <div class="forms-area">
-                  <figure class="highlight">
-                     <pre>
-                        <code class="language-html" data-lang="html">
-                           <span class="nh"><</span><span class="nt">form</span> <span class="na">class=</span><span class="s">"mars-form-checkbox"</span><span class="nh">></span>
-                              <span class="nh"><</span><span class="nt">input</span> <span class="na">class=</span><span class="s">"is-checked"</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">disabled</span><span class="nh">></span>
-                              <span class="nh"><</span><span class="nt">div</span> <span class="na">class=</span><span class="s">"checkbox-check-icon"</span><span class="nh">></span><span class="nh"><</span><span class="nt">/div</span><span class="nh">></span>
-                              <span class="nh"><</span><span class="nt">label</span> <span class="na">class=</span><span class="s">"checkbox-label"</span><span class="nh">></span>Disabled box<span class="nh"><</span><span class="nt">/label</span><span class="nh">></span>
-                           <span class="nh"><</span><span class="nt">/form</span><span class="nh">></span>    
-                        </code>
-                     </pre>       
-                  </figure>  
-               </div>  
-               <form class="mars-form-radio"> 
-                  <input class="is-checked" type="checkbox">
-                  <div class="radio-check-icon"></div>
-                  <label for="input" class="radio-label">Unchecked Radio</label>
-               </form>  
-               <div class="forms-area">
-                  <figure class="highlight">
-                     <pre>
-                        <code class="language-html" data-lang="html">
-                           <span class="nh"><</span><span class="nt">form</span> <span class="na">class=</span><span class="s">"mars-form-radio"</span><span class="nh">></span>
-                              <span class="nh"><</span><span class="nt">input</span> <span class="na">class=</span><span class="s">"is-checked"</span> <span class="na">type=</span><span class="s">"checkbox"</span><span class="nh">></span>
-                              <span class="nh"><</span><span class="nt">div</span> <span class="na">class=</span><span class="s">"radio-check-icon"</span><span class="nh">></span><span class="nh"><</span><span class="nt">/div</span><span class="nh">></span>
-                              <span class="nh"><</span><span class="nt">label</span> <span class="na">class=</span><span class="s">"radio-label"</span><span class="nh">></span>Unchecked Radio<span class="nh"><</span><span class="nt">/label</span><span class="nh">></span>
-                           <span class="nh"><</span><span class="nt">/form</span><span class="nh">></span>    
-                        </code>
-                     </pre>       
-                  </figure>  
-               </div>  
-               <form class="mars-form-radio is-color-primary"> 
-                  <input class="is-checked" type="checkbox" checked>
-                  <div class="radio-check-icon"></div>
-                  <label for="input" class="radio-label">Checked Radio</label>
-               </form>
-               <div class="forms-area">
-                  <figure class="highlight">
-                     <pre>
-                        <code class="language-html" data-lang="html">
-                           <span class="nh"><</span><span class="nt">form</span> <span class="na">class=</span><span class="s">"mars-form-radio"</span><span class="nh">></span>
-                              <span class="nh"><</span><span class="nt">input</span> <span class="na">class=</span><span class="s">"is-checked is-color-primary"</span> <span class="na">type=</span><span class="s">"checked"</span><span class="nh">></span>
-                              <span class="nh"><</span><span class="nt">div</span> <span class="na">class=</span><span class="s">"radio-check-icon"</span><span class="nh">></span><span class="nh"><</span><span class="nt">/div</span><span class="nh">></span>
-                              <span class="nh"><</span><span class="nt">label</span> <span class="na">class=</span><span class="s">"radio-label"</span><span class="nh">></span>Checked Radio<span class="nh"><</span><span class="nt">/label</span><span class="nh">></span>
-                           <span class="nh"><</span><span class="nt">/form</span><span class="nh">></span>    
-                        </code>
-                     </pre>       
-                  </figure>  
-               </div>  
-               <form class="mars-form-radio"> 
-                  <input class="is-checked" type="checkbox" disabled>
-                  <div class="radio-check-icon"></div>
-                  <label for="input" class="radio-label">Disabled Radio</label>
-               </form> 
-               <div class="forms-area">
-                  <figure class="highlight">
-                     <pre>
-                        <code class="language-html" data-lang="html">
-                           <span class="nh"><</span><span class="nt">form</span> <span class="na">class=</span><span class="s">"mars-form-radio"</span><span class="nh">></span>
-                              <span class="nh"><</span><span class="nt">input</span> <span class="na">class=</span><span class="s">"is-checked is-color-primary"</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">disabled</span><span class="nh">></span>
-                              <span class="nh"><</span><span class="nt">div</span> <span class="na">class=</span><span class="s">"radio-check-icon"</span><span class="nh">></span><span class="nh"><</span><span class="nt">/div</span><span class="nh">></span>
-                              <span class="nh"><</span><span class="nt">label</span> <span class="na">class=</span><span class="s">"radio-label"</span><span class="nh">></span>Disabled Radio<span class="nh"><</span><span class="nt">/label</span><span class="nh">></span>
-                           <span class="nh"><</span><span class="nt">/form</span><span class="nh">></span>    
-                        </code>
-                     </pre>       
-                  </figure>   
-               </div>
-           </div>
-      </div>
-   </div>
+               <div class="forms-contents">
+                     <h1 class="forms-title">Checkboxes,Radios</h1>
+                     <div class="forms-area">
+                           <div class="badge">
+                              <span class="mars-button is-color-success">color</span> 
+                              <span class="mars-button is-color-success">state</span>
+                           </div>
+                           <h3 class="forms-area-heading">
+                                 <a href="#">
+                                    <i class="fas fa-link"></i> Variables
+                                 </a>
+                           </h3>
+                     </div>
+                     <div class="forms-area">
+                        <p>
+                           Please refer to the following table for variables about checkboxes and radios.
+                        </p>
+                     </div>
+                     <div class="forms-area">
+                           <div class="tb-container">
+                              <table class="tb">
+                                 <thead>
+                                    <tr>
+                                       <th>Name</th>
+                                       <th>Type</th>
+                                       <th>Computed value</th>
+                                    </tr>           
+                                 </thead>    
+                                 <tfoot>
+                                    <tr>
+                                       <th>Name</th>
+                                       <th>Type</th>
+                                       <th>Computed value</th>   
+                                    </tr> 
+                                 </tfoot>
+                                 <tbody>
+                                    <tr>
+                                       <td>
+                                              
+                                       </td>
+                                       <td>
+                                          <small class="tag">
+                                             color    
+                                          </small>
+                                       </td>
+                                       <td>
+                                          <span class="bd-color" style="background: hsl(200.8, 85.7%, 49.4%);"></span>
+                                          <code class="highlighter-rouge bghr">hsl(200.8, 85.7%, 49.4%)</code>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td>
+                                          <code class="highlighter-rouge bghr">.is-color-blue</code>
+                                       </td>
+                                       <td>
+                                          <small class="tag">
+                                             color    
+                                          </small>
+                                       </td>
+                                       <td>
+                                          <span class="bd-color" style="background: hsl(208.1, 100%, 40.6%);"></span>
+                                          <code class="highlighter-rouge bghr">hsl(200.8, 85.7%, 49.4%)</code>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td>
+                                          <code class="highlighter-rouge bghr">.is-color-green</code>
+                                       </td>
+                                       <td>
+                                          <small class="tag">
+                                             color    
+                                          </small>
+                                       </td>
+                                       <td>
+                                          <span class="bd-color" style="background: hsl(140, 52.2%, 54.9%);"></span>
+                                          <code class="highlighter-rouge bghr">hsl(140, 52.2%, 54.9%)</code>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td>
+                                          <code class="highlighter-rouge bghr">.is-color-green</code>
+                                       </td>
+                                       <td>
+                                          <small class="tag">
+                                             color    
+                                          </small>
+                                       </td>
+                                       <td>
+                                          <span class="bd-color" style="background: hsl(140, 52.2%, 54.9%);"></span>
+                                          <code class="highlighter-rouge bghr">hsl(140, 52.2%, 54.9%)</code>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td>
+                                          <code class="highlighter-rouge bghr">.is-color-yellow</code>
+                                       </td>
+                                       <td>
+                                          <small class="tag">
+                                             color    
+                                          </small>
+                                       </td>
+                                       <td>
+                                          <span class="bd-color" style="background: hsl(56.9, 100%, 48.6%);"></span>
+                                          <code class="highlighter-rouge bghr">hsl(56.9, 100%, 48.6%)</code>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td>
+                                          <code class="highlighter-rouge bghr">.is-color-pink</code>
+                                       </td>
+                                       <td>
+                                          <small class="tag">
+                                             color    
+                                          </small>
+                                       </td>
+                                       <td>
+                                          <span class="bd-color" style="background: hsl(324.7, 53.3%, 73.1%);"></span>
+                                          <code class="highlighter-rouge bghr">hsl(324.7, 53.3%, 73.1%)</code>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td>
+                                          <code class="highlighter-rouge bghr">.is-color-purple</code>
+                                       </td>
+                                       <td>
+                                          <small class="tag">
+                                             color    
+                                          </small>
+                                       </td>
+                                       <td>
+                                          <span class="bd-color" style="background: hsl(270.8, 75.8%, 62.7%);"></span>
+                                          <code class="highlighter-rouge bghr">hsl(270.8, 75.8%, 62.7%)</code>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td>
+                                          <code class="highlighter-rouge bghr">.is-color-primary</code>
+                                       </td>
+                                       <td>
+                                          <small class="tag">
+                                             state    
+                                          </small>
+                                       </td>
+                                       <td>
+                                          <span class="bd-color" style="background: hsl(198.6, 100%, 50%);"></span>
+                                          <code class="highlighter-rouge bghr">hsl(198.6, 100%, 50%)</code>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td>
+                                          <code class="highlighter-rouge bghr">.is-color-success</code>
+                                       </td>
+                                       <td>
+                                          <small class="tag">
+                                             state    
+                                          </small>
+                                       </td>
+                                       <td>
+                                          <span class="bd-color" style="background: hsl(144.3, 100%, 34.9%);"></span>
+                                          <code class="highlighter-rouge bghr">hsl(144.3, 100%, 34.9%)</code>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td>
+                                          <code class="highlighter-rouge bghr">.is-color-warning</code>
+                                       </td>
+                                       <td>
+                                          <small class="tag">
+                                             state    
+                                          </small>
+                                       </td>
+                                       <td>
+                                          <span class="bd-color" style="background: hsl(29.4, 100%, 62.4%);"></span>
+                                          <code class="highlighter-rouge bghr">hsl(29.4, 100%, 62.4%)</code>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td>
+                                          <code class="highlighter-rouge bghr">.is-color-error</code>
+                                       </td>
+                                       <td>
+                                          <small class="tag">
+                                             state    
+                                          </small>
+                                       </td>
+                                       <td>
+                                          <span class="bd-color" style="background: hsl(14.4, 100%, 56.7%);"></span>
+                                          <code class="highlighter-rouge bghr">hsl(14.4, 100%, 56.7%)</code>
+                                       </td>
+                                    </tr>
+                                 </tbody>
+                              </table>
+                           </div>
+                     </div>
+                     <div class="forms-area">
+                           <p>
+                              The checkbox in mars applies a <code class="highlighter-rouge">mars-form-checkbox</code>, so you must use one input tag and one block element.
+                              It must first be placed inside the parent block element and must always remain as a child of the parent block element.<br><br>
+                                    
+                              If you don't want to, start from <code class="highlighter-rouge">mars-form-checkbox</code> and implement your own internals.<br><br>
+                                    
+                                    
+                              The is-checked class should be applied to the child element input tag to locate the check icon.
+      
+                              <code class="highlighter-rouge">radio</code> is very similar to<code class="highlighter-rouge">mars-checkbox</code> , using <code class="highlighter-rouge">mars-form-radio</code>  and icons for <code class="highlighter-rouge">radio-check-icon</code> .
+      
+                              Otherwise it is the same as<code class="highlighter-rouge">mars-form-checkbox</code> 
+                                    
+                                    
+                              Next, the check icon applies the <code class="highlighter-rouge">checkbox-check-icon</code> class, so make sure to use block elements.
+                              You must set the type to checked in the input tag to use the check function.<br><br>      
+                              The check icon requires JavaScript to be applied to svg. If you don't want JavaScript, use fontawesome
+                              You need to implement
+                           </p>
+                        <h3 class="forms-area-heading">
+                           <a href="#">
+                              Overview
+                           </a>
+                        </h3>
+                        <p>
+                           The <code class="highlighter-rouge">mars-form-checkbox </code> contains JavaScript, which you need to create and check the icon.
+                           And mars is a library that depends on JQuery. 
+                        </p>
+                        <figure class="highlight">
+                           <pre>
+                              <code class="language-html" data-lang="html">
+                                  /* checkbox event */
+                                    var icon = {
+                                          checkbox: 
+                                             `<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewbox="0 0 24 24" class="checkbox-check">
+                                                <path d="M9 21.035l-9-8.638 2.791-2.87 6.156 5.874 12.21-12.436 2.843 2.817z"></path>
+                                             </svg>`,
+                                          radio: 
+                                             `<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewbox="0 0 24 24" class="radio-check">
+                                                   <circle cx="12" cy="12" r="12"></circle>
+                                             </svg>`,   
+                                    };        
+      
+                                    var func = {
+                                          checkbox: {
+                                                check: 
+                                                function(index) {
+                                                   if ($('.mars-form-checkbox .is-checked').eq(index).is(':checked') || $('.mars-form-checkbox .is-checked').eq(index).is(':disabled')) {
+                                                         $('.checkbox-check-icon').eq(index).html(icon.checkbox);
+                                                      }       
+                                                },
+                                                
+                                                click: 
+                                                function(index) {
+                                                   if ($('.mars-form-checkbox .is-checked').eq(index).is(':checked')) {
+                                                      $('.checkbox-check-icon').eq(index).html(icon.checkbox); 
+                                                   } else {
+                                                      $('.checkbox-check-icon').eq(index).html('');
+                                                   }  
+                                                }
+                                          },
+      
+                                          radio: {
+                                                check: 
+                                                function(index) {
+                                                   if ($('.mars-form-radio .is-checked').eq(index).is(':checked') || $('.mars-form-radio .is-checked').eq(index).is(':disabled')) {
+                                                      $('.radio-check-icon').eq(index).html(icon.radio);
+                                                   }  
+                                                },
+                                                
+                                                click: 
+                                                function(index) {
+                                                   if ($('.mars-form-radio .is-checked').eq(index).is(':checked')) {
+                                                      $('.radio-check-icon').eq(index).html(icon.radio); 
+                                                   } else {
+                                                      $('.radio-check-icon').eq(index).html('');
+                                                   }  
+                                                }
+                                          },
+                                    };
+      
+      
+                                    /* checkbox */
+                                    $('.mars-form-checkbox .is-checked').each(function(index) { 
+                                       / * Make sure it's checked * /
+                                       func.checkbox.check(index);
+                                       
+                                       $('.mars-form-checkbox .is-checked').eq(index).on('click',function() {
+                                          func.checkbox.click(index);
+                                       });
+                                    });
+      
+                                    /* radio */
+                                    $('.mars-form-radio .is-checked').each(function(index) { 
+                                       / * Make sure it's checked * /
+                                       func.radio.check(index);
+      
+                                       $('.mars-form-radio .is-checked').eq(index).on('click',function() {
+                                          func.radio.click(index);
+                                       });
+                                    });
+                              </code>
+                           </pre>       
+                        </figure>
+                     </div>
+                     <form class="mars-form-checkbox"> 
+                        <input class="is-checked" type="checkbox">
+                        <div class="checkbox-check-icon"></div>
+                        <label for="input" class="checkbox-label">Unchecked box</label>
+                     </form> 
+                     <div class="forms-area">
+                        <figure class="highlight">
+                           <pre>
+                              <code class="language-html" data-lang="html">
+                                 <span class="nh"><</span><span class="nt">form</span> <span class="na">class=</span><span class="s">"mars-form-checkbox"</span><span class="nh">></span>
+                                    <span class="nh"><</span><span class="nt">input</span> <span class="na">class=</span><span class="s">"is-checked"</span> <span class="na">type=</span><span class="s">"checkbox"</span><span class="nh">></span>
+                                    <span class="nh"><</span><span class="nt">div</span> <span class="na">class=</span><span class="s">"checkbox-check-icon"</span><span class="nh">></span><span class="nh"><</span><span class="nt">/div</span><span class="nh">></span>
+                                    <span class="nh"><</span><span class="nt">label</span> <span class="na">class=</span><span class="s">"checkbox-label"</span><span class="nh">></span>Unchecked box<span class="nh"><</span><span class="nt">/label</span><span class="nh">></span>
+                                 <span class="nh"><</span><span class="nt">/form</span><span class="nh">></span>    
+                              </code>
+                           </pre>       
+                        </figure>  
+                     </div>  
+                     <form class="mars-form-checkbox is-color-primary"> 
+                        <input class="is-checked" type="checkbox" checked>
+                        <div class="checkbox-check-icon"></div>
+                        <label for="input" class="checkbox-label">Checked box</label>
+                     </form>   
+                     <div class="forms-area">
+                        <figure class="highlight">
+                           <pre>
+                              <code class="language-html" data-lang="html">
+                                 <span class="nh"><</span><span class="nt">form</span> <span class="na">class=</span><span class="s">"mars-form-checkbox"</span><span class="nh">></span>
+                                    <span class="nh"><</span><span class="nt">input</span> <span class="na">class=</span><span class="s">"is-checked is-color-primary"</span> <span class="na">type=</span><span class="s">"checked"</span><span class="nh">></span>
+                                    <span class="nh"><</span><span class="nt">div</span> <span class="na">class=</span><span class="s">"checkbox-check-icon"</span><span class="nh">></span><span class="nh"><</span><span class="nt">/div</span><span class="nh">></span>
+                                    <span class="nh"><</span><span class="nt">label</span> <span class="na">class=</span><span class="s">"checkbox-label"</span><span class="nh">></span>Checked box<span class="nh"><</span><span class="nt">/label</span><span class="nh">></span>
+                                 <span class="nh"><</span><span class="nt">/form</span><span class="nh">></span>    
+                              </code>
+                           </pre>       
+                        </figure>  
+                     </div>  
+                     <form class="mars-form-checkbox"> 
+                        <input class="is-checked" type="checkbox" disabled>
+                        <div class="checkbox-check-icon"></div>
+                        <label for="input" class="checkbox-label">Disabled box</label>
+                     </form>
+                     <div class="forms-area">
+                        <figure class="highlight">
+                           <pre>
+                              <code class="language-html" data-lang="html">
+                                 <span class="nh"><</span><span class="nt">form</span> <span class="na">class=</span><span class="s">"mars-form-checkbox"</span><span class="nh">></span>
+                                    <span class="nh"><</span><span class="nt">input</span> <span class="na">class=</span><span class="s">"is-checked"</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">disabled</span><span class="nh">></span>
+                                    <span class="nh"><</span><span class="nt">div</span> <span class="na">class=</span><span class="s">"checkbox-check-icon"</span><span class="nh">></span><span class="nh"><</span><span class="nt">/div</span><span class="nh">></span>
+                                    <span class="nh"><</span><span class="nt">label</span> <span class="na">class=</span><span class="s">"checkbox-label"</span><span class="nh">></span>Disabled box<span class="nh"><</span><span class="nt">/label</span><span class="nh">></span>
+                                 <span class="nh"><</span><span class="nt">/form</span><span class="nh">></span>    
+                              </code>
+                           </pre>       
+                        </figure>  
+                     </div>  
+                     <form class="mars-form-radio"> 
+                        <input class="is-checked" type="checkbox">
+                        <div class="radio-check-icon"></div>
+                        <label for="input" class="radio-label">Unchecked Radio</label>
+                     </form>  
+                     <div class="forms-area">
+                        <figure class="highlight">
+                           <pre>
+                              <code class="language-html" data-lang="html">
+                                 <span class="nh"><</span><span class="nt">form</span> <span class="na">class=</span><span class="s">"mars-form-radio"</span><span class="nh">></span>
+                                    <span class="nh"><</span><span class="nt">input</span> <span class="na">class=</span><span class="s">"is-checked"</span> <span class="na">type=</span><span class="s">"checkbox"</span><span class="nh">></span>
+                                    <span class="nh"><</span><span class="nt">div</span> <span class="na">class=</span><span class="s">"radio-check-icon"</span><span class="nh">></span><span class="nh"><</span><span class="nt">/div</span><span class="nh">></span>
+                                    <span class="nh"><</span><span class="nt">label</span> <span class="na">class=</span><span class="s">"radio-label"</span><span class="nh">></span>Unchecked Radio<span class="nh"><</span><span class="nt">/label</span><span class="nh">></span>
+                                 <span class="nh"><</span><span class="nt">/form</span><span class="nh">></span>    
+                              </code>
+                           </pre>       
+                        </figure>  
+                     </div>  
+                     <form class="mars-form-radio is-color-primary"> 
+                        <input class="is-checked" type="checkbox" checked>
+                        <div class="radio-check-icon"></div>
+                        <label for="input" class="radio-label">Checked Radio</label>
+                     </form>
+                     <div class="forms-area">
+                        <figure class="highlight">
+                           <pre>
+                              <code class="language-html" data-lang="html">
+                                 <span class="nh"><</span><span class="nt">form</span> <span class="na">class=</span><span class="s">"mars-form-radio"</span><span class="nh">></span>
+                                    <span class="nh"><</span><span class="nt">input</span> <span class="na">class=</span><span class="s">"is-checked is-color-primary"</span> <span class="na">type=</span><span class="s">"checked"</span><span class="nh">></span>
+                                    <span class="nh"><</span><span class="nt">div</span> <span class="na">class=</span><span class="s">"radio-check-icon"</span><span class="nh">></span><span class="nh"><</span><span class="nt">/div</span><span class="nh">></span>
+                                    <span class="nh"><</span><span class="nt">label</span> <span class="na">class=</span><span class="s">"radio-label"</span><span class="nh">></span>Checked Radio<span class="nh"><</span><span class="nt">/label</span><span class="nh">></span>
+                                 <span class="nh"><</span><span class="nt">/form</span><span class="nh">></span>    
+                              </code>
+                           </pre>       
+                        </figure>  
+                     </div>  
+                     <form class="mars-form-radio"> 
+                        <input class="is-checked" type="checkbox" disabled>
+                        <div class="radio-check-icon"></div>
+                        <label for="input" class="radio-label">Disabled Radio</label>
+                     </form> 
+                     <div class="forms-area">
+                        <figure class="highlight">
+                           <pre>
+                              <code class="language-html" data-lang="html">
+                                 <span class="nh"><</span><span class="nt">form</span> <span class="na">class=</span><span class="s">"mars-form-radio"</span><span class="nh">></span>
+                                    <span class="nh"><</span><span class="nt">input</span> <span class="na">class=</span><span class="s">"is-checked is-color-primary"</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">disabled</span><span class="nh">></span>
+                                    <span class="nh"><</span><span class="nt">div</span> <span class="na">class=</span><span class="s">"radio-check-icon"</span><span class="nh">></span><span class="nh"><</span><span class="nt">/div</span><span class="nh">></span>
+                                    <span class="nh"><</span><span class="nt">label</span> <span class="na">class=</span><span class="s">"radio-label"</span><span class="nh">></span>Disabled Radio<span class="nh"><</span><span class="nt">/label</span><span class="nh">></span>
+                                 <span class="nh"><</span><span class="nt">/form</span><span class="nh">></span>    
+                              </code>
+                           </pre>       
+                        </figure>   
+                     </div>
+                 </div>
+            </div>
+      </div>   
 </body>
 <script src="../../js/mars-forms.js"></script>
 </html>
