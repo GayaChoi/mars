@@ -1,21 +1,26 @@
 {
-  "name": "css-ui-kit",
+  "name": "mars",
   "version": "1.0.0",
   "description": "==========",
-  "main": "index.js",
+  "engines": {
+    "node": "10.3.0",
+    "npm": "6.9.0"
+  },
+  "main": "main.js",
   "scripts": {
+    "start": "node main.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GayaChoi/css-ui-kit.git"
+    "url": "git+https://github.com/GayaChoi/mars.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/GayaChoi/css-ui-kit/issues"
+    "url": "https://github.com/GayaChoi/mars/issues"
   },
-  "homepage": "https://github.com/GayaChoi/css-ui-kit#readme",
+  "homepage": "https://github.com/GayaChoi/mars.git",
   "dependencies": {
     "express": "^4.17.1"
   },
