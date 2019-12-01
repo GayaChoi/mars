@@ -16,5 +16,10 @@
     "url": "https://github.com/GayaChoi/css-ui-kit/issues"
   },
   "homepage": "https://github.com/GayaChoi/css-ui-kit#readme",
-  "dependencies": {}
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.1"
+  }
 }
