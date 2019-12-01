@@ -29,6 +29,7 @@
  ========================================================================== */
 .mars-form {
   width: 100%;
+  max-width: 100%;
   color: black;
   font-family: inherit;
   font-style: normal;
@@ -60,12 +61,14 @@
   cursor: not-allowed !important;
   background-color: #cad2d3 !important;
   color: #cad2d3 !important;
+  opacity: 1 !important;
 }
 
 .mars-form.is-readonly {
   background-color: #eeeeee !important;
   color: #777777 !important;
   border-color: #cccccc !important;
+  opacity: 1 !important;
 }
 
 .mars-form.is-color-blue:focus, .mars-form.is-color-blue.is-focused, .mars-form.is-color-blue:active, .mars-form.is-color-blue.is-actived {
@@ -304,6 +307,7 @@ select.mars-form[disabled] {
   cursor: not-allowed !important;
   background-color: #cad2d3 !important;
   color: #cad2d3 !important;
+  opacity: 1 !important;
 }
 
 input.mars-form[readonly],
@@ -312,6 +316,7 @@ select.mars-form[readonly] {
   background-color: #eeeeee !important;
   color: #777777 !important;
   border-color: #cccccc !important;
+  opacity: 1 !important;
 }
 
 input.mars-form[type="color"] {
@@ -903,7 +908,7 @@ svg:not(:root) {
 .mars-button-icon.is-disabled {
   border: none !important;
   background-image: none !important;
-  opacity: 1;
+  opacity: 1 !important;
   cursor: not-allowed !important;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -931,7 +936,7 @@ svg:not(:root) {
 .mars-button-icon.is-cancel:active,
 .mars-button-icon.is-cancel.is-actived,
 .mars-button-icon.is-cancel.is-pressed {
-  opacity: 1;
+  opacity: 1 !important;
   border: 2px solid #D3D3D3 !important;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -955,7 +960,7 @@ svg:not(:root) {
 .mars-button-icon.is-submit:active,
 .mars-button-icon.is-submit.is-actived,
 .mars-button-icon.is-submit.is-pressed {
-  opacity: 1;
+  opacity: 1 !important;
   border: 2px solid #005CFF !important;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -1134,6 +1139,7 @@ svg:not(:root) {
   border: none;
   -webkit-box-shadow: none;
           box-shadow: none;
+  opacity: 1 !important;
 }
 
 .mars-button.is-outlined.is-outlined.is-color-green,
@@ -1143,6 +1149,7 @@ svg:not(:root) {
   border: none;
   -webkit-box-shadow: none;
           box-shadow: none;
+  opacity: 1 !important;
 }
 
 .mars-button.is-outlined.is-outlined.is-color-yellow,
@@ -1152,6 +1159,7 @@ svg:not(:root) {
   border: none;
   -webkit-box-shadow: none;
           box-shadow: none;
+  opacity: 1 !important;
 }
 
 .mars-button.is-outlined.is-outlined.is-color-pink,
@@ -1161,6 +1169,7 @@ svg:not(:root) {
   border: none;
   -webkit-box-shadow: none;
           box-shadow: none;
+  opacity: 1 !important;
 }
 
 .mars-button.is-outlined.is-outlined.is-color-purple,
@@ -1170,6 +1179,7 @@ svg:not(:root) {
   border: none;
   -webkit-box-shadow: none;
           box-shadow: none;
+  opacity: 1 !important;
 }
 
 .mars-button.is-outlined.is-outlined.is-color-primary,
@@ -1179,6 +1189,7 @@ svg:not(:root) {
   border: none;
   -webkit-box-shadow: none;
           box-shadow: none;
+  opacity: 1 !important;
 }
 
 .mars-button.is-outlined.is-outlined.is-color-success,
@@ -1188,6 +1199,7 @@ svg:not(:root) {
   border: none;
   -webkit-box-shadow: none;
           box-shadow: none;
+  opacity: 1 !important;
 }
 
 .mars-button.is-outlined.is-outlined.is-color-warning,
@@ -1197,6 +1209,7 @@ svg:not(:root) {
   border: none;
   -webkit-box-shadow: none;
           box-shadow: none;
+  opacity: 1 !important;
 }
 
 .mars-button.is-outlined.is-outlined.is-color-error,
@@ -1206,6 +1219,7 @@ svg:not(:root) {
   border: none;
   -webkit-box-shadow: none;
           box-shadow: none;
+  opacity: 1 !important;
 }
 
 .mars-button-icon {

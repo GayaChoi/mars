@@ -114,7 +114,7 @@ $size: (
     &.is-disabled {
         border: $button-none-border !important;
         background-image: $button-disabled-background-image !important;
-        opacity: 1;
+        opacity: 1 !important;
         cursor: not-allowed !important;
         box-shadow: $button-none-box-shadow;
         background-color: $button-disabled-background-color !important;

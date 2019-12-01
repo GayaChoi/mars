@@ -52,6 +52,7 @@ $size: (
 
  .mars-form {
     width: $input-width;
+    max-width: $input-width;
     color: $black;  
     font-family: $input-font-family;
     font-style: $input-font-style;

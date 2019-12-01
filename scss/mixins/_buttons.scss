@@ -72,12 +72,14 @@
     $outline: 2px solid map-get($colors,$_name),
     $color: map-get($colors,$_name),
     $border: $button-none-border,
-    $box-shadow: $button-none-box-shadow
+    $box-shadow: $button-none-box-shadow,
+    $opacity: 1
 ) {
     outline: $outline;
     color: $color;
     border: $border;
     box-shadow: $box-shadow;
+    opacity: $opacity !important;
 }
 
 @mixin modal-button(
@@ -88,7 +90,7 @@
     $color: $white, 
     $border: 2px solid $_name 
 ) {
-    opacity: $opacity; 
+    opacity: $opacity !important; 
     border: $border !important;
     box-shadow: $box-shadow;
     outline: $outline;

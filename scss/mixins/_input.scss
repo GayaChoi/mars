@@ -3,6 +3,7 @@
     cursor: not-allowed !important;
     background-color: $disabled !important;
     color: $disabled !important;
+    opacity: 1 !important;
 }
 
 // input readonly 
@@ -10,6 +11,7 @@
     background-color: $input-readonly-bgcolor !important;
     color: $input-readonly-color !important;
     border-color: $input-readonly-border !important;
+    opacity: 1 !important;
 }
 
 // input-underline 
