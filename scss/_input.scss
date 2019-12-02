@@ -86,7 +86,7 @@ $size: (
 
     /* color actived, focused */
     @each $name in $color-names {
-        &.is-color-#{$name} {
+        &.is-#{$name} {
            &:focus, &.is-focused,
             &:active, &.is-actived {
               border-color: map-get($colors, #{$name});   
@@ -157,7 +157,7 @@ $size: (
 
     /* underline color active, focus */
     @each $name in $color-names {
-        &.is-color-#{$name} {
+        &.is-#{$name} {
            &:focus, &.is-focused, 
            &:active, &.is-actived {
                @include input-underline(map-get($colors,#{$name}));   

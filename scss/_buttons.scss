@@ -66,7 +66,7 @@ $size: (
 
     /* button, icon button color */
     @each $name in $color-names {
-        &.is-color-#{$name} {
+        &.is-#{$name} {
             @include button-color(map-get($colors,#{$name})); 
         }
     }
@@ -102,8 +102,8 @@ $size: (
       
     /* color hovered */
     @each $name in $color-names {
-        &.is-hovered.is-color-#{$name},
-        &.is-color-#{$name}:hover {
+        &.is-hovered.is-#{$name},
+        &.is-#{$name}:hover {
            box-shadow: $button-box-shadow-size rgba(map-get($colors,#{$name}), 0.85);
         }
     }
@@ -160,7 +160,7 @@ $size: (
         box-shadow: $button-box-shadow-size rgba($default, 0.65);  
         
         @each $name in $color-names {
-            &.is-color-#{$name} {   
+            &.is-#{$name} {   
                 background-image: linear-gradient(90deg,map-get($gradient-colors,#{$name}),map-get($colors,#{$name}));
                 box-shadow: $button-box-shadow-size rgba(map-get($colors,#{$name}),0.65);
             } 
@@ -216,7 +216,7 @@ $size: (
 
         /* button outlined color */
         @each $name in $color-names {
-            &.is-outlined.is-color-#{$name} {
+            &.is-outlined.is-#{$name} {
                 @include outlined-button(#{$name}); 
             }
         }

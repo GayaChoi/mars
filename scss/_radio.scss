@@ -60,12 +60,12 @@
     }
 
     @each $name in $color-names {
-        &.is-color-#{$name} > input:not(:disabled):hover, 
-        &.is-color-#{$name} > input:not(:disabled):checked {
+        &.is-#{$name} > input:not(:disabled):hover, 
+        &.is-#{$name} > input:not(:disabled):checked {
             border-color: map-get($colors,#{$name});
         }
 
-        &.is-color-#{$name} > .radio-check-icon svg {               
+        &.is-#{$name} > .radio-check-icon svg {               
              fill: map-get($colors,#{$name});
         }
     }
