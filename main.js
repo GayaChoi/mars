@@ -24,6 +24,10 @@ app.get('/modals', function(req, res) {
   res.sendFile(path.join(__dirname, 'app/html', 'modals.html'));
 });
 
+app.get('/preview', function(req, res) {
+  res.sendFile(path.join(__dirname, 'app/html', 'preview.html')); 
+});
+
 
 // ERROR Handling
 
@@ -61,6 +65,6 @@ app.use(function(error, req, res, next) {
 });
 
 
-app.listen(process.env.PORT || 3000, function () {
-  console.log('Example app listening on port 3000!');
+app.listen(process.env.PORT || 5500, function () {
+  console.log('Example app listening on port 5500!');
 });

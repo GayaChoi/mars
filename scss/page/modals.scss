@@ -1,0 +1,130 @@
+@import './variable';
+@import './mixins/common';
+
+
+@include wrap();
+@include header();
+
+
+.modals-area {
+    @include area-property();
+
+    & button,a {
+        text-align: center;
+    }
+
+    
+    &-heading {
+        font-size: 30px;
+        font-weight: normal;
+    }
+    
+    & >  h3 >  a {
+        text-decoration: none;
+        color: rgba(0,0,0,0.85);
+        cursor: pointer;      
+    }
+
+    & .highlight {
+        @include highlight();
+        
+        & pre {
+            padding: 0;
+            margin-top: 0;
+            margin-bottom: 0;
+            background-color: transparent;
+            border: 0;
+        }
+
+        & pre code {
+            font-size: inherit;
+            color: #212529;
+            position: relative;
+            left: -180px;
+        }
+    }
+
+    & pre {
+        display: block;
+        font-size: 87.5%;
+        color: #212529;
+        overflow: auto;
+        word-break: normal;
+    }
+
+    & figure {
+        width: 100%;
+    }
+
+    & p > a.chart-link {
+        color: #a7a7a7;
+        font-weight: normal;  
+        text-decoration: none;
+    } 
+
+    & p {
+        margin-bottom: 50px;
+    }
+
+    & .badge {
+        @include badge();
+       
+ 
+        & .mars-button {
+            width: 3rem;
+            padding: 0;
+            margin-right: 10px;
+            box-shadow: none;
+        }
+ 
+        & .mars-button:hover {
+            opacity: 1;
+        }
+     }
+ 
+     & .tb-container {
+          @include table();
+    }
+}
+
+.modals-contents {
+    display: $flex-display;
+    flex-direction: column;
+
+    & > * {
+        margin-bottom: 50px;
+    }
+
+    & > .modals-area:nth-of-type(1),
+    & > .modals-area:nth-of-type(2) {
+        margin-bottom: 0px;
+    }
+
+}
+
+.highlighter-rouge {
+    @include rouge();
+}
+
+h1.modals-title {
+    @include title();
+}
+
+.modal-button-area {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+}
+
+.mars-modal a {
+    cursor: pointer;
+}
+
+.modal-title-area {
+    margin-bottom: 40px;
+}
+
+
+span {
+    @include span();
+}

@@ -1,10 +1,34 @@
-.modals-wrap {
+.main-wrap {
   padding: 130px;
   color: black;
   font-size: 14px;
 }
 
-.modals-contents {
+.header {
+  padding: 2em;
+  margin: 0;
+  display: block;
+}
+
+.header a {
+  all: unset;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.header h1.header-logo {
+  display: inline;
+  color: black;
+  font-size: 1em;
+  font-family: 'Orbitron';
+  font-weight: normal;
+}
+
+.header h1.header-logo:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.forms-contents {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -14,21 +38,35 @@
           flex-direction: column;
 }
 
-.modals-contents > * {
+.forms-contents > * {
   margin-bottom: 50px;
+}
+
+h1.forms-title {
+  font-size: 40px;
+  font-weight: 400;
+  font-family: inherit;
+  cursor: default;
+  margin-bottom: 40px;
+}
+
+h1.forms-title > a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.85);
 }
 
 .highlighter-rouge {
   font-size: 87.5%;
   color: #e83e8c;
   word-break: break-word;
+  padding: .25em .5em .25em;
 }
 
 .highlighter-rouge.bghr {
   background-color: #e9e9e9;
 }
 
-.modals-area {
+.forms-area {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -36,40 +74,34 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
   width: 500px;
   font-family: inherit;
   font-size: 16px;
   font-weight: 400;
+  margin-bottom: 0px;
 }
 
-.modals-area button, .modals-area a {
-  text-align: center;
-}
-
-.modals-area-heading {
+.forms-area-heading {
   font-size: 30px;
   font-weight: normal;
+  line-height: 0.85em;
+  margin-bottom: 25px;
 }
 
-.modals-area > h3 > a {
+.forms-area > h3 > a {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.85);
   cursor: pointer;
 }
 
-.modals-area .highlight {
+.forms-area .highlight {
   display: block;
   background-color: #eeeeee;
   padding: 1.5rem;
   margin: 3rem;
 }
 
-.modals-area .highlight pre {
+.forms-area .highlight pre {
   padding: 0;
   margin-top: 0;
   margin-bottom: 0;
@@ -77,14 +109,14 @@
   border: 0;
 }
 
-.modals-area .highlight pre code {
+.forms-area .highlight pre code {
   font-size: inherit;
   color: #212529;
   position: relative;
   left: -180px;
 }
 
-.modals-area pre {
+.forms-area pre {
   display: block;
   font-size: 87.5%;
   color: #212529;
@@ -92,21 +124,11 @@
   word-break: normal;
 }
 
-.modals-area figure {
+.forms-area figure {
   width: 100%;
 }
 
-.modals-area p > a.chart-link {
-  color: #a7a7a7;
-  font-weight: normal;
-  text-decoration: none;
-}
-
-.modals-area p {
-  margin-bottom: 50px;
-}
-
-.modals-area .badge {
+.forms-area .badge {
   font-size: 12px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -121,7 +143,7 @@
       flex-wrap: wrap;
 }
 
-.modals-area .badge .mars-button {
+.forms-area .badge .mars-button {
   width: 3rem;
   padding: 0;
   margin-right: 10px;
@@ -129,22 +151,22 @@
           box-shadow: none;
 }
 
-.modals-area .badge .mars-button:hover {
+.forms-area .badge .mars-button:hover {
   opacity: 1;
 }
 
-.modals-area .tb-container {
+.forms-area .tb-container {
   overflow: auto;
   overflow-y: hidden;
   max-width: 100%;
 }
 
-.modals-area .tb-container .tb {
+.forms-area .tb-container .tb {
   background: #ffffff;
   color: #363636;
 }
 
-.modals-area .tb-container table {
+.forms-area .tb-container table {
   border-collapse: collapse;
   border-spacing: 0;
   border-color: grey;
@@ -152,21 +174,21 @@
           box-sizing: border-box;
 }
 
-.modals-area .tb-container table thead {
+.forms-area .tb-container table thead {
   background-color: transparent;
   border: 1px solid #dbdbdb;
 }
 
-.modals-area .tb-container tr:last-child th {
+.forms-area .tb-container tr:last-child th {
   border-bottom-width: 1px;
 }
 
-.modals-area .tb-container th {
+.forms-area .tb-container th {
   border-width: 1px;
   border: 1px solid #dbdbdb;
 }
 
-.modals-area .tb-container td {
+.forms-area .tb-container td {
   border-width: 1px;
   text-align: left;
   border: 1px solid #dbdbdb;
@@ -174,7 +196,7 @@
   vertical-align: top;
 }
 
-.modals-area .tb-container td .tag {
+.forms-area .tb-container td .tag {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -195,7 +217,7 @@
   white-space: nowrap;
 }
 
-.modals-area .tb-container td .bd-color {
+.forms-area .tb-container td .bd-color {
   border-radius: 2px;
   -webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1), inset 0 0 0 1px rgba(0, 0, 0, 0.1);
           box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1), inset 0 0 0 1px rgba(0, 0, 0, 0.1);
@@ -205,34 +227,8 @@
   margin-right: 8px;
 }
 
-h1.modals-title {
-  font-size: 40px;
-  font-weight: 400;
-  font-family: inherit;
-  cursor: default;
-  margin-bottom: 40px;
-}
-
-h1.modals-title > a {
-  text-decoration: none;
-  color: rgba(0, 0, 0, 0.85);
-}
-
-.modal-button-area {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  padding-top: 30px;
-}
-
-.mars-modal a {
-  cursor: pointer;
-}
-
-.modal-title-area {
-  margin-bottom: 40px;
+.forms-area p {
+  margin-bottom: 50px;
 }
 
 span.s {
@@ -246,4 +242,19 @@ span.nh, span.nt {
 span.na {
   color: #00d2ff;
 }
-/*# sourceMappingURL=modals.css.map */
+
+label.forms-label {
+  display: block;
+  font-weight: 700;
+  font-size: 1em;
+  margin: 3.5em 0.75em 1.5em;
+}
+
+.mars-form legend {
+  display: block;
+  padding: 0.3em 0;
+  margin-bottom: 0.3em;
+  color: #000000;
+  border-bottom: 1px solid #e5e5e5;
+}
+/*# sourceMappingURL=forms.css.map */
