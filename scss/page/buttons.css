@@ -119,7 +119,7 @@
       flex-wrap: wrap;
 }
 
-.buttons-area .badge .mars-button {
+.buttons-area .badge .mars-btn {
   width: 3rem;
   padding: 0;
   margin-right: 10px;
@@ -127,7 +127,7 @@
           box-shadow: none;
 }
 
-.buttons-area .badge .mars-button:hover {
+.buttons-area .badge .mars-btn:hover {
   opacity: 1;
 }
 

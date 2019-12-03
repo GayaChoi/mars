@@ -143,7 +143,7 @@ h1.forms-title > a {
       flex-wrap: wrap;
 }
 
-.forms-area .badge .mars-button {
+.forms-area .badge .mars-btn {
   width: 3rem;
   padding: 0;
   margin-right: 10px;
@@ -151,7 +151,7 @@ h1.forms-title > a {
           box-shadow: none;
 }
 
-.forms-area .badge .mars-button:hover {
+.forms-area .badge .mars-btn:hover {
   opacity: 1;
 }
 

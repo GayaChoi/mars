@@ -10,7 +10,7 @@
     padding: 0;
     margin: 0;
   }
-  .mars-button.is-cancel, .mars-button-icon.is-cancel {
+  .mars-btn.is-cancel, .mars-btn-icon.is-cancel {
     padding: 0;
     width: 3.2rem;
     height: 3.5rem;

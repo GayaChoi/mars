@@ -76,14 +76,14 @@ h1.forms-title {
       @include badge();
       
 
-       & .mars-button {
+       & .mars-btn {
            width: 3rem;
            padding: 0;
            margin-right: 10px;
            box-shadow: none;
        }
 
-       & .mars-button:hover {
+       & .mars-btn:hover {
            opacity: 1;
        }
     }
