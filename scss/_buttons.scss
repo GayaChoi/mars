@@ -42,8 +42,8 @@ $size: (
 
 
 /* default style */
-.mars-button,
-.mars-button-icon {
+.mars-btn,
+.mars-btn-icon {
     width: $button-width;
     font-family: $button-font-family;
     font-size: $button-font-size;
@@ -223,7 +223,7 @@ $size: (
     }
 }
 
-.mars-button-icon {
+.mars-btn-icon {
     @include icon-button();
 
     /* icon button icon size */
@@ -238,7 +238,7 @@ $size: (
 }
 
 /* button loading */
-.mars-button.is-loading {
+.mars-btn.is-loading {
         @include button-loading();
 
         cursor: default;

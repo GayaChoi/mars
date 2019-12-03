@@ -144,7 +144,7 @@
 }
 
 /* input underline */
-.mars-form-underline {
+.mars-form-u {
   width: 100%;
   color: black;
   font-family: inherit;
@@ -176,31 +176,31 @@
   /* underline color active, focus */
 }
 
-.mars-form-underline.is-size-1 {
+.mars-form-u.is-size-1 {
   width: 100% !important;
 }
 
-.mars-form-underline.is-size-3-4 {
+.mars-form-u.is-size-3-4 {
   width: 75% !important;
 }
 
-.mars-form-underline.is-size-2-3 {
+.mars-form-u.is-size-2-3 {
   width: 66% !important;
 }
 
-.mars-form-underline.is-size-1-2 {
+.mars-form-u.is-size-1-2 {
   width: 50% !important;
 }
 
-.mars-form-underline.is-size-1-3 {
+.mars-form-u.is-size-1-3 {
   width: 33% !important;
 }
 
-.mars-form-underline.is-size-1-4 {
+.mars-form-u.is-size-1-4 {
   width: 25% !important;
 }
 
-.mars-form-underline:active, .mars-form-underline.is-actived, .mars-form-underline:focus, .mars-form-underline.is-focused {
+.mars-form-u:active, .mars-form-u.is-actived, .mars-form-u:focus, .mars-form-u.is-focused {
   outline: 0;
   border: transparent;
   border-radius: 3px;
@@ -210,7 +210,7 @@
           box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
 }
 
-.mars-form-underline.is-blue:focus, .mars-form-underline.is-blue.is-focused, .mars-form-underline.is-blue:active, .mars-form-underline.is-blue.is-actived {
+.mars-form-u.is-blue:focus, .mars-form-u.is-blue.is-focused, .mars-form-u.is-blue:active, .mars-form-u.is-blue.is-actived {
   outline: 0;
   border: transparent;
   border-radius: 3px;
@@ -220,7 +220,7 @@
           box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
 }
 
-.mars-form-underline.is-green:focus, .mars-form-underline.is-green.is-focused, .mars-form-underline.is-green:active, .mars-form-underline.is-green.is-actived {
+.mars-form-u.is-green:focus, .mars-form-u.is-green.is-focused, .mars-form-u.is-green:active, .mars-form-u.is-green.is-actived {
   outline: 0;
   border: transparent;
   border-radius: 3px;
@@ -230,7 +230,7 @@
           box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
 }
 
-.mars-form-underline.is-yellow:focus, .mars-form-underline.is-yellow.is-focused, .mars-form-underline.is-yellow:active, .mars-form-underline.is-yellow.is-actived {
+.mars-form-u.is-yellow:focus, .mars-form-u.is-yellow.is-focused, .mars-form-u.is-yellow:active, .mars-form-u.is-yellow.is-actived {
   outline: 0;
   border: transparent;
   border-radius: 3px;
@@ -240,7 +240,7 @@
           box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
 }
 
-.mars-form-underline.is-pink:focus, .mars-form-underline.is-pink.is-focused, .mars-form-underline.is-pink:active, .mars-form-underline.is-pink.is-actived {
+.mars-form-u.is-pink:focus, .mars-form-u.is-pink.is-focused, .mars-form-u.is-pink:active, .mars-form-u.is-pink.is-actived {
   outline: 0;
   border: transparent;
   border-radius: 3px;
@@ -250,7 +250,7 @@
           box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
 }
 
-.mars-form-underline.is-purple:focus, .mars-form-underline.is-purple.is-focused, .mars-form-underline.is-purple:active, .mars-form-underline.is-purple.is-actived {
+.mars-form-u.is-purple:focus, .mars-form-u.is-purple.is-focused, .mars-form-u.is-purple:active, .mars-form-u.is-purple.is-actived {
   outline: 0;
   border: transparent;
   border-radius: 3px;
@@ -260,7 +260,7 @@
           box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
 }
 
-.mars-form-underline.is-primary:focus, .mars-form-underline.is-primary.is-focused, .mars-form-underline.is-primary:active, .mars-form-underline.is-primary.is-actived {
+.mars-form-u.is-primary:focus, .mars-form-u.is-primary.is-focused, .mars-form-u.is-primary:active, .mars-form-u.is-primary.is-actived {
   outline: 0;
   border: transparent;
   border-radius: 3px;
@@ -270,7 +270,7 @@
           box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
 }
 
-.mars-form-underline.is-success:focus, .mars-form-underline.is-success.is-focused, .mars-form-underline.is-success:active, .mars-form-underline.is-success.is-actived {
+.mars-form-u.is-success:focus, .mars-form-u.is-success.is-focused, .mars-form-u.is-success:active, .mars-form-u.is-success.is-actived {
   outline: 0;
   border: transparent;
   border-radius: 3px;
@@ -280,7 +280,7 @@
           box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
 }
 
-.mars-form-underline.is-warning:focus, .mars-form-underline.is-warning.is-focused, .mars-form-underline.is-warning:active, .mars-form-underline.is-warning.is-actived {
+.mars-form-u.is-warning:focus, .mars-form-u.is-warning.is-focused, .mars-form-u.is-warning:active, .mars-form-u.is-warning.is-actived {
   outline: 0;
   border: transparent;
   border-radius: 3px;
@@ -290,7 +290,7 @@
           box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
 }
 
-.mars-form-underline.is-error:focus, .mars-form-underline.is-error.is-focused, .mars-form-underline.is-error:active, .mars-form-underline.is-error.is-actived {
+.mars-form-u.is-error:focus, .mars-form-u.is-error.is-focused, .mars-form-u.is-error:active, .mars-form-u.is-error.is-actived {
   outline: 0;
   border: transparent;
   border-radius: 3px;
@@ -686,8 +686,8 @@ svg:not(:root) {
     Components : buttons
  ========================================================================== */
 /* default style */
-.mars-button,
-.mars-button-icon {
+.mars-btn,
+.mars-btn-icon {
   width: 10rem;
   font-family: inherit;
   font-size: 1rem;
@@ -728,8 +728,8 @@ svg:not(:root) {
   /* button outlined */
 }
 
-.mars-button.is-blue,
-.mars-button-icon.is-blue {
+.mars-btn.is-blue,
+.mars-btn-icon.is-blue {
   outline: 0;
   background-color: #006ecf;
   border-color: #006ecf;
@@ -737,8 +737,8 @@ svg:not(:root) {
           box-shadow: 0px 10px 25px rgba(0, 110, 207, 0.5);
 }
 
-.mars-button.is-green,
-.mars-button-icon.is-green {
+.mars-btn.is-green,
+.mars-btn-icon.is-green {
   outline: 0;
   background-color: #50c878;
   border-color: #50c878;
@@ -746,8 +746,8 @@ svg:not(:root) {
           box-shadow: 0px 10px 25px rgba(80, 200, 120, 0.5);
 }
 
-.mars-button.is-yellow,
-.mars-button-icon.is-yellow {
+.mars-btn.is-yellow,
+.mars-btn-icon.is-yellow {
   outline: 0;
   background-color: #f8eb00;
   border-color: #f8eb00;
@@ -755,8 +755,8 @@ svg:not(:root) {
           box-shadow: 0px 10px 25px rgba(248, 235, 0, 0.5);
 }
 
-.mars-button.is-pink,
-.mars-button-icon.is-pink {
+.mars-btn.is-pink,
+.mars-btn-icon.is-pink {
   outline: 0;
   background-color: #df96c1;
   border-color: #df96c1;
@@ -764,8 +764,8 @@ svg:not(:root) {
           box-shadow: 0px 10px 25px rgba(223, 150, 193, 0.5);
 }
 
-.mars-button.is-purple,
-.mars-button-icon.is-purple {
+.mars-btn.is-purple,
+.mars-btn-icon.is-purple {
   outline: 0;
   background-color: #a258e8;
   border-color: #a258e8;
@@ -773,8 +773,8 @@ svg:not(:root) {
           box-shadow: 0px 10px 25px rgba(162, 88, 232, 0.5);
 }
 
-.mars-button.is-primary,
-.mars-button-icon.is-primary {
+.mars-btn.is-primary,
+.mars-btn-icon.is-primary {
   outline: 0;
   background-color: #00b0ff;
   border-color: #00b0ff;
@@ -782,8 +782,8 @@ svg:not(:root) {
           box-shadow: 0px 10px 25px rgba(0, 176, 255, 0.5);
 }
 
-.mars-button.is-success,
-.mars-button-icon.is-success {
+.mars-btn.is-success,
+.mars-btn-icon.is-success {
   outline: 0;
   background-color: #00b248;
   border-color: #00b248;
@@ -791,8 +791,8 @@ svg:not(:root) {
           box-shadow: 0px 10px 25px rgba(0, 178, 72, 0.5);
 }
 
-.mars-button.is-warning,
-.mars-button-icon.is-warning {
+.mars-btn.is-warning,
+.mars-btn-icon.is-warning {
   outline: 0;
   background-color: #ff9d3f;
   border-color: #ff9d3f;
@@ -800,8 +800,8 @@ svg:not(:root) {
           box-shadow: 0px 10px 25px rgba(255, 157, 63, 0.5);
 }
 
-.mars-button.is-error,
-.mars-button-icon.is-error {
+.mars-btn.is-error,
+.mars-btn-icon.is-error {
   outline: 0;
   background-color: #ff5722;
   border-color: #ff5722;
@@ -809,103 +809,103 @@ svg:not(:root) {
           box-shadow: 0px 10px 25px rgba(255, 87, 34, 0.5);
 }
 
-.mars-button:focus, .mars-button.is-focused,
-.mars-button-icon:focus,
-.mars-button-icon.is-focused {
+.mars-btn:focus, .mars-btn.is-focused,
+.mars-btn-icon:focus,
+.mars-btn-icon.is-focused {
   outline: 0;
   border: 2px solid rgba(18, 159, 234, 0.5);
 }
 
-.mars-button:active, .mars-button.is-actived, .mars-button.is-pressed,
-.mars-button-icon:active,
-.mars-button-icon.is-actived,
-.mars-button-icon.is-pressed {
+.mars-btn:active, .mars-btn.is-actived, .mars-btn.is-pressed,
+.mars-btn-icon:active,
+.mars-btn-icon.is-actived,
+.mars-btn-icon.is-pressed {
   outline: 0;
   -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.12) inset;
           box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.12) inset;
 }
 
-.mars-button.is-hovered, .mars-button:not(.is-outlined):hover,
-.mars-button-icon.is-hovered,
-.mars-button-icon:not(.is-outlined):hover {
+.mars-btn.is-hovered, .mars-btn:not(.is-outlined):hover,
+.mars-btn-icon.is-hovered,
+.mars-btn-icon:not(.is-outlined):hover {
   opacity: 0.75;
   cursor: pointer;
   border-color: transparent;
 }
 
-.mars-button.is-hovered, .mars-button:hover,
-.mars-button-icon.is-hovered,
-.mars-button-icon:hover {
+.mars-btn.is-hovered, .mars-btn:hover,
+.mars-btn-icon.is-hovered,
+.mars-btn-icon:hover {
   -webkit-box-shadow: 0px 10px 25px rgba(18, 159, 234, 0.85);
           box-shadow: 0px 10px 25px rgba(18, 159, 234, 0.85);
 }
 
-.mars-button.is-hovered.is-blue, .mars-button.is-blue:hover,
-.mars-button-icon.is-hovered.is-blue,
-.mars-button-icon.is-blue:hover {
+.mars-btn.is-hovered.is-blue, .mars-btn.is-blue:hover,
+.mars-btn-icon.is-hovered.is-blue,
+.mars-btn-icon.is-blue:hover {
   -webkit-box-shadow: 0px 10px 25px rgba(0, 110, 207, 0.85);
           box-shadow: 0px 10px 25px rgba(0, 110, 207, 0.85);
 }
 
-.mars-button.is-hovered.is-green, .mars-button.is-green:hover,
-.mars-button-icon.is-hovered.is-green,
-.mars-button-icon.is-green:hover {
+.mars-btn.is-hovered.is-green, .mars-btn.is-green:hover,
+.mars-btn-icon.is-hovered.is-green,
+.mars-btn-icon.is-green:hover {
   -webkit-box-shadow: 0px 10px 25px rgba(80, 200, 120, 0.85);
           box-shadow: 0px 10px 25px rgba(80, 200, 120, 0.85);
 }
 
-.mars-button.is-hovered.is-yellow, .mars-button.is-yellow:hover,
-.mars-button-icon.is-hovered.is-yellow,
-.mars-button-icon.is-yellow:hover {
+.mars-btn.is-hovered.is-yellow, .mars-btn.is-yellow:hover,
+.mars-btn-icon.is-hovered.is-yellow,
+.mars-btn-icon.is-yellow:hover {
   -webkit-box-shadow: 0px 10px 25px rgba(248, 235, 0, 0.85);
           box-shadow: 0px 10px 25px rgba(248, 235, 0, 0.85);
 }
 
-.mars-button.is-hovered.is-pink, .mars-button.is-pink:hover,
-.mars-button-icon.is-hovered.is-pink,
-.mars-button-icon.is-pink:hover {
+.mars-btn.is-hovered.is-pink, .mars-btn.is-pink:hover,
+.mars-btn-icon.is-hovered.is-pink,
+.mars-btn-icon.is-pink:hover {
   -webkit-box-shadow: 0px 10px 25px rgba(223, 150, 193, 0.85);
           box-shadow: 0px 10px 25px rgba(223, 150, 193, 0.85);
 }
 
-.mars-button.is-hovered.is-purple, .mars-button.is-purple:hover,
-.mars-button-icon.is-hovered.is-purple,
-.mars-button-icon.is-purple:hover {
+.mars-btn.is-hovered.is-purple, .mars-btn.is-purple:hover,
+.mars-btn-icon.is-hovered.is-purple,
+.mars-btn-icon.is-purple:hover {
   -webkit-box-shadow: 0px 10px 25px rgba(162, 88, 232, 0.85);
           box-shadow: 0px 10px 25px rgba(162, 88, 232, 0.85);
 }
 
-.mars-button.is-hovered.is-primary, .mars-button.is-primary:hover,
-.mars-button-icon.is-hovered.is-primary,
-.mars-button-icon.is-primary:hover {
+.mars-btn.is-hovered.is-primary, .mars-btn.is-primary:hover,
+.mars-btn-icon.is-hovered.is-primary,
+.mars-btn-icon.is-primary:hover {
   -webkit-box-shadow: 0px 10px 25px rgba(0, 176, 255, 0.85);
           box-shadow: 0px 10px 25px rgba(0, 176, 255, 0.85);
 }
 
-.mars-button.is-hovered.is-success, .mars-button.is-success:hover,
-.mars-button-icon.is-hovered.is-success,
-.mars-button-icon.is-success:hover {
+.mars-btn.is-hovered.is-success, .mars-btn.is-success:hover,
+.mars-btn-icon.is-hovered.is-success,
+.mars-btn-icon.is-success:hover {
   -webkit-box-shadow: 0px 10px 25px rgba(0, 178, 72, 0.85);
           box-shadow: 0px 10px 25px rgba(0, 178, 72, 0.85);
 }
 
-.mars-button.is-hovered.is-warning, .mars-button.is-warning:hover,
-.mars-button-icon.is-hovered.is-warning,
-.mars-button-icon.is-warning:hover {
+.mars-btn.is-hovered.is-warning, .mars-btn.is-warning:hover,
+.mars-btn-icon.is-hovered.is-warning,
+.mars-btn-icon.is-warning:hover {
   -webkit-box-shadow: 0px 10px 25px rgba(255, 157, 63, 0.85);
           box-shadow: 0px 10px 25px rgba(255, 157, 63, 0.85);
 }
 
-.mars-button.is-hovered.is-error, .mars-button.is-error:hover,
-.mars-button-icon.is-hovered.is-error,
-.mars-button-icon.is-error:hover {
+.mars-btn.is-hovered.is-error, .mars-btn.is-error:hover,
+.mars-btn-icon.is-hovered.is-error,
+.mars-btn-icon.is-error:hover {
   -webkit-box-shadow: 0px 10px 25px rgba(255, 87, 34, 0.85);
           box-shadow: 0px 10px 25px rgba(255, 87, 34, 0.85);
 }
 
-.mars-button[disabled], .mars-button.is-disabled,
-.mars-button-icon[disabled],
-.mars-button-icon.is-disabled {
+.mars-btn[disabled], .mars-btn.is-disabled,
+.mars-btn-icon[disabled],
+.mars-btn-icon.is-disabled {
   border: none !important;
   background-image: none !important;
   opacity: 1 !important;
@@ -916,8 +916,8 @@ svg:not(:root) {
   color: #cad2d3 !important;
 }
 
-.mars-button.is-cancel,
-.mars-button-icon.is-cancel {
+.mars-btn.is-cancel,
+.mars-btn-icon.is-cancel {
   background-color: #ffffff !important;
   border: 2px solid #D3D3D3 !important;
   border-radius: 2px;
@@ -928,14 +928,14 @@ svg:not(:root) {
           box-shadow: none;
 }
 
-.mars-button.is-cancel:hover, .mars-button.is-cancel.is-hovered, .mars-button.is-cancel:focus, .mars-button.is-cancel.is-focused, .mars-button.is-cancel:active, .mars-button.is-cancel.is-actived, .mars-button.is-cancel.is-pressed,
-.mars-button-icon.is-cancel:hover,
-.mars-button-icon.is-cancel.is-hovered,
-.mars-button-icon.is-cancel:focus,
-.mars-button-icon.is-cancel.is-focused,
-.mars-button-icon.is-cancel:active,
-.mars-button-icon.is-cancel.is-actived,
-.mars-button-icon.is-cancel.is-pressed {
+.mars-btn.is-cancel:hover, .mars-btn.is-cancel.is-hovered, .mars-btn.is-cancel:focus, .mars-btn.is-cancel.is-focused, .mars-btn.is-cancel:active, .mars-btn.is-cancel.is-actived, .mars-btn.is-cancel.is-pressed,
+.mars-btn-icon.is-cancel:hover,
+.mars-btn-icon.is-cancel.is-hovered,
+.mars-btn-icon.is-cancel:focus,
+.mars-btn-icon.is-cancel.is-focused,
+.mars-btn-icon.is-cancel:active,
+.mars-btn-icon.is-cancel.is-actived,
+.mars-btn-icon.is-cancel.is-pressed {
   opacity: 1 !important;
   border: 2px solid #D3D3D3 !important;
   -webkit-box-shadow: none;
@@ -943,8 +943,8 @@ svg:not(:root) {
   outline: 0;
 }
 
-.mars-button.is-submit,
-.mars-button-icon.is-submit {
+.mars-btn.is-submit,
+.mars-btn-icon.is-submit {
   background-color: #005CFF !important;
   border: 2px solid #005CFF !important;
   color: #ffffff;
@@ -952,14 +952,14 @@ svg:not(:root) {
           box-shadow: none;
 }
 
-.mars-button.is-submit:hover, .mars-button.is-submit.is-hovered, .mars-button.is-submit:focus, .mars-button.is-submit.is-focused, .mars-button.is-submit:active, .mars-button.is-submit.is-actived, .mars-button.is-submit.is-pressed,
-.mars-button-icon.is-submit:hover,
-.mars-button-icon.is-submit.is-hovered,
-.mars-button-icon.is-submit:focus,
-.mars-button-icon.is-submit.is-focused,
-.mars-button-icon.is-submit:active,
-.mars-button-icon.is-submit.is-actived,
-.mars-button-icon.is-submit.is-pressed {
+.mars-btn.is-submit:hover, .mars-btn.is-submit.is-hovered, .mars-btn.is-submit:focus, .mars-btn.is-submit.is-focused, .mars-btn.is-submit:active, .mars-btn.is-submit.is-actived, .mars-btn.is-submit.is-pressed,
+.mars-btn-icon.is-submit:hover,
+.mars-btn-icon.is-submit.is-hovered,
+.mars-btn-icon.is-submit:focus,
+.mars-btn-icon.is-submit.is-focused,
+.mars-btn-icon.is-submit:active,
+.mars-btn-icon.is-submit.is-actived,
+.mars-btn-icon.is-submit.is-pressed {
   opacity: 1 !important;
   border: 2px solid #005CFF !important;
   -webkit-box-shadow: none;
@@ -967,8 +967,8 @@ svg:not(:root) {
   outline: 0;
 }
 
-.mars-button.is-gradient,
-.mars-button-icon.is-gradient {
+.mars-btn.is-gradient,
+.mars-btn-icon.is-gradient {
   border: none;
   background-image: -webkit-gradient(linear, left top, right top, from(#1233ea), to(#129fea));
   background-image: linear-gradient(90deg, #1233ea, #129fea);
@@ -976,88 +976,88 @@ svg:not(:root) {
           box-shadow: 0px 10px 25px rgba(18, 159, 234, 0.65);
 }
 
-.mars-button.is-gradient.is-blue,
-.mars-button-icon.is-gradient.is-blue {
+.mars-btn.is-gradient.is-blue,
+.mars-btn-icon.is-gradient.is-blue {
   background-image: -webkit-gradient(linear, left top, right top, from(#002a50), to(#006ecf));
   background-image: linear-gradient(90deg, #002a50, #006ecf);
   -webkit-box-shadow: 0px 10px 25px rgba(0, 110, 207, 0.65);
           box-shadow: 0px 10px 25px rgba(0, 110, 207, 0.65);
 }
 
-.mars-button.is-gradient.is-green,
-.mars-button-icon.is-gradient.is-green {
+.mars-btn.is-gradient.is-green,
+.mars-btn-icon.is-gradient.is-green {
   background-image: -webkit-gradient(linear, left top, right top, from(#319b54), to(#50c878));
   background-image: linear-gradient(90deg, #319b54, #50c878);
   -webkit-box-shadow: 0px 10px 25px rgba(80, 200, 120, 0.65);
           box-shadow: 0px 10px 25px rgba(80, 200, 120, 0.65);
 }
 
-.mars-button.is-gradient.is-yellow,
-.mars-button-icon.is-gradient.is-yellow {
+.mars-btn.is-gradient.is-yellow,
+.mars-btn-icon.is-gradient.is-yellow {
   background-image: -webkit-gradient(linear, left top, right top, from(#aca300), to(#f8eb00));
   background-image: linear-gradient(90deg, #aca300, #f8eb00);
   -webkit-box-shadow: 0px 10px 25px rgba(248, 235, 0, 0.65);
           box-shadow: 0px 10px 25px rgba(248, 235, 0, 0.65);
 }
 
-.mars-button.is-gradient.is-pink,
-.mars-button-icon.is-gradient.is-pink {
+.mars-btn.is-gradient.is-pink,
+.mars-btn-icon.is-gradient.is-pink {
   background-image: -webkit-gradient(linear, left top, right top, from(#c74792), to(#df96c1));
   background-image: linear-gradient(90deg, #c74792, #df96c1);
   -webkit-box-shadow: 0px 10px 25px rgba(223, 150, 193, 0.65);
           box-shadow: 0px 10px 25px rgba(223, 150, 193, 0.65);
 }
 
-.mars-button.is-gradient.is-purple,
-.mars-button-icon.is-gradient.is-purple {
+.mars-btn.is-gradient.is-purple,
+.mars-btn-icon.is-gradient.is-purple {
   background-image: -webkit-gradient(linear, left top, right top, from(#6217a9), to(#a258e8));
   background-image: linear-gradient(90deg, #6217a9, #a258e8);
   -webkit-box-shadow: 0px 10px 25px rgba(162, 88, 232, 0.65);
           box-shadow: 0px 10px 25px rgba(162, 88, 232, 0.65);
 }
 
-.mars-button.is-gradient.is-primary,
-.mars-button-icon.is-gradient.is-primary {
+.mars-btn.is-gradient.is-primary,
+.mars-btn-icon.is-gradient.is-primary {
   background-image: -webkit-gradient(linear, left top, right top, from(#0031ff), to(#00b0ff));
   background-image: linear-gradient(90deg, #0031ff, #00b0ff);
   -webkit-box-shadow: 0px 10px 25px rgba(0, 176, 255, 0.65);
           box-shadow: 0px 10px 25px rgba(0, 176, 255, 0.65);
 }
 
-.mars-button.is-gradient.is-success,
-.mars-button-icon.is-gradient.is-success {
+.mars-btn.is-gradient.is-success,
+.mars-btn-icon.is-gradient.is-success {
   background-image: -webkit-gradient(linear, left top, right top, from(#006629), to(#00b248));
   background-image: linear-gradient(90deg, #006629, #00b248);
   -webkit-box-shadow: 0px 10px 25px rgba(0, 178, 72, 0.65);
           box-shadow: 0px 10px 25px rgba(0, 178, 72, 0.65);
 }
 
-.mars-button.is-gradient.is-warning,
-.mars-button-icon.is-gradient.is-warning {
+.mars-btn.is-gradient.is-warning,
+.mars-btn-icon.is-gradient.is-warning {
   background-image: -webkit-gradient(linear, left top, right top, from(#f27600), to(#ff9d3f));
   background-image: linear-gradient(90deg, #f27600, #ff9d3f);
   -webkit-box-shadow: 0px 10px 25px rgba(255, 157, 63, 0.65);
           box-shadow: 0px 10px 25px rgba(255, 157, 63, 0.65);
 }
 
-.mars-button.is-gradient.is-error,
-.mars-button-icon.is-gradient.is-error {
+.mars-btn.is-gradient.is-error,
+.mars-btn-icon.is-gradient.is-error {
   background-image: -webkit-gradient(linear, left top, right top, from(#d53300), to(#ff5722));
   background-image: linear-gradient(90deg, #d53300, #ff5722);
   -webkit-box-shadow: 0px 10px 25px rgba(255, 87, 34, 0.65);
           box-shadow: 0px 10px 25px rgba(255, 87, 34, 0.65);
 }
 
-.mars-button.is-gradient.is-cancel, .mars-button.is-gradient.is-submit,
-.mars-button-icon.is-gradient.is-cancel,
-.mars-button-icon.is-gradient.is-submit {
+.mars-btn.is-gradient.is-cancel, .mars-btn.is-gradient.is-submit,
+.mars-btn-icon.is-gradient.is-cancel,
+.mars-btn-icon.is-gradient.is-submit {
   background-image: none !important;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
-.mars-button.is-anim,
-.mars-button-icon.is-anim {
+.mars-btn.is-anim,
+.mars-btn-icon.is-anim {
   -webkit-animation: bgAnim 3s linear infinite;
           animation: bgAnim 3s linear infinite;
   background-size: 400% 400% !important;
@@ -1081,43 +1081,43 @@ svg:not(:root) {
   }
 }
 
-.mars-button.is-small,
-.mars-button-icon.is-small {
+.mars-btn.is-small,
+.mars-btn-icon.is-small {
   font-size: 0.75rem;
 }
 
-.mars-button.is-medium,
-.mars-button-icon.is-medium {
+.mars-btn.is-medium,
+.mars-btn-icon.is-medium {
   font-size: 1.25rem;
 }
 
-.mars-button.is-normal,
-.mars-button-icon.is-normal {
+.mars-btn.is-normal,
+.mars-btn-icon.is-normal {
   font-size: 1rem;
 }
 
-.mars-button.is-large,
-.mars-button-icon.is-large {
+.mars-btn.is-large,
+.mars-btn-icon.is-large {
   font-size: 1.5rem;
 }
 
-.mars-button.is-nor-rounded,
-.mars-button-icon.is-nor-rounded {
+.mars-btn.is-nor-rounded,
+.mars-btn-icon.is-nor-rounded {
   border-radius: 4px;
 }
 
-.mars-button.is-md-rounded,
-.mars-button-icon.is-md-rounded {
+.mars-btn.is-md-rounded,
+.mars-btn-icon.is-md-rounded {
   border-radius: 1em;
 }
 
-.mars-button.is-lg-rounded,
-.mars-button-icon.is-lg-rounded {
+.mars-btn.is-lg-rounded,
+.mars-btn-icon.is-lg-rounded {
   border-radius: 2em;
 }
 
-.mars-button.is-outlined,
-.mars-button-icon.is-outlined {
+.mars-btn.is-outlined,
+.mars-btn-icon.is-outlined {
   opacity: 1;
   outline: 2px solid #129fea;
   border-width: 2px;
@@ -1132,8 +1132,8 @@ svg:not(:root) {
   /* button outlined color */
 }
 
-.mars-button.is-outlined.is-outlined.is-blue,
-.mars-button-icon.is-outlined.is-outlined.is-blue {
+.mars-btn.is-outlined.is-outlined.is-blue,
+.mars-btn-icon.is-outlined.is-outlined.is-blue {
   outline: 2px solid #006ecf;
   color: #006ecf;
   border: none;
@@ -1142,8 +1142,8 @@ svg:not(:root) {
   opacity: 1 !important;
 }
 
-.mars-button.is-outlined.is-outlined.is-green,
-.mars-button-icon.is-outlined.is-outlined.is-green {
+.mars-btn.is-outlined.is-outlined.is-green,
+.mars-btn-icon.is-outlined.is-outlined.is-green {
   outline: 2px solid #50c878;
   color: #50c878;
   border: none;
@@ -1152,8 +1152,8 @@ svg:not(:root) {
   opacity: 1 !important;
 }
 
-.mars-button.is-outlined.is-outlined.is-yellow,
-.mars-button-icon.is-outlined.is-outlined.is-yellow {
+.mars-btn.is-outlined.is-outlined.is-yellow,
+.mars-btn-icon.is-outlined.is-outlined.is-yellow {
   outline: 2px solid #f8eb00;
   color: #f8eb00;
   border: none;
@@ -1162,8 +1162,8 @@ svg:not(:root) {
   opacity: 1 !important;
 }
 
-.mars-button.is-outlined.is-outlined.is-pink,
-.mars-button-icon.is-outlined.is-outlined.is-pink {
+.mars-btn.is-outlined.is-outlined.is-pink,
+.mars-btn-icon.is-outlined.is-outlined.is-pink {
   outline: 2px solid #df96c1;
   color: #df96c1;
   border: none;
@@ -1172,8 +1172,8 @@ svg:not(:root) {
   opacity: 1 !important;
 }
 
-.mars-button.is-outlined.is-outlined.is-purple,
-.mars-button-icon.is-outlined.is-outlined.is-purple {
+.mars-btn.is-outlined.is-outlined.is-purple,
+.mars-btn-icon.is-outlined.is-outlined.is-purple {
   outline: 2px solid #a258e8;
   color: #a258e8;
   border: none;
@@ -1182,8 +1182,8 @@ svg:not(:root) {
   opacity: 1 !important;
 }
 
-.mars-button.is-outlined.is-outlined.is-primary,
-.mars-button-icon.is-outlined.is-outlined.is-primary {
+.mars-btn.is-outlined.is-outlined.is-primary,
+.mars-btn-icon.is-outlined.is-outlined.is-primary {
   outline: 2px solid #00b0ff;
   color: #00b0ff;
   border: none;
@@ -1192,8 +1192,8 @@ svg:not(:root) {
   opacity: 1 !important;
 }
 
-.mars-button.is-outlined.is-outlined.is-success,
-.mars-button-icon.is-outlined.is-outlined.is-success {
+.mars-btn.is-outlined.is-outlined.is-success,
+.mars-btn-icon.is-outlined.is-outlined.is-success {
   outline: 2px solid #00b248;
   color: #00b248;
   border: none;
@@ -1202,8 +1202,8 @@ svg:not(:root) {
   opacity: 1 !important;
 }
 
-.mars-button.is-outlined.is-outlined.is-warning,
-.mars-button-icon.is-outlined.is-outlined.is-warning {
+.mars-btn.is-outlined.is-outlined.is-warning,
+.mars-btn-icon.is-outlined.is-outlined.is-warning {
   outline: 2px solid #ff9d3f;
   color: #ff9d3f;
   border: none;
@@ -1212,8 +1212,8 @@ svg:not(:root) {
   opacity: 1 !important;
 }
 
-.mars-button.is-outlined.is-outlined.is-error,
-.mars-button-icon.is-outlined.is-outlined.is-error {
+.mars-btn.is-outlined.is-outlined.is-error,
+.mars-btn-icon.is-outlined.is-outlined.is-error {
   outline: 2px solid #ff5722;
   color: #ff5722;
   border: none;
@@ -1222,7 +1222,7 @@ svg:not(:root) {
   opacity: 1 !important;
 }
 
-.mars-button-icon {
+.mars-btn-icon {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -1240,13 +1240,13 @@ svg:not(:root) {
   /* icon button icon size */
 }
 
-.mars-button-icon.icon, .mars-button-icon.icon.is-small, .mars-button-icon.icon.is-normal, .mars-button-icon.icon.is-medium, .mars-button-icon.icon.is-large {
+.mars-btn-icon.icon, .mars-btn-icon.icon.is-small, .mars-btn-icon.icon.is-normal, .mars-btn-icon.icon.is-medium, .mars-btn-icon.icon.is-large {
   width: 1.5em;
   height: 1.5em;
 }
 
 /* button loading */
-.mars-button.is-loading {
+.mars-btn.is-loading {
   /* loading button */
   cursor: default;
   color: transparent !important;
@@ -1289,7 +1289,7 @@ svg:not(:root) {
   }
 }
 
-.mars-button.is-loading::after {
+.mars-btn.is-loading::after {
   -webkit-animation: spinAround 500ms infinite linear;
   animation: spinAround 500ms infinite linear;
   border: 2px solid #dbdbdb;

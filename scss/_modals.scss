@@ -70,7 +70,7 @@ $modal-title-margin-bottom:                               10px !default;
     box-sizing: border-box !important;
     
 
-    & a:not(.mars-button) {
+    & a:not(.mars-btn) {
         color: $current;
         text-decoration: $modal-text-decoration;
     }
