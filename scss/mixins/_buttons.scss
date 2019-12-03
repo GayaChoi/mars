@@ -75,9 +75,9 @@
     $box-shadow: $button-none-box-shadow,
     $opacity: 1
 ) {
-    outline: $outline;
+    outline: $outline !important;
     color: $color;
-    border: $border;
+    border: $border !important;
     box-shadow: $box-shadow;
     opacity: $opacity !important;
 }

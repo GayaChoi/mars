@@ -13,12 +13,12 @@
 .mars-form-radio {
     @include box();
 
-    & > .is-checked {
+    & > .checked {
         @include check(50%);
     }
 
     
-    & > .radio-check-icon {
+    & > .check-icon {
         @include checkIcon();        
       
         & > svg {
@@ -53,19 +53,19 @@
         }
 
         &:disabled 
-          + .radio-check-icon svg {
+          + .check-icon svg {
               fill: $input-box-disabled-fill;
               cursor: not-allowed;
         }
     }
 
     @each $name in $color-names {
-        &.is-#{$name} > input:not(:disabled):hover, 
-        &.is-#{$name} > input:not(:disabled):checked {
+        &.border-#{$name} > input:not(:disabled):hover, 
+        &.border-#{$name} > input:not(:disabled):checked {
             border-color: map-get($colors,#{$name});
         }
 
-        &.is-#{$name} > .radio-check-icon svg {               
+        &.border-#{$name} > .check-icon svg {               
              fill: map-get($colors,#{$name});
         }
     }

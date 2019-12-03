@@ -13,11 +13,11 @@
 .mars-form-checkbox {
     @include box();
 
-    & > .is-checked {
+    & > .checked {
         @include check(3px);
     }
 
-    & > .checkbox-check-icon {
+    & > .check-icon {
         @include checkIcon();
         color: $white;
         & > svg {
@@ -31,18 +31,18 @@
         border-color: $default; 
     }
 
-    & > input:disabled + .checkbox-check-icon svg {
+    & > input:disabled + .check-icon svg {
         fill: $input-box-disabled-fill;
         cursor: not-allowed;
     }
     
     /* colors checked hovered  */
     @each $name in $color-names {
-        &.is-#{$name} > input:not(:disabled):hover {
+        &.bg-#{$name} > input:not(:disabled):hover {
             border-color: map-get($colors,#{$name});
         }
 
-        &.is-#{$name} > input:checked {
+        &.bg-#{$name} > input:checked {
             background-color: map-get($colors,#{$name});               
             border-color: map-get($colors,#{$name});
         }

@@ -47,9 +47,6 @@ $size: (
     Components : input
  ========================================================================== */
 
-
-
-
  .mars-form {
     width: $input-width;
     max-width: $input-width;
@@ -70,69 +67,81 @@ $size: (
 
 
     /* default active, focus */
-    &:active, &.is-actived, 
-    &:focus, &.is-focused {
+    &:active, &.actived, 
+    &:focus, &.focused {
         border-color: $default;      
     }
 
     /* default disabled & readonly type */
-    &.is-disabled {
+    &.disabled {
         @include input-disabled();
     }
 
-    &.is-readonly {
+    &.readonly {
         @include input-readonly();
     }
 
     /* color actived, focused */
     @each $name in $color-names {
-        &.is-#{$name} {
-           &:focus, &.is-focused,
-            &:active, &.is-actived {
+        &.border-#{$name} {
+           &:focus, &.focused,
+            &:active, &.actived {
               border-color: map-get($colors, #{$name});   
            }
         }          
     }
 
     /* rounded */
-    &.is-nor-rounded {
+    &.nor-rounded {
         border-radius: $input-radius;
     }
 
-    &.is-md-rounded {
+    &.md-rounded {
         border-radius: $input-radius-md;
     }
 
-    &.is-lg-rounded {
+    &.lg-rounded {
         border-radius: $input-radius-lg;
     }
 
     /* size */
     @each $value in $sizes {
-        &.is-size-#{$value} {
+        &.w-#{$value} {
             width: map-get($size, #{$value}) !important;
         }    
     }
-} 
 
-/* input underline */
-.mars-form-u {
-    width: $input-width;
-    color: $black;  
-    font-family: $input-font-family;
-    font-style: $input-font-style;
-    font-weight: $input-font-weight;
-    font-size: $input-font-size;
-    display: inline-block;
-    padding: $input-padding-vertical $input-padding-horizontal;
-    border: 1px solid $transparent;
-    background: $white;
-    vertical-align: middle;
-    box-sizing: $input-border-box;
-    box-shadow: rgba(0,0,0,0.1) $input-box-shadow-size;
-    outline: $input-outline;
-    margin-bottom: $input-margin-bottom;
+    /* input, textarea, select disabled & readonly type */
+    &.input,
+    &.textarea,
+    &.select {
+        &[disabled] {
+            @include input-disabled();
+        }
 
+        &[readonly] {
+            @include input-readonly();
+        }
+    }
+
+    &.input {
+        &[type="color"] {
+            padding: 0.2em 0.5em;
+        }
+    }
+
+    /* textarea */
+    &.textarea {
+        height: calc(2.5rem * 5);  
+    }
+
+    /* label */
+    &.label {
+        margin: 0.5em 0.75em 0.5em;
+    }
+
+    /* input underline */
+&.u {
     border: 2px solid $transparent;
     border-radius: $input-radius !important;
     border-width: $input-border-width 0px;
@@ -141,59 +150,34 @@ $size: (
     box-shadow: $input-box-shadow-size rgba(0, 0, 0, 0.1);
     transition: $transition;
     
-
     /* size */
     @each $value in $sizes {
-        &.is-size-#{$value} {
+        &.w-#{$value} {
             width: map-get($size, #{$value}) !important;
         }    
     }
 
     /* underline default color focus,active */
-    &:active, &.is-actived, 
-    &:focus, &.is-focused {
+    &:active, &.actived, 
+    &:focus, &.focused {
         @include input-underline($default);
     } 
 
     /* underline color active, focus */
     @each $name in $color-names {
-        &.is-#{$name} {
+        &.border-#{$name} {
            &:focus, &.is-focused, 
            &:active, &.is-actived {
                @include input-underline(map-get($colors,#{$name}));   
            }
         }          
     }
-}
+  }
+} 
 
-/* input, textarea, select disabled & readonly type */
-input.mars-form,
-textarea.mars-form,
-select.mars-form {
-    &[disabled] {
-        @include input-disabled();
-    }
 
-    &[readonly] {
-        @include input-readonly();
-    }
-}
 
-input.mars-form {
-    &[type="color"] {
-        padding: 0.2em 0.5em;
-    }
-}
 
-/* textarea */
-textarea.mars-form {
-    height: calc(2.5rem * 5);  
-}
-
-/* label */
-label.forms-label {
-    margin: 0.5em 0.75em 0.5em;
-}
 
 
 

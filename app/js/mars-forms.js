@@ -14,17 +14,17 @@ var func = {
         checkbox: {
             check: 
               function(index) {
-                 if ($('.mars-form-checkbox .is-checked').eq(index).is(':checked') || $('.mars-form-checkbox .is-checked').eq(index).is(':disabled')) {
-                      $('.checkbox-check-icon').eq(index).html(icon.checkbox);
+                 if ($('.mars-form-checkbox .checked').eq(index).is(':checked') || $('.mars-form-checkbox .checked').eq(index).is(':disabled')) {
+                      $('.mars-form-checkbox .check-icon').eq(index).html(icon.checkbox);
                   }       
               },
             
             click: 
               function(index) {
-                if ($('.mars-form-checkbox .is-checked').eq(index).is(':checked')) {
-                    $('.checkbox-check-icon').eq(index).html(icon.checkbox); 
+                if ($('.mars-form-checkbox .checked').eq(index).is(':checked')) {
+                    $('.mars-form-checkbox .check-icon').eq(index).html(icon.checkbox); 
                 } else {
-                    $('.checkbox-check-icon').eq(index).html('');
+                    $('.mars-form-checkbox .check-icon').eq(index).html('');
                 }  
             }
         },
@@ -32,17 +32,17 @@ var func = {
         radio: {
             check: 
               function(index) {
-                 if ($('.mars-form-radio .is-checked').eq(index).is(':checked') || $('.mars-form-radio .is-checked').eq(index).is(':disabled')) {
-                    $('.radio-check-icon').eq(index).html(icon.radio);
+                 if ($('.mars-form-radio .checked').eq(index).is(':checked') || $('.mars-form-radio .checked').eq(index).is(':disabled')) {
+                    $('.mars-form-radio .check-icon').eq(index).html(icon.radio);
                  }  
               },
             
             click: 
               function(index) {
-                if ($('.mars-form-radio .is-checked').eq(index).is(':checked')) {
-                  $('.radio-check-icon').eq(index).html(icon.radio); 
+                if ($('.mars-form-radio .checked').eq(index).is(':checked')) {
+                  $('.mars-form-radio .check-icon').eq(index).html(icon.radio); 
                 } else {
-                  $('.radio-check-icon').eq(index).html('');
+                  $('.mars-form-radio .check-icon').eq(index).html('');
                 }  
             }
         },
@@ -50,21 +50,21 @@ var func = {
 
 
 /* checkbox */
-$('.mars-form-checkbox .is-checked').each(function(index) { 
+$('.mars-form-checkbox .checked').each(function(index) { 
     /* 체크가 되었는 지 확인 */
     func.checkbox.check(index);
     
-    $('.mars-form-checkbox .is-checked').eq(index).on('click',function() {
+    $('.mars-form-checkbox .checked').eq(index).on('click',function() {
         func.checkbox.click(index);
     });
 });
 
 /* radio */
-$('.mars-form-radio .is-checked').each(function(index) { 
+$('.mars-form-radio .checked').each(function(index) { 
     /* 체크가 되었는 지 확인 */
     func.radio.check(index);
 
-    $('.mars-form-radio .is-checked').eq(index).on('click',function() {
+    $('.mars-form-radio .checked').eq(index).on('click',function() {
         func.radio.click(index);
     });
 });

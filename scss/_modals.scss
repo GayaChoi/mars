@@ -114,15 +114,15 @@ $modal-title-margin-bottom:                               10px !default;
         top: $modal-pos-2-top;
 
         /* modal delete size */
-        &.is-small {
+        &.sm {
             @include delete-sizes($modal-delete-small); 
         }
 
-        &.is-medium {
+        &.md {
             @include delete-sizes($modal-delete-medium); 
         }
 
-        &.is-large {
+        &.lg {
             @include delete-sizes($modal-delete-large); 
         }
 
@@ -149,7 +149,7 @@ $modal-title-margin-bottom:                               10px !default;
         }
     }
 
-    & .is-title {
+    & .title {
         display: $modal-display-block;
         font-size: 22px;
         font-weight: $modal-font-weight;
@@ -160,7 +160,7 @@ $modal-title-margin-bottom:                               10px !default;
     
     /* color */
     @each $name in $color-names {
-        & .is-title.is-#{$name} {
+        & .title.bg-#{$name} {
             color: map-get($colors, #{$name});
         }
     }
