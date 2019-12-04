@@ -83,7 +83,7 @@ $size: (
 
     /* color actived, focused */
     @each $name in $color-names {
-        &.border-#{$name} {
+        &.#{$name} {
            &:focus, &.focused,
             &:active, &.actived {
               border-color: map-get($colors, #{$name});   
@@ -92,15 +92,15 @@ $size: (
     }
 
     /* rounded */
-    &.nor-rounded {
+    &.rounded-nor {
         border-radius: $input-radius;
     }
 
-    &.md-rounded {
+    &.rounded-md {
         border-radius: $input-radius-md;
     }
 
-    &.lg-rounded {
+    &.rounded-lg {
         border-radius: $input-radius-lg;
     }
 
@@ -165,9 +165,9 @@ $size: (
 
     /* underline color active, focus */
     @each $name in $color-names {
-        &.border-#{$name} {
-           &:focus, &.is-focused, 
-           &:active, &.is-actived {
+        &.#{$name} {
+           &:focus, &.focused, 
+           &:active, &.actived {
                @include input-underline(map-get($colors,#{$name}));   
            }
         }          

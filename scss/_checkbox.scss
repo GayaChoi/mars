@@ -38,11 +38,11 @@
     
     /* colors checked hovered  */
     @each $name in $color-names {
-        &.bg-#{$name} > input:not(:disabled):hover {
+        &.#{$name} > input:not(:disabled):hover {
             border-color: map-get($colors,#{$name});
         }
 
-        &.bg-#{$name} > input:checked {
+        &.#{$name} > input:checked {
             background-color: map-get($colors,#{$name});               
             border-color: map-get($colors,#{$name});
         }

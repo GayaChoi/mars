@@ -160,7 +160,7 @@ $modal-title-margin-bottom:                               10px !default;
     
     /* color */
     @each $name in $color-names {
-        & .title.bg-#{$name} {
+        & .title.#{$name} {
             color: map-get($colors, #{$name});
         }
     }

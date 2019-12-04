@@ -19,10 +19,10 @@ $button-margin-bottom:                                      30px !default;
 
 /* buttons size maps */
 /* buttons size variable */
-$button-small: 0.75rem !default;
-$button-medium: 1.25rem !default;
-$button-normal: 1rem !default;
-$button-large: 1.5rem !default;
+$button-small:                                              0.75rem !default;
+$button-medium:                                             1.25rem !default;
+$button-normal:                                             1rem !default;
+$button-large:                                              1.5rem !default;
 
 
 $sizes: "sm","md","nor","lg";
@@ -61,9 +61,9 @@ $size: (
     box-shadow: $button-box-shadow-size rgba($default, 0.5);
     box-sizing: border-box !important;
 
-    /* button color */
+    /* buttons color */
     @each $name in $color-names {
-        &.bg-#{$name} {
+        &.#{$name} {
             @include button-color(map-get($colors,#{$name})); 
         }
     }
@@ -100,8 +100,8 @@ $size: (
       
     /* color hovered */
     @each $name in $color-names {
-        &.hovered.bg-#{$name},
-        &.bg-#{$name}:hover {
+        &.hovered.#{$name},
+        &.#{$name}:hover {
            box-shadow: $button-box-shadow-size rgba(map-get($colors,#{$name}), 0.85);
         }
     }
@@ -158,7 +158,7 @@ $size: (
         box-shadow: $button-box-shadow-size rgba($default, 0.65);  
         
         @each $name in $color-names {
-            &.bg-#{$name} {   
+            &.#{$name} {   
                 background-image: linear-gradient(90deg,map-get($gradient-colors,#{$name}),map-get($colors,#{$name}));
                 box-shadow: $button-box-shadow-size rgba(map-get($colors,#{$name}),0.65);
             } 

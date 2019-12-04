@@ -75,51 +75,51 @@
   opacity: 1 !important;
 }
 
-.mars-form.border-blue:focus, .mars-form.border-blue.focused, .mars-form.border-blue:active, .mars-form.border-blue.actived {
+.mars-form.blue:focus, .mars-form.blue.focused, .mars-form.blue:active, .mars-form.blue.actived {
   border-color: #006ecf;
 }
 
-.mars-form.border-green:focus, .mars-form.border-green.focused, .mars-form.border-green:active, .mars-form.border-green.actived {
+.mars-form.green:focus, .mars-form.green.focused, .mars-form.green:active, .mars-form.green.actived {
   border-color: #50c878;
 }
 
-.mars-form.border-yellow:focus, .mars-form.border-yellow.focused, .mars-form.border-yellow:active, .mars-form.border-yellow.actived {
+.mars-form.yellow:focus, .mars-form.yellow.focused, .mars-form.yellow:active, .mars-form.yellow.actived {
   border-color: #f8eb00;
 }
 
-.mars-form.border-pink:focus, .mars-form.border-pink.focused, .mars-form.border-pink:active, .mars-form.border-pink.actived {
+.mars-form.pink:focus, .mars-form.pink.focused, .mars-form.pink:active, .mars-form.pink.actived {
   border-color: #df96c1;
 }
 
-.mars-form.border-purple:focus, .mars-form.border-purple.focused, .mars-form.border-purple:active, .mars-form.border-purple.actived {
+.mars-form.purple:focus, .mars-form.purple.focused, .mars-form.purple:active, .mars-form.purple.actived {
   border-color: #a258e8;
 }
 
-.mars-form.border-primary:focus, .mars-form.border-primary.focused, .mars-form.border-primary:active, .mars-form.border-primary.actived {
+.mars-form.primary:focus, .mars-form.primary.focused, .mars-form.primary:active, .mars-form.primary.actived {
   border-color: #00b0ff;
 }
 
-.mars-form.border-success:focus, .mars-form.border-success.focused, .mars-form.border-success:active, .mars-form.border-success.actived {
+.mars-form.success:focus, .mars-form.success.focused, .mars-form.success:active, .mars-form.success.actived {
   border-color: #00b248;
 }
 
-.mars-form.border-warning:focus, .mars-form.border-warning.focused, .mars-form.border-warning:active, .mars-form.border-warning.actived {
+.mars-form.warning:focus, .mars-form.warning.focused, .mars-form.warning:active, .mars-form.warning.actived {
   border-color: #ff9d3f;
 }
 
-.mars-form.border-error:focus, .mars-form.border-error.focused, .mars-form.border-error:active, .mars-form.border-error.actived {
+.mars-form.error:focus, .mars-form.error.focused, .mars-form.error:active, .mars-form.error.actived {
   border-color: #ff5722;
 }
 
-.mars-form.nor-rounded {
+.mars-form.rounded-nor {
   border-radius: 3px;
 }
 
-.mars-form.md-rounded {
+.mars-form.rounded-md {
   border-radius: 0.5em;
 }
 
-.mars-form.lg-rounded {
+.mars-form.rounded-lg {
   border-radius: 2em;
 }
 
@@ -223,7 +223,7 @@
           box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
 }
 
-.mars-form.u.border-blue:focus, .mars-form.u.border-blue.is-focused, .mars-form.u.border-blue:active, .mars-form.u.border-blue.is-actived {
+.mars-form.u.blue:focus, .mars-form.u.blue.focused, .mars-form.u.blue:active, .mars-form.u.blue.actived {
   outline: 0;
   border: transparent;
   border-radius: 3px;
@@ -233,7 +233,7 @@
           box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
 }
 
-.mars-form.u.border-green:focus, .mars-form.u.border-green.is-focused, .mars-form.u.border-green:active, .mars-form.u.border-green.is-actived {
+.mars-form.u.green:focus, .mars-form.u.green.focused, .mars-form.u.green:active, .mars-form.u.green.actived {
   outline: 0;
   border: transparent;
   border-radius: 3px;
@@ -243,7 +243,7 @@
           box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
 }
 
-.mars-form.u.border-yellow:focus, .mars-form.u.border-yellow.is-focused, .mars-form.u.border-yellow:active, .mars-form.u.border-yellow.is-actived {
+.mars-form.u.yellow:focus, .mars-form.u.yellow.focused, .mars-form.u.yellow:active, .mars-form.u.yellow.actived {
   outline: 0;
   border: transparent;
   border-radius: 3px;
@@ -253,7 +253,7 @@
           box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
 }
 
-.mars-form.u.border-pink:focus, .mars-form.u.border-pink.is-focused, .mars-form.u.border-pink:active, .mars-form.u.border-pink.is-actived {
+.mars-form.u.pink:focus, .mars-form.u.pink.focused, .mars-form.u.pink:active, .mars-form.u.pink.actived {
   outline: 0;
   border: transparent;
   border-radius: 3px;
@@ -263,7 +263,7 @@
           box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
 }
 
-.mars-form.u.border-purple:focus, .mars-form.u.border-purple.is-focused, .mars-form.u.border-purple:active, .mars-form.u.border-purple.is-actived {
+.mars-form.u.purple:focus, .mars-form.u.purple.focused, .mars-form.u.purple:active, .mars-form.u.purple.actived {
   outline: 0;
   border: transparent;
   border-radius: 3px;
@@ -273,7 +273,7 @@
           box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
 }
 
-.mars-form.u.border-primary:focus, .mars-form.u.border-primary.is-focused, .mars-form.u.border-primary:active, .mars-form.u.border-primary.is-actived {
+.mars-form.u.primary:focus, .mars-form.u.primary.focused, .mars-form.u.primary:active, .mars-form.u.primary.actived {
   outline: 0;
   border: transparent;
   border-radius: 3px;
@@ -283,7 +283,7 @@
           box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
 }
 
-.mars-form.u.border-success:focus, .mars-form.u.border-success.is-focused, .mars-form.u.border-success:active, .mars-form.u.border-success.is-actived {
+.mars-form.u.success:focus, .mars-form.u.success.focused, .mars-form.u.success:active, .mars-form.u.success.actived {
   outline: 0;
   border: transparent;
   border-radius: 3px;
@@ -293,7 +293,7 @@
           box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
 }
 
-.mars-form.u.border-warning:focus, .mars-form.u.border-warning.is-focused, .mars-form.u.border-warning:active, .mars-form.u.border-warning.is-actived {
+.mars-form.u.warning:focus, .mars-form.u.warning.focused, .mars-form.u.warning:active, .mars-form.u.warning.actived {
   outline: 0;
   border: transparent;
   border-radius: 3px;
@@ -303,7 +303,7 @@
           box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
 }
 
-.mars-form.u.border-error:focus, .mars-form.u.border-error.is-focused, .mars-form.u.border-error:active, .mars-form.u.border-error.is-actived {
+.mars-form.u.error:focus, .mars-form.u.error.focused, .mars-form.u.error:active, .mars-form.u.error.actived {
   outline: 0;
   border: transparent;
   border-radius: 3px;
@@ -370,83 +370,83 @@
   cursor: not-allowed;
 }
 
-.mars-form-checkbox.bg-blue > input:not(:disabled):hover {
+.mars-form-checkbox.blue > input:not(:disabled):hover {
   border-color: #006ecf;
 }
 
-.mars-form-checkbox.bg-blue > input:checked {
+.mars-form-checkbox.blue > input:checked {
   background-color: #006ecf;
   border-color: #006ecf;
 }
 
-.mars-form-checkbox.bg-green > input:not(:disabled):hover {
+.mars-form-checkbox.green > input:not(:disabled):hover {
   border-color: #50c878;
 }
 
-.mars-form-checkbox.bg-green > input:checked {
+.mars-form-checkbox.green > input:checked {
   background-color: #50c878;
   border-color: #50c878;
 }
 
-.mars-form-checkbox.bg-yellow > input:not(:disabled):hover {
+.mars-form-checkbox.yellow > input:not(:disabled):hover {
   border-color: #f8eb00;
 }
 
-.mars-form-checkbox.bg-yellow > input:checked {
+.mars-form-checkbox.yellow > input:checked {
   background-color: #f8eb00;
   border-color: #f8eb00;
 }
 
-.mars-form-checkbox.bg-pink > input:not(:disabled):hover {
+.mars-form-checkbox.pink > input:not(:disabled):hover {
   border-color: #df96c1;
 }
 
-.mars-form-checkbox.bg-pink > input:checked {
+.mars-form-checkbox.pink > input:checked {
   background-color: #df96c1;
   border-color: #df96c1;
 }
 
-.mars-form-checkbox.bg-purple > input:not(:disabled):hover {
+.mars-form-checkbox.purple > input:not(:disabled):hover {
   border-color: #a258e8;
 }
 
-.mars-form-checkbox.bg-purple > input:checked {
+.mars-form-checkbox.purple > input:checked {
   background-color: #a258e8;
   border-color: #a258e8;
 }
 
-.mars-form-checkbox.bg-primary > input:not(:disabled):hover {
+.mars-form-checkbox.primary > input:not(:disabled):hover {
   border-color: #00b0ff;
 }
 
-.mars-form-checkbox.bg-primary > input:checked {
+.mars-form-checkbox.primary > input:checked {
   background-color: #00b0ff;
   border-color: #00b0ff;
 }
 
-.mars-form-checkbox.bg-success > input:not(:disabled):hover {
+.mars-form-checkbox.success > input:not(:disabled):hover {
   border-color: #00b248;
 }
 
-.mars-form-checkbox.bg-success > input:checked {
+.mars-form-checkbox.success > input:checked {
   background-color: #00b248;
   border-color: #00b248;
 }
 
-.mars-form-checkbox.bg-warning > input:not(:disabled):hover {
+.mars-form-checkbox.warning > input:not(:disabled):hover {
   border-color: #ff9d3f;
 }
 
-.mars-form-checkbox.bg-warning > input:checked {
+.mars-form-checkbox.warning > input:checked {
   background-color: #ff9d3f;
   border-color: #ff9d3f;
 }
 
-.mars-form-checkbox.bg-error > input:not(:disabled):hover {
+.mars-form-checkbox.error > input:not(:disabled):hover {
   border-color: #ff5722;
 }
 
-.mars-form-checkbox.bg-error > input:checked {
+.mars-form-checkbox.error > input:checked {
   background-color: #ff5722;
   border-color: #ff5722;
 }
@@ -568,8 +568,8 @@ svg:not(:root) {
   cursor: not-allowed;
 }
 
-.mars-form-radio.border-blue > input:not(:disabled):hover,
-.mars-form-radio.border-blue > input:not(:disabled):checked {
+.mars-form-radio.blue > input:not(:disabled):hover,
+.mars-form-radio.blue > input:not(:disabled):checked {
   border-color: #006ecf;
 }
 
@@ -577,8 +577,8 @@ svg:not(:root) {
   fill: #006ecf;
 }
 
-.mars-form-radio.border-green > input:not(:disabled):hover,
-.mars-form-radio.border-green > input:not(:disabled):checked {
+.mars-form-radio.green > input:not(:disabled):hover,
+.mars-form-radio.green > input:not(:disabled):checked {
   border-color: #50c878;
 }
 
@@ -586,8 +586,8 @@ svg:not(:root) {
   fill: #50c878;
 }
 
-.mars-form-radio.border-yellow > input:not(:disabled):hover,
-.mars-form-radio.border-yellow > input:not(:disabled):checked {
+.mars-form-radio.yellow > input:not(:disabled):hover,
+.mars-form-radio.yellow > input:not(:disabled):checked {
   border-color: #f8eb00;
 }
 
@@ -595,8 +595,8 @@ svg:not(:root) {
   fill: #f8eb00;
 }
 
-.mars-form-radio.border-pink > input:not(:disabled):hover,
-.mars-form-radio.border-pink > input:not(:disabled):checked {
+.mars-form-radio.pink > input:not(:disabled):hover,
+.mars-form-radio.pink > input:not(:disabled):checked {
   border-color: #df96c1;
 }
 
@@ -604,8 +604,8 @@ svg:not(:root) {
   fill: #df96c1;
 }
 
-.mars-form-radio.border-purple > input:not(:disabled):hover,
-.mars-form-radio.border-purple > input:not(:disabled):checked {
+.mars-form-radio.purple > input:not(:disabled):hover,
+.mars-form-radio.purple > input:not(:disabled):checked {
   border-color: #a258e8;
 }
 
@@ -613,8 +613,8 @@ svg:not(:root) {
   fill: #a258e8;
 }
 
-.mars-form-radio.border-primary > input:not(:disabled):hover,
-.mars-form-radio.border-primary > input:not(:disabled):checked {
+.mars-form-radio.primary > input:not(:disabled):hover,
+.mars-form-radio.primary > input:not(:disabled):checked {
   border-color: #00b0ff;
 }
 
@@ -622,8 +622,8 @@ svg:not(:root) {
   fill: #00b0ff;
 }
 
-.mars-form-radio.border-success > input:not(:disabled):hover,
-.mars-form-radio.border-success > input:not(:disabled):checked {
+.mars-form-radio.success > input:not(:disabled):hover,
+.mars-form-radio.success > input:not(:disabled):checked {
   border-color: #00b248;
 }
 
@@ -631,8 +631,8 @@ svg:not(:root) {
   fill: #00b248;
 }
 
-.mars-form-radio.border-warning > input:not(:disabled):hover,
-.mars-form-radio.border-warning > input:not(:disabled):checked {
+.mars-form-radio.warning > input:not(:disabled):hover,
+.mars-form-radio.warning > input:not(:disabled):checked {
   border-color: #ff9d3f;
 }
 
@@ -640,8 +640,8 @@ svg:not(:root) {
   fill: #ff9d3f;
 }
 
-.mars-form-radio.border-error > input:not(:disabled):hover,
-.mars-form-radio.border-error > input:not(:disabled):checked {
+.mars-form-radio.error > input:not(:disabled):hover,
+.mars-form-radio.error > input:not(:disabled):checked {
   border-color: #ff5722;
 }
 
@@ -690,7 +690,7 @@ svg:not(:root) {
           box-shadow: 0px 10px 25px rgba(18, 159, 234, 0.5);
   -webkit-box-sizing: border-box !important;
           box-sizing: border-box !important;
-  /* button color */
+  /* buttons color */
   /* focused */
   /* actived, pressed */
   /* default hovered box-shadow */
@@ -708,7 +708,7 @@ svg:not(:root) {
   /* button loading */
 }
 
-.mars-btn.bg-blue {
+.mars-btn.blue {
   outline: 0;
   background-color: #006ecf;
   border-color: #006ecf;
@@ -716,7 +716,7 @@ svg:not(:root) {
           box-shadow: 0px 10px 25px rgba(0, 110, 207, 0.5);
 }
 
-.mars-btn.bg-green {
+.mars-btn.green {
   outline: 0;
   background-color: #50c878;
   border-color: #50c878;
@@ -724,7 +724,7 @@ svg:not(:root) {
           box-shadow: 0px 10px 25px rgba(80, 200, 120, 0.5);
 }
 
-.mars-btn.bg-yellow {
+.mars-btn.yellow {
   outline: 0;
   background-color: #f8eb00;
   border-color: #f8eb00;
@@ -732,7 +732,7 @@ svg:not(:root) {
           box-shadow: 0px 10px 25px rgba(248, 235, 0, 0.5);
 }
 
-.mars-btn.bg-pink {
+.mars-btn.pink {
   outline: 0;
   background-color: #df96c1;
   border-color: #df96c1;
@@ -740,7 +740,7 @@ svg:not(:root) {
           box-shadow: 0px 10px 25px rgba(223, 150, 193, 0.5);
 }
 
-.mars-btn.bg-purple {
+.mars-btn.purple {
   outline: 0;
   background-color: #a258e8;
   border-color: #a258e8;
@@ -748,7 +748,7 @@ svg:not(:root) {
           box-shadow: 0px 10px 25px rgba(162, 88, 232, 0.5);
 }
 
-.mars-btn.bg-primary {
+.mars-btn.primary {
   outline: 0;
   background-color: #00b0ff;
   border-color: #00b0ff;
@@ -756,7 +756,7 @@ svg:not(:root) {
           box-shadow: 0px 10px 25px rgba(0, 176, 255, 0.5);
 }
 
-.mars-btn.bg-success {
+.mars-btn.success {
   outline: 0;
   background-color: #00b248;
   border-color: #00b248;
@@ -764,7 +764,7 @@ svg:not(:root) {
           box-shadow: 0px 10px 25px rgba(0, 178, 72, 0.5);
 }
 
-.mars-btn.bg-warning {
+.mars-btn.warning {
   outline: 0;
   background-color: #ff9d3f;
   border-color: #ff9d3f;
@@ -772,7 +772,7 @@ svg:not(:root) {
           box-shadow: 0px 10px 25px rgba(255, 157, 63, 0.5);
 }
 
-.mars-btn.bg-error {
+.mars-btn.error {
   outline: 0;
   background-color: #ff5722;
   border-color: #ff5722;
@@ -803,47 +803,47 @@ svg:not(:root) {
           box-shadow: 0px 10px 25px rgba(18, 159, 234, 0.85);
 }
 
-.mars-btn.hovered.bg-blue, .mars-btn.bg-blue:hover {
+.mars-btn.hovered.blue, .mars-btn.blue:hover {
   -webkit-box-shadow: 0px 10px 25px rgba(0, 110, 207, 0.85);
           box-shadow: 0px 10px 25px rgba(0, 110, 207, 0.85);
 }
 
-.mars-btn.hovered.bg-green, .mars-btn.bg-green:hover {
+.mars-btn.hovered.green, .mars-btn.green:hover {
   -webkit-box-shadow: 0px 10px 25px rgba(80, 200, 120, 0.85);
           box-shadow: 0px 10px 25px rgba(80, 200, 120, 0.85);
 }
 
-.mars-btn.hovered.bg-yellow, .mars-btn.bg-yellow:hover {
+.mars-btn.hovered.yellow, .mars-btn.yellow:hover {
   -webkit-box-shadow: 0px 10px 25px rgba(248, 235, 0, 0.85);
           box-shadow: 0px 10px 25px rgba(248, 235, 0, 0.85);
 }
 
-.mars-btn.hovered.bg-pink, .mars-btn.bg-pink:hover {
+.mars-btn.hovered.pink, .mars-btn.pink:hover {
   -webkit-box-shadow: 0px 10px 25px rgba(223, 150, 193, 0.85);
           box-shadow: 0px 10px 25px rgba(223, 150, 193, 0.85);
 }
 
-.mars-btn.hovered.bg-purple, .mars-btn.bg-purple:hover {
+.mars-btn.hovered.purple, .mars-btn.purple:hover {
   -webkit-box-shadow: 0px 10px 25px rgba(162, 88, 232, 0.85);
           box-shadow: 0px 10px 25px rgba(162, 88, 232, 0.85);
 }
 
-.mars-btn.hovered.bg-primary, .mars-btn.bg-primary:hover {
+.mars-btn.hovered.primary, .mars-btn.primary:hover {
   -webkit-box-shadow: 0px 10px 25px rgba(0, 176, 255, 0.85);
           box-shadow: 0px 10px 25px rgba(0, 176, 255, 0.85);
 }
 
-.mars-btn.hovered.bg-success, .mars-btn.bg-success:hover {
+.mars-btn.hovered.success, .mars-btn.success:hover {
   -webkit-box-shadow: 0px 10px 25px rgba(0, 178, 72, 0.85);
           box-shadow: 0px 10px 25px rgba(0, 178, 72, 0.85);
 }
 
-.mars-btn.hovered.bg-warning, .mars-btn.bg-warning:hover {
+.mars-btn.hovered.warning, .mars-btn.warning:hover {
   -webkit-box-shadow: 0px 10px 25px rgba(255, 157, 63, 0.85);
           box-shadow: 0px 10px 25px rgba(255, 157, 63, 0.85);
 }
 
-.mars-btn.hovered.bg-error, .mars-btn.bg-error:hover {
+.mars-btn.hovered.error, .mars-btn.error:hover {
   -webkit-box-shadow: 0px 10px 25px rgba(255, 87, 34, 0.85);
           box-shadow: 0px 10px 25px rgba(255, 87, 34, 0.85);
 }
@@ -902,63 +902,63 @@ svg:not(:root) {
           box-shadow: 0px 10px 25px rgba(18, 159, 234, 0.65);
 }
 
-.mars-btn.gradient.bg-blue {
+.mars-btn.gradient.blue {
   background-image: -webkit-gradient(linear, left top, right top, from(#002a50), to(#006ecf));
   background-image: linear-gradient(90deg, #002a50, #006ecf);
   -webkit-box-shadow: 0px 10px 25px rgba(0, 110, 207, 0.65);
           box-shadow: 0px 10px 25px rgba(0, 110, 207, 0.65);
 }
 
-.mars-btn.gradient.bg-green {
+.mars-btn.gradient.green {
   background-image: -webkit-gradient(linear, left top, right top, from(#319b54), to(#50c878));
   background-image: linear-gradient(90deg, #319b54, #50c878);
   -webkit-box-shadow: 0px 10px 25px rgba(80, 200, 120, 0.65);
           box-shadow: 0px 10px 25px rgba(80, 200, 120, 0.65);
 }
 
-.mars-btn.gradient.bg-yellow {
+.mars-btn.gradient.yellow {
   background-image: -webkit-gradient(linear, left top, right top, from(#aca300), to(#f8eb00));
   background-image: linear-gradient(90deg, #aca300, #f8eb00);
   -webkit-box-shadow: 0px 10px 25px rgba(248, 235, 0, 0.65);
           box-shadow: 0px 10px 25px rgba(248, 235, 0, 0.65);
 }
 
-.mars-btn.gradient.bg-pink {
+.mars-btn.gradient.pink {
   background-image: -webkit-gradient(linear, left top, right top, from(#c74792), to(#df96c1));
   background-image: linear-gradient(90deg, #c74792, #df96c1);
   -webkit-box-shadow: 0px 10px 25px rgba(223, 150, 193, 0.65);
           box-shadow: 0px 10px 25px rgba(223, 150, 193, 0.65);
 }
 
-.mars-btn.gradient.bg-purple {
+.mars-btn.gradient.purple {
   background-image: -webkit-gradient(linear, left top, right top, from(#6217a9), to(#a258e8));
   background-image: linear-gradient(90deg, #6217a9, #a258e8);
   -webkit-box-shadow: 0px 10px 25px rgba(162, 88, 232, 0.65);
           box-shadow: 0px 10px 25px rgba(162, 88, 232, 0.65);
 }
 
-.mars-btn.gradient.bg-primary {
+.mars-btn.gradient.primary {
   background-image: -webkit-gradient(linear, left top, right top, from(#0031ff), to(#00b0ff));
   background-image: linear-gradient(90deg, #0031ff, #00b0ff);
   -webkit-box-shadow: 0px 10px 25px rgba(0, 176, 255, 0.65);
           box-shadow: 0px 10px 25px rgba(0, 176, 255, 0.65);
 }
 
-.mars-btn.gradient.bg-success {
+.mars-btn.gradient.success {
   background-image: -webkit-gradient(linear, left top, right top, from(#006629), to(#00b248));
   background-image: linear-gradient(90deg, #006629, #00b248);
   -webkit-box-shadow: 0px 10px 25px rgba(0, 178, 72, 0.65);
           box-shadow: 0px 10px 25px rgba(0, 178, 72, 0.65);
 }
 
-.mars-btn.gradient.bg-warning {
+.mars-btn.gradient.warning {
   background-image: -webkit-gradient(linear, left top, right top, from(#f27600), to(#ff9d3f));
   background-image: linear-gradient(90deg, #f27600, #ff9d3f);
   -webkit-box-shadow: 0px 10px 25px rgba(255, 157, 63, 0.65);
           box-shadow: 0px 10px 25px rgba(255, 157, 63, 0.65);
 }
 
-.mars-btn.gradient.bg-error {
+.mars-btn.gradient.error {
   background-image: -webkit-gradient(linear, left top, right top, from(#d53300), to(#ff5722));
   background-image: linear-gradient(90deg, #d53300, #ff5722);
   -webkit-box-shadow: 0px 10px 25px rgba(255, 87, 34, 0.65);
@@ -1330,39 +1330,39 @@ svg:not(:root) {
   color: black;
 }
 
-.mars-modal .title.bg-blue {
+.mars-modal .title.blue {
   color: #006ecf;
 }
 
-.mars-modal .title.bg-green {
+.mars-modal .title.green {
   color: #50c878;
 }
 
-.mars-modal .title.bg-yellow {
+.mars-modal .title.yellow {
   color: #f8eb00;
 }
 
-.mars-modal .title.bg-pink {
+.mars-modal .title.pink {
   color: #df96c1;
 }
 
-.mars-modal .title.bg-purple {
+.mars-modal .title.purple {
   color: #a258e8;
 }
 
-.mars-modal .title.bg-primary {
+.mars-modal .title.primary {
   color: #00b0ff;
 }
 
-.mars-modal .title.bg-success {
+.mars-modal .title.success {
   color: #00b248;
 }
 
-.mars-modal .title.bg-warning {
+.mars-modal .title.warning {
   color: #ff9d3f;
 }
 
-.mars-modal .title.bg-error {
+.mars-modal .title.error {
   color: #ff5722;
 }
 /*# sourceMappingURL=mars.css.map */
