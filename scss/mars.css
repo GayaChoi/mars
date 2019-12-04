@@ -1204,6 +1204,13 @@ svg:not(:root) {
   position: absolute !important;
 }
 
+.mars-btn .btn {
+  padding-bottom: calc(0.5em - 1px);
+  padding-left: calc(0.75em - 1px);
+  padding-right: calc(0.75em - 1px);
+  padding-top: calc(0.5em - 1px);
+}
+
 /* modals variables */
 /* modal delete */
 /* modal title */
