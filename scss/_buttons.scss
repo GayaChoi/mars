@@ -186,17 +186,17 @@ $size: (
     }
 
     /* normal rounded */
-    &.nor-rounded {
+    &.rounded-nor {
         border-radius: $button-radius;
     }
 
     /* medium rounded */
-    &.md-rounded {
+    &.rounded-md {
         border-radius: $button-radius-md;
     }
 
     /* large rounded */
-    &.lg-rounded {
+    &.rounded-lg {
         border-radius: $button-radius-lg;
     }
 
@@ -269,6 +269,40 @@ $size: (
             top: calc(45% - (1em / 2));
             position: absolute !important;
         }
+    }
+
+    &.slide-area {
+       position: relative;
+       overflow: hidden;
+    
+
+
+       & a {
+           color: #ffffff;
+           position: relative;
+           text-decoration: none;
+           transition: all .35s ease-out;
+       }
+
+       & .slide {
+           width: 100%;
+           height: 100%;
+           left: -200px;
+           background: #ffffff;
+           position: absolute !important;
+           transition: all .35s ease-out;
+           bottom: 0; 
+       }
+
+       &:hover {
+           & .slide {
+               left: 0; 
+           }
+       }
+
+       &:hover a {
+            color: rgba(0,0,0,.75);
+       }
     }
 }
 

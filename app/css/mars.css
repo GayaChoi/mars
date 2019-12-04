@@ -1011,15 +1011,15 @@ svg:not(:root) {
   font-size: 1.5rem;
 }
 
-.mars-btn.nor-rounded {
+.mars-btn.rounded-nor {
   border-radius: 4px;
 }
 
-.mars-btn.md-rounded {
+.mars-btn.rounded-md {
   border-radius: 1em;
 }
 
-.mars-btn.lg-rounded {
+.mars-btn.rounded-lg {
   border-radius: 2em;
 }
 
@@ -1204,11 +1204,36 @@ svg:not(:root) {
   position: absolute !important;
 }
 
-.mars-btn .btn {
-  padding-bottom: calc(0.5em - 1px);
-  padding-left: calc(0.75em - 1px);
-  padding-right: calc(0.75em - 1px);
-  padding-top: calc(0.5em - 1px);
+.mars-btn.slide-area {
+  position: relative;
+  overflow: hidden;
+}
+
+.mars-btn.slide-area a {
+  color: #ffffff;
+  position: relative;
+  text-decoration: none;
+  -webkit-transition: all .35s ease-out;
+  transition: all .35s ease-out;
+}
+
+.mars-btn.slide-area .slide {
+  width: 100%;
+  height: 100%;
+  left: -200px;
+  background: #ffffff;
+  position: absolute !important;
+  -webkit-transition: all .35s ease-out;
+  transition: all .35s ease-out;
+  bottom: 0;
+}
+
+.mars-btn.slide-area:hover .slide {
+  left: 0;
+}
+
+.mars-btn.slide-area:hover a {
+  color: rgba(0, 0, 0, 0.75);
 }
 
 /* modals variables */
