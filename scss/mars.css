@@ -45,6 +45,7 @@
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
           box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
   outline: 0;
+  border-radius: 4px;
   margin-bottom: 15px;
   /* default active, focus */
   /* default disabled & readonly type */
@@ -112,7 +113,7 @@
 }
 
 .mars-form.rounded-nor {
-  border-radius: 3px;
+  border-radius: 4px;
 }
 
 .mars-form.rounded-md {
@@ -175,7 +176,7 @@
 
 .mars-form.u {
   border: 2px solid transparent;
-  border-radius: 3px !important;
+  border-radius: 4px !important;
   border-width: 2px 0px;
   background: #ffffff;
   -webkit-box-sizing: border-box;
@@ -216,7 +217,7 @@
 .mars-form.u:active, .mars-form.u.actived, .mars-form.u:focus, .mars-form.u.focused {
   outline: 0;
   border: transparent;
-  border-radius: 3px;
+  border-radius: 4px;
   border-width: 2px 0px;
   border-bottom: 2px solid #129fea;
   -webkit-box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
@@ -226,7 +227,7 @@
 .mars-form.u.blue:focus, .mars-form.u.blue.focused, .mars-form.u.blue:active, .mars-form.u.blue.actived {
   outline: 0;
   border: transparent;
-  border-radius: 3px;
+  border-radius: 4px;
   border-width: 2px 0px;
   border-bottom: 2px solid #006ecf;
   -webkit-box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
@@ -236,7 +237,7 @@
 .mars-form.u.green:focus, .mars-form.u.green.focused, .mars-form.u.green:active, .mars-form.u.green.actived {
   outline: 0;
   border: transparent;
-  border-radius: 3px;
+  border-radius: 4px;
   border-width: 2px 0px;
   border-bottom: 2px solid #50c878;
   -webkit-box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
@@ -246,7 +247,7 @@
 .mars-form.u.yellow:focus, .mars-form.u.yellow.focused, .mars-form.u.yellow:active, .mars-form.u.yellow.actived {
   outline: 0;
   border: transparent;
-  border-radius: 3px;
+  border-radius: 4px;
   border-width: 2px 0px;
   border-bottom: 2px solid #f8eb00;
   -webkit-box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
@@ -256,7 +257,7 @@
 .mars-form.u.pink:focus, .mars-form.u.pink.focused, .mars-form.u.pink:active, .mars-form.u.pink.actived {
   outline: 0;
   border: transparent;
-  border-radius: 3px;
+  border-radius: 4px;
   border-width: 2px 0px;
   border-bottom: 2px solid #df96c1;
   -webkit-box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
@@ -266,7 +267,7 @@
 .mars-form.u.purple:focus, .mars-form.u.purple.focused, .mars-form.u.purple:active, .mars-form.u.purple.actived {
   outline: 0;
   border: transparent;
-  border-radius: 3px;
+  border-radius: 4px;
   border-width: 2px 0px;
   border-bottom: 2px solid #a258e8;
   -webkit-box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
@@ -276,7 +277,7 @@
 .mars-form.u.primary:focus, .mars-form.u.primary.focused, .mars-form.u.primary:active, .mars-form.u.primary.actived {
   outline: 0;
   border: transparent;
-  border-radius: 3px;
+  border-radius: 4px;
   border-width: 2px 0px;
   border-bottom: 2px solid #00b0ff;
   -webkit-box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
@@ -286,7 +287,7 @@
 .mars-form.u.success:focus, .mars-form.u.success.focused, .mars-form.u.success:active, .mars-form.u.success.actived {
   outline: 0;
   border: transparent;
-  border-radius: 3px;
+  border-radius: 4px;
   border-width: 2px 0px;
   border-bottom: 2px solid #00b248;
   -webkit-box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
@@ -296,7 +297,7 @@
 .mars-form.u.warning:focus, .mars-form.u.warning.focused, .mars-form.u.warning:active, .mars-form.u.warning.actived {
   outline: 0;
   border: transparent;
-  border-radius: 3px;
+  border-radius: 4px;
   border-width: 2px 0px;
   border-bottom: 2px solid #ff9d3f;
   -webkit-box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
@@ -306,7 +307,7 @@
 .mars-form.u.error:focus, .mars-form.u.error.focused, .mars-form.u.error:active, .mars-form.u.error.actived {
   outline: 0;
   border: transparent;
-  border-radius: 3px;
+  border-radius: 4px;
   border-width: 2px 0px;
   border-bottom: 2px solid #ff5722;
   -webkit-box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
@@ -573,7 +574,7 @@ svg:not(:root) {
   border-color: #006ecf;
 }
 
-.mars-form-radio.border-blue > .check-icon svg {
+.mars-form-radio.blue > .check-icon svg {
   fill: #006ecf;
 }
 
@@ -582,7 +583,7 @@ svg:not(:root) {
   border-color: #50c878;
 }
 
-.mars-form-radio.border-green > .check-icon svg {
+.mars-form-radio.green > .check-icon svg {
   fill: #50c878;
 }
 
@@ -591,7 +592,7 @@ svg:not(:root) {
   border-color: #f8eb00;
 }
 
-.mars-form-radio.border-yellow > .check-icon svg {
+.mars-form-radio.yellow > .check-icon svg {
   fill: #f8eb00;
 }
 
@@ -600,7 +601,7 @@ svg:not(:root) {
   border-color: #df96c1;
 }
 
-.mars-form-radio.border-pink > .check-icon svg {
+.mars-form-radio.pink > .check-icon svg {
   fill: #df96c1;
 }
 
@@ -609,7 +610,7 @@ svg:not(:root) {
   border-color: #a258e8;
 }
 
-.mars-form-radio.border-purple > .check-icon svg {
+.mars-form-radio.purple > .check-icon svg {
   fill: #a258e8;
 }
 
@@ -618,7 +619,7 @@ svg:not(:root) {
   border-color: #00b0ff;
 }
 
-.mars-form-radio.border-primary > .check-icon svg {
+.mars-form-radio.primary > .check-icon svg {
   fill: #00b0ff;
 }
 
@@ -627,7 +628,7 @@ svg:not(:root) {
   border-color: #00b248;
 }
 
-.mars-form-radio.border-success > .check-icon svg {
+.mars-form-radio.success > .check-icon svg {
   fill: #00b248;
 }
 
@@ -636,7 +637,7 @@ svg:not(:root) {
   border-color: #ff9d3f;
 }
 
-.mars-form-radio.border-warning > .check-icon svg {
+.mars-form-radio.warning > .check-icon svg {
   fill: #ff9d3f;
 }
 
@@ -645,7 +646,7 @@ svg:not(:root) {
   border-color: #ff5722;
 }
 
-.mars-form-radio.border-error > .check-icon svg {
+.mars-form-radio.error > .check-icon svg {
   fill: #ff5722;
 }
 
@@ -1030,8 +1031,6 @@ svg:not(:root) {
   background-color: transparent !important;
   color: #129fea;
   border-radius: 0px;
-  -webkit-transition: all 0.2s ease-in-out 0s;
-  transition: all 0.2s ease-in-out 0s;
   border: none !important;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -1204,36 +1203,138 @@ svg:not(:root) {
   position: absolute !important;
 }
 
-.mars-btn.slide-area {
+.mars-btn.slide {
   position: relative;
   overflow: hidden;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 0px !important;
+  font-family: inherit;
+  background: transparent !important;
 }
 
-.mars-btn.slide-area a {
-  color: #ffffff;
+.mars-btn.slide.blue a {
+  color: #006ecf;
+}
+
+.mars-btn.slide.blue .slider {
+  background: #006ecf;
+}
+
+.mars-btn.slide.green a {
+  color: #50c878;
+}
+
+.mars-btn.slide.green .slider {
+  background: #50c878;
+}
+
+.mars-btn.slide.yellow a {
+  color: #f8eb00;
+}
+
+.mars-btn.slide.yellow .slider {
+  background: #f8eb00;
+}
+
+.mars-btn.slide.pink a {
+  color: #df96c1;
+}
+
+.mars-btn.slide.pink .slider {
+  background: #df96c1;
+}
+
+.mars-btn.slide.purple a {
+  color: #a258e8;
+}
+
+.mars-btn.slide.purple .slider {
+  background: #a258e8;
+}
+
+.mars-btn.slide.primary a {
+  color: #00b0ff;
+}
+
+.mars-btn.slide.primary .slider {
+  background: #00b0ff;
+}
+
+.mars-btn.slide.success a {
+  color: #00b248;
+}
+
+.mars-btn.slide.success .slider {
+  background: #00b248;
+}
+
+.mars-btn.slide.warning a {
+  color: #ff9d3f;
+}
+
+.mars-btn.slide.warning .slider {
+  background: #ff9d3f;
+}
+
+.mars-btn.slide.error a {
+  color: #ff5722;
+}
+
+.mars-btn.slide.error .slider {
+  background: #ff5722;
+}
+
+.mars-btn.slide a {
   position: relative;
   text-decoration: none;
   -webkit-transition: all .35s ease-out;
   transition: all .35s ease-out;
 }
 
-.mars-btn.slide-area .slide {
+.mars-btn.slide .slider {
   width: 100%;
   height: 100%;
-  left: -200px;
-  background: #ffffff;
   position: absolute !important;
   -webkit-transition: all .35s ease-out;
   transition: all .35s ease-out;
   bottom: 0;
 }
 
-.mars-btn.slide-area:hover .slide {
+.mars-btn.slide .slider.left {
+  left: -200px;
+}
+
+.mars-btn.slide .slider.right {
+  left: 200px;
+}
+
+.mars-btn.slide .slider.top {
+  top: -200px;
+}
+
+.mars-btn.slide .slider.bottom {
+  top: 200px;
+}
+
+.mars-btn.slide:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.mars-btn.slide:hover .slider.left,
+.mars-btn.slide:hover .slider.right {
   left: 0;
 }
 
-.mars-btn.slide-area:hover a {
-  color: rgba(0, 0, 0, 0.75);
+.mars-btn.slide:hover .slider.top,
+.mars-btn.slide:hover .slider.bottom {
+  top: 0;
+  left: 0;
+}
+
+.mars-btn.slide:hover a {
+  color: #ffffff;
 }
 
 /* modals variables */

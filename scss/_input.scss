@@ -63,6 +63,7 @@ $size: (
     box-sizing: $input-border-box;
     box-shadow: rgba(0,0,0,0.1) $input-box-shadow-size;
     outline: $input-outline;
+    border-radius: 4px;
     margin-bottom: $input-margin-bottom;
 
 
@@ -93,7 +94,7 @@ $size: (
 
     /* rounded */
     &.rounded-nor {
-        border-radius: $input-radius;
+        border-radius: $input-radius-nor;
     }
 
     &.rounded-md {
@@ -143,7 +144,7 @@ $size: (
     /* input underline */
 &.u {
     border: 2px solid $transparent;
-    border-radius: $input-radius !important;
+    border-radius: $input-radius-nor !important;
     border-width: $input-border-width 0px;
     background: $white;
     box-sizing: $input-border-box;

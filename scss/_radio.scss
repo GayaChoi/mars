@@ -65,7 +65,7 @@
             border-color: map-get($colors,#{$name});
         }
 
-        &.border-#{$name} > .check-icon svg {               
+        &.#{$name} > .check-icon svg {               
              fill: map-get($colors,#{$name});
         }
     }
