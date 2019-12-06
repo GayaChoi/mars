@@ -1,5 +1,3 @@
-'use strict';
-
 var pkg = require('./package.json');
 module.exports = require('@root/greenlock').create({
     // name & version for ACME client user agent

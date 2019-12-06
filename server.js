@@ -3,10 +3,8 @@ const app = require('./app');
 var morgan = require('morgan'); 
 
 app.use(morgan('dev'));
-
-"use strict";
  
-require("greenlock-express")
+const lex = require("greenlock-express")
     .init(function() {
         return {
             greenlock: require("./greenlock.js"),
@@ -23,7 +21,4 @@ require("greenlock-express")
         glx.serveApp(app);
     });
 
-
-http.createServer(app).listen(process.env.SSL_PORT || 443, ()=>{
-    console.log(process.env.SSL_PORT);
-});
+    http.createServer(app).listen(process.env.PORT || 443);
