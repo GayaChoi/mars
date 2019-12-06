@@ -24,4 +24,6 @@ require("greenlock-express")
     });
 
 
-http.createServer(app).listen(process.env.PORT || 5500);
+http.createServer(app).listen(process.env.SSL_PORT || 443, ()=>{
+    console.log(process.env.SSL_PORT);
+});
