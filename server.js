@@ -3,7 +3,7 @@ const app = require('./app');
 var morgan = require('morgan'); 
 
 app.use(morgan('dev'));
- 
+ /* 
 require("greenlock-express")
     .init(function() {
         return {
@@ -20,7 +20,7 @@ require("greenlock-express")
         // Get's SSL certificates magically!
         glx.serveApp(app);
     });
-
-http.createServer(app).listen(process.env.PORT || 80, function() {
+ */
+http.createServer(app).listen(process.env.PORT || 8080, function() {
      console.log("success PORT 8080");  
 });
