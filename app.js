@@ -29,6 +29,7 @@ app.get('/preview', function(req, res) {
 });
 
 
+
 // ERROR Handling
 
 app.use(function(req, res, next) {
@@ -64,7 +65,4 @@ app.use(function(error, req, res, next) {
  res.send('500 Internal Server Error');
 });
 
-
-app.listen(process.env.PORT || 5500, function () {
-  console.log('Example app listening on port 5500!');
-});
+module.exports = app;

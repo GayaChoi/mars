@@ -1,31 +1,30 @@
 {
   "name": "mars",
   "version": "1.0.0",
-  "description": "==========",
+  "description": "mars.css is ui kit",
   "engines": {
-    "node": "10.16.0",
-    "npm": "6.9.0"
+    "node": "12.13.1",
+    "npm": "6.12.1"
   },
-  "main": "main.js",
+  "main": "./server.js",
   "scripts": {
-    "start": "node main.js",
+    "start": "node ./server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/GayaChoi/mars.git"
   },
-  "author": "",
+  "author": "'Gaya Choi <woosung827@naver.com> (https://mars-css.herokuapp.com)",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/GayaChoi/mars/issues"
   },
-  "homepage": "https://github.com/GayaChoi/mars.git",
+  "homepage": "https://github.com/GayaChoi/mars#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "greenlock-express": "^3.1.1",
+    "morgan": "^1.9.1",
     "serve-favicon": "^2.5.0"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.1"
   }
 }
