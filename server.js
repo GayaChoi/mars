@@ -2,8 +2,8 @@ var http = require('http');
 var app = require('./app');
 var morgan = require('morgan'); 
 var server = http.createServer(app);
-var securePort = process.argv[2] || 8443;
-var insecurePort = process.argv[3] || 8080;
+/* var securePort = process.argv[2] || 8443;
+var insecurePort = process.argv[3] || 8080; */
 
 app.use(morgan('dev'));
 
@@ -24,18 +24,17 @@ app.use(morgan('dev'));
         // Get's SSL certificates magically!
         glx.serveApp(app);
     });
-*/
+*/ 
 
-server.on('request', require('redirect-https')({
-    port: securePort
-  , body: '<!-- Hello! Please use HTTPS instead -->'
-  , trustProxy: true // default is false
-}));    
-
-server.listen(process.env.PORT || insecurePort, function () {
-    console.log('Listening on http://localhost.pplwink.com:' + server.address().port);
-}); 
-/* 
+if(process.env.NODE_ENV === 'production') {
+    app.use((req, res, next) => {
+      if (req.header('x-forwarded-proto') !== 'https')
+        res.redirect(`https://${req.header('host')}${req.url}`)
+      else
+        next()
+    })
+  }
+ 
 server.listen(process.env.PORT || 3000, function() {
     console.log("server success");
-}); */
+}); 
