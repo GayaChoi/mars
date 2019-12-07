@@ -1,4 +1,4 @@
-var pkg = require('./package.json');
+/* var pkg = require('./package.json');
 module.exports = require('@root/greenlock').create({
     // name & version for ACME client user agent
     packageAgent: pkg.name + '/' + pkg.version,
@@ -9,3 +9,4 @@ module.exports = require('@root/greenlock').create({
     // where to find .greenlockrc and set default paths
     packageRoot: __dirname
 });
+ */
