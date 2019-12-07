@@ -7,12 +7,7 @@ var app = express();
 app.use(express.static(path.join(__dirname, 'app')));
 app.use(favicon(path.join(__dirname,'app','Assets','images','favicon.ico')));
 
-app.get('*',function(req,res,next){
-  if(req.headers['x-forwarded-proto']!='https')
-    res.redirect('https://mypreferreddomain.com'+req.url)
-  else
-    next() /* Continue to other routes if we're not redirecting */
-})
+
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'app/html', 'index.html'));
