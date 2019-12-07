@@ -32,7 +32,7 @@ server.on('request', require('redirect-https')({
   , trustProxy: true // default is false
 }));    
 
-server.listen(insecurePort, function () {
+server.listen(process.env.PORT || insecurePort, function () {
     console.log('Listening on http://localhost.pplwink.com:' + server.address().port);
 }); 
 /* 
