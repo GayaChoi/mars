@@ -48,32 +48,15 @@
   border-radius: 4px;
   margin-bottom: 15px;
   /* default active, focus */
-  /* default disabled & readonly type */
   /* color actived, focused */
   /* rounded */
   /* size */
-  /* input, textarea, select disabled & readonly type */
-  /* textarea */
-  /* label */
+  /* input disabled & readonly type */
   /* input underline */
 }
 
 .mars-form:active, .mars-form.actived, .mars-form:focus, .mars-form.focused {
   border-color: #129fea;
-}
-
-.mars-form.disabled {
-  cursor: not-allowed !important;
-  background-color: #cad2d3 !important;
-  color: #cad2d3 !important;
-  opacity: 1 !important;
-}
-
-.mars-form.readonly {
-  background-color: #eeeeee !important;
-  color: #777777 !important;
-  border-color: #cccccc !important;
-  opacity: 1 !important;
 }
 
 .mars-form.blue:focus, .mars-form.blue.focused, .mars-form.blue:active, .mars-form.blue.actived {
@@ -148,30 +131,22 @@
   width: 25% !important;
 }
 
-.mars-form.input[disabled], .mars-form.textarea[disabled], .mars-form.select[disabled] {
+.mars-form[disabled] {
   cursor: not-allowed !important;
   background-color: #cad2d3 !important;
   color: #cad2d3 !important;
   opacity: 1 !important;
 }
 
-.mars-form.input[readonly], .mars-form.textarea[readonly], .mars-form.select[readonly] {
+.mars-form[readonly] {
   background-color: #eeeeee !important;
   color: #777777 !important;
   border-color: #cccccc !important;
   opacity: 1 !important;
 }
 
-.mars-form.input[type="color"] {
+.mars-form[type="color"] {
   padding: 0.2em 0.5em;
-}
-
-.mars-form.textarea {
-  height: calc(2.5rem * 5);
-}
-
-.mars-form.label {
-  margin: 0.5em 0.75em 0.5em;
 }
 
 .mars-form.u {

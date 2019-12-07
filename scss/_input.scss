@@ -73,15 +73,6 @@ $size: (
         border-color: $default;      
     }
 
-    /* default disabled & readonly type */
-    &.disabled {
-        @include input-disabled();
-    }
-
-    &.readonly {
-        @include input-readonly();
-    }
-
     /* color actived, focused */
     @each $name in $color-names {
         &.#{$name} {
@@ -112,33 +103,18 @@ $size: (
         }    
     }
 
-    /* input, textarea, select disabled & readonly type */
-    &.input,
-    &.textarea,
-    &.select {
-        &[disabled] {
-            @include input-disabled();
-        }
-
-        &[readonly] {
-            @include input-readonly();
-        }
+    /* input disabled & readonly type */
+    
+    &[disabled] {
+        @include input-disabled();
     }
 
-    &.input {
-        &[type="color"] {
-            padding: 0.2em 0.5em;
-        }
+    &[readonly] {
+        @include input-readonly();
     }
-
-    /* textarea */
-    &.textarea {
-        height: calc(2.5rem * 5);  
-    }
-
-    /* label */
-    &.label {
-        margin: 0.5em 0.75em 0.5em;
+        
+    &[type="color"] {
+        padding: 0.2em 0.5em;
     }
 
     /* input underline */
@@ -175,8 +151,6 @@ $size: (
     }
   }
 } 
-
-
 
 
 

@@ -1,10 +1,17 @@
-const http = require('http');
-const app = require('./app');
+var http = require('http');
+var app = require('./app');
 var morgan = require('morgan'); 
-
+var server = http.createServer(app);
+var sslRedirect = require('heroku-ssl-redirect');
+/* var securePort = process.argv[2] || 8443;
+var insecurePort = process.argv[3] || 8080;
+ */
 app.use(morgan('dev'));
- /* 
-require("greenlock-express")
+
+// enable ssl redirect
+app.use(sslRedirect()); 
+
+/* require("greenlock-express")
     .init(function() {
         return {
             greenlock: require("./greenlock.js"),
@@ -20,7 +27,17 @@ require("greenlock-express")
         // Get's SSL certificates magically!
         glx.serveApp(app);
     });
- */
-http.createServer(app).listen(process.env.PORT || 8080, function() {
-     console.log("success PORT 8080");  
+
+server.on('request', require('redirect-https')({
+    port: securePort
+  , body: '<!-- Hello! Please use HTTPS instead -->'
+  , trustProxy: true // default is false
+}));    
+
+server.listen(insecurePort, function () {
+    console.log('Listening on http://localhost.pplwink.com:' + server.address().port);
+}); */
+
+server.listen(process.env.PORT || 3000, function() {
+    console.log("server success");
 });
