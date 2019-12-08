@@ -9,7 +9,6 @@
 
 
 
-/* default */
 .mars-form-checkbox {
     @include box();
 
@@ -25,7 +24,6 @@
         }    
     }
 
-    /* default color checked event */
     & > input:not(:disabled):checked {
         background-color: $default;
         border-color: $default; 
@@ -36,7 +34,6 @@
         cursor: not-allowed;
     }
     
-    /* colors checked hovered  */
     @each $name in $color-names {
         &.#{$name} > input:not(:disabled):hover {
             border-color: map-get($colors,#{$name});
@@ -57,7 +54,6 @@
             padding: $input-box-padding;       
         }
 
-        /* checkbox disabled attribute */
         &:disabled {
            @include box-disabled();
         }
@@ -66,7 +62,6 @@
             border-color: $input-box-border-color;
         }
 
-        /* default hover */
         &:not(:disabled):hover {
             border-color: $default;
         }
@@ -77,7 +72,6 @@ svg:not(:root) {
     overflow: hidden;
 }
 
-/* label attribute */
 .checkbox-label {
     font-size: 14px;
     margin-left: 10px;

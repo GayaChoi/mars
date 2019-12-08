@@ -67,13 +67,12 @@ $size: (
     margin-bottom: $input-margin-bottom;
 
 
-    /* default active, focus */
     &:active, &.actived, 
     &:focus, &.focused {
         border-color: $default;      
     }
 
-    /* color actived, focused */
+    
     @each $name in $color-names {
         &.#{$name} {
            &:focus, &.focused,
@@ -83,7 +82,7 @@ $size: (
         }          
     }
 
-    /* rounded */
+   
     &.rounded-nor {
         border-radius: $input-radius-nor;
     }
@@ -96,14 +95,13 @@ $size: (
         border-radius: $input-radius-lg;
     }
 
-    /* size */
+    
     @each $value in $sizes {
         &.w-#{$value} {
             width: map-get($size, #{$value}) !important;
         }    
     }
 
-    /* input disabled & readonly type */
     
     &[disabled] {
         @include input-disabled();
@@ -117,7 +115,7 @@ $size: (
         padding: 0.2em 0.5em;
     }
 
-    /* input underline */
+
 &.u {
     border: 2px solid $transparent;
     border-radius: $input-radius-nor !important;
@@ -127,20 +125,20 @@ $size: (
     box-shadow: $input-box-shadow-size rgba(0, 0, 0, 0.1);
     transition: $transition;
     
-    /* size */
+    
     @each $value in $sizes {
         &.w-#{$value} {
             width: map-get($size, #{$value}) !important;
         }    
     }
 
-    /* underline default color focus,active */
+   
     &:active, &.actived, 
     &:focus, &.focused {
         @include input-underline($default);
     } 
 
-    /* underline color active, focus */
+   
     @each $name in $color-names {
         &.#{$name} {
            &:focus, &.focused, 

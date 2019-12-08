@@ -1,33 +1,17 @@
 /*! mars.css | MIT License | github.com/GayaChoi/mars */
-/* colors */
-/* state color */
-/* input checkbox, radio common color */
-/* input checkbox, radio, disabled common color */
-/* input checkbox, disabled color */
-/* buttons hovered color */
-/* buttons disabled color */
-/* buttons gradient color */
-/* colors maps */
-/* buttons gradient maps */
-/* input readonly color */
-/* common variable transition */
-/* input variables */
-/* input outline */
-/* input radius */
-/* input border width */
-/* input checkbox & radio */
-/* buttons variables */
-/* buttons actived */
-/* buttons hovered */
-/* buttons disabled variable */
-/* buttons radius size */
-/* input variables*/
-/* input size maps */
-/* input size variable */
+
+
+
+
+
 /* ========================================================================
     Components : input
  ========================================================================== */
-.mars-form {
+
+
+
+/* mars-form */
+ .mars-form {
   width: 100%;
   max-width: 100%;
   color: black;
@@ -47,14 +31,10 @@
   outline: 0;
   border-radius: 4px;
   margin-bottom: 15px;
-  /* default active, focus */
-  /* color actived, focused */
-  /* rounded */
-  /* size */
-  /* input disabled & readonly type */
-  /* input underline */
 }
 
+
+/* actived,focused */
 .mars-form:active, .mars-form.actived, .mars-form:focus, .mars-form.focused {
   border-color: #129fea;
 }
@@ -95,6 +75,8 @@
   border-color: #ff5722;
 }
 
+
+/* rounded */
 .mars-form.rounded-nor {
   border-radius: 4px;
 }
@@ -107,6 +89,7 @@
   border-radius: 2em;
 }
 
+/* width size */
 .mars-form.w-1 {
   width: 100% !important;
 }
@@ -131,6 +114,7 @@
   width: 25% !important;
 }
 
+/* mars-form disabled */
 .mars-form[disabled] {
   cursor: not-allowed !important;
   background-color: #cad2d3 !important;
@@ -138,6 +122,7 @@
   opacity: 1 !important;
 }
 
+/* mars-form readonly */
 .mars-form[readonly] {
   background-color: #eeeeee !important;
   color: #777777 !important;
@@ -149,6 +134,7 @@
   padding: 0.2em 0.5em;
 }
 
+/* mars-form underline */
 .mars-form.u {
   border: 2px solid transparent;
   border-radius: 4px !important;
@@ -160,11 +146,9 @@
           box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
   -webkit-transition: all 0.2s ease-in-out 0s;
   transition: all 0.2s ease-in-out 0s;
-  /* size */
-  /* underline default color focus,active */
-  /* underline color active, focus */
 }
 
+/* width size */
 .mars-form.u.w-1 {
   width: 100% !important;
 }
@@ -189,6 +173,7 @@
   width: 25% !important;
 }
 
+/* actived,focused */
 .mars-form.u:active, .mars-form.u.actived, .mars-form.u:focus, .mars-form.u.focused {
   outline: 0;
   border: transparent;
@@ -292,7 +277,8 @@
 /* ========================================================================
     forms : checkbox
  ========================================================================== */
-/* default */
+
+ /* mars-form-checkbox */
 .mars-form-checkbox {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -303,8 +289,6 @@
   position: relative;
   cursor: pointer;
   height: 20px;
-  /* default color checked event */
-  /* colors checked hovered  */
 }
 
 .mars-form-checkbox > .checked {
@@ -430,8 +414,6 @@
 .mars-form-checkbox > input {
   border-width: 3px;
   border-style: solid;
-  /* checkbox disabled attribute */
-  /* default hover */
 }
 
 .mars-form-checkbox > input[type="checkbox"] {
@@ -469,6 +451,9 @@ svg:not(:root) {
 /* ========================================================================
     forms : radio
  ========================================================================== */
+
+
+/* mars-form-radio */
 .mars-form-radio {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -519,6 +504,7 @@ svg:not(:root) {
   padding: initial;
 }
 
+/* mars-form-radio disabled */
 .mars-form-radio > input:disabled {
   color: #949494;
   background-color: #eaeded;
@@ -635,13 +621,13 @@ svg:not(:root) {
   cursor: pointer;
 }
 
-/* buttons variables */
-/* buttons size maps */
-/* buttons size variable */
+
 /* ========================================================================
     Components : buttons
  ========================================================================== */
-/* default style */
+
+
+/* mars-btn */
 .mars-btn {
   width: 10rem;
   font-family: inherit;
@@ -666,22 +652,6 @@ svg:not(:root) {
           box-shadow: 0px 10px 25px rgba(18, 159, 234, 0.5);
   -webkit-box-sizing: border-box !important;
           box-sizing: border-box !important;
-  /* buttons color */
-  /* focused */
-  /* actived, pressed */
-  /* default hovered box-shadow */
-  /* color hovered */
-  /* disabled */
-  /* modals button */
-  /* gradient button */
-  /* anim button */
-  /* button size */
-  /* normal rounded */
-  /* medium rounded */
-  /* large rounded */
-  /* button outlined */
-  /* icon button */
-  /* button loading */
 }
 
 .mars-btn.blue {
@@ -756,6 +726,7 @@ svg:not(:root) {
           box-shadow: 0px 10px 25px rgba(255, 87, 34, 0.5);
 }
 
+/* focused */
 .mars-btn:focus, .mars-btn.focused {
   opacity: 1;
   outline: 0;
@@ -764,6 +735,7 @@ svg:not(:root) {
           box-shadow: none;
 }
 
+/* focused,actived */
 .mars-btn:focus, .mars-btn.focused, .mars-btn:active, .mars-btn.actived, .mars-btn.pressed {
   opacity: 1;
   outline: 0;
@@ -771,6 +743,7 @@ svg:not(:root) {
           box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.12) inset;
 }
 
+/* hovered */
 .mars-btn.hovered, .mars-btn:hover {
   opacity: 0.75;
   cursor: pointer;
@@ -824,6 +797,7 @@ svg:not(:root) {
           box-shadow: 0px 10px 25px rgba(255, 87, 34, 0.85);
 }
 
+/* mars-btn disabled */
 .mars-btn[disabled], .mars-btn.disabled {
   border: none !important;
   background-image: none !important;
@@ -870,6 +844,7 @@ svg:not(:root) {
   outline: 0;
 }
 
+/* mars-btn gradient */
 .mars-btn.gradient {
   border: none !important;
   background-image: -webkit-gradient(linear, left top, right top, from(#1233ea), to(#129fea));
@@ -947,6 +922,7 @@ svg:not(:root) {
           box-shadow: none;
 }
 
+/* mars-btn anim  */
 .mars-btn.anim {
   -webkit-animation: bgAnim 3s linear infinite;
           animation: bgAnim 3s linear infinite;
@@ -971,6 +947,7 @@ svg:not(:root) {
   }
 }
 
+/* mars-btn sized */
 .mars-btn.sm {
   font-size: 0.75rem;
 }
@@ -987,6 +964,7 @@ svg:not(:root) {
   font-size: 1.5rem;
 }
 
+/* mars-btn rounded */
 .mars-btn.rounded-nor {
   border-radius: 4px;
 }
@@ -999,6 +977,7 @@ svg:not(:root) {
   border-radius: 2em;
 }
 
+/* mars-btn outlined */
 .mars-btn.outlined {
   opacity: 1 !important;
   outline: 2px solid #129fea !important;
@@ -1009,7 +988,6 @@ svg:not(:root) {
   border: none !important;
   -webkit-box-shadow: none;
           box-shadow: none;
-  /* button outlined color */
 }
 
 .mars-btn.outlined.blue {
@@ -1093,6 +1071,7 @@ svg:not(:root) {
   opacity: 1 !important;
 }
 
+/* mars-btn icon */
 .mars-btn.icon {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -1108,7 +1087,6 @@ svg:not(:root) {
   padding-top: calc(0.5em - 1px);
   position: relative;
   vertical-align: top;
-  /* icon button icon size */
 }
 
 .mars-btn.icon .icon.sm,
@@ -1119,8 +1097,8 @@ svg:not(:root) {
   height: 1.5em;
 }
 
+/* mars-btn loading button */
 .mars-btn.loading {
-  /* loading button */
   cursor: default;
   color: transparent !important;
   padding-bottom: calc(1em - 1px);
@@ -1137,7 +1115,6 @@ svg:not(:root) {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  /* after */
 }
 
 @-webkit-keyframes spinAround {
@@ -1162,6 +1139,7 @@ svg:not(:root) {
   }
 }
 
+/* after */
 .mars-btn.loading::after {
   -webkit-animation: spinAround 500ms infinite linear;
   animation: spinAround 500ms infinite linear;
@@ -1178,6 +1156,7 @@ svg:not(:root) {
   position: absolute !important;
 }
 
+/* mars-btn slide */
 .mars-btn.slide {
   position: relative;
   overflow: hidden;
@@ -1312,13 +1291,13 @@ svg:not(:root) {
   color: #ffffff;
 }
 
-/* modals variables */
-/* modal delete */
-/* modal title */
+
 /* ========================================================================
     Components: modals
  ========================================================================== */
-.mars-modal {
+
+
+ .mars-modal {
   position: relative;
   background-color: #ffffff;
   width: 30rem;
@@ -1331,7 +1310,6 @@ svg:not(:root) {
           box-shadow: 0px 30px 30px 0px rgba(0, 0, 0, 0.1);
   -webkit-box-sizing: border-box !important;
           box-sizing: border-box !important;
-  /* color */
 }
 
 .mars-modal a:not(.mars-btn) {
@@ -1376,7 +1354,6 @@ svg:not(:root) {
   position: absolute;
   right: 1.5rem;
   top: 1.5rem;
-  /* modal delete size */
 }
 
 .mars-modal .delete.sm {
