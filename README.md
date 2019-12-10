@@ -12,7 +12,7 @@ mars is a css ui kit, a **very simple and easy** to use library.
 
 mars is css library. Include CSS files singly.[mars.css](https://github.com/GayaChoi/mars/blob/master/app/css/mars.css)
 
-It is also available through the sass file.[mars.scss](https://github.com/GayaChoi/mars/blob/master/scss/mars.scss)
+It is also available through the sass file.[mars.scss](https://github.com/GayaChoi/mars/blob/master/scss/_mars.scss)
 
 Some JavaScript is included, but you can include or modify your own JavaScript file.
 
