@@ -8,7 +8,6 @@ app.use(express.static(path.join(__dirname, 'app')));
 app.use(favicon(path.join(__dirname,'app','Assets','images','favicon.ico')));
 
 
-
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'app/html', 'index.html'));
 });

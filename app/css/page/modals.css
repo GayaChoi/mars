@@ -249,7 +249,7 @@ h1.modals-title > a {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   padding-top: 30px;
 }
 

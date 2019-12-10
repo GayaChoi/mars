@@ -1079,7 +1079,7 @@ svg:not(:root) {
   height: 2.5em;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   line-height: 1.5;
   padding-bottom: calc(0.5em - 1px);
   padding-left: calc(0.78em - 1px);
