@@ -12,7 +12,7 @@ const gulp = require('gulp'),
       lineec = require('gulp-line-ending-corrector');
 
 
-var base = '../gulp'
+var base = '../gulp',
     scss = base + '/scss',      
     styleWatchFiles = scss + '**/*.scss';
     
