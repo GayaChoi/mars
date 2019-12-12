@@ -1,0 +1,344 @@
+
+// Variables
+// ========================================================================
+
+
+
+
+/* buttons variables */
+$button-width:                                              10rem !default;
+$button-font-family:                                        inherit !default;
+$button-font-size:                                          1rem !default;
+$button-font-weight:                                        500 !default;
+$button-border-width:                                       2px !default;
+$button-border-image:                                       initial !default;
+$button-text-decoration:                                    none !default;
+$button-margin-bottom:                                      30px !default;
+
+
+
+/* buttons size maps */
+/* buttons size variable */
+$button-small:                                              0.75rem !default;
+$button-medium:                                             1.25rem !default;
+$button-normal:                                             1rem !default;
+$button-large:                                              1.5rem !default;
+
+
+$sizes: "sm","md","nor","lg";
+$size: (
+    "sm": $button-small,
+    "md": $button-medium,
+    "nor": $button-normal,
+    "lg": $button-large
+);
+
+
+/* ========================================================================
+    Components : buttons
+ ========================================================================== */
+
+
+.mars-btn {
+    width: $button-width;
+    font-family: $button-font-family;
+    font-size: $button-font-size;
+    font-weight: $button-font-weight;
+    border: 2px solid $transparent;
+    border-width: $button-border-width;
+    border-image: $button-border-image;
+    padding: $button-padding-vertical $button-padding-horizontal;
+    background-color: $default;
+    text-decoration: $button-text-decoration;
+    border-radius: $button-radius;
+    margin-bottom: $button-margin-bottom;
+    cursor: pointer;
+    transition: $transition;
+    color: $white;
+    outline: $button-outline;
+    text-align: center;
+    box-shadow: $button-box-shadow-size rgba($default, 0.5);
+    box-sizing: border-box !important;
+
+    
+
+    @each $name in $color-names {
+        &.#{$name} {
+            @include button-color(map-get($colors,#{$name})); 
+        }
+    }
+
+    
+    &:focus,
+    &.focused {
+         opacity: 1;
+         outline: $button-outline;
+         border: 2px solid rgba($default, 0.5);
+         box-shadow: none;
+    }
+
+   
+    &:focus,
+    &.focused,
+    &:active, 
+    &.actived,
+    &.pressed {
+        opacity: 1;
+        outline: $button-outline;
+        box-shadow: $button-active-box-shadow-size rgba($black,0.12) inset; 
+    }
+ 
+
+    &.hovered,
+    &:hover {
+        opacity: $button-hovered-opacity;
+        cursor: pointer;
+        border-color: $button-hovered-color;
+        box-shadow: $button-box-shadow-size rgba($default, 0.85);  
+    }
+      
+    
+    @each $name in $color-names {
+        &.hovered.#{$name},
+        &.#{$name}:hover {
+           box-shadow: $button-box-shadow-size rgba(map-get($colors,#{$name}), 0.85);
+        }
+    }
+
+  
+    &[disabled],
+    &.disabled {
+        border: $button-none-border !important;
+        background-image: $button-disabled-background-image !important;
+        opacity: 1 !important;
+        cursor: not-allowed !important;
+        box-shadow: $button-none-box-shadow !important;
+        background-color: $button-disabled-background-color !important;
+        color: $disabled !important;
+    }
+
+   
+    &.cancel {
+        background-color: #ffffff !important;
+        border: 2px solid #D3D3D3 !important;
+        border-radius: $button-border-width;
+        width: 6.5rem;
+        height: 3.5rem;
+        color: rgba(139,139,139,0.83) !important;
+        box-shadow: $button-none-box-shadow;
+
+        &:hover, &.hovered, 
+        &:focus, &.focused, 
+        &:active, &.actived,
+        &.pressed {
+            @include modal-button(#D3D3D3);
+        }
+    }
+
+    &.submit {
+        background-color: #005CFF !important;
+        border: 2px solid #005CFF !important;
+        color: $white;
+        box-shadow: $button-none-box-shadow;
+
+        &:hover, &.hovered,
+        &:focus, &.focused,  
+        &:active, &.actived,
+        &.pressed {
+            @include modal-button(#005CFF);
+        }
+    }
+
+   
+    &.gradient {
+        border: $button-none-border !important;
+        background-image: linear-gradient(90deg,$gradient-default,$default);
+        box-shadow: $button-box-shadow-size rgba($default, 0.65);  
+        
+        @each $name in $color-names {
+            &.#{$name} {   
+                background-image: linear-gradient(90deg,map-get($gradient-colors,#{$name}),map-get($colors,#{$name}));
+                box-shadow: $button-box-shadow-size rgba(map-get($colors,#{$name}),0.65);
+            } 
+        }
+
+        &.cancel,
+        &.submit {
+           background-image: none !important;
+           box-shadow: $button-none-box-shadow;
+        }
+    }
+    
+   
+    &.anim {
+        @include button-anim();
+        animation: bgAnim 3s linear infinite;
+        background-size: $button-background-size !important;
+    }
+    
+
+    @each $value in $sizes {
+       &.#{$value} {
+           font-size: map-get($size,#{$value});
+       }
+    }
+
+ 
+    &.rounded-nor {
+        border-radius: $button-radius;
+    }
+
+   
+    &.rounded-md {
+        border-radius: $button-radius-md;
+    }
+
+    
+    &.rounded-lg {
+        border-radius: $button-radius-lg;
+    }
+
+    
+    &.outlined {
+        opacity: 1 !important;
+        outline: 2px solid $default !important;
+        border-width: $button-border-width;
+        background-color: $transparent !important;  
+        color: $default;
+        border-radius: 0px;
+        border: $button-none-box-shadow !important;
+        box-shadow: $button-none-box-shadow;
+
+       
+        @each $name in $color-names {
+            &.#{$name} {
+                @include outlined-button(#{$name}); 
+            }
+        }
+    }
+  
+    &.icon {
+        @include icon-button();
+
+        & .icon.sm,
+        & .icon.nor,
+        & .icon.md,
+        & .icon.lg {
+            width: 1.5em;
+            height: 1.5em;
+        }
+    }
+
+        
+    &.loading {
+       @include button-loading();
+
+        cursor: default;
+        color: transparent !important;
+        padding-bottom: calc(1em - 1px);
+        padding-left: $button-padding-vertical;
+        padding-right: $button-padding-vertical;
+        padding-top: calc(1em - 1px);
+        text-align: center;
+        white-space: nowrap;
+        pointer-events: none !important;
+        height: 2.5em;
+        font-size: $button-font-size;
+        line-height: 2.5em;
+        align-items: center;
+        position: relative;
+        
+        
+        &::after {
+            -webkit-animation: spinAround 500ms infinite linear;
+            animation: spinAround 500ms infinite linear;  
+            border: 2px solid #dbdbdb;
+            border-radius: 20000px;
+            border-right-color: $transparent;
+            border-top-color: $transparent;
+            content: "";
+            display: block;
+            width: 1em;
+            height: 1em;
+            left: calc(50% - (1em / 2));
+            top: calc(45% - (1em / 2));
+            position: absolute !important;
+        }
+    }
+
+    &.slide {
+       position: relative;
+       overflow: hidden;  
+       box-shadow: none;
+       border-radius: 0px !important; 
+       font-family: $button-font-family;
+       background: $transparent !important;
+
+       
+     
+       @each $name in $color-names {
+            &.#{$name} {
+               & a {
+                 color: map-get($colors,#{$name});  
+               }
+
+               & .slider {
+                  background: map-get($colors,#{$name});   
+               }
+            }
+        }
+       
+
+       & a {
+           position: relative;
+           text-decoration: none;
+           transition: all .35s ease-out;
+       }
+
+       & .slider {
+           width: 100%;
+           height: 100%;
+           position: absolute !important;
+           transition: all .35s ease-out;
+           bottom: 0; 
+           
+           &.left {
+              left: -200px; 
+           }
+
+           &.right {
+               left: 200px;
+           }
+
+           &.top {
+              top: -200px;
+           }
+
+           &.bottom {
+               top: 200px;
+           }
+       }
+
+       &:hover {    
+           box-shadow: none;
+
+           & .slider.left,
+           & .slider.right {
+               left: 0; 
+           }
+           
+           & .slider.top,
+           & .slider.bottom {
+               top: 0; 
+               left: 0;
+           }
+       }
+
+       &:hover a {
+            color: $white;
+       }
+    }
+}
+
+
+

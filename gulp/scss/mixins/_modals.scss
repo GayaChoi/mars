@@ -1,0 +1,8 @@
+@mixin delete-sizes($_size) {
+    height: $_size;
+    max-height: $_size;
+    max-width: $_size;
+    min-height: $_size;
+    min-width: $_size;
+    width: $_size;
+}

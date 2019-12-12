@@ -1,0 +1,53 @@
+
+// checkbox & radio 
+@mixin box() {
+    display: $input-box-display;
+    align-items: $input-box-items;
+    position: $input-box-pos;
+    cursor: pointer;
+    height: $input-box-height;
+}
+
+@mixin check(
+    $_size,
+    $all: unset,
+    $width: $input-box-width,
+    $height: $input-box-height, 
+    $display: $input-box-icon-display,
+    $background: $input-box-background,
+    $border-radius: $_size,
+    $border-width: $input-box-border-width,
+    $border-style: $input-box-border-style,
+    $border-image: $input-box-border-image,
+    $transition: $transition,
+    $border-color: $input-box-border-color,
+    $cursor: pointer
+) {
+    all: $all;
+    width: $width;
+    height: $height; 
+    display: $display;
+    background: $background;
+    border-radius: $border-radius;
+    border-width: $border-width;
+    border-style: $border-style;
+    border-image: $border-image;
+    transition: $transition;
+    border-color: $border-color;
+    cursor: $cursor;
+}
+
+@mixin checkIcon() {
+    position: $input-box-icon-pos;
+    display: $input-box-icon-display;
+    top: 15%;
+    left: 10px;
+}
+
+@mixin box-disabled() {
+    color: $input-checkbox-disabled-color;
+    background-color: $input-checkbox-disabled-bgcolor;
+    border-color: $input-checkbox-disabled-border-color;
+    border-width: $input-box-border-width;
+    border-style: $input-box-border-style;
+}

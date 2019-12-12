@@ -1,0 +1,162 @@
+// Variables
+// Record the global variables, including the variables you need for mixin.
+//
+
+
+
+/* colors */
+$default: rgb(18,159,234) !default;
+$blue: rgb(0,110,207) !default;
+$green: rgb(80,200,120) !default;
+$yellow: rgb(248,235,0) !default;
+$pink: rgb(223,150,193) !default;
+$purple: rgb(162,88,232) !default;
+$disabled: rgb(202,210,211) !default;
+$read-only:rgb(238,238,238) !default;
+$black: rgb(0,0,0) !default;
+$background: rgba(51, 50, 56, 0.52) !default;
+$transparent: transparent !default;
+$white:#ffffff !default;
+$current: currentColor !default;
+
+
+
+/* state color */
+$primary: rgb(0,176,255) !default;
+$success: rgb(0,178,72) !default;
+$warning: rgb(255,157,63) !default;
+$error: rgb(255,87,34) !default;
+
+
+/* input checkbox, radio common color */
+$input-box-border-color: rgb(223, 223, 223) !default;
+
+/* input checkbox, radio, disabled common color */
+$input-box-disabled-fill: rgb(204, 204, 204) !default;
+
+/* input checkbox, disabled color */
+$input-checkbox-disabled-color:#949494 !default;
+$input-checkbox-disabled-bgcolor:#eaeded !default;
+$input-checkbox-disabled-border-color:#bebebe !default;
+
+/* buttons hovered color */
+$button-hovered-color: transparent !default;
+
+/* buttons disabled color */
+$button-disabled-background-color: rgb(234,237,237) !default; 
+
+
+/* buttons gradient color */
+$gradient-default: #1233ea !default;
+$gradient-blue: #002a50 !default;
+$gradient-green: #319b54 !default;
+$gradient-yellow:  #aca300 !default;
+$gradient-pink: #c74792 !default;
+$gradient-purple: #6217a9 !default;   
+$gradient-primary: #0031ff !default;
+$gradient-success: #006629 !default;
+$gradient-warning: #f27600 !default;
+$gradient-error: #d53300 !default;
+
+
+/* colors maps */
+$color-names: "blue","green","yellow","pink","purple","primary","success","warning","error";
+$colors: (
+    "blue": $blue,
+    "green": $green,
+    "yellow": $yellow,
+    "pink": $pink,
+    "purple": $purple,
+    "primary": $primary,
+    "success": $success,
+    "warning": $warning,
+    "error": $error
+);
+
+
+/* buttons gradient maps */
+$gradient-colors: (
+   "blue": $gradient-blue,
+   "green": $gradient-green,
+   "yellow": $gradient-yellow,
+   "pink": $gradient-pink,
+   "purple": $gradient-purple, 
+   "primary": $gradient-primary,
+   "success": $gradient-success,
+   "warning": $gradient-warning,
+   "error": $gradient-error
+);
+
+
+/* input readonly color */
+$input-readonly-bgcolor:                       #eeeeee !default;
+$input-readonly-color:                         #777777 !default;
+$input-readonly-border:                        #cccccc !default; 
+
+
+
+/* common variable transition */
+$transition:                                    all 0.2s ease-in-out 0s !default;
+
+
+/* input variables */
+/* input outline */
+$input-outline:                                 0 !default;
+
+
+/* input radius */
+$input-radius-nor:                                  4px !default;
+$input-radius-md:                               0.5em !default;
+$input-radius-lg:                               2em !default;
+
+
+/* input border width */
+$input-border-width:                            2px !default;
+
+
+/* input checkbox & radio */
+$input-box-display: flex !default;
+$input-box-border-width: 3px !default;
+$input-box-icon-display: block !default;
+$input-box-icon-pos: absolute !default; 
+$input-box-background: none !default;
+$input-box-items: center !default;
+$input-box-pos: relative !default;
+$input-box-width: 20px !default;
+$input-box-height: 20px !default;
+$input-box-border-style: solid !default;
+$input-box-border-image: initial !default;
+$input-box-padding: initial !default;
+$input-box-margin: 3px 3px 3px 4px !default;
+
+
+
+/* buttons variables */
+$button-outline: 0 !default;
+$button-box-shadow-size: 0px 10px 25px !default; 
+$button-background-size: 400% 400% !default;
+$button-padding-vertical: 0.85em !default;
+$button-padding-horizontal: 1em !default;
+$button-none-border: none !default;
+$button-none-box-shadow: none !default;
+
+
+
+/* buttons actived */
+$button-active-box-shadow-size: 0 0 0 1px !default;
+
+/* buttons hovered */
+$button-hovered-opacity: 0.75 !default;
+
+/* buttons disabled variable */
+$button-disabled-opacity: 1 !default;
+$button-disabled-background-image: none !default;
+
+
+/* buttons radius size */
+$button-radius: 4px !default;
+$button-radius-md: 1em !default;
+$button-radius-lg: 2em !default;
+
+
+

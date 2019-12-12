@@ -1,0 +1,81 @@
+// Variables
+// ========================================================================
+
+
+
+/* ========================================================================
+    forms : checkbox
+ ========================================================================== */
+
+
+
+.mars-form-checkbox {
+    @include box();
+
+    & > .checked {
+        @include check(3px);
+    }
+
+    & > .check-icon {
+        @include checkIcon();
+        color: $white;
+        & > svg {
+            fill: $white;
+        }    
+    }
+
+    & > input:not(:disabled):checked {
+        background-color: $default;
+        border-color: $default; 
+    }
+
+    & > input:disabled + .check-icon svg {
+        fill: $input-box-disabled-fill;
+        cursor: not-allowed;
+    }
+    
+    @each $name in $color-names {
+        &.#{$name} > input:not(:disabled):hover {
+            border-color: map-get($colors,#{$name});
+        }
+
+        &.#{$name} > input:checked {
+            background-color: map-get($colors,#{$name});               
+            border-color: map-get($colors,#{$name});
+        }
+    }
+    
+    & > input {
+        border-width: $input-box-border-width;
+        border-style: $input-box-border-style;
+
+        &[type="checkbox"] {
+            margin: $input-box-margin;
+            padding: $input-box-padding;       
+        }
+
+        &:disabled {
+           @include box-disabled();
+        }
+
+        &:not(:disabled) {
+            border-color: $input-box-border-color;
+        }
+
+        &:not(:disabled):hover {
+            border-color: $default;
+        }
+    }
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+.checkbox-label {
+    font-size: 14px;
+    margin-left: 10px;
+    cursor: pointer;    
+}
+
+

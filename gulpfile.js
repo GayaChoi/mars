@@ -12,30 +12,31 @@ const gulp = require('gulp'),
       lineec = require('gulp-line-ending-corrector');
 
 
-var scss = '../scss',      
+var base = '../gulp'
+    scss = base + '/scss',      
     styleWatchFiles = scss + '**/*.scss';
-
+    
 
 var cssSRC = [
-    './app/Assets/common/common.css',  
-    './app/css/mars.css',
-    './app/css/mars.min.css',
-    './app/css/page/buttons.css',
-    './app/css/page/buttons.min.css',
-    './app/css/page/forms.css',
-    './app/css/page/forms.min.css',
-    './app/css/page/index.css',
-    './app/css/page/index.min.css',
-    './app/css/page/modal.css',
-    './app/css/page/modeal.min.css',
-    './app/css/page/page-r.css',
-    './app/css/page/preview.css',
-    './app/css/page/preview.min.css'
+    base + '/app/Assets/common/common.css',  
+    base + '/app/css/mars.css',
+    base + '/app/css/mars.min.css',
+    base + '/app/css/page/buttons.css',
+    base + '/app/css/page/buttons.min.css',
+    base + '/app/css/page/forms.css',
+    base + '/app/css/page/forms.min.css',
+    base + '/app/css/page/index.css',
+    base + '/app/css/page/index.min.css',
+    base + '/app/css/page/modal.css',
+    base + '/app/css/page/modeal.min.css',
+    base + '/app/css/page/page-r.css',
+    base + '/app/css/page/preview.css',
+    base + '/app/css/page/preview.min.css'
 ];    
  
 
 function css() {
-   return gulp.src([scss + 'mars.scss'])
+   return gulp.src([scss + '/page' + '/index.scss'])
    .pipe(sourcemaps.init({loadMaps: true}))
    .pipe(sass({
       outputStyle: 'expanded' 
@@ -49,7 +50,7 @@ function css() {
 function concatCSS() { 
   return gulp.src(cssSRC)
   .pipe(sourcemaps.init({loadMaps: true, largeFile: true}))
-  .pipe(concat('mars.min.css'))
+  .pipe(concat('index.min.css'))
   .pipe(clanCSS())
   .pipe(sourcemaps.write('./maps/'))
   .pipe(lineec())
@@ -59,7 +60,7 @@ function concatCSS() {
 function watch() { 
    browserSync.init({
       open: 'external',
-      proxy: 'http://localhost',
+      proxy: 'http://localhost/',
       port: 5500,   
    });
    gulp.watch(styleWatchFiles, gulp.series([css, concatCSS]));
