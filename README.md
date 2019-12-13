@@ -30,6 +30,5 @@ mars supports the latest version of the browser by default, but browsers such as
 * Opera
 * Safari
 
-Internet Explorer (11+) is only partially supported.<br/>
-**Edge is not supported.**<br/>
+Internet Explorer (11+) & Edge is only partially supported.<br/>
 
