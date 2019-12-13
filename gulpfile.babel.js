@@ -1,4 +1,4 @@
-import gulp from "gulp";
+/* import gulp from "gulp";
 import ws from "gulp-webserver";
 import sass from "gulp-sass";
 import autoprefixer from "gulp-autoprefixer";
@@ -7,7 +7,7 @@ sass.compiler = require('node-sass');
 
 const routes = {
     scss: {
-        watch: "scss/**/*.scss",
+        watch: "", 
         src: "scss/mars.scss",
         dest: "build/css"
     }
@@ -34,10 +34,7 @@ const autoPre = () => {
     .pipe(sass({
         outpustStyle: 'expanded'
     })).on('error', sass.logError)
-    .pipe(autoprefixer({
-        browsers: 'last 4 versions',
-        cascade: false
-    }))
+    .pipe(autoprefixer('last 2 versions'))
     .pipe(gulp.dest(routes.scss.dest))
   );
 }
@@ -47,4 +44,4 @@ const assets = gulp.series([styles]);
 const live = gulp.parallel([webserver,watch]);
 
 exports.autoPre = autoPre;
-export const dev = gulp.series([assets, live]);
+export const dev = gulp.series([assets, live]);  */
