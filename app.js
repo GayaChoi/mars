@@ -3,31 +3,30 @@ var path = require('path');
 var favicon = require('serve-favicon');
 var app = express();
 
-   
-app.use(express.static(path.join(__dirname, 'app')));
-app.use(favicon(path.join(__dirname,'app','Assets','images','favicon.ico')));
+
+app.use(express.static(path.join(__dirname, 'public')));
+app.use(favicon(path.join(__dirname,'public','Assets','images','favicon.ico')));
 
 
 app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'app/html', 'index.html'));
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
 app.get('/forms', function (req, res) {
-  res.sendFile(path.join(__dirname, 'app/html', 'forms.html'));
+  res.sendFile(path.join(__dirname, 'public/html', 'forms.html'));
 });
 
 app.get('/buttons', function(req, res) {
-  res.sendFile(path.join(__dirname, 'app/html', 'buttons.html'));
+  res.sendFile(path.join(__dirname, 'public/html', 'buttons.html'));
 });
 
 app.get('/modals', function(req, res) {
-  res.sendFile(path.join(__dirname, 'app/html', 'modals.html'));
+  res.sendFile(path.join(__dirname, 'public/html', 'modals.html'));
 });
 
 app.get('/preview', function(req, res) {
-  res.sendFile(path.join(__dirname, 'app/html', 'preview.html')); 
+  res.sendFile(path.join(__dirname, 'public/html', 'preview.html')); 
 });
-
 
 
 // ERROR Handling
