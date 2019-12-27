@@ -3,21 +3,26 @@
   .forms-area {
     margin: 50px;
   }
+
   .forms-area {
     width: 300px;
   }
+
   .forms-area .highlight {
     padding: 0;
     margin: 0;
   }
+
   .mars-btn.is-cancel, .mars-btn-icon.is-cancel {
     padding: 0;
     width: 3.2rem;
     height: 3.5rem;
   }
+
   .main-area, .main-area .main-area-link {
     width: 400px;
   }
+  
   svg.fa-arrow-circle-right {
     top: 80px;
     left: 80px;

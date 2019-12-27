@@ -19,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/GayaChoi/mars/issues"
   },
-  "homepage": "https://mars-css.herokuapp.com",
+  "homepage": "",
   "dependencies": {
     "@babel/core": "^7.7.5",
     "@babel/register": "^7.7.4",

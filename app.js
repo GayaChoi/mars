@@ -1,36 +1,33 @@
-var express = require('express');
-var path = require('path');
-var favicon = require('serve-favicon');
-var app = express();
+const express = require('express');
+const favicon = require('serve-favicon')
+const path = require('path');
+const app = express();
+ 
+app.use(express.static(path.join(__dirname,'public')));
 
-
-app.use(express.static(path.join(__dirname, 'public')));
 app.use(favicon(path.join(__dirname,'public','Assets','images','favicon.ico')));
 
-
 app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+  res.sendFile(path.join(__dirname,'public','index.html'));
 });
 
 app.get('/forms', function (req, res) {
-  res.sendFile(path.join(__dirname, 'public/html', 'forms.html'));
+  res.sendFile(path.join(__dirname,'public','html','forms.html'));
 });
 
 app.get('/buttons', function(req, res) {
-  res.sendFile(path.join(__dirname, 'public/html', 'buttons.html'));
+  res.sendFile(path.join(__dirname,'public','html','buttons.html'));
 });
 
 app.get('/modals', function(req, res) {
-  res.sendFile(path.join(__dirname, 'public/html', 'modals.html'));
+  res.sendFile(path.join(__dirname,'public','html','modals.html'));
 });
 
 app.get('/preview', function(req, res) {
-  res.sendFile(path.join(__dirname, 'public/html', 'preview.html')); 
+  res.sendFile(path.join(__dirname,'public','html','preview.html')); 
 });
-
-
+ 
 // ERROR Handling
-
 app.use(function(req, res, next) {
   const error = new Error('Page Not Found');
   error.status(404);
