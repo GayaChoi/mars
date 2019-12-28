@@ -8,9 +8,8 @@
   },
   "main": "main.js",
   "scripts": {
-    "dev": "gulp dev",
-    "build": "gulp build",
     "start": "node main.js",
+    "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": "git+https://github.com/GayaChoi/mars.git",
