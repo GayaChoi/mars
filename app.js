@@ -7,22 +7,27 @@ app.use(express.static(path.join(__dirname,'public')));
 
 app.use(favicon(path.join(__dirname,'public','Assets','images','favicon.ico')));
 
+// home
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname,'public','index.html'));
 });
 
+// forms
 app.get('/forms', function (req, res) {
   res.sendFile(path.join(__dirname,'public','html','forms.html'));
 });
-
+ 
+// buttons
 app.get('/buttons', function(req, res) {
   res.sendFile(path.join(__dirname,'public','html','buttons.html'));
 });
 
+// modals 
 app.get('/modals', function(req, res) {
   res.sendFile(path.join(__dirname,'public','html','modals.html'));
 });
 
+// preview
 app.get('/preview', function(req, res) {
   res.sendFile(path.join(__dirname,'public','html','preview.html')); 
 });

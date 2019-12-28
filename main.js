@@ -2,4 +2,7 @@ var http = require('http');
 var app = require('./app');
 var server = http.createServer(app);
 
-server.listen(process.env.PORT || 3000);
+// heroku PORT + localhost
+server.listen(process.env.PORT || 3000 ,function() {
+    console.log("Server is success!")
+});
