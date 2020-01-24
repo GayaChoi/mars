@@ -3,7 +3,7 @@
 mars is a css ui kit, a **very simple and easy** to use library.
 
 
-<img src="https://mars-css.firebaseapp.com/Assets/images/mars-logo.png" width="300px" height="300px" title="mars" alt="mars"></img><br/>
+<img src="http://marscss.herokuapp.com/Assets/images/mars-logo.png" width="300px" height="300px" title="mars" alt="mars"></img><br/>
 
 
 
