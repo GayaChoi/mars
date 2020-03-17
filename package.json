@@ -1,59 +1,40 @@
 {
-  "name": "mars",
-  "version": "1.0.0",
-  "description": "mars.css is ui kit",
-  "engines": {
-    "node": "12.13.1",
-    "npm": "6.12.1"
+  "name": "mars-css",
+  "version": "0.1.0",
+  "homepage": "https://marscss.herokuapp.com/",
+  "author": {
+    "name": "Gaya Choi",
+    "email": "woosung827@naver.com"
   },
-  "main": "main.js",
-  "scripts": {
-    "start": "node main.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "description": "mars-css is ui kit",
+  "main": "mars.scss",
   "repository": "git+https://github.com/GayaChoi/mars.git",
-  "author": "'woosung827@naver.com",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/GayaChoi/mars/issues"
   },
-  "homepage": "https://marscss.herokuapp.com/",
-  "dependencies": {
-    "@babel/core": "^7.7.5",
-    "@babel/register": "^7.7.4",
-    "autoprefixer": "^9.7.3",
-    "browser-sync": "^2.26.7",
-    "del": "^5.1.0",
-    "express": "^4.17.1",
-    "greenlock": "^3.1.5",
-    "greenlock-express": "^3.1.1",
-    "gulp-changed": "^4.0.2",
-    "gulp-clean-css": "^4.2.0",
-    "gulp-line-ending-corrector": "^1.0.3",
-    "gulp-sourcemaps": "^2.6.5",
-    "lodash.template": "^4.5.0",
-    "mime-types": "^2.1.25",
-    "morgan": "^1.9.1",
-    "open": "^7.0.0",
-    "redirect-https": "^1.3.0",
-    "serve-favicon": "^2.5.0",
-    "url": "^0.11.0"
-  },
-  "browserslist": [
-    "last 2 version",
-    "> 1%",
-    "IE 10"
+  "keywords": [
+    "css",
+    "scss",
+    "responsive",
+    "ui-kit"
   ],
+  "dependencies": {
+    "sass": "^1.25.0"
+  },
   "devDependencies": {
-    "@babel/preset-env": "^7.7.6",
-    "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^7.0.1",
-    "gulp-concat": "^2.6.1",
-    "gulp-imagemin": "^6.2.0",
-    "gulp-postcss": "^8.0.0",
-    "gulp-sass": "^4.0.2",
-    "gulp-uglify": "^3.0.2",
-    "gulp-webserver": "^0.9.1",
-    "node-sass": "^4.13.0"
-  }
+    "autoprefixer": "^9.7.4",
+    "clean-css-cli": "^4.3.0",
+    "node-sass": "^4.13.1",
+    "postcss-cli": "^7.1.0",
+    "rimraf": "^3.0.1"
+  },
+  "scripts": {},
+  "files": [
+    "css",
+    "scss",
+    "mars.scss",
+    "LICENSE",
+    "README.md"
+  ]
 }
