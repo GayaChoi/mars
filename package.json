@@ -20,6 +20,7 @@
     "ui-kit"
   ],
   "dependencies": {
+    "kind-of": "^6.0.3",
     "sass": "^1.25.0"
   },
   "devDependencies": {
