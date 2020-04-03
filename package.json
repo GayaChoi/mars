@@ -8,10 +8,10 @@
   },
   "description": "mars-css is ui kit",
   "main": "mars.scss",
-  "repository": "git+https://github.com/GayaChoi/mars.git",
+  "repository": "git+https://github.com/choigaya/mars.git",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/GayaChoi/mars/issues"
+    "url": "https://github.com/choigaya/mars/issues"
   },
   "keywords": [
     "css",
