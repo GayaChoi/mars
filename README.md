@@ -32,3 +32,6 @@ mars supports the latest version of the browser by default, but browsers such as
 
 Internet Explorer (11+) & Edge is only partially supported.<br/>
 
+## License
+
+* MIT
